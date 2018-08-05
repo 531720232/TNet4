@@ -7,9 +7,10 @@ scut怎么吃TNet就怎么吃。
 ——————————————————————
 修改说明
 ——————————————————————————
-①gzip替换为7zip
-②添加EndianBinaryWriter,EndianBinaryReader
-③添加ecs框架
+##①gzip替换为7zip
+##②添加EndianBinaryWriter,EndianBinaryReader
+##③添加ecs框架
+##④添加cs_script??
 ________________________
 已知问题
 ______________
