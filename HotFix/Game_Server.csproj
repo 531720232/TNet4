@@ -1,0 +1,98 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>TNET_GS</AssemblyName>
+    <RootNamespace>TNet</RootNamespace>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NETCOREAPP2_0;NO_ASSEMBLY_SCANNING;NETCOREAPP2_0;NO_REMOTING</DefineConstants>
+    <Optimize>false</Optimize>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ECS\EcsRx.Infrastructure\**" />
+    <Compile Remove="ECS\EcsRx.Reactive\**" />
+    <Compile Remove="ECS\EcsRx.Views\**" />
+    <Compile Remove="ECS\EcsRx\**" />
+    <EmbeddedResource Remove="ECS\EcsRx.Infrastructure\**" />
+    <EmbeddedResource Remove="ECS\EcsRx.Reactive\**" />
+    <EmbeddedResource Remove="ECS\EcsRx.Views\**" />
+    <EmbeddedResource Remove="ECS\EcsRx\**" />
+    <None Remove="ECS\EcsRx.Infrastructure\**" />
+    <None Remove="ECS\EcsRx.Reactive\**" />
+    <None Remove="ECS\EcsRx.Views\**" />
+    <None Remove="ECS\EcsRx\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="script\cs\Class11.cs" />
+    <Compile Remove="script\cs\Main.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="script\cs\Class11.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="script\cs\Main.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.5.6" />
+    <PackageReference Include="NLog.Config" Version="4.5.6" />
+    <PackageReference Include="NLog.InstallNLogConfig" Version="2.0.0" />
+    <PackageReference Include="NLua_Safe" Version="1.3.2.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+    <PackageReference Include="System.Console" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TNet_Core\TNet_Core.csproj" />
+    <ProjectReference Include="..\TNet_Game\TNet_Game.csproj" />
+    <ProjectReference Include="..\TNet_Share\TNet_Share.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="IronPython">
+      <HintPath>C:\Users\Administrator\Pictures\IronPython.2.7.8\netcoreapp2.0\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules">
+      <HintPath>C:\Users\Administrator\Pictures\IronPython.2.7.8\netcoreapp2.0\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic">
+      <HintPath>C:\Users\Administrator\Pictures\IronPython.2.7.8\netcoreapp2.0\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting">
+      <HintPath>C:\Users\Administrator\Pictures\IronPython.2.7.8\netcoreapp2.0\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\..\..\GitHub\ironpython3\bin\Debug\netcoreapp2.0\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages">
+      <HintPath>C:\Users\Administrator\Pictures\IronPython.2.7.8\netcoreapp2.0\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="script\dll\TKL.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="script\py\a.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="script\model\" />
+    <Folder Include="script\lua\" />
+  </ItemGroup>
+
+</Project>

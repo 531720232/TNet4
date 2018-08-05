@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNet4", "TNet4\TNet4.csproj", "{6FD84D16-3FD9-4E45-90F4-3478C91E8939}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TNet4_scut阉割版", "TNet4\TNet4_scut阉割版.csproj", "{6FD84D16-3FD9-4E45-90F4-3478C91E8939}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TNet_Share", "TNet_Share\TNet_Share.csproj", "{BE15A3A4-6664-40BB-9747-385C7E08132C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TNet_Game", "TNet_Game\TNet_Game.csproj", "{01CCE647-F317-4AFD-9469-2B2C7DB2612C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TNet_Core", "TNet_Core\TNet_Core.csproj", "{6CBE16FD-2CA2-4F97-90F1-3A87459C1D2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcsRx", "EcsRx\EcsRx.csproj", "{6AE044C3-A25B-41B7-A3BA-D24438FF210D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game_Server", "HotFix\Game_Server.csproj", "{2A878D78-7575-4879-BAF7-73A835CA8DB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{6FD84D16-3FD9-4E45-90F4-3478C91E8939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FD84D16-3FD9-4E45-90F4-3478C91E8939}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FD84D16-3FD9-4E45-90F4-3478C91E8939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE15A3A4-6664-40BB-9747-385C7E08132C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE15A3A4-6664-40BB-9747-385C7E08132C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE15A3A4-6664-40BB-9747-385C7E08132C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE15A3A4-6664-40BB-9747-385C7E08132C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01CCE647-F317-4AFD-9469-2B2C7DB2612C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CCE647-F317-4AFD-9469-2B2C7DB2612C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01CCE647-F317-4AFD-9469-2B2C7DB2612C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01CCE647-F317-4AFD-9469-2B2C7DB2612C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CBE16FD-2CA2-4F97-90F1-3A87459C1D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBE16FD-2CA2-4F97-90F1-3A87459C1D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBE16FD-2CA2-4F97-90F1-3A87459C1D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBE16FD-2CA2-4F97-90F1-3A87459C1D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AE044C3-A25B-41B7-A3BA-D24438FF210D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE044C3-A25B-41B7-A3BA-D24438FF210D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE044C3-A25B-41B7-A3BA-D24438FF210D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE044C3-A25B-41B7-A3BA-D24438FF210D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A878D78-7575-4879-BAF7-73A835CA8DB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A878D78-7575-4879-BAF7-73A835CA8DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A878D78-7575-4879-BAF7-73A835CA8DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A878D78-7575-4879-BAF7-73A835CA8DB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
