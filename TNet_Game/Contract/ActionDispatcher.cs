@@ -73,6 +73,45 @@ namespace TNet.Contract
     /// </summary>
     public class ScutActionDispatcher : IActionDispatcher
     {
+        public bool TryBuildFromNode(DataNode data,out RequestPackage package)
+        {
+            package = null;
+            Guid proxySid;
+            proxySid= data.GetHierarchy("ssid",Guid.Empty);//, out proxySid);
+            int actionid;
+          if(!data.TryGetHierarchy("aid",out actionid))
+            {
+                return false;
+            }
+            int msgid=-1;
+            if (!data.TryGetHierarchy("mid", out actionid))
+            {
+                return false;
+            }
+            int userId;
+            userId = data.GetHierarchy("uid", -1);
+            string sessionId;
+            string proxyId;
+            int ptcl;
+            data.TryGetHierarchy("sid", out sessionId);
+            data.TryGetHierarchy("proxyId", out proxyId);
+            data.TryGetHierarchy("ptcl", out ptcl);
+
+            package = new RequestPackage(msgid, sessionId, actionid, userId, ptcl.ToEnum<ProtocolVersion>())
+            {
+                ProxySid = proxySid,
+                ProxyId = proxyId,
+                IsProxyRequest = data.GetChild("isproxy")!=null,
+                RouteName = data.GetHierarchy("route",""),
+                IsUrlParam = true,
+              //  Params = data["Params"].Get<Dictionary<string,string>>(),
+              // packageReader.InputStream,
+              //  OriginalParam = packageReader.RawParam
+            };
+            return true;
+
+        }
+
 
         /// <summary>
         /// Decode request package
@@ -85,23 +124,41 @@ namespace TNet.Contract
             package = null;
             try
             {
-                var new_m = new System.IO.MemoryStream(e.Data);
+                //var new_m = new System.IO.MemoryStream(e.Data);
 
-                var reader = new TNet.IO.EndianBinaryReader(IO.EndianBitConverter.Little, new_m);
+             //   if (e.Data.Length>3&&e.Data[0] == 93 && e.Data[1] == 0&& e.Data[2]==0&&e.Data[3]==64)
+             //   {
+             //       e.Data = LZMA.Decompress(e.Data);
+             //   }
 
 
-                var msgid = reader.ReadInt32();
-                var pad = reader.ReadString();
-                var sessionid = reader.ReadString();
-                var act_id = reader.ReadInt32();
-                var user_id = reader.ReadInt32();
+             //   var reader = new TNet.IO.EndianBinaryReader(IO.EndianBitConverter.Little, new System.IO.MemoryStream(e.Data));
+             // var r=  reader.ReadObj<RequestParam>();
+             //   //var str = reader.ReadBytes();
+             //var bs=   System.Text.Encoding.UTF8.GetBytes(r.ToPostString());
 
-                package = new RequestPackage(msgid, sessionid, act_id, user_id);
-                package.OpCode = e.Message.OpCode;
-                package.ProxySid = Guid.Parse(pad);
-                package.CommandMessage = e.Socket.IsWebSocket && e.Message.OpCode == OpCode.Text
-                       ? e.Message.Message : null;
-                return true;
+                //    var packageReader = new PackageReader(e.Data, Encoding.UTF8);
+                //if (TryBuildFromNode(node, out package))
+                //{
+                //    package.OpCode = e.Message.OpCode;
+                //    package.CommandMessage = e.Socket.IsWebSocket && e.Message.OpCode == OpCode.Text
+                //        ? e.Message.Message
+                //        : null;
+                //    return true;
+                //}
+                var packageReader = new PackageReader(e.Data, Encoding.UTF8);
+                if (TryBuildPackage(packageReader, out package))
+                {
+                    package.OpCode = e.Message.OpCode;
+                    package.CommandMessage = e.Socket.IsWebSocket && e.Message.OpCode == OpCode.Text
+                        ? e.Message.Message
+                        : null;
+                  //  package.Message = reader.ToBytes();
+                    return true;
+                }
+
+
+                return false;
             }
             catch
             {
@@ -180,13 +237,18 @@ namespace TNet.Contract
             string st = actionGetter.GetSt();
             ProtocolVersion prtcl = actionGetter.GetPtcl();
             MessageHead head = new MessageHead(actionGetter.GetMsgId(), actionGetter.GetActionId(), st, errorCode, errorInfo);
-            MessageStructure sb = new MessageStructure();
+          //->  MessageStructure sb = new MessageStructure();
+            var sg = new IO.EndianBinaryWriter(IO.EndianBitConverter.Little, new System.IO.MemoryStream());
             if (prtcl >= ProtocolVersion.ExtendHead)
             {
-                sb.PushIntoStack(0); //不输出扩展头属性
+                sg.Write(0);
+               // sb.PushIntoStack(0); //不输出扩展头属性
             }
-            sb.WriteBuffer(head);
-            response.BinaryWrite(sb.PopBuffer());
+            //-> sb.WriteBuffer(head);
+            sg.WriteObj(head);
+            response.BinaryWrite(sg.To7ZBytes());
+            sg.Dispose();
+           // response.BinaryWrite(sb.PopBuffer());
         }
 
         /// <summary>

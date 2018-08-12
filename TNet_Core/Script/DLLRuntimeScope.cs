@@ -28,49 +28,56 @@ namespace TNet.Script
         {
           
           
-            if (scriptCode==null)
-            {
+          
               
               foreach(var v in assemblies)
                 {
                  var type=  v.GetType(typeName);
                     if(type!=null)
                     {
-                        return type.CreateInstance(args);
-                    }
-                }
-                foreach (var v in AppDomain.CurrentDomain.GetAssemblies())
-                {
-                    var type = v.GetType(typeName);
-                    if (type != null)
+                    var obj= type.CreateInstance(args);
+                    return obj;
+                    }else
                     {
-                        return type.CreateInstance(args);
+                        type = v.GetType(scriptCode);
+                        if(type!=null)
+                        {
+                            return type.CreateInstance(args);
+                        }
                     }
                 }
-            }
-            else
-            {
-                if (typeName == null) { }
-              else  if(assemblies.Exists(x=>x.FullName.StartsWith(scriptCode)))
-                {
-               var b=     assemblies.Find(x => x.FullName.StartsWith(scriptCode));
-                    var type = b.GetType(typeName);
-                    if (type != null)
-                    {
-                        return type.CreateInstance(args);
-                    }
-                }
-                else if (AppDomain.CurrentDomain.GetAssemblies().ToList().Exists(x => x.FullName.StartsWith(scriptCode)))
-                {
-                    var gw = AppDomain.CurrentDomain.GetAssemblies().ToList();
-                    var b = gw.Find(x => x.FullName.StartsWith(scriptCode));
-                    var type = b.GetType(typeName);
-                    if (type != null)
-                    {
-                        return type.CreateInstance(args);
-                    }
-                }
-            }
+                //foreach (var v in AppDomain.CurrentDomain.GetAssemblies())
+                //{
+                //    var type = v.GetType(typeName);
+                //    if (type != null)
+                //    {
+                //        return type.CreateInstance(args);
+                //    }
+                //}
+            
+            //else
+            //{
+            //    if (typeName == null) { }
+            //  else  if(assemblies.Exists(x=>x.FullName.StartsWith(scriptCode)))
+            //    {
+            //   var b=     assemblies.Find(x => x.FullName.StartsWith(scriptCode));
+            //        var type = b.GetType(typeName);
+            //        if (type != null)
+            //        {
+            //            return type.CreateInstance(args);
+            //        }
+            //    }
+            //    else if (AppDomain.CurrentDomain.GetAssemblies().ToList().Exists(x => x.FullName.StartsWith(scriptCode)))
+            //    {
+            //        var gw = AppDomain.CurrentDomain.GetAssemblies().ToList();
+            //        var b = gw.Find(x => x.FullName.StartsWith(scriptCode));
+            //        var type = b.GetType(typeName);
+            //        if (type != null)
+            //        {
+            //            return type.CreateInstance(args);
+            //        }
+            //    }
+            //}
 
 
             return base.Execute(scriptCode, typeName, args);
@@ -97,8 +104,11 @@ namespace TNet.Script
             base.Init();
 
         }
+        private bool isInit = false;
         public void InitDll()
         {
+            assemblies = new List<Assembly>();
+          
             var dlls = System.IO.Directory.GetFiles(_dllPath, "*.dll", SearchOption.AllDirectories);
             //加载热更dll
             foreach (var dl in dlls)
@@ -119,8 +129,10 @@ namespace TNet.Script
                         break;
                     }
                 }
-                AddWatchPath(_dllPath, "*.dll");
+
+               if(!isInit) AddWatchPath(_dllPath, "*.dll");
             }
+            isInit = true;
         }
 
         /// <summary>

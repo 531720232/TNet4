@@ -35,7 +35,7 @@ namespace TNet.Task
     public abstract class TaskBaseConfig : ShareEntity
     {
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ZyGames.Framework.Game.Task.TaskBaseConfig"/> class.
+		/// Initializes a new instance of the <see cref="TNet.Task.TaskBaseConfig"/> class.
 		/// </summary>
         protected TaskBaseConfig()
             : base(AccessLevel.ReadOnly)
@@ -43,7 +43,7 @@ namespace TNet.Task
 
         }
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ZyGames.Framework.Game.Task.TaskBaseConfig"/> class.
+		/// Initializes a new instance of the <see cref="TNet.Task.TaskBaseConfig"/> class.
 		/// </summary>
 		/// <param name="taskID">Task I.</param>
         protected TaskBaseConfig(int taskID)

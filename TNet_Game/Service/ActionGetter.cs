@@ -437,6 +437,10 @@ namespace TNet.Service
         {
             throw new NotImplementedException();
         }
+        public virtual bool GetObj<T>(string aName, ref T rValue)
+        {
+            throw new Exception();
+        }
 
         /// <summary>
         /// 

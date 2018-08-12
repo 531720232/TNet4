@@ -46,7 +46,7 @@ namespace TNet.Message
         private int _isRunning;
         private readonly BroadcastCallback _callback;
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ZyGames.Framework.Game.Message.BroadcastTimer"/> class.
+		/// Initializes a new instance of the <see cref="TNet.Message.BroadcastTimer"/> class.
 		/// </summary>
 		/// <param name="callback">Callback.</param>
         public BroadcastTimer(BroadcastCallback callback)

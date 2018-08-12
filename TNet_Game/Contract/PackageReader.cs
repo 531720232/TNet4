@@ -22,7 +22,7 @@ namespace TNet.Contract
         private static readonly string PrefixParamChar = "?d=";
         //private readonly static byte[] RouteHeadBytes = Encoding.UTF8.GetBytes(PrefixRouteChar);
         //private readonly static byte[] UrlHeadBytes = Encoding.UTF8.GetBytes(PrefixParamChar);
-        private Dictionary<string, string> _params = new Dictionary<string, string>(StringComparer.InvariantCultureIgnoreCase);
+        public Dictionary<string, string> _params = new Dictionary<string, string>(StringComparer.InvariantCultureIgnoreCase);
 
         private Encoding _encoding;
 

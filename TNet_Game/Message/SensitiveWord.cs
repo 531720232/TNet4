@@ -34,7 +34,7 @@ namespace TNet.Message
     /// 
     /// </summary>
     [Serializable, ProtoContract]
-    [EntityTable(AccessLevel.ReadOnly, Pay_ConfigManger.ConnectKey, "SensitiveWord")]
+    [EntityTable(AccessLevel.ReadOnly, ConfigManger.ConnectKey, "SensitiveWord")]
     public class SensitiveWord : ShareEntity
     {
 

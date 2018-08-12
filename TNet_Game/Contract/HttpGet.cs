@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -44,40 +45,65 @@ namespace TNet.Contract
         private StringBuilder _error = new StringBuilder();
         private Dictionary<string, string> _param = new Dictionary<string, string>(StringComparer.InvariantCultureIgnoreCase);
 
-        ///// <summary>
-        ///// 构造函数
-        ///// </summary>
-        //public HttpGet(HttpRequest request)
-        //    : base(null, null)
-        //{
-        //    _paramString = request["d"] ?? "";
-        //    InitData(_paramString);
-        //    //http
-        //    string sessionId = "";
-        //    if (_param.ContainsKey(ParamSid))
-        //    {
-        //        sessionId = _param[ParamSid];
-        //    }
-        //    if (string.IsNullOrEmpty(sessionId))
-        //    {
-        //        sessionId = request[ParamSid];
-        //    }
-        //    _session = GameSession.Get(sessionId) ?? GameSession.CreateNew(Guid.NewGuid(), request);
 
-        //    //set cookie
-        //    var cookie = request.Cookies.Get(ParamSid);
-        //    if (cookie == null && HttpContext.Current != null)
-        //    {
-        //        cookie = new HttpCookie(ParamSid, SessionId);
-        //        cookie.Expires = DateTime.Now.AddMinutes(5);
-        //        HttpContext.Current.Response.Cookies.Add(cookie);
-        //    }
-        //}
+
+        
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        public HttpGet(HttpRequest request)
+            : base(null, null)
+        {
+            _paramString = request.Query["d"];// request.QueryString.Value;
+            foreach(var eq in request.Query)
+            {
+                _param[eq.Key] = eq.Value;
+                switch(eq.Key)
+                {
+                    case ParamMsgId:
+                        MsgId = eq.Value.ToInt();
+                        break;
+                    case ParamActionId:
+                        MsgId = eq.Value.ToInt();
+                        break;
+                    case ParamPtcl:
+                      
+                        MsgId = eq.Value.ToInt();
+                        break;
+                }
+            }
+          //可能产生未知bug  InitData(_paramString);
+            //http
+            string sessionId = "";
+            if (_param.ContainsKey(ParamSid))
+            {
+                sessionId = _param[ParamSid];
+            }
+            if (string.IsNullOrEmpty(sessionId))
+            {
+               
+                sessionId = request.Cookies[ParamSid];
+            }
+            _session = GameSession.Get(sessionId) ?? GameSession.CreateNew(Guid.NewGuid(), request);
+
+            //set cookie
+            request.Cookies.TryGetValue(ParamSid,out string cookie);
+            if (cookie == null && HttpContext2.Current != null)
+            {
+
+                CookieBuilder co = new CookieBuilder();
+             var off=   co.Build(HttpContext2.Current, DateTime.Now.AddMinutes(5));
+                //  cookie = new HttpCookie(ParamSid, SessionId);
+
+
+                HttpContext2.Current.Response.Cookies.Append(ParamSid,SessionId,off);//.(cookie);
+            }
+        }
 
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="package"></param>
+        /// <param name="package"></param>.
         /// <param name="session"></param>
         public HttpGet(RequestPackage package, GameSession session)
             : base(package, session)
@@ -686,6 +712,22 @@ namespace TNet.Contract
                 WriteContainsError(aName);
             }
             return result;
+        }
+        /// <summary>
+        /// 读取指定类型的请求参数(json)
+        /// </summary>
+        /// <param name="aName">URL参数名</param>
+        /// <param name="rValue">返回变量</param>
+        /// <param name="ignoreError"></param>
+        /// <returns></returns>
+        public override  bool GetObj<T>(string aName, ref T rValue)
+        {
+        
+            var strs = "";
+         var str=   GetString(aName, ref strs, ZeroNum, -1, true);
+            var news = Newtonsoft.Json.JsonConvert.DeserializeObject<T>(strs);
+            rValue = news;
+            return news != null ? true : false;
         }
 
         /// <summary>

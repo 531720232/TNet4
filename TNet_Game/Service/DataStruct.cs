@@ -487,13 +487,14 @@ namespace TNet.Service
         /// <param name="response"></param>
         protected static void WriteString(BaseGameResponse response, string aValue)
         {
+          
             byte[] outputStream = System.Text.Encoding.UTF8.GetBytes(aValue);
             int iLen = outputStream.Length;
             byte[] outputStreamForLen = BitConverter.GetBytes(iLen);
             response.BinaryWrite(outputStreamForLen);
             if (outputStream.Length > 0)
             {
-                response.BinaryWrite(outputStream);
+               response.BinaryWrite(outputStream);
             }
         }
         /// <summary>

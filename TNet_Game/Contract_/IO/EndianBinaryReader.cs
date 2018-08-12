@@ -12,6 +12,11 @@ namespace TNet.IO
     ///     the EndianBitConverter it is constructed with. No data is buffered in the
     ///     reader; the client may seek within the stream at will.
     /// </summary>
+    /// <summary>
+    ///     Equivalent of System.IO.BinaryReader, but with either endianness, depending on
+    ///     the EndianBitConverter it is constructed with. No data is buffered in the
+    ///     reader; the client may seek within the stream at will.
+    /// </summary>
     public class EndianBinaryReader : IDisposable
     {
         #region IDisposable Members
@@ -489,8 +494,52 @@ namespace TNet.IO
             ReadInternal(data, bytesToRead);
             return Encoding.GetString(data, 0, data.Length);
         }
+        /// <summary>
+        /// read a object from bson
+        /// </summary>
+        /// <returns></returns>
+        public T ReadObj<T>()
+        {
+            var bytesToRead = ReadInt32();
+
+            var data = new byte[bytesToRead];
+            ReadInternal(data, bytesToRead);
+            var decode = MessagePack.LZ4MessagePackSerializer.Decode(data);
+            var obj = MessagePack.LZ4MessagePackSerializer.Deserialize<T>(decode);
+
+            return obj;
+        }
+
+        public byte[] To7ZBytes()
+        {
+
+            BaseStream.Position = 0;
+            var bytes = new byte[BaseStream.Length];
+
+            BaseStream.Read(bytes);
+            return LZMA.Compress(bytes);
+        }
+        public byte[] ToBytes()
+        {
+
+            BaseStream.Position = 0;
+            var bytes = new byte[BaseStream.Length];
+            BaseStream.Read(bytes);
+            return bytes;
+        }
+
+
+
+
+
 
         #endregion
+        public EndianBinaryWriter ToWriter()
+        {
+            //  BaseStream.Position = 0;
+            return new EndianBinaryWriter(this.BitConverter, BaseStream);
+        }
+
 
         #region Private methods
 

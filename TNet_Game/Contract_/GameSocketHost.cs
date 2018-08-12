@@ -109,6 +109,7 @@ namespace TNet.Contract
             _httpCdnAddress = new HttpCDNAddress();
             httpListener = new HttpListener();
             var httpHost = section.HttpHost;
+            httpHost = "127.0.0.1:2017";
             var httpPort = section.HttpPort;
             var httpName = section.HttpName;
 
@@ -172,12 +173,19 @@ namespace TNet.Contract
         {
             try
             {
+
+
+              
+         
+             
+           
                 OnReceivedBefore(e);
                 //  socketListener.PostSend(e.Socket, new byte[] { 5, 20 }, 0, 2).Wait();
                
                 
-
-               
+               // var reader=new  TNet.IO.EndianBinaryReader(TNet.IO.EndianBitConverter.Little, new System.IO.MemoryStream(e.Data));
+             // var packs=  reader.ReadString();
+                //PackageReader packagereader = new PackageReader(e.Data, Encoding.UTF8);
 
                 RequestPackage package;
                 if (!ActionDispatcher.TryDecodePackage(e, out package))
@@ -267,6 +275,7 @@ namespace TNet.Contract
                     actionGetter = ActionDispatcher.GetActionGetter(package, session);
                     DoAction(actionGetter, response);
                     data = response.ReadByte();
+                    var byw = System.Text.Encoding.UTF8.GetString(data);
                 }
                 try
                 {
@@ -343,6 +352,16 @@ namespace TNet.Contract
                 HttpListener listener = (HttpListener)result.AsyncState;
                 HttpListenerContext context = listener.EndGetContext(result);
                 listener.BeginGetContext(OnHttpRequest, listener);
+                using (StreamWriter writer = new StreamWriter(context.Response.OutputStream))
+                {
+                    writer.WriteLine("<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/><title>测试服务器</title></head><body>");
+                    writer.WriteLine("<div style=\"height:20px;color:blue;text-align:center;\"><p> hello</p></div>");
+                    writer.WriteLine("<ul>");
+                    writer.WriteLine("</ul>");
+                    writer.WriteLine("</body></html>");
+
+                }
+
                 string userHostAddress = _httpCdnAddress.GetUserHostAddress(context.Request.RemoteEndPoint,
                     key => context.Request.Headers[key]);
                 RequestPackage package;
@@ -366,7 +385,7 @@ namespace TNet.Contract
                 }
                 session.RemoteAddress = userHostAddress;
                 package.Bind(session);
-
+             
                 ActionGetter httpGet = ActionDispatcher.GetActionGetter(package, session);
                 if (package.IsUrlParam)
                 {
@@ -469,6 +488,7 @@ namespace TNet.Contract
         public override void Start(string[] args)
         {
             socketListener.StartListen();
+          
             if (EnableHttp)
             {
                 httpListener.Start();

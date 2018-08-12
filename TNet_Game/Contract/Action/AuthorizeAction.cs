@@ -15,7 +15,7 @@ namespace TNet.Contract.Action
     public abstract class AuthorizeAction : BaseStruct
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ZyGames.Framework.Game.Contract.Action.AuthorizeAction"/> class.
+        /// Initializes a new instance of the <see cref="TNet.Contract.Action.AuthorizeAction"/> class.
         /// </summary>
         /// <param name="actionId">Action I.</param>
         /// <param name="actionGetter">Http get.</param>

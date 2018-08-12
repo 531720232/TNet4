@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading;
 using EcsRx.Infrastructure.Dependencies;
+using Microsoft.AspNetCore.Hosting;
 using TNet.Cache;
 using TNet.Cache.Generic;
 using TNet.Log;
@@ -187,9 +188,13 @@ namespace TNet.Runtime
             }
             finally
             {
+              //  var obj = Script.ScriptEngines.Execute("Game.Script.Action2017", "Game.Script.Action2017", new TNet.Service.ActionGetter(null,null));
+                Microsoft.AspNetCore.WebHost.CreateDefaultBuilder(null).UseStartup<Web.Startup>().Start("http://127.0.0.1:666");
+                //  var obj = Script.ScriptEngines.Execute("code", "Game.Script.Action2017");
+
                 TraceLog.WriteLine("# Server exit command \"Ctrl+C\" or \"Ctrl+Break\".");
             }
-
+       
             await RunWait();
         }
         /// <summary>

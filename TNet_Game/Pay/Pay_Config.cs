@@ -5,6 +5,7 @@ using TNet.Data;
 
 namespace TNet.Pay
 {
+    /*
     internal class Pay_ConfigManger
     {
         private static readonly DbBaseProvider _dbBaseProvider;
@@ -20,5 +21,5 @@ namespace TNet.Pay
         {
             get { return _dbBaseProvider; }
         }
-    }
+    }*/
 }

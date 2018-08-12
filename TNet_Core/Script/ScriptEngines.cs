@@ -325,6 +325,9 @@ namespace TNet.Script
                             _runtimeDomain.Scope.InitLua();
                             PrintCompiledMessage("lua script");
                             break;
+                        case ".dll":
+                            _runtimeDomain.Scope.InitDll();
+                            break;
                         default:
                             throw new NotSupportedException(string.Format("Script type \"{0}\" not supported.", ext));
                     }

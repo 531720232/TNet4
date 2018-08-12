@@ -57,13 +57,13 @@ namespace TNet.Contract
         /// <param name="typeName"></param>
         public static void Request(string typeName)
         {
-          //  if (HttpContext.Current == null)
-            //{
-            //    throw new Exception("HttpContext is not supported.");
-            //}
-            //HttpGet httpGet = new HttpGet(H.Current.Request);
-            //HttpGameResponse response = new HttpGameResponse(HttpContext.Current.Response);
-            //Request(typeName, httpGet, response);
+            if (HttpContext2.Current == null)
+            {
+                throw new Exception("HttpContext is not supported.");
+            }
+            HttpGet httpGet = new HttpGet(HttpContext2.Current.Request);
+            HttpGameResponse response = new HttpGameResponse(HttpContext2.Current.Response);
+            Request(typeName, httpGet, response);
         }
 
         /// <summary>
@@ -118,9 +118,9 @@ namespace TNet.Contract
         /// </summary>
         public static void RequestScript()
         {
-            //HttpGet httpGet = new HttpGet(HttpContext.Current.Request);
-            //BaseGameResponse response = new HttpGameResponse(HttpContext.Current.Response);
-            //RequestScript(httpGet, response);
+            HttpGet httpGet = new HttpGet(HttpContext2.Current.Request);
+            BaseGameResponse response = new HttpGameResponse(HttpContext2.Current.Response);
+            RequestScript(httpGet, response);
         }
 
         /// <summary>
@@ -302,6 +302,7 @@ namespace TNet.Contract
             }
             else
             {
+              
                 //小于3次超时不显示提示
                 baseStruct.WriteLockTimeoutAction(response, errorTarget, waitTimeOutNum, waitTimeOutNum > 3);
             }
@@ -649,7 +650,7 @@ namespace TNet.Contract
                 }
             }
 
-            scriptCode = string.Format("action.action{0}", actionId);
+            scriptCode = string.Format("action{0}", actionId);
             BaseStruct baseStruct = ScriptEngines.Execute(scriptCode, scriptTypeName, actionGetter);
             if (baseStruct != null) return baseStruct;
             return null;
@@ -658,6 +659,7 @@ namespace TNet.Contract
         internal static BaseStruct FindRoute(string typeExpression, ActionGetter actionGetter, int actionId)
         {
             BaseStruct baseStruct = FindScriptRoute(actionGetter, actionId);
+          
             if (baseStruct != null)
             {
                 return baseStruct;

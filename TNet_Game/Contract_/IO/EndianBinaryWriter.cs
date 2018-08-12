@@ -310,6 +310,24 @@ namespace TNet.IO
             WriteInternal(data, data.Length);
         }
 
+        public byte[] To7ZBytes()
+        {
+
+            BaseStream.Position = 0;
+            var bytes = new byte[BaseStream.Length];
+
+            BaseStream.Read(bytes);
+            return LZMA.Compress(bytes);
+        }
+        public byte[] ToBytes()
+        {
+
+            BaseStream.Position = 0;
+            var bytes = new byte[BaseStream.Length];
+            BaseStream.Read(bytes);
+            return bytes;
+        }
+
         /// <summary>
         ///     Writes a string to the stream, using the encoding for this writer.
         /// </summary>
@@ -354,6 +372,34 @@ namespace TNet.IO
 
         #endregion
 
+
+        /// <summary>
+        /// write a object to bson
+        /// </summary>
+        /// <returns></returns>
+        public void WriteObj<T>(T obj)
+        {
+            var se_bytes = MessagePack.LZ4MessagePackSerializer.Serialize(obj);
+
+            var code = MessagePack.LZ4MessagePackSerializer.ToLZ4Binary(se_bytes);
+            var length = code.Length;
+
+            Write(length);
+            WriteInternal(code, length);
+
+
+        }
+
+
+        public EndianBinaryReader ToReader()
+        {
+
+            BaseStream.Position = 0;
+            return new EndianBinaryReader(this.BitConverter, BaseStream);
+        }
+
+
+
         #region Private methods
 
         /// <summary>
@@ -364,6 +410,7 @@ namespace TNet.IO
             if (disposed)
                 throw new ObjectDisposedException("EndianBinaryWriter");
         }
+        int pos = 0;
 
         /// <summary>
         ///     Writes the specified number of bytes from the start of the given byte array,
@@ -375,6 +422,7 @@ namespace TNet.IO
         {
             CheckDisposed();
             BaseStream.Write(bytes, 0, length);
+            pos += 16;
         }
 
         #endregion

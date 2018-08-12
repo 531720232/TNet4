@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Build</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TNet_Core\TNet_Core.csproj" />
+    <ProjectReference Include="..\TNet_Game\TNet_Game.csproj" />
+    <ProjectReference Include="..\TNet_Share\TNet_Share.csproj" />
+  </ItemGroup>
+
 </Project>

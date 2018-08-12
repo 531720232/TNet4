@@ -15,17 +15,18 @@ namespace TNet.Service
             var setting = Runtime.GameZone.Setting;
             if (setting != null)
             {
-                MessageStructure.Enable7zip = setting.ActionEnable7Zip;
-                MessageStructure.Enable7zipMinByte = setting.Action7ZipOutLength;
+            //    MessageStructure.Enable7zip = setting.ActionEnable7Zip;
+              //  MessageStructure.Enable7zipMinByte = setting.Action7ZipOutLength;
             }
         }
-
-        private MessageStructure _buffers;
+      
+       private MessageStructure _buffers;
         /// <summary>
         /// 
         /// </summary>
         public SocketGameResponse()
         {
+          //  _buffers = new IO.EndianBinaryWriter(IO.EndianBitConverter.Little,new System.IO.MemoryStream());
             _buffers = new MessageStructure();
         }
 
@@ -53,12 +54,15 @@ namespace TNet.Service
         /// <returns></returns>
         public byte[] ReadByte()
         {
-            return _buffers.PosGzipBuffer();
+            //var buff = _buffers.To7ZBytes();
+            //_buffers.Dispose();
+            return _buffers.PopBuffer();
         }
 
         private void DoWrite(byte[] buffer)
         {
-            _buffers.WriteByte(buffer);
+            //_buffers.Write(buffer);
+           _buffers.WriteByte(buffer);
         }
 
     }

@@ -41,14 +41,14 @@ namespace TNet.Cache
         private readonly string _groupKey;
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ZyGames.Framework.Game.Cache.BroadcastCacheSet"/> class.
+		/// Initializes a new instance of the <see cref="TNet.Cache.BroadcastCacheSet"/> class.
 		/// </summary>
         public BroadcastCacheSet()
             : this("10000")
         {
         }
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ZyGames.Framework.Game.Cache.BroadcastCacheSet"/> class.
+		/// Initializes a new instance of the <see cref="TNet.Cache.BroadcastCacheSet"/> class.
 		/// </summary>
 		/// <param name="groupKey">Group key.</param>
         public BroadcastCacheSet(string groupKey)

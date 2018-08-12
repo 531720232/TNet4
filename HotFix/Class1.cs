@@ -48,8 +48,9 @@ namespace TNet
             var app =new  TNet.Runtime.TNServer_AppInConsole();
             app.StartApplication();
 
-          
-     
+            
+
+
             while (true)
             {
               
