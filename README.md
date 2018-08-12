@@ -16,10 +16,10 @@ TNet是移植自scut_game的游戏框架，其运行平台是**Net Core**
 
 ### 2. 修改说明[^LaTeX]
 
->①gzip替换为7zip（已撤销）
->②添加EndianBinaryWriter,EndianBinaryReader
->③添加ecs框架
->④添加cs_script??
+>- ①gzip替换为7zip（已撤销）
+>- ②添加EndianBinaryWriter,EndianBinaryReader
+>- ③添加ecs框架
+>- ④添加cs_script??
 
 ### 3. 如何使用[^code]
 
