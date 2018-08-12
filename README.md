@@ -6,7 +6,7 @@
 
 ## 什么是 TNet
 
-TNet是移植自scut_game的游戏框架，其运行平台是**Net Core**
+TNet是移植自scut_game的游戏**服务端**框架，其运行平台是**Net Core**
 
 ### 1. 运行需求
 
