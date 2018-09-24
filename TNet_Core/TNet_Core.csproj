@@ -26,19 +26,19 @@
 
   <ItemGroup>
     <Reference Include="Microsoft.Scripting">
-      <HintPath>bin\netcoreapp2.1\Microsoft.Scripting.dll</HintPath>
+      <HintPath>..\Build\Microsoft.Scripting.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Common">
-      <HintPath>bin\netcoreapp2.1\ServiceStack.Common.dll</HintPath>
+      <HintPath>..\Build\ServiceStack.Common.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Interfaces">
-      <HintPath>bin\netcoreapp2.1\ServiceStack.Interfaces.dll</HintPath>
+      <HintPath>..\Build\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Redis">
-      <HintPath>bin\netcoreapp2.1\ServiceStack.Redis.dll</HintPath>
+      <HintPath>..\Build\ServiceStack.Redis.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Text">
-      <HintPath>bin\netcoreapp2.1\ServiceStack.Text.dll</HintPath>
+      <HintPath>..\Build\ServiceStack.Text.dll</HintPath>
     </Reference>
   </ItemGroup>
 
