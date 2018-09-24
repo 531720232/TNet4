@@ -26,19 +26,19 @@
 
   <ItemGroup>
     <Reference Include="Microsoft.Scripting">
-      <HintPath>C:\Users\Administrator\Pictures\IronPython.2.7.8\netcoreapp2.0\Microsoft.Scripting.dll</HintPath>
+      <HintPath>bin\netcoreapp2.1\Microsoft.Scripting.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Common">
-      <HintPath>C:\Users\Administrator\.nuget\packages\servicestack.common.core\5.1.0\lib\netstandard2.0\ServiceStack.Common.dll</HintPath>
+      <HintPath>bin\netcoreapp2.1\ServiceStack.Common.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Interfaces">
-      <HintPath>C:\Users\Administrator\.nuget\packages\servicestack.interfaces.core\5.1.0\lib\netstandard2.0\ServiceStack.Interfaces.dll</HintPath>
+      <HintPath>bin\netcoreapp2.1\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Redis">
-      <HintPath>C:\Users\Administrator\.nuget\packages\servicestack.redis.core\5.1.0\lib\netstandard2.0\ServiceStack.Redis.dll</HintPath>
+      <HintPath>bin\netcoreapp2.1\ServiceStack.Redis.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Text">
-      <HintPath>C:\Users\Administrator\Pictures\5\ClassLibrary1\bin\Debug\netcoreapp2.1\ServiceStack.Text.dll</HintPath>
+      <HintPath>bin\netcoreapp2.1\ServiceStack.Text.dll</HintPath>
     </Reference>
   </ItemGroup>
 
