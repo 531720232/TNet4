@@ -1,0 +1,1004 @@
+\hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter}{}\section{T\+Net.\+I\+O.\+Endian\+Bit\+Converter Class Reference}
+\label{class_t_net_1_1_i_o_1_1_endian_bit_converter}\index{T\+Net.\+I\+O.\+Endian\+Bit\+Converter@{T\+Net.\+I\+O.\+Endian\+Bit\+Converter}}
+
+
+Equivalent of System.\+Bit\+Converter, but with either endianness.  
+
+
+Inheritance diagram for T\+Net.\+I\+O.\+Endian\+Bit\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_net_1_1_i_o_1_1_endian_bit_converter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a0fe24cd850d8da0da9f75ef0467551cb}{Is\+Little\+Endian}} ()
+\begin{DoxyCompactList}\small\item\em Indicates the byte order (\char`\"{}endianess\char`\"{}) in which data is converted using this class. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_ad7661c4bcea50caa14cd4d22110873a0}{Double\+To\+Int64\+Bits}} (double value)
+\begin{DoxyCompactList}\small\item\em Converts the specified double-\/precision floating point number to a 64-\/bit signed integer. Note\+: the endianness of this converter does not affect the returned value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a33615ec4ba0c20f450b34599d76fcc7f}{Int64\+Bits\+To\+Double}} (long value)
+\begin{DoxyCompactList}\small\item\em Converts the specified 64-\/bit signed integer to a double-\/precision floating point number. Note\+: the endianness of this converter does not affect the returned value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_ac93b60f01cf809e9f290c3f4793f79cd}{Single\+To\+Int32\+Bits}} (float value)
+\begin{DoxyCompactList}\small\item\em Converts the specified single-\/precision floating point number to a 32-\/bit signed integer. Note\+: the endianness of this converter does not affect the returned value. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a6dfc6c331c6591940588f75d7a7e793e}{Int32\+Bits\+To\+Single}} (int value)
+\begin{DoxyCompactList}\small\item\em Converts the specified 32-\/bit signed integer to a single-\/precision floating point number. Note\+: the endianness of this converter does not affect the returned value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_ac08a3108ce00f7bbc088c361777bce52}{To\+Boolean}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a Boolean value converted from one byte at a specified position in a byte array. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a04b97d937753db34e5184a3f9140a644}{To\+Char}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a Unicode character converted from two bytes at a specified position in a byte array. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a46f2f5e1fee257fae892768be7fbd24d}{To\+Double}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a double-\/precision floating point number converted from eight bytes at a specified position in a byte array. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a8f2ff9046650f0fea88be0cd90b7ef26}{To\+Single}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a single-\/precision floating point number converted from four bytes at a specified position in a byte array. \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a57927039a631af103ed63e8b0a91e660}{To\+Int16}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a 16-\/bit signed integer converted from two bytes at a specified position in a byte array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_aa8b78416e423bdbc0bdae03ade423796}{To\+Int32}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a 32-\/bit signed integer converted from four bytes at a specified position in a byte array. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_aae5e69649f8d5240a1dd12bfc6da091c}{To\+Int64}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a 64-\/bit signed integer converted from eight bytes at a specified position in a byte array. \end{DoxyCompactList}\item 
+ushort \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a164e8478c154756a2a902efd889d8c84}{To\+U\+Int16}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a 16-\/bit unsigned integer converted from two bytes at a specified position in a byte array. \end{DoxyCompactList}\item 
+uint \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a663d4f8714c5a58433ecef1f7db68b99}{To\+U\+Int32}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a 32-\/bit unsigned integer converted from four bytes at a specified position in a byte array. \end{DoxyCompactList}\item 
+ulong \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_aa693b9f9c3b71a8bb02730f1cd00b42f}{To\+U\+Int64}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a 64-\/bit unsigned integer converted from eight bytes at a specified position in a byte array. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a226ca2d24192152238c46c2a47bc5c24}{To\+Decimal}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a decimal value converted from sixteen bytes at a specified position in a byte array. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a2c5a4d5038b4af6f8712bff82302faa8}{Get\+Bytes}} (decimal value)
+\begin{DoxyCompactList}\small\item\em Returns the specified decimal value as an array of bytes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_ae6c54f83688fed430b88c2d769f7d693}{Copy\+Bytes}} (decimal value, byte\mbox{[}$\,$\mbox{]} buffer, int index)
+\begin{DoxyCompactList}\small\item\em Copies the specified decimal value into the specified byte array, beginning at the specified index. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_aa7c0bec707cb4e3b6866c96bb53276c4}{Get\+Bytes}} (bool value)
+\begin{DoxyCompactList}\small\item\em Returns the specified Boolean value as an array of bytes. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_ac0bf5270842f7892896cfb842d4eee6a}{Get\+Bytes}} (char value)
+\begin{DoxyCompactList}\small\item\em Returns the specified Unicode character value as an array of bytes. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a10b7358f3ab627c0376f5236c0165a3f}{Get\+Bytes}} (double value)
+\begin{DoxyCompactList}\small\item\em Returns the specified double-\/precision floating point value as an array of bytes. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_ab0553ed30b167a3cd3df5a1422c31b98}{Get\+Bytes}} (short value)
+\begin{DoxyCompactList}\small\item\em Returns the specified 16-\/bit signed integer value as an array of bytes. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a116e1d710499764287b46c7bd76ce00e}{Get\+Bytes}} (int value)
+\begin{DoxyCompactList}\small\item\em Returns the specified 32-\/bit signed integer value as an array of bytes. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a3c9aae4ed4eb806f97a5b29dd47ad484}{Get\+Bytes}} (long value)
+\begin{DoxyCompactList}\small\item\em Returns the specified 64-\/bit signed integer value as an array of bytes. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a473401216eb8158e500667635eb10e28}{Get\+Bytes}} (float value)
+\begin{DoxyCompactList}\small\item\em Returns the specified single-\/precision floating point value as an array of bytes. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_aeda4cf603ad487bb18ec95f947a1664b}{Get\+Bytes}} (ushort value)
+\begin{DoxyCompactList}\small\item\em Returns the specified 16-\/bit unsigned integer value as an array of bytes. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a5a69ebad933ce89df339a41b7d1bf6c4}{Get\+Bytes}} (uint value)
+\begin{DoxyCompactList}\small\item\em Returns the specified 32-\/bit unsigned integer value as an array of bytes. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a74f57e3195722e1f5d6f3049fcb1fe82}{Get\+Bytes}} (ulong value)
+\begin{DoxyCompactList}\small\item\em Returns the specified 64-\/bit unsigned integer value as an array of bytes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_aabd4e9d09948e7f5667c280f0bb91745}{Copy\+Bytes}} (bool value, byte\mbox{[}$\,$\mbox{]} buffer, int index)
+\begin{DoxyCompactList}\small\item\em Copies the specified Boolean value into the specified byte array, beginning at the specified index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_acfd471d62606de630af7176edc57e87d}{Copy\+Bytes}} (char value, byte\mbox{[}$\,$\mbox{]} buffer, int index)
+\begin{DoxyCompactList}\small\item\em Copies the specified Unicode character value into the specified byte array, beginning at the specified index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_ac357c85d1176552db3a01319796daf7d}{Copy\+Bytes}} (double value, byte\mbox{[}$\,$\mbox{]} buffer, int index)
+\begin{DoxyCompactList}\small\item\em Copies the specified double-\/precision floating point value into the specified byte array, beginning at the specified index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_aecab93faaa77e19225d89b3119d2950a}{Copy\+Bytes}} (short value, byte\mbox{[}$\,$\mbox{]} buffer, int index)
+\begin{DoxyCompactList}\small\item\em Copies the specified 16-\/bit signed integer value into the specified byte array, beginning at the specified index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a307e58b3ceaddfcfd5012135fdd3e127}{Copy\+Bytes}} (int value, byte\mbox{[}$\,$\mbox{]} buffer, int index)
+\begin{DoxyCompactList}\small\item\em Copies the specified 32-\/bit signed integer value into the specified byte array, beginning at the specified index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_af64c0714e7650f5be17e9e4fe886459c}{Copy\+Bytes}} (long value, byte\mbox{[}$\,$\mbox{]} buffer, int index)
+\begin{DoxyCompactList}\small\item\em Copies the specified 64-\/bit signed integer value into the specified byte array, beginning at the specified index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a1ec7134c73cfee7f092697f372d59bf8}{Copy\+Bytes}} (float value, byte\mbox{[}$\,$\mbox{]} buffer, int index)
+\begin{DoxyCompactList}\small\item\em Copies the specified single-\/precision floating point value into the specified byte array, beginning at the specified index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a47c89c95d05c3916ad3394dd1174a907}{Copy\+Bytes}} (ushort value, byte\mbox{[}$\,$\mbox{]} buffer, int index)
+\begin{DoxyCompactList}\small\item\em Copies the specified 16-\/bit unsigned integer value into the specified byte array, beginning at the specified index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a7d340813aa031aec33f9f8471a6f30b4}{Copy\+Bytes}} (uint value, byte\mbox{[}$\,$\mbox{]} buffer, int index)
+\begin{DoxyCompactList}\small\item\em Copies the specified 32-\/bit unsigned integer value into the specified byte array, beginning at the specified index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a93127860a9864bfed93d1382cdccc732}{Copy\+Bytes}} (ulong value, byte\mbox{[}$\,$\mbox{]} buffer, int index)
+\begin{DoxyCompactList}\small\item\em Copies the specified 64-\/bit unsigned integer value into the specified byte array, beginning at the specified index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a2d1c19944491257c2f73b50a39034bac}{To\+String}} (byte\mbox{[}$\,$\mbox{]} value)
+\begin{DoxyCompactList}\small\item\em Returns a String converted from the elements of a byte array. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a28aabc2bed261bbd287911df84512dcd}{To\+String}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index)
+\begin{DoxyCompactList}\small\item\em Returns a String converted from the elements of a byte array starting at a specified array position. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_abfe5a9033c0f14fbfa209af61cee5124}{To\+String}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index, int length)
+\begin{DoxyCompactList}\small\item\em Returns a String converted from a specified number of bytes at a specified position in a byte array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract long \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a20baa5cfe592893363ad0574639a3002}{From\+Bytes}} (byte\mbox{[}$\,$\mbox{]} value, int start\+Index, int bytes\+To\+Convert)
+\begin{DoxyCompactList}\small\item\em Convert the given number of bytes from the given array, from the given start position, into a long, using the bytes as the least significant part of the long. By the time this is called, the arguments have been checked for validity. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_aee6cc9a29f052fc97acc51eef906e600}{Copy\+Bytes\+Impl}} (long value, int bytes, byte\mbox{[}$\,$\mbox{]} buffer, int index)
+\begin{DoxyCompactList}\small\item\em Copies the given number of bytes from the least-\/specific end of the specified value into the specified byte array, beginning at the specified index. This must be implemented in concrete derived classes, but the implementation may assume that the value will fit into the buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dc}{Endianness}} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a71c58efdcbbd22729d8eb1f823cb5479}{Endianness}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates the byte order (\char`\"{}endianess\char`\"{}) in which data is converted using this class. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_little_endian_bit_converter}{Little\+Endian\+Bit\+Converter}} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a9d8d5d6c2daa5102bc7683e77604f616}{Little}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns a little-\/endian bit converter instance. The same instance is always returned. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_big_endian_bit_converter}{Big\+Endian\+Bit\+Converter}} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_af25fbd59f89604f6554e5a5a9ed9a279}{Big}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns a big-\/endian bit converter instance. The same instance is always returned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Equivalent of System.\+Bit\+Converter, but with either endianness. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_ae6c54f83688fed430b88c2d769f7d693}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_ae6c54f83688fed430b88c2d769f7d693}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Copy\+Bytes@{Copy\+Bytes}}
+\index{Copy\+Bytes@{Copy\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Copy\+Bytes()}{CopyBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/11]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Copy\+Bytes (\begin{DoxyParamCaption}\item[{decimal}]{value,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Copies the specified decimal value into the specified byte array, beginning at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & A character to convert.\\
+\hline
+{\em buffer} & The byte array to copy the bytes into\\
+\hline
+{\em index} & The first index into the array to copy the bytes into\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_aabd4e9d09948e7f5667c280f0bb91745}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_aabd4e9d09948e7f5667c280f0bb91745}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Copy\+Bytes@{Copy\+Bytes}}
+\index{Copy\+Bytes@{Copy\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Copy\+Bytes()}{CopyBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/11]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Copy\+Bytes (\begin{DoxyParamCaption}\item[{bool}]{value,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Copies the specified Boolean value into the specified byte array, beginning at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & A Boolean value.\\
+\hline
+{\em buffer} & The byte array to copy the bytes into\\
+\hline
+{\em index} & The first index into the array to copy the bytes into\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_acfd471d62606de630af7176edc57e87d}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_acfd471d62606de630af7176edc57e87d}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Copy\+Bytes@{Copy\+Bytes}}
+\index{Copy\+Bytes@{Copy\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Copy\+Bytes()}{CopyBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [3/11]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Copy\+Bytes (\begin{DoxyParamCaption}\item[{char}]{value,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Copies the specified Unicode character value into the specified byte array, beginning at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & A character to convert.\\
+\hline
+{\em buffer} & The byte array to copy the bytes into\\
+\hline
+{\em index} & The first index into the array to copy the bytes into\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_ac357c85d1176552db3a01319796daf7d}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_ac357c85d1176552db3a01319796daf7d}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Copy\+Bytes@{Copy\+Bytes}}
+\index{Copy\+Bytes@{Copy\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Copy\+Bytes()}{CopyBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [4/11]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Copy\+Bytes (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Copies the specified double-\/precision floating point value into the specified byte array, beginning at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+{\em buffer} & The byte array to copy the bytes into\\
+\hline
+{\em index} & The first index into the array to copy the bytes into\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_aecab93faaa77e19225d89b3119d2950a}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_aecab93faaa77e19225d89b3119d2950a}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Copy\+Bytes@{Copy\+Bytes}}
+\index{Copy\+Bytes@{Copy\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Copy\+Bytes()}{CopyBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [5/11]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Copy\+Bytes (\begin{DoxyParamCaption}\item[{short}]{value,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Copies the specified 16-\/bit signed integer value into the specified byte array, beginning at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+{\em buffer} & The byte array to copy the bytes into\\
+\hline
+{\em index} & The first index into the array to copy the bytes into\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a307e58b3ceaddfcfd5012135fdd3e127}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a307e58b3ceaddfcfd5012135fdd3e127}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Copy\+Bytes@{Copy\+Bytes}}
+\index{Copy\+Bytes@{Copy\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Copy\+Bytes()}{CopyBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [6/11]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Copy\+Bytes (\begin{DoxyParamCaption}\item[{int}]{value,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Copies the specified 32-\/bit signed integer value into the specified byte array, beginning at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+{\em buffer} & The byte array to copy the bytes into\\
+\hline
+{\em index} & The first index into the array to copy the bytes into\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_af64c0714e7650f5be17e9e4fe886459c}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_af64c0714e7650f5be17e9e4fe886459c}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Copy\+Bytes@{Copy\+Bytes}}
+\index{Copy\+Bytes@{Copy\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Copy\+Bytes()}{CopyBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [7/11]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Copy\+Bytes (\begin{DoxyParamCaption}\item[{long}]{value,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Copies the specified 64-\/bit signed integer value into the specified byte array, beginning at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+{\em buffer} & The byte array to copy the bytes into\\
+\hline
+{\em index} & The first index into the array to copy the bytes into\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a1ec7134c73cfee7f092697f372d59bf8}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a1ec7134c73cfee7f092697f372d59bf8}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Copy\+Bytes@{Copy\+Bytes}}
+\index{Copy\+Bytes@{Copy\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Copy\+Bytes()}{CopyBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [8/11]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Copy\+Bytes (\begin{DoxyParamCaption}\item[{float}]{value,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Copies the specified single-\/precision floating point value into the specified byte array, beginning at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+{\em buffer} & The byte array to copy the bytes into\\
+\hline
+{\em index} & The first index into the array to copy the bytes into\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a47c89c95d05c3916ad3394dd1174a907}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a47c89c95d05c3916ad3394dd1174a907}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Copy\+Bytes@{Copy\+Bytes}}
+\index{Copy\+Bytes@{Copy\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Copy\+Bytes()}{CopyBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [9/11]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Copy\+Bytes (\begin{DoxyParamCaption}\item[{ushort}]{value,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Copies the specified 16-\/bit unsigned integer value into the specified byte array, beginning at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+{\em buffer} & The byte array to copy the bytes into\\
+\hline
+{\em index} & The first index into the array to copy the bytes into\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a7d340813aa031aec33f9f8471a6f30b4}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a7d340813aa031aec33f9f8471a6f30b4}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Copy\+Bytes@{Copy\+Bytes}}
+\index{Copy\+Bytes@{Copy\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Copy\+Bytes()}{CopyBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [10/11]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Copy\+Bytes (\begin{DoxyParamCaption}\item[{uint}]{value,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Copies the specified 32-\/bit unsigned integer value into the specified byte array, beginning at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+{\em buffer} & The byte array to copy the bytes into\\
+\hline
+{\em index} & The first index into the array to copy the bytes into\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a93127860a9864bfed93d1382cdccc732}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a93127860a9864bfed93d1382cdccc732}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Copy\+Bytes@{Copy\+Bytes}}
+\index{Copy\+Bytes@{Copy\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Copy\+Bytes()}{CopyBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [11/11]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Copy\+Bytes (\begin{DoxyParamCaption}\item[{ulong}]{value,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Copies the specified 64-\/bit unsigned integer value into the specified byte array, beginning at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+{\em buffer} & The byte array to copy the bytes into\\
+\hline
+{\em index} & The first index into the array to copy the bytes into\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_aee6cc9a29f052fc97acc51eef906e600}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_aee6cc9a29f052fc97acc51eef906e600}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Copy\+Bytes\+Impl@{Copy\+Bytes\+Impl}}
+\index{Copy\+Bytes\+Impl@{Copy\+Bytes\+Impl}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Copy\+Bytes\+Impl()}{CopyBytesImpl()}}
+{\footnotesize\ttfamily abstract void T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Copy\+Bytes\+Impl (\begin{DoxyParamCaption}\item[{long}]{value,  }\item[{int}]{bytes,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Copies the given number of bytes from the least-\/specific end of the specified value into the specified byte array, beginning at the specified index. This must be implemented in concrete derived classes, but the implementation may assume that the value will fit into the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to copy bytes for\\
+\hline
+{\em bytes} & The number of significant bytes to copy\\
+\hline
+{\em buffer} & The byte array to copy the bytes into\\
+\hline
+{\em index} & The first index into the array to copy the bytes into\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a3fbb9a8e3f64036d8c8882a857ef4d38}{T\+Net.\+I\+O.\+Big\+Endian\+Bit\+Converter}}, and \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_little_endian_bit_converter_ae620d0f512b18fc4ddaf7d1225dac136}{T\+Net.\+I\+O.\+Little\+Endian\+Bit\+Converter}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_ad7661c4bcea50caa14cd4d22110873a0}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_ad7661c4bcea50caa14cd4d22110873a0}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Double\+To\+Int64\+Bits@{Double\+To\+Int64\+Bits}}
+\index{Double\+To\+Int64\+Bits@{Double\+To\+Int64\+Bits}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Double\+To\+Int64\+Bits()}{DoubleToInt64Bits()}}
+{\footnotesize\ttfamily long T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Double\+To\+Int64\+Bits (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Converts the specified double-\/precision floating point number to a 64-\/bit signed integer. Note\+: the endianness of this converter does not affect the returned value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 64-\/bit signed integer whose value is equivalent to value.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a20baa5cfe592893363ad0574639a3002}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a20baa5cfe592893363ad0574639a3002}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!From\+Bytes@{From\+Bytes}}
+\index{From\+Bytes@{From\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{From\+Bytes()}{FromBytes()}}
+{\footnotesize\ttfamily abstract long T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+From\+Bytes (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index,  }\item[{int}]{bytes\+To\+Convert }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Convert the given number of bytes from the given array, from the given start position, into a long, using the bytes as the least significant part of the long. By the time this is called, the arguments have been checked for validity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The bytes to convert\\
+\hline
+{\em start\+Index} & The index of the first byte to convert\\
+\hline
+{\em bytes\+To\+Convert} & The number of bytes to use in the conversion\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The converted number
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a4d62837761d9100fbbc2540c53c15f1f}{T\+Net.\+I\+O.\+Big\+Endian\+Bit\+Converter}}, and \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_little_endian_bit_converter_a090b29608a2125db97e02f4a9956eeb2}{T\+Net.\+I\+O.\+Little\+Endian\+Bit\+Converter}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a2c5a4d5038b4af6f8712bff82302faa8}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a2c5a4d5038b4af6f8712bff82302faa8}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Get\+Bytes@{Get\+Bytes}}
+\index{Get\+Bytes@{Get\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Get\+Bytes()}{GetBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/11]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Get\+Bytes (\begin{DoxyParamCaption}\item[{decimal}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns the specified decimal value as an array of bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of bytes with length 16.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_aa7c0bec707cb4e3b6866c96bb53276c4}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_aa7c0bec707cb4e3b6866c96bb53276c4}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Get\+Bytes@{Get\+Bytes}}
+\index{Get\+Bytes@{Get\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Get\+Bytes()}{GetBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/11]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Get\+Bytes (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns the specified Boolean value as an array of bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & A Boolean value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of bytes with length 1.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_ac0bf5270842f7892896cfb842d4eee6a}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_ac0bf5270842f7892896cfb842d4eee6a}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Get\+Bytes@{Get\+Bytes}}
+\index{Get\+Bytes@{Get\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Get\+Bytes()}{GetBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [3/11]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Get\+Bytes (\begin{DoxyParamCaption}\item[{char}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns the specified Unicode character value as an array of bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & A character to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of bytes with length 2.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a10b7358f3ab627c0376f5236c0165a3f}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a10b7358f3ab627c0376f5236c0165a3f}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Get\+Bytes@{Get\+Bytes}}
+\index{Get\+Bytes@{Get\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Get\+Bytes()}{GetBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [4/11]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Get\+Bytes (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns the specified double-\/precision floating point value as an array of bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of bytes with length 8.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_ab0553ed30b167a3cd3df5a1422c31b98}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_ab0553ed30b167a3cd3df5a1422c31b98}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Get\+Bytes@{Get\+Bytes}}
+\index{Get\+Bytes@{Get\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Get\+Bytes()}{GetBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [5/11]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Get\+Bytes (\begin{DoxyParamCaption}\item[{short}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns the specified 16-\/bit signed integer value as an array of bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of bytes with length 2.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a116e1d710499764287b46c7bd76ce00e}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a116e1d710499764287b46c7bd76ce00e}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Get\+Bytes@{Get\+Bytes}}
+\index{Get\+Bytes@{Get\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Get\+Bytes()}{GetBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [6/11]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Get\+Bytes (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns the specified 32-\/bit signed integer value as an array of bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of bytes with length 4.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a3c9aae4ed4eb806f97a5b29dd47ad484}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a3c9aae4ed4eb806f97a5b29dd47ad484}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Get\+Bytes@{Get\+Bytes}}
+\index{Get\+Bytes@{Get\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Get\+Bytes()}{GetBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [7/11]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Get\+Bytes (\begin{DoxyParamCaption}\item[{long}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns the specified 64-\/bit signed integer value as an array of bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of bytes with length 8.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a473401216eb8158e500667635eb10e28}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a473401216eb8158e500667635eb10e28}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Get\+Bytes@{Get\+Bytes}}
+\index{Get\+Bytes@{Get\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Get\+Bytes()}{GetBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [8/11]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Get\+Bytes (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns the specified single-\/precision floating point value as an array of bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of bytes with length 4.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_aeda4cf603ad487bb18ec95f947a1664b}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_aeda4cf603ad487bb18ec95f947a1664b}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Get\+Bytes@{Get\+Bytes}}
+\index{Get\+Bytes@{Get\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Get\+Bytes()}{GetBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [9/11]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Get\+Bytes (\begin{DoxyParamCaption}\item[{ushort}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns the specified 16-\/bit unsigned integer value as an array of bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of bytes with length 2.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a5a69ebad933ce89df339a41b7d1bf6c4}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a5a69ebad933ce89df339a41b7d1bf6c4}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Get\+Bytes@{Get\+Bytes}}
+\index{Get\+Bytes@{Get\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Get\+Bytes()}{GetBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [10/11]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Get\+Bytes (\begin{DoxyParamCaption}\item[{uint}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns the specified 32-\/bit unsigned integer value as an array of bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of bytes with length 4.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a74f57e3195722e1f5d6f3049fcb1fe82}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a74f57e3195722e1f5d6f3049fcb1fe82}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Get\+Bytes@{Get\+Bytes}}
+\index{Get\+Bytes@{Get\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Get\+Bytes()}{GetBytes()}\hspace{0.1cm}{\footnotesize\ttfamily [11/11]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Get\+Bytes (\begin{DoxyParamCaption}\item[{ulong}]{value }\end{DoxyParamCaption})}
+
+
+
+Returns the specified 64-\/bit unsigned integer value as an array of bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of bytes with length 8.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a6dfc6c331c6591940588f75d7a7e793e}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a6dfc6c331c6591940588f75d7a7e793e}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Int32\+Bits\+To\+Single@{Int32\+Bits\+To\+Single}}
+\index{Int32\+Bits\+To\+Single@{Int32\+Bits\+To\+Single}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Int32\+Bits\+To\+Single()}{Int32BitsToSingle()}}
+{\footnotesize\ttfamily float T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Int32\+Bits\+To\+Single (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Converts the specified 32-\/bit signed integer to a single-\/precision floating point number. Note\+: the endianness of this converter does not affect the returned value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A single-\/precision floating point number whose value is equivalent to value.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a33615ec4ba0c20f450b34599d76fcc7f}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a33615ec4ba0c20f450b34599d76fcc7f}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Int64\+Bits\+To\+Double@{Int64\+Bits\+To\+Double}}
+\index{Int64\+Bits\+To\+Double@{Int64\+Bits\+To\+Double}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Int64\+Bits\+To\+Double()}{Int64BitsToDouble()}}
+{\footnotesize\ttfamily double T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Int64\+Bits\+To\+Double (\begin{DoxyParamCaption}\item[{long}]{value }\end{DoxyParamCaption})}
+
+
+
+Converts the specified 64-\/bit signed integer to a double-\/precision floating point number. Note\+: the endianness of this converter does not affect the returned value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double-\/precision floating point number whose value is equivalent to value.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a0fe24cd850d8da0da9f75ef0467551cb}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a0fe24cd850d8da0da9f75ef0467551cb}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Is\+Little\+Endian@{Is\+Little\+Endian}}
+\index{Is\+Little\+Endian@{Is\+Little\+Endian}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Is\+Little\+Endian()}{IsLittleEndian()}}
+{\footnotesize\ttfamily abstract bool T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Is\+Little\+Endian (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Indicates the byte order (\char`\"{}endianess\char`\"{}) in which data is converted using this class. 
+
+Different computer architectures store data using different byte orders. \char`\"{}\+Big-\/endian\char`\"{} means the most significant byte is on the left end of a word. \char`\"{}\+Little-\/endian\char`\"{} means the most significant byte is on the right end of a word. 
+
+\begin{DoxyReturn}{Returns}
+true if this converter is little-\/endian, false otherwise.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a277e4b24764d25a882042be3c2e1f231}{T\+Net.\+I\+O.\+Big\+Endian\+Bit\+Converter}}, and \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_little_endian_bit_converter_a72c11f0120a83ac3a81574f98beb7278}{T\+Net.\+I\+O.\+Little\+Endian\+Bit\+Converter}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_ac93b60f01cf809e9f290c3f4793f79cd}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_ac93b60f01cf809e9f290c3f4793f79cd}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Single\+To\+Int32\+Bits@{Single\+To\+Int32\+Bits}}
+\index{Single\+To\+Int32\+Bits@{Single\+To\+Int32\+Bits}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Single\+To\+Int32\+Bits()}{SingleToInt32Bits()}}
+{\footnotesize\ttfamily int T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Single\+To\+Int32\+Bits (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Converts the specified single-\/precision floating point number to a 32-\/bit signed integer. Note\+: the endianness of this converter does not affect the returned value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The number to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 32-\/bit signed integer whose value is equivalent to value.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_ac08a3108ce00f7bbc088c361777bce52}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_ac08a3108ce00f7bbc088c361777bce52}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+Boolean@{To\+Boolean}}
+\index{To\+Boolean@{To\+Boolean}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+Boolean()}{ToBoolean()}}
+{\footnotesize\ttfamily bool T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+Boolean (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index }\end{DoxyParamCaption})}
+
+
+
+Returns a Boolean value converted from one byte at a specified position in a byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+{\em start\+Index} & The starting position within value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the byte at start\+Index in value is nonzero; otherwise, false.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a04b97d937753db34e5184a3f9140a644}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a04b97d937753db34e5184a3f9140a644}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+Char@{To\+Char}}
+\index{To\+Char@{To\+Char}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+Char()}{ToChar()}}
+{\footnotesize\ttfamily char T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+Char (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index }\end{DoxyParamCaption})}
+
+
+
+Returns a Unicode character converted from two bytes at a specified position in a byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+{\em start\+Index} & The starting position within value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A character formed by two bytes beginning at start\+Index.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a226ca2d24192152238c46c2a47bc5c24}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a226ca2d24192152238c46c2a47bc5c24}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+Decimal@{To\+Decimal}}
+\index{To\+Decimal@{To\+Decimal}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+Decimal()}{ToDecimal()}}
+{\footnotesize\ttfamily decimal T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+Decimal (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index }\end{DoxyParamCaption})}
+
+
+
+Returns a decimal value converted from sixteen bytes at a specified position in a byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+{\em start\+Index} & The starting position within value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A decimal formed by sixteen bytes beginning at start\+Index.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a46f2f5e1fee257fae892768be7fbd24d}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a46f2f5e1fee257fae892768be7fbd24d}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+Double@{To\+Double}}
+\index{To\+Double@{To\+Double}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+Double()}{ToDouble()}}
+{\footnotesize\ttfamily double T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+Double (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index }\end{DoxyParamCaption})}
+
+
+
+Returns a double-\/precision floating point number converted from eight bytes at a specified position in a byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+{\em start\+Index} & The starting position within value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double precision floating point number formed by eight bytes beginning at start\+Index.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a57927039a631af103ed63e8b0a91e660}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a57927039a631af103ed63e8b0a91e660}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+Int16@{To\+Int16}}
+\index{To\+Int16@{To\+Int16}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+Int16()}{ToInt16()}}
+{\footnotesize\ttfamily short T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+Int16 (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index }\end{DoxyParamCaption})}
+
+
+
+Returns a 16-\/bit signed integer converted from two bytes at a specified position in a byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+{\em start\+Index} & The starting position within value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 16-\/bit signed integer formed by two bytes beginning at start\+Index.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_aa8b78416e423bdbc0bdae03ade423796}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_aa8b78416e423bdbc0bdae03ade423796}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+Int32@{To\+Int32}}
+\index{To\+Int32@{To\+Int32}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+Int32()}{ToInt32()}}
+{\footnotesize\ttfamily int T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+Int32 (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index }\end{DoxyParamCaption})}
+
+
+
+Returns a 32-\/bit signed integer converted from four bytes at a specified position in a byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+{\em start\+Index} & The starting position within value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 32-\/bit signed integer formed by four bytes beginning at start\+Index.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_aae5e69649f8d5240a1dd12bfc6da091c}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_aae5e69649f8d5240a1dd12bfc6da091c}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+Int64@{To\+Int64}}
+\index{To\+Int64@{To\+Int64}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+Int64()}{ToInt64()}}
+{\footnotesize\ttfamily long T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+Int64 (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index }\end{DoxyParamCaption})}
+
+
+
+Returns a 64-\/bit signed integer converted from eight bytes at a specified position in a byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+{\em start\+Index} & The starting position within value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 64-\/bit signed integer formed by eight bytes beginning at start\+Index.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a8f2ff9046650f0fea88be0cd90b7ef26}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a8f2ff9046650f0fea88be0cd90b7ef26}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+Single@{To\+Single}}
+\index{To\+Single@{To\+Single}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+Single()}{ToSingle()}}
+{\footnotesize\ttfamily float T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+Single (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index }\end{DoxyParamCaption})}
+
+
+
+Returns a single-\/precision floating point number converted from four bytes at a specified position in a byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+{\em start\+Index} & The starting position within value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A single precision floating point number formed by four bytes beginning at start\+Index.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a2d1c19944491257c2f73b50a39034bac}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a2d1c19944491257c2f73b50a39034bac}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static string T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+String (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a String converted from the elements of a byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+\end{DoxyParams}
+
+
+All the elements of value are converted.
+
+\begin{DoxyReturn}{Returns}
+A String of hexadecimal pairs separated by hyphens, where each pair represents the corresponding element in value; for example, \char`\"{}7\+F-\/2\+C-\/4\+A\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a28aabc2bed261bbd287911df84512dcd}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a28aabc2bed261bbd287911df84512dcd}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static string T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+String (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a String converted from the elements of a byte array starting at a specified array position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+{\em start\+Index} & The starting position within value.\\
+\hline
+\end{DoxyParams}
+
+
+The elements from array position start\+Index to the end of the array are converted.
+
+\begin{DoxyReturn}{Returns}
+A String of hexadecimal pairs separated by hyphens, where each pair represents the corresponding element in value; for example, \char`\"{}7\+F-\/2\+C-\/4\+A\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_abfe5a9033c0f14fbfa209af61cee5124}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_abfe5a9033c0f14fbfa209af61cee5124}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static string T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+String (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a String converted from a specified number of bytes at a specified position in a byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+{\em start\+Index} & The starting position within value.\\
+\hline
+{\em length} & The number of bytes to convert.\\
+\hline
+\end{DoxyParams}
+
+
+The length elements from array position start\+Index are converted.
+
+\begin{DoxyReturn}{Returns}
+A String of hexadecimal pairs separated by hyphens, where each pair represents the corresponding element in value; for example, \char`\"{}7\+F-\/2\+C-\/4\+A\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a164e8478c154756a2a902efd889d8c84}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a164e8478c154756a2a902efd889d8c84}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+U\+Int16@{To\+U\+Int16}}
+\index{To\+U\+Int16@{To\+U\+Int16}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+U\+Int16()}{ToUInt16()}}
+{\footnotesize\ttfamily ushort T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+U\+Int16 (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index }\end{DoxyParamCaption})}
+
+
+
+Returns a 16-\/bit unsigned integer converted from two bytes at a specified position in a byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+{\em start\+Index} & The starting position within value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 16-\/bit unsigned integer formed by two bytes beginning at start\+Index.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a663d4f8714c5a58433ecef1f7db68b99}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a663d4f8714c5a58433ecef1f7db68b99}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+U\+Int32@{To\+U\+Int32}}
+\index{To\+U\+Int32@{To\+U\+Int32}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+U\+Int32()}{ToUInt32()}}
+{\footnotesize\ttfamily uint T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+U\+Int32 (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index }\end{DoxyParamCaption})}
+
+
+
+Returns a 32-\/bit unsigned integer converted from four bytes at a specified position in a byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+{\em start\+Index} & The starting position within value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 32-\/bit unsigned integer formed by four bytes beginning at start\+Index.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_aa693b9f9c3b71a8bb02730f1cd00b42f}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_aa693b9f9c3b71a8bb02730f1cd00b42f}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!To\+U\+Int64@{To\+U\+Int64}}
+\index{To\+U\+Int64@{To\+U\+Int64}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{To\+U\+Int64()}{ToUInt64()}}
+{\footnotesize\ttfamily ulong T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+To\+U\+Int64 (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{start\+Index }\end{DoxyParamCaption})}
+
+
+
+Returns a 64-\/bit unsigned integer converted from eight bytes at a specified position in a byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array of bytes.\\
+\hline
+{\em start\+Index} & The starting position within value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 64-\/bit unsigned integer formed by eight bytes beginning at start\+Index.
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_af25fbd59f89604f6554e5a5a9ed9a279}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_af25fbd59f89604f6554e5a5a9ed9a279}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Big@{Big}}
+\index{Big@{Big}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Big}{Big}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_big_endian_bit_converter}{Big\+Endian\+Bit\+Converter}} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Big\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Returns a big-\/endian bit converter instance. The same instance is always returned. 
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a71c58efdcbbd22729d8eb1f823cb5479}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a71c58efdcbbd22729d8eb1f823cb5479}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Endianness@{Endianness}}
+\index{Endianness@{Endianness}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Endianness}{Endianness}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dc}{Endianness}} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Endianness\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates the byte order (\char`\"{}endianess\char`\"{}) in which data is converted using this class. 
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_bit_converter_a9d8d5d6c2daa5102bc7683e77604f616}\label{class_t_net_1_1_i_o_1_1_endian_bit_converter_a9d8d5d6c2daa5102bc7683e77604f616}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}!Little@{Little}}
+\index{Little@{Little}!T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Little}{Little}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_little_endian_bit_converter}{Little\+Endian\+Bit\+Converter}} T\+Net.\+I\+O.\+Endian\+Bit\+Converter.\+Little\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Returns a little-\/endian bit converter instance. The same instance is always returned. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract\+\_\+/\+I\+O/Endian\+Bit\+Converter.\+cs\end{DoxyCompactItemize}

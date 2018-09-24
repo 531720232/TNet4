@@ -1,0 +1,98 @@
+\hypertarget{class_t_net_1_1_com_1_1_mall_1_1_merchant}{}\section{T\+Net.\+Com.\+Mall.\+Merchant Class Reference}
+\label{class_t_net_1_1_com_1_1_mall_1_1_merchant}\index{T\+Net.\+Com.\+Mall.\+Merchant@{T\+Net.\+Com.\+Mall.\+Merchant}}
+
+
+商家  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_merchant_a9895dbbfb76c8d7815377c001e4925ab}{Merchant}} (int merchant\+Id, \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_mall_controller}{Mall\+Controller}} controller)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_merchant}{T\+Net.\+Com.\+Mall.\+Merchant}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_merchant_a02c61749f291218d23749705cd5974e8}{Initialize\+Goods}} ()
+\begin{DoxyCompactList}\small\item\em 初始化商品 \end{DoxyCompactList}\item 
+I\+List$<$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}} $>$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_merchant_a14e1cd4cd3083c89490cb982bbbe2bb7}{Show\+Goods}} (Predicate$<$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}} $>$ match, int page\+Index, int page\+Size, out int page\+Count)
+\begin{DoxyCompactList}\small\item\em 展示商品 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_merchant_af787957e959d176b192dfef20f681bad}{Buy\+Goods}} (\mbox{\hyperlink{class_t_net_1_1_context___1_1_base_user}{Base\+User}} user, int goods\+Id, int goods\+Num, out \mbox{\hyperlink{namespace_t_net_1_1_com_1_1_mall_a8ed58f71da1d1495830104612fc5667a}{Trade\+Error\+Code}} error\+Code)
+\begin{DoxyCompactList}\small\item\em 购买商品 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+商家 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_mall_1_1_merchant_a9895dbbfb76c8d7815377c001e4925ab}\label{class_t_net_1_1_com_1_1_mall_1_1_merchant_a9895dbbfb76c8d7815377c001e4925ab}} 
+\index{T\+Net\+::\+Com\+::\+Mall\+::\+Merchant@{T\+Net\+::\+Com\+::\+Mall\+::\+Merchant}!Merchant@{Merchant}}
+\index{Merchant@{Merchant}!T\+Net\+::\+Com\+::\+Mall\+::\+Merchant@{T\+Net\+::\+Com\+::\+Mall\+::\+Merchant}}
+\subsubsection{\texorpdfstring{Merchant()}{Merchant()}}
+{\footnotesize\ttfamily T\+Net.\+Com.\+Mall.\+Merchant.\+Merchant (\begin{DoxyParamCaption}\item[{int}]{merchant\+Id,  }\item[{\mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_mall_controller}{Mall\+Controller}}}]{controller }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_merchant}{T\+Net.\+Com.\+Mall.\+Merchant}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em merchant\+Id} & \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_merchant}{Merchant}} identifier.\\
+\hline
+{\em controller} & Controller.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_mall_1_1_merchant_af787957e959d176b192dfef20f681bad}\label{class_t_net_1_1_com_1_1_mall_1_1_merchant_af787957e959d176b192dfef20f681bad}} 
+\index{T\+Net\+::\+Com\+::\+Mall\+::\+Merchant@{T\+Net\+::\+Com\+::\+Mall\+::\+Merchant}!Buy\+Goods@{Buy\+Goods}}
+\index{Buy\+Goods@{Buy\+Goods}!T\+Net\+::\+Com\+::\+Mall\+::\+Merchant@{T\+Net\+::\+Com\+::\+Mall\+::\+Merchant}}
+\subsubsection{\texorpdfstring{Buy\+Goods()}{BuyGoods()}}
+{\footnotesize\ttfamily bool T\+Net.\+Com.\+Mall.\+Merchant.\+Buy\+Goods (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_context___1_1_base_user}{Base\+User}}}]{user,  }\item[{int}]{goods\+Id,  }\item[{int}]{goods\+Num,  }\item[{out \mbox{\hyperlink{namespace_t_net_1_1_com_1_1_mall_a8ed58f71da1d1495830104612fc5667a}{Trade\+Error\+Code}}}]{error\+Code }\end{DoxyParamCaption})}
+
+
+
+购买商品 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em goods\+Id} & \\
+\hline
+{\em goods\+Num} & \\
+\hline
+{\em error\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_mall_1_1_merchant_a02c61749f291218d23749705cd5974e8}\label{class_t_net_1_1_com_1_1_mall_1_1_merchant_a02c61749f291218d23749705cd5974e8}} 
+\index{T\+Net\+::\+Com\+::\+Mall\+::\+Merchant@{T\+Net\+::\+Com\+::\+Mall\+::\+Merchant}!Initialize\+Goods@{Initialize\+Goods}}
+\index{Initialize\+Goods@{Initialize\+Goods}!T\+Net\+::\+Com\+::\+Mall\+::\+Merchant@{T\+Net\+::\+Com\+::\+Mall\+::\+Merchant}}
+\subsubsection{\texorpdfstring{Initialize\+Goods()}{InitializeGoods()}}
+{\footnotesize\ttfamily void T\+Net.\+Com.\+Mall.\+Merchant.\+Initialize\+Goods (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+初始化商品 
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_mall_1_1_merchant_a14e1cd4cd3083c89490cb982bbbe2bb7}\label{class_t_net_1_1_com_1_1_mall_1_1_merchant_a14e1cd4cd3083c89490cb982bbbe2bb7}} 
+\index{T\+Net\+::\+Com\+::\+Mall\+::\+Merchant@{T\+Net\+::\+Com\+::\+Mall\+::\+Merchant}!Show\+Goods@{Show\+Goods}}
+\index{Show\+Goods@{Show\+Goods}!T\+Net\+::\+Com\+::\+Mall\+::\+Merchant@{T\+Net\+::\+Com\+::\+Mall\+::\+Merchant}}
+\subsubsection{\texorpdfstring{Show\+Goods()}{ShowGoods()}}
+{\footnotesize\ttfamily I\+List$<$\mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}}$>$ T\+Net.\+Com.\+Mall.\+Merchant.\+Show\+Goods (\begin{DoxyParamCaption}\item[{Predicate$<$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}} $>$}]{match,  }\item[{int}]{page\+Index,  }\item[{int}]{page\+Size,  }\item[{out int}]{page\+Count }\end{DoxyParamCaption})}
+
+
+
+展示商品 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Com/\+Mall/Merchant.\+cs\end{DoxyCompactItemize}

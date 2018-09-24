@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EcsRx.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,9 +9,9 @@ namespace TNet.Coms
     {
 
         public TNet.RPC.Sockets.SocketListener socket;
+        public IEntity Entity { get; set; }
 
-
-    public TNServer_Socket()
+        public TNServer_Socket()
         {
             Init();
         }

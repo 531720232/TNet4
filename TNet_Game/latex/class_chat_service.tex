@@ -1,0 +1,271 @@
+\hypertarget{class_chat_service}{}\section{Chat\+Service Class Reference}
+\label{class_chat_service}\index{Chat\+Service@{Chat\+Service}}
+
+
+聊天服务  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_chat_service_a21e1bdf73ddabd0703168ad24546a260}{Has\+Message}} (int version)
+\begin{DoxyCompactList}\small\item\em Determines whether this instance has message the specified version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_service_a1784ca3c6b4cd656b537d3e76bf48d52}{Send}} (\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} message)
+\begin{DoxyCompactList}\small\item\em Send the specified message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_service_a75d42d36e9f6e4ac6a301b02fb7856ca}{Send\+Whisper}} (int to\+User\+Id, \mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} message)
+\begin{DoxyCompactList}\small\item\em Sends the whisper. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} $>$ \mbox{\hyperlink{class_chat_service_acde6f5c4da12d849ba340cef90ae919a}{Receive}} ()
+\begin{DoxyCompactList}\small\item\em Receive this instance. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} $>$ \mbox{\hyperlink{class_chat_service_a3eea8046d720ae3e84ce5c8f4dacf2c1}{Public\+Receive}} ()
+\begin{DoxyCompactList}\small\item\em Publics the receive. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} $>$ \mbox{\hyperlink{class_chat_service_a68d1993d7a034e9f999e0d3c8d51c00c}{User\+Receive}} (int user\+Id)
+\begin{DoxyCompactList}\small\item\em Users the receive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_chat_service_a12dc266664c0a263013841e75dc949fa}{Chat\+Service}} (int user\+Id)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the T\+Net.\+Message.\+Chat\+Service class. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} $>$ \mbox{\hyperlink{class_chat_service_aae1d333e18b5b7b6528fadde15a9181d}{Get\+Chat\+Messages}} ()
+\begin{DoxyCompactList}\small\item\em Gets the chat messages. \end{DoxyCompactList}\item 
+abstract List$<$ \mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} $>$ \mbox{\hyperlink{class_chat_service_a0386ca23c48f3d389bbb600565585d37}{Get\+Range}} (List$<$ \mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} $>$ msg\+List)
+\begin{DoxyCompactList}\small\item\em Gets the range. \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{class_chat_service_ac3b151ae5fe90fe7b8e78a8ea1a11a27}{Has\+Receive}} (\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} message)
+\begin{DoxyCompactList}\small\item\em Determines whether this instance has receive the specified message. \end{DoxyCompactList}\item 
+abstract string \mbox{\hyperlink{class_chat_service_a110f921d7a54356b2cb357d241af37fb}{Filter\+Message}} (string message)
+\begin{DoxyCompactList}\small\item\em Filters the message. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_chat_service_a906fad4202a26ffa55febf4a5fd6dd7e}{Write\+Log}} (\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} message)
+\begin{DoxyCompactList}\small\item\em Writes the log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_chat_service_abe3bd1117695ea56843642519c995a5a}{Next\+Version}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 取下一个版本号 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_chat_service_a1a35e337d470e0a1c4627b778c9f93cd}{Curr\+Version}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the curr version. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+聊天服务 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_chat_service_a12dc266664c0a263013841e75dc949fa}\label{class_chat_service_a12dc266664c0a263013841e75dc949fa}} 
+\index{Chat\+Service@{Chat\+Service}!Chat\+Service@{Chat\+Service}}
+\index{Chat\+Service@{Chat\+Service}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{Chat\+Service()}{ChatService()}}
+{\footnotesize\ttfamily Chat\+Service.\+Chat\+Service (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the T\+Net.\+Message.\+Chat\+Service class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & User identifier.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_chat_service_a110f921d7a54356b2cb357d241af37fb}\label{class_chat_service_a110f921d7a54356b2cb357d241af37fb}} 
+\index{Chat\+Service@{Chat\+Service}!Filter\+Message@{Filter\+Message}}
+\index{Filter\+Message@{Filter\+Message}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{Filter\+Message()}{FilterMessage()}}
+{\footnotesize\ttfamily abstract string Chat\+Service.\+Filter\+Message (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Filters the message. 
+
+\begin{DoxyReturn}{Returns}
+The message.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chat_service_aae1d333e18b5b7b6528fadde15a9181d}\label{class_chat_service_aae1d333e18b5b7b6528fadde15a9181d}} 
+\index{Chat\+Service@{Chat\+Service}!Get\+Chat\+Messages@{Get\+Chat\+Messages}}
+\index{Get\+Chat\+Messages@{Get\+Chat\+Messages}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{Get\+Chat\+Messages()}{GetChatMessages()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}}$>$ Chat\+Service.\+Get\+Chat\+Messages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Gets the chat messages. 
+
+\begin{DoxyReturn}{Returns}
+The chat messages.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_chat_service_a0386ca23c48f3d389bbb600565585d37}\label{class_chat_service_a0386ca23c48f3d389bbb600565585d37}} 
+\index{Chat\+Service@{Chat\+Service}!Get\+Range@{Get\+Range}}
+\index{Get\+Range@{Get\+Range}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{Get\+Range()}{GetRange()}}
+{\footnotesize\ttfamily abstract List$<$\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}}$>$ Chat\+Service.\+Get\+Range (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} $>$}]{msg\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Gets the range. 
+
+\begin{DoxyReturn}{Returns}
+The range.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em msg\+List} & Message list.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chat_service_a21e1bdf73ddabd0703168ad24546a260}\label{class_chat_service_a21e1bdf73ddabd0703168ad24546a260}} 
+\index{Chat\+Service@{Chat\+Service}!Has\+Message@{Has\+Message}}
+\index{Has\+Message@{Has\+Message}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{Has\+Message()}{HasMessage()}}
+{\footnotesize\ttfamily bool Chat\+Service.\+Has\+Message (\begin{DoxyParamCaption}\item[{int}]{version }\end{DoxyParamCaption})}
+
+
+
+Determines whether this instance has message the specified version. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this instance has message the specified version; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em version} & Version.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chat_service_ac3b151ae5fe90fe7b8e78a8ea1a11a27}\label{class_chat_service_ac3b151ae5fe90fe7b8e78a8ea1a11a27}} 
+\index{Chat\+Service@{Chat\+Service}!Has\+Receive@{Has\+Receive}}
+\index{Has\+Receive@{Has\+Receive}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{Has\+Receive()}{HasReceive()}}
+{\footnotesize\ttfamily abstract bool Chat\+Service.\+Has\+Receive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}}}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Determines whether this instance has receive the specified message. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this instance has receive the specified message; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chat_service_a3eea8046d720ae3e84ce5c8f4dacf2c1}\label{class_chat_service_a3eea8046d720ae3e84ce5c8f4dacf2c1}} 
+\index{Chat\+Service@{Chat\+Service}!Public\+Receive@{Public\+Receive}}
+\index{Public\+Receive@{Public\+Receive}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{Public\+Receive()}{PublicReceive()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}}$>$ Chat\+Service.\+Public\+Receive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Publics the receive. 
+
+\begin{DoxyReturn}{Returns}
+The receive.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_chat_service_acde6f5c4da12d849ba340cef90ae919a}\label{class_chat_service_acde6f5c4da12d849ba340cef90ae919a}} 
+\index{Chat\+Service@{Chat\+Service}!Receive@{Receive}}
+\index{Receive@{Receive}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{Receive()}{Receive()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}}$>$ Chat\+Service.\+Receive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Receive this instance. 
+
+\mbox{\Hypertarget{class_chat_service_a1784ca3c6b4cd656b537d3e76bf48d52}\label{class_chat_service_a1784ca3c6b4cd656b537d3e76bf48d52}} 
+\index{Chat\+Service@{Chat\+Service}!Send@{Send}}
+\index{Send@{Send}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{Send()}{Send()}}
+{\footnotesize\ttfamily void Chat\+Service.\+Send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}}}]{message }\end{DoxyParamCaption})}
+
+
+
+Send the specified message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chat_service_a75d42d36e9f6e4ac6a301b02fb7856ca}\label{class_chat_service_a75d42d36e9f6e4ac6a301b02fb7856ca}} 
+\index{Chat\+Service@{Chat\+Service}!Send\+Whisper@{Send\+Whisper}}
+\index{Send\+Whisper@{Send\+Whisper}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{Send\+Whisper()}{SendWhisper()}}
+{\footnotesize\ttfamily void Chat\+Service.\+Send\+Whisper (\begin{DoxyParamCaption}\item[{int}]{to\+User\+Id,  }\item[{\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}}}]{message }\end{DoxyParamCaption})}
+
+
+
+Sends the whisper. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+User\+Id} & To user identifier.\\
+\hline
+{\em message} & Message.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chat_service_a68d1993d7a034e9f999e0d3c8d51c00c}\label{class_chat_service_a68d1993d7a034e9f999e0d3c8d51c00c}} 
+\index{Chat\+Service@{Chat\+Service}!User\+Receive@{User\+Receive}}
+\index{User\+Receive@{User\+Receive}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{User\+Receive()}{UserReceive()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}}$>$ Chat\+Service.\+User\+Receive (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Users the receive. 
+
+\begin{DoxyReturn}{Returns}
+The receive.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & User identifier.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chat_service_a906fad4202a26ffa55febf4a5fd6dd7e}\label{class_chat_service_a906fad4202a26ffa55febf4a5fd6dd7e}} 
+\index{Chat\+Service@{Chat\+Service}!Write\+Log@{Write\+Log}}
+\index{Write\+Log@{Write\+Log}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{Write\+Log()}{WriteLog()}}
+{\footnotesize\ttfamily abstract void Chat\+Service.\+Write\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}}}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Writes the log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_chat_service_a1a35e337d470e0a1c4627b778c9f93cd}\label{class_chat_service_a1a35e337d470e0a1c4627b778c9f93cd}} 
+\index{Chat\+Service@{Chat\+Service}!Curr\+Version@{Curr\+Version}}
+\index{Curr\+Version@{Curr\+Version}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{Curr\+Version}{CurrVersion}}
+{\footnotesize\ttfamily int Chat\+Service.\+Curr\+Version\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the curr version. 
+
+The curr version.\mbox{\Hypertarget{class_chat_service_abe3bd1117695ea56843642519c995a5a}\label{class_chat_service_abe3bd1117695ea56843642519c995a5a}} 
+\index{Chat\+Service@{Chat\+Service}!Next\+Version@{Next\+Version}}
+\index{Next\+Version@{Next\+Version}!Chat\+Service@{Chat\+Service}}
+\subsubsection{\texorpdfstring{Next\+Version}{NextVersion}}
+{\footnotesize\ttfamily int Chat\+Service.\+Next\+Version\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+取下一个版本号 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Message/Chat\+Service.\+cs\end{DoxyCompactItemize}

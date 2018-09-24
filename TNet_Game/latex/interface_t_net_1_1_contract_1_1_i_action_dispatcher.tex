@@ -1,0 +1,188 @@
+\hypertarget{interface_t_net_1_1_contract_1_1_i_action_dispatcher}{}\section{T\+Net.\+Contract.\+I\+Action\+Dispatcher Interface Reference}
+\label{interface_t_net_1_1_contract_1_1_i_action_dispatcher}\index{T\+Net.\+Contract.\+I\+Action\+Dispatcher@{T\+Net.\+Contract.\+I\+Action\+Dispatcher}}
+
+
+Action分发器接口  
+
+
+Inheritance diagram for T\+Net.\+Contract.\+I\+Action\+Dispatcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_t_net_1_1_contract_1_1_i_action_dispatcher}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a6cd207fe8c2c4c6af269c24cf7a12f43}{Try\+Decode\+Package}} (Connection\+Event\+Args e, out \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}} package)
+\begin{DoxyCompactList}\small\item\em decode package for socket \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a689e3bea000c3e52404e890d20226617}{Try\+Decode\+Package}} (Http\+Listener\+Request request, out \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}} package, out int status\+Code)
+\item 
+bool \mbox{\hyperlink{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a111c0f9bc0cb0c1ba2c72bcbeb0d9ec5}{Try\+Decode\+Package}} (Http\+Listener\+Context context, out \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}} package)
+\begin{DoxyCompactList}\small\item\em decode package for http \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a8de9c448c00d87b1e5c5e97aa7304243}{Try\+Decode\+Package}} (Http\+Context context, out \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}} package)
+\begin{DoxyCompactList}\small\item\em decode package for http \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} \mbox{\hyperlink{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a6c8cd6e4355356d71fba54bc53d7a094}{Get\+Action\+Getter}} (\mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}} package, \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} session)
+\item 
+void \mbox{\hyperlink{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a630c4f4ee17ac20278b9dc9cdb4d4990}{Response\+Error}} (\mbox{\hyperlink{class_t_net_1_1_service_1_1_base_game_response}{Base\+Game\+Response}} response, \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} action\+Getter, int error\+Code, string error\+Info)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Action分发器接口 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a6c8cd6e4355356d71fba54bc53d7a094}\label{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a6c8cd6e4355356d71fba54bc53d7a094}} 
+\index{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher@{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher}!Get\+Action\+Getter@{Get\+Action\+Getter}}
+\index{Get\+Action\+Getter@{Get\+Action\+Getter}!T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher@{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher}}
+\subsubsection{\texorpdfstring{Get\+Action\+Getter()}{GetActionGetter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} T\+Net.\+Contract.\+I\+Action\+Dispatcher.\+Get\+Action\+Getter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}}}]{package,  }\item[{\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}}]{session }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em package} & \\
+\hline
+{\em session} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_scut_action_dispatcher_adb33996b5f5bf5ad4ebf6ad59fa1f065}{T\+Net.\+Contract.\+Scut\+Action\+Dispatcher}}.
+
+\mbox{\Hypertarget{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a630c4f4ee17ac20278b9dc9cdb4d4990}\label{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a630c4f4ee17ac20278b9dc9cdb4d4990}} 
+\index{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher@{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher}!Response\+Error@{Response\+Error}}
+\index{Response\+Error@{Response\+Error}!T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher@{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher}}
+\subsubsection{\texorpdfstring{Response\+Error()}{ResponseError()}}
+{\footnotesize\ttfamily void T\+Net.\+Contract.\+I\+Action\+Dispatcher.\+Response\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_base_game_response}{Base\+Game\+Response}}}]{response,  }\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}}}]{action\+Getter,  }\item[{int}]{error\+Code,  }\item[{string}]{error\+Info }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & \\
+\hline
+{\em action\+Getter} & \\
+\hline
+{\em error\+Code} & \\
+\hline
+{\em error\+Info} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_scut_action_dispatcher_ad0983174f224f8b03e9fb0d3bc10579d}{T\+Net.\+Contract.\+Scut\+Action\+Dispatcher}}.
+
+\mbox{\Hypertarget{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a6cd207fe8c2c4c6af269c24cf7a12f43}\label{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a6cd207fe8c2c4c6af269c24cf7a12f43}} 
+\index{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher@{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher}!Try\+Decode\+Package@{Try\+Decode\+Package}}
+\index{Try\+Decode\+Package@{Try\+Decode\+Package}!T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher@{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher}}
+\subsubsection{\texorpdfstring{Try\+Decode\+Package()}{TryDecodePackage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+I\+Action\+Dispatcher.\+Try\+Decode\+Package (\begin{DoxyParamCaption}\item[{Connection\+Event\+Args}]{e,  }\item[{out \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}}}]{package }\end{DoxyParamCaption})}
+
+
+
+decode package for socket 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+{\em package} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_scut_action_dispatcher_a0e8423b7c8a7447b5b462b55d6b4fdfc}{T\+Net.\+Contract.\+Scut\+Action\+Dispatcher}}.
+
+\mbox{\Hypertarget{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a689e3bea000c3e52404e890d20226617}\label{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a689e3bea000c3e52404e890d20226617}} 
+\index{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher@{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher}!Try\+Decode\+Package@{Try\+Decode\+Package}}
+\index{Try\+Decode\+Package@{Try\+Decode\+Package}!T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher@{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher}}
+\subsubsection{\texorpdfstring{Try\+Decode\+Package()}{TryDecodePackage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+I\+Action\+Dispatcher.\+Try\+Decode\+Package (\begin{DoxyParamCaption}\item[{Http\+Listener\+Request}]{request,  }\item[{out \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}}}]{package,  }\item[{out int}]{status\+Code }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+{\em package} & \\
+\hline
+{\em status\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_scut_action_dispatcher_aad510a5ad8c140c45b6d992903fed081}{T\+Net.\+Contract.\+Scut\+Action\+Dispatcher}}.
+
+\mbox{\Hypertarget{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a111c0f9bc0cb0c1ba2c72bcbeb0d9ec5}\label{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a111c0f9bc0cb0c1ba2c72bcbeb0d9ec5}} 
+\index{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher@{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher}!Try\+Decode\+Package@{Try\+Decode\+Package}}
+\index{Try\+Decode\+Package@{Try\+Decode\+Package}!T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher@{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher}}
+\subsubsection{\texorpdfstring{Try\+Decode\+Package()}{TryDecodePackage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+I\+Action\+Dispatcher.\+Try\+Decode\+Package (\begin{DoxyParamCaption}\item[{Http\+Listener\+Context}]{context,  }\item[{out \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}}}]{package }\end{DoxyParamCaption})}
+
+
+
+decode package for http 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & \\
+\hline
+{\em package} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_scut_action_dispatcher_afdcd34dde1c7dcbe79569eea02676885}{T\+Net.\+Contract.\+Scut\+Action\+Dispatcher}}.
+
+\mbox{\Hypertarget{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a8de9c448c00d87b1e5c5e97aa7304243}\label{interface_t_net_1_1_contract_1_1_i_action_dispatcher_a8de9c448c00d87b1e5c5e97aa7304243}} 
+\index{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher@{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher}!Try\+Decode\+Package@{Try\+Decode\+Package}}
+\index{Try\+Decode\+Package@{Try\+Decode\+Package}!T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher@{T\+Net\+::\+Contract\+::\+I\+Action\+Dispatcher}}
+\subsubsection{\texorpdfstring{Try\+Decode\+Package()}{TryDecodePackage()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+I\+Action\+Dispatcher.\+Try\+Decode\+Package (\begin{DoxyParamCaption}\item[{Http\+Context}]{context,  }\item[{out \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}}}]{package }\end{DoxyParamCaption})}
+
+
+
+decode package for http 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & \\
+\hline
+{\em package} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_scut_action_dispatcher_a1419151e61eeff45c912074bbf820c26}{T\+Net.\+Contract.\+Scut\+Action\+Dispatcher}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract/Action\+Dispatcher.\+cs\end{DoxyCompactItemize}

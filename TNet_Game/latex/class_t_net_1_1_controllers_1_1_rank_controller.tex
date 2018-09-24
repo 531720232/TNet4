@@ -1,0 +1,112 @@
+\hypertarget{class_t_net_1_1_controllers_1_1_rank_controller}{}\section{T\+Net.\+Controllers.\+Rank\+Controller Class Reference}
+\label{class_t_net_1_1_controllers_1_1_rank_controller}\index{T\+Net.\+Controllers.\+Rank\+Controller@{T\+Net.\+Controllers.\+Rank\+Controller}}
+Inheritance diagram for T\+Net.\+Controllers.\+Rank\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_t_net_1_1_controllers_1_1_rank_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_controllers_1_1_rank_controller_a2eab740ac63773df99ed150cae8b632d}\label{class_t_net_1_1_controllers_1_1_rank_controller_a2eab740ac63773df99ed150cae8b632d}} 
+virtual I\+Enumerable$<$ string $>$ {\bfseries Get} ()
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_controllers_1_1_rank_controller_a8836338ca9b89211bb115d8e1355bc29}\label{class_t_net_1_1_controllers_1_1_rank_controller_a8836338ca9b89211bb115d8e1355bc29}} 
+virtual string {\bfseries Get} (int id, int id2)
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_controllers_1_1_rank_controller_ad2378bfef33eeadcf603d1ce5cdda9ca}\label{class_t_net_1_1_controllers_1_1_rank_controller_ad2378bfef33eeadcf603d1ce5cdda9ca}} 
+void {\bfseries Post} (\mbox{[}From\+Body\mbox{]} string value)
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_controllers_1_1_rank_controller_a083357089443223c533bed7598cd77ca}\label{class_t_net_1_1_controllers_1_1_rank_controller_a083357089443223c533bed7598cd77ca}} 
+void {\bfseries Put} (int id, \mbox{[}From\+Body\mbox{]} string value)
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_controllers_1_1_rank_controller_a15b505785ffd113ebafd76ec38cfb931}\label{class_t_net_1_1_controllers_1_1_rank_controller_a15b505785ffd113ebafd76ec38cfb931}} 
+void {\bfseries Delete} (int id)
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_controllers_1_1_rank_controller_a27d4e5425a6492053523676c0e797e84}\label{class_t_net_1_1_controllers_1_1_rank_controller_a27d4e5425a6492053523676c0e797e84}} 
+I\+Action\+Result {\bfseries Do\+Ranking} (int rank, int top)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{interface_t_net_1_1_com_1_1_rank_1_1_i_ranking}{I\+Ranking}} \mbox{\hyperlink{class_t_net_1_1_controllers_1_1_rank_controller_aec1afa4c5dedbebd41a32416f4f827b1}{Get\+Ranking\+Object}} (int rank\+Type)
+\begin{DoxyCompactList}\small\item\em Gets the ranking object. \end{DoxyCompactList}\item 
+abstract string \mbox{\hyperlink{class_t_net_1_1_controllers_1_1_rank_controller_a61adb0bb3db269494ac6c71f6a1f7c27}{Ranking\+To\+Json}} (I\+List$<$ object $>$ data\+List)
+\begin{DoxyCompactList}\small\item\em Rankings to json. \end{DoxyCompactList}\item 
+abstract string \mbox{\hyperlink{class_t_net_1_1_controllers_1_1_rank_controller_a453b81a53f72a30914f32ecded63dae2}{Ranking\+To\+Html}} (I\+List$<$ object $>$ data\+List)
+\begin{DoxyCompactList}\small\item\em Rankings to html. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_controllers_1_1_rank_controller_aec1afa4c5dedbebd41a32416f4f827b1}\label{class_t_net_1_1_controllers_1_1_rank_controller_aec1afa4c5dedbebd41a32416f4f827b1}} 
+\index{T\+Net\+::\+Controllers\+::\+Rank\+Controller@{T\+Net\+::\+Controllers\+::\+Rank\+Controller}!Get\+Ranking\+Object@{Get\+Ranking\+Object}}
+\index{Get\+Ranking\+Object@{Get\+Ranking\+Object}!T\+Net\+::\+Controllers\+::\+Rank\+Controller@{T\+Net\+::\+Controllers\+::\+Rank\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Ranking\+Object()}{GetRankingObject()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{interface_t_net_1_1_com_1_1_rank_1_1_i_ranking}{I\+Ranking}} T\+Net.\+Controllers.\+Rank\+Controller.\+Get\+Ranking\+Object (\begin{DoxyParamCaption}\item[{int}]{rank\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Gets the ranking object. 
+
+\begin{DoxyReturn}{Returns}
+The ranking object.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em rank\+Type} & Rank type.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_controllers_1_1_sample_rank_a29b6d1de9fab8703d209385b6a8de185}{T\+Net.\+Controllers.\+Sample\+Rank}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_controllers_1_1_rank_controller_a453b81a53f72a30914f32ecded63dae2}\label{class_t_net_1_1_controllers_1_1_rank_controller_a453b81a53f72a30914f32ecded63dae2}} 
+\index{T\+Net\+::\+Controllers\+::\+Rank\+Controller@{T\+Net\+::\+Controllers\+::\+Rank\+Controller}!Ranking\+To\+Html@{Ranking\+To\+Html}}
+\index{Ranking\+To\+Html@{Ranking\+To\+Html}!T\+Net\+::\+Controllers\+::\+Rank\+Controller@{T\+Net\+::\+Controllers\+::\+Rank\+Controller}}
+\subsubsection{\texorpdfstring{Ranking\+To\+Html()}{RankingToHtml()}}
+{\footnotesize\ttfamily abstract string T\+Net.\+Controllers.\+Rank\+Controller.\+Ranking\+To\+Html (\begin{DoxyParamCaption}\item[{I\+List$<$ object $>$}]{data\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Rankings to html. 
+
+\begin{DoxyReturn}{Returns}
+The to html.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em data\+List} & Data list.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_controllers_1_1_sample_rank_ae2de6cc2ed3dcdcd29f6df49c406da07}{T\+Net.\+Controllers.\+Sample\+Rank}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_controllers_1_1_rank_controller_a61adb0bb3db269494ac6c71f6a1f7c27}\label{class_t_net_1_1_controllers_1_1_rank_controller_a61adb0bb3db269494ac6c71f6a1f7c27}} 
+\index{T\+Net\+::\+Controllers\+::\+Rank\+Controller@{T\+Net\+::\+Controllers\+::\+Rank\+Controller}!Ranking\+To\+Json@{Ranking\+To\+Json}}
+\index{Ranking\+To\+Json@{Ranking\+To\+Json}!T\+Net\+::\+Controllers\+::\+Rank\+Controller@{T\+Net\+::\+Controllers\+::\+Rank\+Controller}}
+\subsubsection{\texorpdfstring{Ranking\+To\+Json()}{RankingToJson()}}
+{\footnotesize\ttfamily abstract string T\+Net.\+Controllers.\+Rank\+Controller.\+Ranking\+To\+Json (\begin{DoxyParamCaption}\item[{I\+List$<$ object $>$}]{data\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Rankings to json. 
+
+\begin{DoxyReturn}{Returns}
+The to json.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em data\+List} & Data list.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_controllers_1_1_sample_rank_ae6bc5f73a0068ef27537e742cbff29be}{T\+Net.\+Controllers.\+Sample\+Rank}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/Rank\+Controller.\+cs\end{DoxyCompactItemize}

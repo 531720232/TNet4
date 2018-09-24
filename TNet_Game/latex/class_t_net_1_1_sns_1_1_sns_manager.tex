@@ -1,0 +1,426 @@
+\hypertarget{class_t_net_1_1_sns_1_1_sns_manager}{}\section{T\+Net.\+Sns.\+Sns\+Manager Class Reference}
+\label{class_t_net_1_1_sns_1_1_sns_manager}\index{T\+Net.\+Sns.\+Sns\+Manager@{T\+Net.\+Sns.\+Sns\+Manager}}
+
+
+用户中心登录管理类  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_a54742e73031a8061b08022f463b933bf}{Get\+Random\+Pwd}} ()
+\begin{DoxyCompactList}\small\item\em 获取随机\+G\+U\+I\+D密码 \end{DoxyCompactList}\item 
+static string \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_aded1d06b617c84350ad0e164b77a91d4}{Get\+Reg\+Passport}} (string imei, bool is\+New=false, Func$<$ string, string $>$ encode\+Func=null)
+\begin{DoxyCompactList}\small\item\em 获取通行证 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_ae23b4b2c994c201985f596d2da981694}{Register}} (string pid, string password, string imei, bool is\+Custom=false)
+\begin{DoxyCompactList}\small\item\em 注册 \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_afdcc8f75a537a331b4d44ef121e215f9}{Register\+Weixin}} (string pid, string password, string imei, string open\+Id)
+\item 
+static int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_aa0b358b47bbac33d65c5cb2be6f741e5}{Quick\+Register\+Passport}} (string passport\+Id, string password, string imei, bool is\+Custom=false)
+\item 
+static int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_a63371665f4331ea04ecd498ef3c1bc86}{Quick\+Register\+Passport}} (string passport\+Id, string password, string imei, out int user\+Type, bool is\+Custom=false)
+\item 
+static string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_ad57fcb3381e2a5a0c51d0a7c0490ed1e}{Register\+Passport}} (string password, string imei, string\mbox{[}$\,$\mbox{]} param\+Names=null, string\mbox{[}$\,$\mbox{]} param\+Values=null)
+\begin{DoxyCompactList}\small\item\em 注册 \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_a66c9e1d69383f0c9234ca342d6a0f7aa}{Login}} (string user, string password, bool is\+Custom=false)
+\begin{DoxyCompactList}\small\item\em 登录\+W\+E\+B调用 \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_a7fb3467cf9b1dae456671690b7706659}{Login\+By\+Device}} (string user, string password, string imei, bool is\+Custom=false)
+\item 
+static int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_a09d21791af1b07f84d46faa4aaf0a8b1}{Login\+By\+Device}} (string user, string password, string imei, out \mbox{\hyperlink{namespace_t_net_1_1_sns_a338402ea3c5dbc36f95f0a7e4c1cd3a2}{Reg\+Type}} user\+Type, bool is\+Custom=false)
+\begin{DoxyCompactList}\small\item\em 登录 \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_a162cafb3af0c97584368ff67531e3a78}{Login\+By\+Weixin}} (string open\+Id)
+\item 
+static string \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_afd8c2b14a0748d363f9d2d1e2bdca40f}{Login\+By\+Retail}} (string retail\+Id, string retail\+User, string imei=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em 通道商验证登录 \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_a217ffada63ad62adf154cbad1a630e23}{Change\+Pass}} (string user, string password, string imei=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em 修改密码 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_a4ae5a1995dd3ee5dfc9048b32d655571}{Check\+Passport}} (string user)
+\begin{DoxyCompactList}\small\item\em 通行证检查 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_a6352e554313329f388273f85d4aaf37f}{Check\+Passport\+Pwd}} (string pid, string password, string imei=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em 检查通行证密码 \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_ab39d9d2a2fd35e526fb40148caae8c65}{Change\+User\+Info}} (string pid, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} snsuser)
+\begin{DoxyCompactList}\small\item\em 补全用户信息 \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_manager_a872db22add21af8cd3c1eb179677d30b}{Get\+User\+Info}} (string pid)
+\begin{DoxyCompactList}\small\item\em 获取用户信息 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+用户中心登录管理类 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_a217ffada63ad62adf154cbad1a630e23}\label{class_t_net_1_1_sns_1_1_sns_manager_a217ffada63ad62adf154cbad1a630e23}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Change\+Pass@{Change\+Pass}}
+\index{Change\+Pass@{Change\+Pass}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Change\+Pass()}{ChangePass()}}
+{\footnotesize\ttfamily static int T\+Net.\+Sns.\+Sns\+Manager.\+Change\+Pass (\begin{DoxyParamCaption}\item[{string}]{user,  }\item[{string}]{password,  }\item[{string}]{imei = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+修改密码 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em password} & \\
+\hline
+{\em imei} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_ab39d9d2a2fd35e526fb40148caae8c65}\label{class_t_net_1_1_sns_1_1_sns_manager_ab39d9d2a2fd35e526fb40148caae8c65}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Change\+User\+Info@{Change\+User\+Info}}
+\index{Change\+User\+Info@{Change\+User\+Info}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Change\+User\+Info()}{ChangeUserInfo()}}
+{\footnotesize\ttfamily static int T\+Net.\+Sns.\+Sns\+Manager.\+Change\+User\+Info (\begin{DoxyParamCaption}\item[{string}]{pid,  }\item[{\mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}}}]{snsuser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+补全用户信息 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pid} & \\
+\hline
+{\em snsuser} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_a4ae5a1995dd3ee5dfc9048b32d655571}\label{class_t_net_1_1_sns_1_1_sns_manager_a4ae5a1995dd3ee5dfc9048b32d655571}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Check\+Passport@{Check\+Passport}}
+\index{Check\+Passport@{Check\+Passport}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Check\+Passport()}{CheckPassport()}}
+{\footnotesize\ttfamily static bool T\+Net.\+Sns.\+Sns\+Manager.\+Check\+Passport (\begin{DoxyParamCaption}\item[{string}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+通行证检查 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_a6352e554313329f388273f85d4aaf37f}\label{class_t_net_1_1_sns_1_1_sns_manager_a6352e554313329f388273f85d4aaf37f}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Check\+Passport\+Pwd@{Check\+Passport\+Pwd}}
+\index{Check\+Passport\+Pwd@{Check\+Passport\+Pwd}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Check\+Passport\+Pwd()}{CheckPassportPwd()}}
+{\footnotesize\ttfamily static bool T\+Net.\+Sns.\+Sns\+Manager.\+Check\+Passport\+Pwd (\begin{DoxyParamCaption}\item[{string}]{pid,  }\item[{string}]{password,  }\item[{string}]{imei = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+检查通行证密码 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pid} & \\
+\hline
+{\em password} & \\
+\hline
+{\em imei} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_a54742e73031a8061b08022f463b933bf}\label{class_t_net_1_1_sns_1_1_sns_manager_a54742e73031a8061b08022f463b933bf}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Get\+Random\+Pwd@{Get\+Random\+Pwd}}
+\index{Get\+Random\+Pwd@{Get\+Random\+Pwd}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Random\+Pwd()}{GetRandomPwd()}}
+{\footnotesize\ttfamily static string T\+Net.\+Sns.\+Sns\+Manager.\+Get\+Random\+Pwd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+获取随机\+G\+U\+I\+D密码 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_aded1d06b617c84350ad0e164b77a91d4}\label{class_t_net_1_1_sns_1_1_sns_manager_aded1d06b617c84350ad0e164b77a91d4}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Get\+Reg\+Passport@{Get\+Reg\+Passport}}
+\index{Get\+Reg\+Passport@{Get\+Reg\+Passport}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Reg\+Passport()}{GetRegPassport()}}
+{\footnotesize\ttfamily static string \mbox{[}$\,$\mbox{]} T\+Net.\+Sns.\+Sns\+Manager.\+Get\+Reg\+Passport (\begin{DoxyParamCaption}\item[{string}]{imei,  }\item[{bool}]{is\+New = {\ttfamily false},  }\item[{Func$<$ string, string $>$}]{encode\+Func = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+获取通行证 
+
+
+\begin{DoxyParams}{Parameters}
+{\em imei} & if null then get new pid\\
+\hline
+{\em is\+New} & \\
+\hline
+{\em encode\+Func} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_a872db22add21af8cd3c1eb179677d30b}\label{class_t_net_1_1_sns_1_1_sns_manager_a872db22add21af8cd3c1eb179677d30b}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Get\+User\+Info@{Get\+User\+Info}}
+\index{Get\+User\+Info@{Get\+User\+Info}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Get\+User\+Info()}{GetUserInfo()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} T\+Net.\+Sns.\+Sns\+Manager.\+Get\+User\+Info (\begin{DoxyParamCaption}\item[{string}]{pid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+获取用户信息 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_a66c9e1d69383f0c9234ca342d6a0f7aa}\label{class_t_net_1_1_sns_1_1_sns_manager_a66c9e1d69383f0c9234ca342d6a0f7aa}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Login@{Login}}
+\index{Login@{Login}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily static int T\+Net.\+Sns.\+Sns\+Manager.\+Login (\begin{DoxyParamCaption}\item[{string}]{user,  }\item[{string}]{password,  }\item[{bool}]{is\+Custom = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+登录\+W\+E\+B调用 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em password} & \\
+\hline
+{\em is\+Custom} & use custom passport\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_a7fb3467cf9b1dae456671690b7706659}\label{class_t_net_1_1_sns_1_1_sns_manager_a7fb3467cf9b1dae456671690b7706659}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Login\+By\+Device@{Login\+By\+Device}}
+\index{Login\+By\+Device@{Login\+By\+Device}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Login\+By\+Device()}{LoginByDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int T\+Net.\+Sns.\+Sns\+Manager.\+Login\+By\+Device (\begin{DoxyParamCaption}\item[{string}]{user,  }\item[{string}]{password,  }\item[{string}]{imei,  }\item[{bool}]{is\+Custom = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em password} & \\
+\hline
+{\em imei} & \\
+\hline
+{\em is\+Custom} & use custom passport\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_a09d21791af1b07f84d46faa4aaf0a8b1}\label{class_t_net_1_1_sns_1_1_sns_manager_a09d21791af1b07f84d46faa4aaf0a8b1}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Login\+By\+Device@{Login\+By\+Device}}
+\index{Login\+By\+Device@{Login\+By\+Device}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Login\+By\+Device()}{LoginByDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int T\+Net.\+Sns.\+Sns\+Manager.\+Login\+By\+Device (\begin{DoxyParamCaption}\item[{string}]{user,  }\item[{string}]{password,  }\item[{string}]{imei,  }\item[{out \mbox{\hyperlink{namespace_t_net_1_1_sns_a338402ea3c5dbc36f95f0a7e4c1cd3a2}{Reg\+Type}}}]{user\+Type,  }\item[{bool}]{is\+Custom = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+登录 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em password} & \\
+\hline
+{\em imei} & \\
+\hline
+{\em user\+Type} & \\
+\hline
+{\em is\+Custom} & use custom passport\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_afd8c2b14a0748d363f9d2d1e2bdca40f}\label{class_t_net_1_1_sns_1_1_sns_manager_afd8c2b14a0748d363f9d2d1e2bdca40f}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Login\+By\+Retail@{Login\+By\+Retail}}
+\index{Login\+By\+Retail@{Login\+By\+Retail}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Login\+By\+Retail()}{LoginByRetail()}}
+{\footnotesize\ttfamily static string \mbox{[}$\,$\mbox{]} T\+Net.\+Sns.\+Sns\+Manager.\+Login\+By\+Retail (\begin{DoxyParamCaption}\item[{string}]{retail\+Id,  }\item[{string}]{retail\+User,  }\item[{string}]{imei = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+通道商验证登录 
+
+
+\begin{DoxyParams}{Parameters}
+{\em retail\+Id} & \\
+\hline
+{\em retail\+User} & \\
+\hline
+{\em imei} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_a162cafb3af0c97584368ff67531e3a78}\label{class_t_net_1_1_sns_1_1_sns_manager_a162cafb3af0c97584368ff67531e3a78}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Login\+By\+Weixin@{Login\+By\+Weixin}}
+\index{Login\+By\+Weixin@{Login\+By\+Weixin}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Login\+By\+Weixin()}{LoginByWeixin()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} T\+Net.\+Sns.\+Sns\+Manager.\+Login\+By\+Weixin (\begin{DoxyParamCaption}\item[{string}]{open\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em open\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_aa0b358b47bbac33d65c5cb2be6f741e5}\label{class_t_net_1_1_sns_1_1_sns_manager_aa0b358b47bbac33d65c5cb2be6f741e5}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Quick\+Register\+Passport@{Quick\+Register\+Passport}}
+\index{Quick\+Register\+Passport@{Quick\+Register\+Passport}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Quick\+Register\+Passport()}{QuickRegisterPassport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int T\+Net.\+Sns.\+Sns\+Manager.\+Quick\+Register\+Passport (\begin{DoxyParamCaption}\item[{string}]{passport\+Id,  }\item[{string}]{password,  }\item[{string}]{imei,  }\item[{bool}]{is\+Custom = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em passport\+Id} & \\
+\hline
+{\em password} & \\
+\hline
+{\em imei} & \\
+\hline
+{\em is\+Custom} & use custom passport\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+userid
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_a63371665f4331ea04ecd498ef3c1bc86}\label{class_t_net_1_1_sns_1_1_sns_manager_a63371665f4331ea04ecd498ef3c1bc86}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Quick\+Register\+Passport@{Quick\+Register\+Passport}}
+\index{Quick\+Register\+Passport@{Quick\+Register\+Passport}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Quick\+Register\+Passport()}{QuickRegisterPassport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int T\+Net.\+Sns.\+Sns\+Manager.\+Quick\+Register\+Passport (\begin{DoxyParamCaption}\item[{string}]{passport\+Id,  }\item[{string}]{password,  }\item[{string}]{imei,  }\item[{out int}]{user\+Type,  }\item[{bool}]{is\+Custom = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em passport\+Id} & \\
+\hline
+{\em password} & \\
+\hline
+{\em imei} & \\
+\hline
+{\em user\+Type} & \\
+\hline
+{\em is\+Custom} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_ae23b4b2c994c201985f596d2da981694}\label{class_t_net_1_1_sns_1_1_sns_manager_ae23b4b2c994c201985f596d2da981694}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Register@{Register}}
+\index{Register@{Register}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily static bool T\+Net.\+Sns.\+Sns\+Manager.\+Register (\begin{DoxyParamCaption}\item[{string}]{pid,  }\item[{string}]{password,  }\item[{string}]{imei,  }\item[{bool}]{is\+Custom = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+注册 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pid} & \\
+\hline
+{\em password} & \\
+\hline
+{\em imei} & \\
+\hline
+{\em is\+Custom} & use custom passport\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_ad57fcb3381e2a5a0c51d0a7c0490ed1e}\label{class_t_net_1_1_sns_1_1_sns_manager_ad57fcb3381e2a5a0c51d0a7c0490ed1e}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Register\+Passport@{Register\+Passport}}
+\index{Register\+Passport@{Register\+Passport}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Register\+Passport()}{RegisterPassport()}}
+{\footnotesize\ttfamily static string T\+Net.\+Sns.\+Sns\+Manager.\+Register\+Passport (\begin{DoxyParamCaption}\item[{string}]{password,  }\item[{string}]{imei,  }\item[{string \mbox{[}$\,$\mbox{]}}]{param\+Names = {\ttfamily null},  }\item[{string \mbox{[}$\,$\mbox{]}}]{param\+Values = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+注册 
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & \\
+\hline
+{\em imei} & \\
+\hline
+{\em param\+Names} & \\
+\hline
+{\em param\+Values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pid
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_manager_afdcc8f75a537a331b4d44ef121e215f9}\label{class_t_net_1_1_sns_1_1_sns_manager_afdcc8f75a537a331b4d44ef121e215f9}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}!Register\+Weixin@{Register\+Weixin}}
+\index{Register\+Weixin@{Register\+Weixin}!T\+Net\+::\+Sns\+::\+Sns\+Manager@{T\+Net\+::\+Sns\+::\+Sns\+Manager}}
+\subsubsection{\texorpdfstring{Register\+Weixin()}{RegisterWeixin()}}
+{\footnotesize\ttfamily static int T\+Net.\+Sns.\+Sns\+Manager.\+Register\+Weixin (\begin{DoxyParamCaption}\item[{string}]{pid,  }\item[{string}]{password,  }\item[{string}]{imei,  }\item[{string}]{open\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em pid} & \\
+\hline
+{\em password} & \\
+\hline
+{\em imei} & \\
+\hline
+{\em open\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\+:失败, 1\+:成功 2\+:已绑定
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sns/Sns\+Manager.\+cs\end{DoxyCompactItemize}

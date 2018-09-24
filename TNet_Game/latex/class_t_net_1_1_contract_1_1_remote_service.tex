@@ -1,0 +1,169 @@
+\hypertarget{class_t_net_1_1_contract_1_1_remote_service}{}\section{T\+Net.\+Contract.\+Remote\+Service Class Reference}
+\label{class_t_net_1_1_contract_1_1_remote_service}\index{T\+Net.\+Contract.\+Remote\+Service@{T\+Net.\+Contract.\+Remote\+Service}}
+
+
+Remote service.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_service_a32caa60c2d1d3110516eeb82022b7137}{Call}} (string route\+Path, Request\+Param param, Action$<$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_package}{Remote\+Package}} $>$ callback)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_service}{Remote\+Service}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_service_ad0b7ea44d67f1b4cf993a15df7ab0e64}{Create\+Http\+Proxy}} (string proxy\+Id, string url)
+\begin{DoxyCompactList}\small\item\em Create http proxy \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_service}{Remote\+Service}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_service_a868f0c715c9632a2a3542cd0546cc7ea}{Create\+Http\+Proxy}} (string proxy\+Id, string url, Encoding encoding, int? timeout)
+\begin{DoxyCompactList}\small\item\em Create tcp proxy \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_service}{Remote\+Service}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_service_a780d71828a6028cc3dc045fbc9c9dd2c}{Create\+Tcp\+Proxy}} (string proxy\+Id, string host, int port, int heart\+Interval)
+\begin{DoxyCompactList}\small\item\em Create tcp proxy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_service_afba9a8932721f36073ea0dc197316a2f}{Package\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Remote\+Callback \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_service_a359541f7a12b4829d9b5f0689326d9b8}{Pushed\+Handle}}
+\begin{DoxyCompactList}\small\item\em Server push to data callback \end{DoxyCompactList}\item 
+Remote\+Callback \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_service_ad910d4f7a265817237aa7be64b0ad11d}{Error\+Handle}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Remote service. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_remote_service_a32caa60c2d1d3110516eeb82022b7137}\label{class_t_net_1_1_contract_1_1_remote_service_a32caa60c2d1d3110516eeb82022b7137}} 
+\index{T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}!Call@{Call}}
+\index{Call@{Call}!T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}}
+\subsubsection{\texorpdfstring{Call()}{Call()}}
+{\footnotesize\ttfamily void T\+Net.\+Contract.\+Remote\+Service.\+Call (\begin{DoxyParamCaption}\item[{string}]{route\+Path,  }\item[{Request\+Param}]{param,  }\item[{Action$<$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_package}{Remote\+Package}} $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em route\+Path} & Call method path, ex\+:class\+Name.\+method\\
+\hline
+{\em param} & \\
+\hline
+{\em callback} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_remote_service_ad0b7ea44d67f1b4cf993a15df7ab0e64}\label{class_t_net_1_1_contract_1_1_remote_service_ad0b7ea44d67f1b4cf993a15df7ab0e64}} 
+\index{T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}!Create\+Http\+Proxy@{Create\+Http\+Proxy}}
+\index{Create\+Http\+Proxy@{Create\+Http\+Proxy}!T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}}
+\subsubsection{\texorpdfstring{Create\+Http\+Proxy()}{CreateHttpProxy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_service}{Remote\+Service}} T\+Net.\+Contract.\+Remote\+Service.\+Create\+Http\+Proxy (\begin{DoxyParamCaption}\item[{string}]{proxy\+Id,  }\item[{string}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create http proxy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em proxy\+Id} & \\
+\hline
+{\em url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_remote_service_a868f0c715c9632a2a3542cd0546cc7ea}\label{class_t_net_1_1_contract_1_1_remote_service_a868f0c715c9632a2a3542cd0546cc7ea}} 
+\index{T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}!Create\+Http\+Proxy@{Create\+Http\+Proxy}}
+\index{Create\+Http\+Proxy@{Create\+Http\+Proxy}!T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}}
+\subsubsection{\texorpdfstring{Create\+Http\+Proxy()}{CreateHttpProxy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_service}{Remote\+Service}} T\+Net.\+Contract.\+Remote\+Service.\+Create\+Http\+Proxy (\begin{DoxyParamCaption}\item[{string}]{proxy\+Id,  }\item[{string}]{url,  }\item[{Encoding}]{encoding,  }\item[{int?}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create tcp proxy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em proxy\+Id} & \\
+\hline
+{\em url} & \\
+\hline
+{\em encoding} & \\
+\hline
+{\em timeout} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_remote_service_a780d71828a6028cc3dc045fbc9c9dd2c}\label{class_t_net_1_1_contract_1_1_remote_service_a780d71828a6028cc3dc045fbc9c9dd2c}} 
+\index{T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}!Create\+Tcp\+Proxy@{Create\+Tcp\+Proxy}}
+\index{Create\+Tcp\+Proxy@{Create\+Tcp\+Proxy}!T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}}
+\subsubsection{\texorpdfstring{Create\+Tcp\+Proxy()}{CreateTcpProxy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_remote_service}{Remote\+Service}} T\+Net.\+Contract.\+Remote\+Service.\+Create\+Tcp\+Proxy (\begin{DoxyParamCaption}\item[{string}]{proxy\+Id,  }\item[{string}]{host,  }\item[{int}]{port,  }\item[{int}]{heart\+Interval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create tcp proxy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em proxy\+Id} & \\
+\hline
+{\em host} & \\
+\hline
+{\em port} & \\
+\hline
+{\em heart\+Interval} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_remote_service_afba9a8932721f36073ea0dc197316a2f}\label{class_t_net_1_1_contract_1_1_remote_service_afba9a8932721f36073ea0dc197316a2f}} 
+\index{T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}!Package\+Count@{Package\+Count}}
+\index{Package\+Count@{Package\+Count}!T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}}
+\subsubsection{\texorpdfstring{Package\+Count}{PackageCount}}
+{\footnotesize\ttfamily int T\+Net.\+Contract.\+Remote\+Service.\+Package\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_remote_service_ad910d4f7a265817237aa7be64b0ad11d}\label{class_t_net_1_1_contract_1_1_remote_service_ad910d4f7a265817237aa7be64b0ad11d}} 
+\index{T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}!Error\+Handle@{Error\+Handle}}
+\index{Error\+Handle@{Error\+Handle}!T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}}
+\subsubsection{\texorpdfstring{Error\+Handle}{ErrorHandle}}
+{\footnotesize\ttfamily Remote\+Callback T\+Net.\+Contract.\+Remote\+Service.\+Error\+Handle}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_remote_service_a359541f7a12b4829d9b5f0689326d9b8}\label{class_t_net_1_1_contract_1_1_remote_service_a359541f7a12b4829d9b5f0689326d9b8}} 
+\index{T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}!Pushed\+Handle@{Pushed\+Handle}}
+\index{Pushed\+Handle@{Pushed\+Handle}!T\+Net\+::\+Contract\+::\+Remote\+Service@{T\+Net\+::\+Contract\+::\+Remote\+Service}}
+\subsubsection{\texorpdfstring{Pushed\+Handle}{PushedHandle}}
+{\footnotesize\ttfamily Remote\+Callback T\+Net.\+Contract.\+Remote\+Service.\+Pushed\+Handle}
+
+
+
+Server push to data callback 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract/Remote\+Service.\+cs\end{DoxyCompactItemize}

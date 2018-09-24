@@ -1,0 +1,127 @@
+\hypertarget{class_t_net_1_1_i_o_1_1_big_endian_bit_converter}{}\section{T\+Net.\+I\+O.\+Big\+Endian\+Bit\+Converter Class Reference}
+\label{class_t_net_1_1_i_o_1_1_big_endian_bit_converter}\index{T\+Net.\+I\+O.\+Big\+Endian\+Bit\+Converter@{T\+Net.\+I\+O.\+Big\+Endian\+Bit\+Converter}}
+
+
+Implementation of \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} which converts to/from big-\/endian byte arrays.  
+
+
+Inheritance diagram for T\+Net.\+I\+O.\+Big\+Endian\+Bit\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_net_1_1_i_o_1_1_big_endian_bit_converter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a277e4b24764d25a882042be3c2e1f231}{Is\+Little\+Endian}} ()
+\begin{DoxyCompactList}\small\item\em Indicates the byte order (\char`\"{}endianess\char`\"{}) in which data is converted using this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a3fbb9a8e3f64036d8c8882a857ef4d38}{Copy\+Bytes\+Impl}} (long value, int bytes, byte\mbox{[}$\,$\mbox{]} buffer, int index)
+\begin{DoxyCompactList}\small\item\em Copies the specified number of bytes from value to buffer, starting at index. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a4d62837761d9100fbbc2540c53c15f1f}{From\+Bytes}} (byte\mbox{[}$\,$\mbox{]} buffer, int start\+Index, int bytes\+To\+Convert)
+\begin{DoxyCompactList}\small\item\em Returns a value built from the specified number of bytes from the given buffer, starting at index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override \mbox{\hyperlink{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dc}{Endianness}} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a2bb1043e1dd56349111dcf2b20169063}{Endianness}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates the byte order (\char`\"{}endianess\char`\"{}) in which data is converted using this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implementation of \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} which converts to/from big-\/endian byte arrays. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a3fbb9a8e3f64036d8c8882a857ef4d38}\label{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a3fbb9a8e3f64036d8c8882a857ef4d38}} 
+\index{T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter}!Copy\+Bytes\+Impl@{Copy\+Bytes\+Impl}}
+\index{Copy\+Bytes\+Impl@{Copy\+Bytes\+Impl}!T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Copy\+Bytes\+Impl()}{CopyBytesImpl()}}
+{\footnotesize\ttfamily override void T\+Net.\+I\+O.\+Big\+Endian\+Bit\+Converter.\+Copy\+Bytes\+Impl (\begin{DoxyParamCaption}\item[{long}]{value,  }\item[{int}]{bytes,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Copies the specified number of bytes from value to buffer, starting at index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to copy\\
+\hline
+{\em bytes} & The number of bytes to copy\\
+\hline
+{\em buffer} & The buffer to copy the bytes into\\
+\hline
+{\em index} & The index to start at\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_aee6cc9a29f052fc97acc51eef906e600}{T\+Net.\+I\+O.\+Endian\+Bit\+Converter}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a4d62837761d9100fbbc2540c53c15f1f}\label{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a4d62837761d9100fbbc2540c53c15f1f}} 
+\index{T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter}!From\+Bytes@{From\+Bytes}}
+\index{From\+Bytes@{From\+Bytes}!T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{From\+Bytes()}{FromBytes()}}
+{\footnotesize\ttfamily override long T\+Net.\+I\+O.\+Big\+Endian\+Bit\+Converter.\+From\+Bytes (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{start\+Index,  }\item[{int}]{bytes\+To\+Convert }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Returns a value built from the specified number of bytes from the given buffer, starting at index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The data in byte array format\\
+\hline
+{\em start\+Index} & The first index to use\\
+\hline
+{\em bytes\+To\+Convert} & The number of bytes to use\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value built from the given bytes
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a20baa5cfe592893363ad0574639a3002}{T\+Net.\+I\+O.\+Endian\+Bit\+Converter}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a277e4b24764d25a882042be3c2e1f231}\label{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a277e4b24764d25a882042be3c2e1f231}} 
+\index{T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter}!Is\+Little\+Endian@{Is\+Little\+Endian}}
+\index{Is\+Little\+Endian@{Is\+Little\+Endian}!T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Is\+Little\+Endian()}{IsLittleEndian()}}
+{\footnotesize\ttfamily override bool T\+Net.\+I\+O.\+Big\+Endian\+Bit\+Converter.\+Is\+Little\+Endian (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Indicates the byte order (\char`\"{}endianess\char`\"{}) in which data is converted using this class. 
+
+Different computer architectures store data using different byte orders. \char`\"{}\+Big-\/endian\char`\"{} means the most significant byte is on the left end of a word. \char`\"{}\+Little-\/endian\char`\"{} means the most significant byte is on the right end of a word. 
+
+\begin{DoxyReturn}{Returns}
+true if this converter is little-\/endian, false otherwise.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter_a0fe24cd850d8da0da9f75ef0467551cb}{T\+Net.\+I\+O.\+Endian\+Bit\+Converter}}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a2bb1043e1dd56349111dcf2b20169063}\label{class_t_net_1_1_i_o_1_1_big_endian_bit_converter_a2bb1043e1dd56349111dcf2b20169063}} 
+\index{T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter}!Endianness@{Endianness}}
+\index{Endianness@{Endianness}!T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter@{T\+Net\+::\+I\+O\+::\+Big\+Endian\+Bit\+Converter}}
+\subsubsection{\texorpdfstring{Endianness}{Endianness}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dc}{Endianness}} T\+Net.\+I\+O.\+Big\+Endian\+Bit\+Converter.\+Endianness\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates the byte order (\char`\"{}endianess\char`\"{}) in which data is converted using this class. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract\+\_\+/\+I\+O/Big\+Endian\+Bit\+Converter.\+cs\end{DoxyCompactItemize}

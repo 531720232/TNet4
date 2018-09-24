@@ -1,0 +1,105 @@
+\hypertarget{interface_t_net_1_1_combat_1_1_i_single_combat}{}\section{T\+Net.\+Combat.\+I\+Single\+Combat Interface Reference}
+\label{interface_t_net_1_1_combat_1_1_i_single_combat}\index{T\+Net.\+Combat.\+I\+Single\+Combat@{T\+Net.\+Combat.\+I\+Single\+Combat}}
+
+
+一对一战斗接口  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_t_net_1_1_combat_1_1_i_single_combat_a02e8c6b12a64e732bed4c7bcf98eae0b}{Set\+Attack}} (\mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue}{Embattle\+Queue}} combat\+Grid)
+\begin{DoxyCompactList}\small\item\em 加入攻击方阵列 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_t_net_1_1_combat_1_1_i_single_combat_a6e2dcd2a555712742c45e4b3808a25df}{Set\+Defend}} (\mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue}{Embattle\+Queue}} combat\+Grid)
+\begin{DoxyCompactList}\small\item\em 加入防守方阵列 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_t_net_1_1_combat_1_1_i_single_combat_a977c4ce9c7f73e1da379fbc1a3d5f00f}{Doing}} ()
+\begin{DoxyCompactList}\small\item\em 交战 \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{interface_t_net_1_1_combat_1_1_i_single_combat_ae7ab7a80fe1d9da370449e29c4ee1657}{Get\+Process\+Result}} ()
+\begin{DoxyCompactList}\small\item\em 交战过程 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interface_t_net_1_1_combat_1_1_i_single_combat_a8696c3f6a2760e9b672eb112c8797155}{Bout\+Num}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 回合数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+一对一战斗接口 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_t_net_1_1_combat_1_1_i_single_combat_a977c4ce9c7f73e1da379fbc1a3d5f00f}\label{interface_t_net_1_1_combat_1_1_i_single_combat_a977c4ce9c7f73e1da379fbc1a3d5f00f}} 
+\index{T\+Net\+::\+Combat\+::\+I\+Single\+Combat@{T\+Net\+::\+Combat\+::\+I\+Single\+Combat}!Doing@{Doing}}
+\index{Doing@{Doing}!T\+Net\+::\+Combat\+::\+I\+Single\+Combat@{T\+Net\+::\+Combat\+::\+I\+Single\+Combat}}
+\subsubsection{\texorpdfstring{Doing()}{Doing()}}
+{\footnotesize\ttfamily bool T\+Net.\+Combat.\+I\+Single\+Combat.\+Doing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+交战 
+
+\begin{DoxyReturn}{Returns}
+返回胜利或失败
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_t_net_1_1_combat_1_1_i_single_combat_ae7ab7a80fe1d9da370449e29c4ee1657}\label{interface_t_net_1_1_combat_1_1_i_single_combat_ae7ab7a80fe1d9da370449e29c4ee1657}} 
+\index{T\+Net\+::\+Combat\+::\+I\+Single\+Combat@{T\+Net\+::\+Combat\+::\+I\+Single\+Combat}!Get\+Process\+Result@{Get\+Process\+Result}}
+\index{Get\+Process\+Result@{Get\+Process\+Result}!T\+Net\+::\+Combat\+::\+I\+Single\+Combat@{T\+Net\+::\+Combat\+::\+I\+Single\+Combat}}
+\subsubsection{\texorpdfstring{Get\+Process\+Result()}{GetProcessResult()}}
+{\footnotesize\ttfamily object T\+Net.\+Combat.\+I\+Single\+Combat.\+Get\+Process\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+交战过程 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_t_net_1_1_combat_1_1_i_single_combat_a02e8c6b12a64e732bed4c7bcf98eae0b}\label{interface_t_net_1_1_combat_1_1_i_single_combat_a02e8c6b12a64e732bed4c7bcf98eae0b}} 
+\index{T\+Net\+::\+Combat\+::\+I\+Single\+Combat@{T\+Net\+::\+Combat\+::\+I\+Single\+Combat}!Set\+Attack@{Set\+Attack}}
+\index{Set\+Attack@{Set\+Attack}!T\+Net\+::\+Combat\+::\+I\+Single\+Combat@{T\+Net\+::\+Combat\+::\+I\+Single\+Combat}}
+\subsubsection{\texorpdfstring{Set\+Attack()}{SetAttack()}}
+{\footnotesize\ttfamily void T\+Net.\+Combat.\+I\+Single\+Combat.\+Set\+Attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue}{Embattle\+Queue}}}]{combat\+Grid }\end{DoxyParamCaption})}
+
+
+
+加入攻击方阵列 
+
+
+\begin{DoxyParams}{Parameters}
+{\em combat\+Grid} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_t_net_1_1_combat_1_1_i_single_combat_a6e2dcd2a555712742c45e4b3808a25df}\label{interface_t_net_1_1_combat_1_1_i_single_combat_a6e2dcd2a555712742c45e4b3808a25df}} 
+\index{T\+Net\+::\+Combat\+::\+I\+Single\+Combat@{T\+Net\+::\+Combat\+::\+I\+Single\+Combat}!Set\+Defend@{Set\+Defend}}
+\index{Set\+Defend@{Set\+Defend}!T\+Net\+::\+Combat\+::\+I\+Single\+Combat@{T\+Net\+::\+Combat\+::\+I\+Single\+Combat}}
+\subsubsection{\texorpdfstring{Set\+Defend()}{SetDefend()}}
+{\footnotesize\ttfamily void T\+Net.\+Combat.\+I\+Single\+Combat.\+Set\+Defend (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue}{Embattle\+Queue}}}]{combat\+Grid }\end{DoxyParamCaption})}
+
+
+
+加入防守方阵列 
+
+
+\begin{DoxyParams}{Parameters}
+{\em combat\+Grid} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_t_net_1_1_combat_1_1_i_single_combat_a8696c3f6a2760e9b672eb112c8797155}\label{interface_t_net_1_1_combat_1_1_i_single_combat_a8696c3f6a2760e9b672eb112c8797155}} 
+\index{T\+Net\+::\+Combat\+::\+I\+Single\+Combat@{T\+Net\+::\+Combat\+::\+I\+Single\+Combat}!Bout\+Num@{Bout\+Num}}
+\index{Bout\+Num@{Bout\+Num}!T\+Net\+::\+Combat\+::\+I\+Single\+Combat@{T\+Net\+::\+Combat\+::\+I\+Single\+Combat}}
+\subsubsection{\texorpdfstring{Bout\+Num}{BoutNum}}
+{\footnotesize\ttfamily int T\+Net.\+Combat.\+I\+Single\+Combat.\+Bout\+Num\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+回合数 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Combat/I\+Single\+Combat.\+cs\end{DoxyCompactItemize}

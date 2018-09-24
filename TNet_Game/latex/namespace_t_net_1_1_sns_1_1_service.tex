@@ -1,0 +1,116 @@
+\hypertarget{namespace_t_net_1_1_sns_1_1_service}{}\section{T\+Net.\+Sns.\+Service Namespace Reference}
+\label{namespace_t_net_1_1_sns_1_1_service}\index{T\+Net.\+Sns.\+Service@{T\+Net.\+Sns.\+Service}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler}{Base\+Http\+Handler}}
+\item 
+class \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_handler_data}{Handler\+Data}}
+\item 
+class \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_handler_exception}{Handler\+Exception}}
+\item 
+class {\bfseries Handler\+Manager}
+\item 
+interface \mbox{\hyperlink{interface_t_net_1_1_sns_1_1_service_1_1_i_handler}{I\+Handler}}
+\item 
+interface \mbox{\hyperlink{interface_t_net_1_1_sns_1_1_service_1_1_i_response_formater}{I\+Response\+Formater}}
+\item 
+class \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_json_response_formater}{Json\+Response\+Formater}}
+\item 
+class \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_login_token}{Login\+Token}}
+\item 
+class \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_passport_info}{Passport\+Info}}
+\item 
+class \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_response_body}{Response\+Body}}
+\item 
+class \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_response_data}{Response\+Data}}
+\item 
+class \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_user_token}{User\+Token}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ac6e96f45529b532afd48a137e408ce35}{Response\+Type}} \{ \mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ac6e96f45529b532afd48a137e408ce35aeed8d85b888a6c015834240885ee6333}{Response\+Type.\+Json}} = 0
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8}{State\+Code}} \{ \newline
+\mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ae0aa021e21dddbd6d8cecec71e9cf564}{State\+Code.\+OK}} = 0, 
+\mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8a902b0d55fddef6f8d651fe1035b7d4bd}{State\+Code.\+Error}} = 100, 
+\mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8a0555c5e038900772975ed5b2e00fddc0}{State\+Code.\+Sign\+Error}} = 101, 
+\mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8aa7eca7fc3f962d43e3cf02ec194aee6f}{State\+Code.\+No\+Handler}} = 102, 
+\newline
+\mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8aff4758f00cc782a488169f97e0c50376}{State\+Code.\+Passwork\+Error}} = 103, 
+\mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ab223364e8c3ac195629f1297336e5984}{State\+Code.\+No\+Token}} = 105, 
+\mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ab57797e252164f476125ec32002e3580}{State\+Code.\+Token\+Expired}} = 106, 
+\mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ac85a251cc457840f1e032f1b733e9398}{State\+Code.\+Timeout}} = 107, 
+\newline
+\mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ae41199faa7290c167f70f314c5e6c165}{State\+Code.\+Parse\+Error}} = 108
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_t_net_1_1_sns_1_1_service_ac6e96f45529b532afd48a137e408ce35}\label{namespace_t_net_1_1_sns_1_1_service_ac6e96f45529b532afd48a137e408ce35}} 
+\index{T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}!Response\+Type@{Response\+Type}}
+\index{Response\+Type@{Response\+Type}!T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}}
+\subsubsection{\texorpdfstring{Response\+Type}{ResponseType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ac6e96f45529b532afd48a137e408ce35}{T\+Net.\+Sns.\+Service.\+Response\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Json@{Json}!T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}}\index{T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}!Json@{Json}}}\mbox{\Hypertarget{namespace_t_net_1_1_sns_1_1_service_ac6e96f45529b532afd48a137e408ce35aeed8d85b888a6c015834240885ee6333}\label{namespace_t_net_1_1_sns_1_1_service_ac6e96f45529b532afd48a137e408ce35aeed8d85b888a6c015834240885ee6333}} 
+Json&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8}\label{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8}} 
+\index{T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}!State\+Code@{State\+Code}}
+\index{State\+Code@{State\+Code}!T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}}
+\subsubsection{\texorpdfstring{State\+Code}{StateCode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8}{T\+Net.\+Sns.\+Service.\+State\+Code}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OK@{OK}!T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}}\index{T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}!OK@{OK}}}\mbox{\Hypertarget{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ae0aa021e21dddbd6d8cecec71e9cf564}\label{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ae0aa021e21dddbd6d8cecec71e9cf564}} 
+OK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Error@{Error}!T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}}\index{T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}!Error@{Error}}}\mbox{\Hypertarget{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8a902b0d55fddef6f8d651fe1035b7d4bd}\label{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8a902b0d55fddef6f8d651fe1035b7d4bd}} 
+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sign\+Error@{Sign\+Error}!T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}}\index{T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}!Sign\+Error@{Sign\+Error}}}\mbox{\Hypertarget{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8a0555c5e038900772975ed5b2e00fddc0}\label{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8a0555c5e038900772975ed5b2e00fddc0}} 
+Sign\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{No\+Handler@{No\+Handler}!T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}}\index{T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}!No\+Handler@{No\+Handler}}}\mbox{\Hypertarget{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8aa7eca7fc3f962d43e3cf02ec194aee6f}\label{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8aa7eca7fc3f962d43e3cf02ec194aee6f}} 
+No\+Handler&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Passwork\+Error@{Passwork\+Error}!T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}}\index{T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}!Passwork\+Error@{Passwork\+Error}}}\mbox{\Hypertarget{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8aff4758f00cc782a488169f97e0c50376}\label{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8aff4758f00cc782a488169f97e0c50376}} 
+Passwork\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{No\+Token@{No\+Token}!T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}}\index{T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}!No\+Token@{No\+Token}}}\mbox{\Hypertarget{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ab223364e8c3ac195629f1297336e5984}\label{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ab223364e8c3ac195629f1297336e5984}} 
+No\+Token&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Token\+Expired@{Token\+Expired}!T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}}\index{T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}!Token\+Expired@{Token\+Expired}}}\mbox{\Hypertarget{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ab57797e252164f476125ec32002e3580}\label{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ab57797e252164f476125ec32002e3580}} 
+Token\+Expired&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Timeout@{Timeout}!T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}}\index{T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}!Timeout@{Timeout}}}\mbox{\Hypertarget{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ac85a251cc457840f1e032f1b733e9398}\label{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ac85a251cc457840f1e032f1b733e9398}} 
+Timeout&Request account server Timeout. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Parse\+Error@{Parse\+Error}!T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}}\index{T\+Net\+::\+Sns\+::\+Service@{T\+Net\+::\+Sns\+::\+Service}!Parse\+Error@{Parse\+Error}}}\mbox{\Hypertarget{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ae41199faa7290c167f70f314c5e6c165}\label{namespace_t_net_1_1_sns_1_1_service_ab93c34900ebc0ee83129c9ccab1e4bd8ae41199faa7290c167f70f314c5e6c165}} 
+Parse\+Error&Parse json error. \\
+\hline
+
+\end{DoxyEnumFields}

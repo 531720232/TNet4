@@ -521,6 +521,7 @@ namespace TNet.Model
         /// <returns></returns>
         public string GetKeyCode()
         {
+           
             string value = KeyValue;
             foreach (string key in _schema.Keys)
             {
@@ -528,7 +529,8 @@ namespace TNet.Model
                 {
                     value += KeyCodeJoinChar;
                 }
-                value += EncodeKeyCode(GetPropertyValue(key).ToNotNullString());
+                var va = key;// GetPropertyValue(key);
+                value += EncodeKeyCode(va);//(GetPropertyValue(key).ToNotNullString());
             }
             if (string.IsNullOrEmpty(value))
             {

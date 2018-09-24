@@ -1,0 +1,147 @@
+\hypertarget{class_t_net_1_1_message_1_1_broadcast_timer}{}\section{T\+Net.\+Message.\+Broadcast\+Timer Class Reference}
+\label{class_t_net_1_1_message_1_1_broadcast_timer}\index{T\+Net.\+Message.\+Broadcast\+Timer@{T\+Net.\+Message.\+Broadcast\+Timer}}
+
+
+广播定时器  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_timer_a1448fe69d16ce4a9e2b202e1d82fd944}{Broadcast\+Callback}} (\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} message)
+\item 
+\mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_timer_abcf0ff0d54000d1286590c1aed0efe15}{Broadcast\+Timer}} (\mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_timer_a1448fe69d16ce4a9e2b202e1d82fd944}{Broadcast\+Callback}} callback)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_timer}{T\+Net.\+Message.\+Broadcast\+Timer}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_timer_a6903709845c4dc7a6d5b8c325f50e993}{Add}} (\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} message, string begin\+Time, string end\+Time, bool is\+Cycle, int second\+Interval)
+\begin{DoxyCompactList}\small\item\em Add the specified message, begin\+Time, end\+Time, is\+Cycle and second\+Interval. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_timer_ae3e883e10fa7270176e4d4bdd00c0cc4}{Add}} (\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} message, Day\+Of\+Week week, string begin\+Time, string end\+Time, bool is\+Cycle, int second\+Interval)
+\begin{DoxyCompactList}\small\item\em Add the specified message, week, begin\+Time, end\+Time, is\+Cycle and second\+Interval. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_timer_ae158ae35265a5bc4d3047c2410cc6571}{Remove}} (Guid message\+Id)
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_timer_a2bf88ef8fa26ae3e0b03c90806c8fc19}{Remove}} (Predicate$<$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} $>$ match)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+广播定时器 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_timer_abcf0ff0d54000d1286590c1aed0efe15}\label{class_t_net_1_1_message_1_1_broadcast_timer_abcf0ff0d54000d1286590c1aed0efe15}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Timer@{T\+Net\+::\+Message\+::\+Broadcast\+Timer}!Broadcast\+Timer@{Broadcast\+Timer}}
+\index{Broadcast\+Timer@{Broadcast\+Timer}!T\+Net\+::\+Message\+::\+Broadcast\+Timer@{T\+Net\+::\+Message\+::\+Broadcast\+Timer}}
+\subsubsection{\texorpdfstring{Broadcast\+Timer()}{BroadcastTimer()}}
+{\footnotesize\ttfamily T\+Net.\+Message.\+Broadcast\+Timer.\+Broadcast\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_timer_a1448fe69d16ce4a9e2b202e1d82fd944}{Broadcast\+Callback}}}]{callback }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_timer}{T\+Net.\+Message.\+Broadcast\+Timer}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & Callback.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_timer_a6903709845c4dc7a6d5b8c325f50e993}\label{class_t_net_1_1_message_1_1_broadcast_timer_a6903709845c4dc7a6d5b8c325f50e993}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Timer@{T\+Net\+::\+Message\+::\+Broadcast\+Timer}!Add@{Add}}
+\index{Add@{Add}!T\+Net\+::\+Message\+::\+Broadcast\+Timer@{T\+Net\+::\+Message\+::\+Broadcast\+Timer}}
+\subsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void T\+Net.\+Message.\+Broadcast\+Timer.\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}}}]{message,  }\item[{string}]{begin\+Time,  }\item[{string}]{end\+Time,  }\item[{bool}]{is\+Cycle,  }\item[{int}]{second\+Interval }\end{DoxyParamCaption})}
+
+
+
+Add the specified message, begin\+Time, end\+Time, is\+Cycle and second\+Interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \mbox{\hyperlink{namespace_t_net_1_1_message}{Message}}.\\
+\hline
+{\em begin\+Time} & Begin time.\\
+\hline
+{\em end\+Time} & End time.\\
+\hline
+{\em is\+Cycle} & If set to {\ttfamily true} is cycle.\\
+\hline
+{\em second\+Interval} & Second interval.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_timer_ae3e883e10fa7270176e4d4bdd00c0cc4}\label{class_t_net_1_1_message_1_1_broadcast_timer_ae3e883e10fa7270176e4d4bdd00c0cc4}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Timer@{T\+Net\+::\+Message\+::\+Broadcast\+Timer}!Add@{Add}}
+\index{Add@{Add}!T\+Net\+::\+Message\+::\+Broadcast\+Timer@{T\+Net\+::\+Message\+::\+Broadcast\+Timer}}
+\subsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void T\+Net.\+Message.\+Broadcast\+Timer.\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}}}]{message,  }\item[{Day\+Of\+Week}]{week,  }\item[{string}]{begin\+Time,  }\item[{string}]{end\+Time,  }\item[{bool}]{is\+Cycle,  }\item[{int}]{second\+Interval }\end{DoxyParamCaption})}
+
+
+
+Add the specified message, week, begin\+Time, end\+Time, is\+Cycle and second\+Interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \mbox{\hyperlink{namespace_t_net_1_1_message}{Message}}.\\
+\hline
+{\em week} & Week.\\
+\hline
+{\em begin\+Time} & Begin time.\\
+\hline
+{\em end\+Time} & End time. void\\
+\hline
+{\em is\+Cycle} & If set to {\ttfamily true} is cycle. void\\
+\hline
+{\em second\+Interval} & Second interval. void\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_timer_a1448fe69d16ce4a9e2b202e1d82fd944}\label{class_t_net_1_1_message_1_1_broadcast_timer_a1448fe69d16ce4a9e2b202e1d82fd944}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Timer@{T\+Net\+::\+Message\+::\+Broadcast\+Timer}!Broadcast\+Callback@{Broadcast\+Callback}}
+\index{Broadcast\+Callback@{Broadcast\+Callback}!T\+Net\+::\+Message\+::\+Broadcast\+Timer@{T\+Net\+::\+Message\+::\+Broadcast\+Timer}}
+\subsubsection{\texorpdfstring{Broadcast\+Callback()}{BroadcastCallback()}}
+{\footnotesize\ttfamily delegate void T\+Net.\+Message.\+Broadcast\+Timer.\+Broadcast\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}}}]{message }\end{DoxyParamCaption})}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_timer_ae158ae35265a5bc4d3047c2410cc6571}\label{class_t_net_1_1_message_1_1_broadcast_timer_ae158ae35265a5bc4d3047c2410cc6571}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Timer@{T\+Net\+::\+Message\+::\+Broadcast\+Timer}!Remove@{Remove}}
+\index{Remove@{Remove}!T\+Net\+::\+Message\+::\+Broadcast\+Timer@{T\+Net\+::\+Message\+::\+Broadcast\+Timer}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool T\+Net.\+Message.\+Broadcast\+Timer.\+Remove (\begin{DoxyParamCaption}\item[{Guid}]{message\+Id }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_timer_a2bf88ef8fa26ae3e0b03c90806c8fc19}\label{class_t_net_1_1_message_1_1_broadcast_timer_a2bf88ef8fa26ae3e0b03c90806c8fc19}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Timer@{T\+Net\+::\+Message\+::\+Broadcast\+Timer}!Remove@{Remove}}
+\index{Remove@{Remove}!T\+Net\+::\+Message\+::\+Broadcast\+Timer@{T\+Net\+::\+Message\+::\+Broadcast\+Timer}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool T\+Net.\+Message.\+Broadcast\+Timer.\+Remove (\begin{DoxyParamCaption}\item[{Predicate$<$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em match} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Message/Broadcast\+Timer.\+cs\end{DoxyCompactItemize}

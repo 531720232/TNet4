@@ -1,0 +1,365 @@
+\hypertarget{class_t_net_1_1_lang_1_1_language}{}\section{T\+Net.\+Lang.\+Language Class Reference}
+\label{class_t_net_1_1_lang_1_1_language}\index{T\+Net.\+Lang.\+Language@{T\+Net.\+Lang.\+Language}}
+
+
+Game language setting.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a1b375c75980d9b5fe4648f39a594d311}{Set\+Lang}} ()
+\begin{DoxyCompactList}\small\item\em Set language object. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_aa1896863a4e71b42b4f55133c668dbe0}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset lang. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a44e52b163e643daf2ab4b7cb27ea81f4}{Error\+Code}} = 10000
+\begin{DoxyCompactList}\small\item\em The error code. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_adaad998ea9c55e29ca616238bb03a30c}{Timeout\+Code}} = 10001
+\begin{DoxyCompactList}\small\item\em The no login or timeout code \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_ac2373f5708633f977c4f248271006c29}{Kicked\+Out\+Code}} = 10002
+\begin{DoxyCompactList}\small\item\em Was kicked out of the server error code \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_aee77bbbba94f1e261dc70a18e63c1ff2}{Validate\+Code}} = 10003
+\begin{DoxyCompactList}\small\item\em Request param error code \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a71ad4a2d5b8257a750801abf369d7f14}{Duplicate\+Code}} = 10004
+\begin{DoxyCompactList}\small\item\em Duplicate of error code \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a6e8a827aaf8e28279890f58fc4a5f07c}{Maintain\+Code}} = 10005
+\begin{DoxyCompactList}\small\item\em Maintain of error code \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a31effda7d2661df470ba44de9d05839a}{Lock\+Timeout\+Code}} = 10006
+\begin{DoxyCompactList}\small\item\em lock time of error code \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a04a6ba81965f6884f01627f1aebca2ff}{Sign\+Error}} = \char`\"{}Sign error.\char`\"{}
+\begin{DoxyCompactList}\small\item\em 验签出错 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a169ffa13ad898518ba25a8e6152cabea}{Validate\+Error}} = \char`\"{}Request\textquotesingle{}s param validate error.\char`\"{}
+\begin{DoxyCompactList}\small\item\em validate error \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_ac2b5a3cde294186ce50a2b3f63119c7e}{Server\+Busy}} = \char`\"{}The server is busy.\char`\"{}
+\begin{DoxyCompactList}\small\item\em The system is busy \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_aee2d4350d1336065f4e171e2bcf33b0b}{Url\+Element}} = \char`\"{}Request\textquotesingle{}s param error.\char`\"{}
+\begin{DoxyCompactList}\small\item\em param error \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_ae3b82b6ec41445ca014b29a974d397ab}{Url\+No\+Param}} = \char`\"{}Parameter name\+: \{0\} does not exist.\char`\"{}
+\begin{DoxyCompactList}\small\item\em 参数名\+:\{0\}不存在 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_af907649d51b824cc1c9e4a5967e0e8c2}{Url\+Param\+Out\+Range}} = \char`\"{}Parameter name\+: \{0\} is out of range \mbox{[}\{1\} -\/ \{2\}\mbox{]}\char`\"{}
+\begin{DoxyCompactList}\small\item\em 参数名\+:\{0\}超出范围\mbox{[}\{1\}-\/\{2\}\mbox{]} \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_af1a53ceca62027e4c711678a60e47e15}{Server\+Maintain}} = \char`\"{}Server is being updated.\char`\"{}
+\begin{DoxyCompactList}\small\item\em 服务器正在维护 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_abedea2869c4abedcee3657759334e14a}{Server\+Loading}} = \char`\"{}The server is restarted, please wait...\char`\"{}
+\begin{DoxyCompactList}\small\item\em 服务器正在重启中，请稍候... \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a5e773ddaeca098c847ef0ec5410094c4}{Request\+Timeout}} = \char`\"{}Request too often, please rest.\char`\"{}
+\begin{DoxyCompactList}\small\item\em 请求超时 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a81136fdf5a0d2cfc44c9178d699d0d1e}{Password\+Error}} = \char`\"{}You enter the account or password is error.\char`\"{}
+\begin{DoxyCompactList}\small\item\em 您输入的账号或密码不正确 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a9e949d64dce700c30c185139f3313ce2}{Load\+Data\+Error}} = \char`\"{}Server data failed to load.\char`\"{}
+\begin{DoxyCompactList}\small\item\em 加载数据失败 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a5e332303757d547cee972417c3629e00}{Acount\+Is\+Locked}} = \char`\"{}The account has been locked.\char`\"{}
+\begin{DoxyCompactList}\small\item\em 该账号已被封禁 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a58d185e4119ec522828844a02c00ba1e}{Acount\+No\+Login}} = \char`\"{}The account is not registered or has expired.\char`\"{}
+\begin{DoxyCompactList}\small\item\em 您的账号未登录或已过期 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a00b1d41e65935fe7b5589f4ec329b1a9}{Acount\+Logined}} = \char`\"{}The account has been registered elsewhere.\char`\"{}
+\begin{DoxyCompactList}\small\item\em 您的账号已在其它地方登录 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a721006a6bd95f0fc5d34c8e8565ce357}{App\+Store\+Pay\+Error}} = \char`\"{}Pay error.\char`\"{}
+\begin{DoxyCompactList}\small\item\em 充值失败 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a1083afdf1007d65e61edfbe6638ceedf}{Get\+Access\+Failure}} = \char`\"{}Get token failed.\char`\"{}
+\begin{DoxyCompactList}\small\item\em 获取受权失败 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a57ccd81a99a702a7f06b6dc0ef43a16d}{Language}} ()
+\begin{DoxyCompactList}\small\item\em The instance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static dynamic \mbox{\hyperlink{class_t_net_1_1_lang_1_1_language_a050dce524a6d108f4b39e6e5f47519bc}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get single language. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Game language setting. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a57ccd81a99a702a7f06b6dc0ef43a16d}\label{class_t_net_1_1_lang_1_1_language_a57ccd81a99a702a7f06b6dc0ef43a16d}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Language@{Language}}
+\index{Language@{Language}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Language()}{Language()}}
+{\footnotesize\ttfamily T\+Net.\+Lang.\+Language.\+Language (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The instance 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_aa1896863a4e71b42b4f55133c668dbe0}\label{class_t_net_1_1_lang_1_1_language_aa1896863a4e71b42b4f55133c668dbe0}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Reset@{Reset}}
+\index{Reset@{Reset}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily static void T\+Net.\+Lang.\+Language.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reset lang. 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a1b375c75980d9b5fe4648f39a594d311}\label{class_t_net_1_1_lang_1_1_language_a1b375c75980d9b5fe4648f39a594d311}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Set\+Lang@{Set\+Lang}}
+\index{Set\+Lang@{Set\+Lang}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Set\+Lang()}{SetLang()}}
+{\footnotesize\ttfamily static void T\+Net.\+Lang.\+Language.\+Set\+Lang (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set language object. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a5e332303757d547cee972417c3629e00}\label{class_t_net_1_1_lang_1_1_language_a5e332303757d547cee972417c3629e00}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Acount\+Is\+Locked@{Acount\+Is\+Locked}}
+\index{Acount\+Is\+Locked@{Acount\+Is\+Locked}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Acount\+Is\+Locked}{AcountIsLocked}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Acount\+Is\+Locked = \char`\"{}The account has been locked.\char`\"{}}
+
+
+
+该账号已被封禁 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a00b1d41e65935fe7b5589f4ec329b1a9}\label{class_t_net_1_1_lang_1_1_language_a00b1d41e65935fe7b5589f4ec329b1a9}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Acount\+Logined@{Acount\+Logined}}
+\index{Acount\+Logined@{Acount\+Logined}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Acount\+Logined}{AcountLogined}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Acount\+Logined = \char`\"{}The account has been registered elsewhere.\char`\"{}}
+
+
+
+您的账号已在其它地方登录 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a58d185e4119ec522828844a02c00ba1e}\label{class_t_net_1_1_lang_1_1_language_a58d185e4119ec522828844a02c00ba1e}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Acount\+No\+Login@{Acount\+No\+Login}}
+\index{Acount\+No\+Login@{Acount\+No\+Login}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Acount\+No\+Login}{AcountNoLogin}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Acount\+No\+Login = \char`\"{}The account is not registered or has expired.\char`\"{}}
+
+
+
+您的账号未登录或已过期 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a721006a6bd95f0fc5d34c8e8565ce357}\label{class_t_net_1_1_lang_1_1_language_a721006a6bd95f0fc5d34c8e8565ce357}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!App\+Store\+Pay\+Error@{App\+Store\+Pay\+Error}}
+\index{App\+Store\+Pay\+Error@{App\+Store\+Pay\+Error}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{App\+Store\+Pay\+Error}{AppStorePayError}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+App\+Store\+Pay\+Error = \char`\"{}Pay error.\char`\"{}}
+
+
+
+充值失败 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a71ad4a2d5b8257a750801abf369d7f14}\label{class_t_net_1_1_lang_1_1_language_a71ad4a2d5b8257a750801abf369d7f14}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Duplicate\+Code@{Duplicate\+Code}}
+\index{Duplicate\+Code@{Duplicate\+Code}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Duplicate\+Code}{DuplicateCode}}
+{\footnotesize\ttfamily int T\+Net.\+Lang.\+Language.\+Duplicate\+Code = 10004}
+
+
+
+Duplicate of error code 
+
+The kicked out code.\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a44e52b163e643daf2ab4b7cb27ea81f4}\label{class_t_net_1_1_lang_1_1_language_a44e52b163e643daf2ab4b7cb27ea81f4}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Error\+Code@{Error\+Code}}
+\index{Error\+Code@{Error\+Code}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Error\+Code}{ErrorCode}}
+{\footnotesize\ttfamily int T\+Net.\+Lang.\+Language.\+Error\+Code = 10000}
+
+
+
+The error code. 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a1083afdf1007d65e61edfbe6638ceedf}\label{class_t_net_1_1_lang_1_1_language_a1083afdf1007d65e61edfbe6638ceedf}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Get\+Access\+Failure@{Get\+Access\+Failure}}
+\index{Get\+Access\+Failure@{Get\+Access\+Failure}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Get\+Access\+Failure}{GetAccessFailure}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Get\+Access\+Failure = \char`\"{}Get token failed.\char`\"{}}
+
+
+
+获取受权失败 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_ac2373f5708633f977c4f248271006c29}\label{class_t_net_1_1_lang_1_1_language_ac2373f5708633f977c4f248271006c29}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Kicked\+Out\+Code@{Kicked\+Out\+Code}}
+\index{Kicked\+Out\+Code@{Kicked\+Out\+Code}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Kicked\+Out\+Code}{KickedOutCode}}
+{\footnotesize\ttfamily int T\+Net.\+Lang.\+Language.\+Kicked\+Out\+Code = 10002}
+
+
+
+Was kicked out of the server error code 
+
+The kicked out code.\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a9e949d64dce700c30c185139f3313ce2}\label{class_t_net_1_1_lang_1_1_language_a9e949d64dce700c30c185139f3313ce2}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Load\+Data\+Error@{Load\+Data\+Error}}
+\index{Load\+Data\+Error@{Load\+Data\+Error}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Load\+Data\+Error}{LoadDataError}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Load\+Data\+Error = \char`\"{}Server data failed to load.\char`\"{}}
+
+
+
+加载数据失败 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a31effda7d2661df470ba44de9d05839a}\label{class_t_net_1_1_lang_1_1_language_a31effda7d2661df470ba44de9d05839a}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Lock\+Timeout\+Code@{Lock\+Timeout\+Code}}
+\index{Lock\+Timeout\+Code@{Lock\+Timeout\+Code}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Lock\+Timeout\+Code}{LockTimeoutCode}}
+{\footnotesize\ttfamily int T\+Net.\+Lang.\+Language.\+Lock\+Timeout\+Code = 10006}
+
+
+
+lock time of error code 
+
+The kicked out code.\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a6e8a827aaf8e28279890f58fc4a5f07c}\label{class_t_net_1_1_lang_1_1_language_a6e8a827aaf8e28279890f58fc4a5f07c}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Maintain\+Code@{Maintain\+Code}}
+\index{Maintain\+Code@{Maintain\+Code}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Maintain\+Code}{MaintainCode}}
+{\footnotesize\ttfamily int T\+Net.\+Lang.\+Language.\+Maintain\+Code = 10005}
+
+
+
+Maintain of error code 
+
+The kicked out code.\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a81136fdf5a0d2cfc44c9178d699d0d1e}\label{class_t_net_1_1_lang_1_1_language_a81136fdf5a0d2cfc44c9178d699d0d1e}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Password\+Error@{Password\+Error}}
+\index{Password\+Error@{Password\+Error}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Password\+Error}{PasswordError}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Password\+Error = \char`\"{}You enter the account or password is error.\char`\"{}}
+
+
+
+您输入的账号或密码不正确 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a5e773ddaeca098c847ef0ec5410094c4}\label{class_t_net_1_1_lang_1_1_language_a5e773ddaeca098c847ef0ec5410094c4}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Request\+Timeout@{Request\+Timeout}}
+\index{Request\+Timeout@{Request\+Timeout}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Request\+Timeout}{RequestTimeout}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Request\+Timeout = \char`\"{}Request too often, please rest.\char`\"{}}
+
+
+
+请求超时 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_ac2b5a3cde294186ce50a2b3f63119c7e}\label{class_t_net_1_1_lang_1_1_language_ac2b5a3cde294186ce50a2b3f63119c7e}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Server\+Busy@{Server\+Busy}}
+\index{Server\+Busy@{Server\+Busy}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Server\+Busy}{ServerBusy}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Server\+Busy = \char`\"{}The server is busy.\char`\"{}}
+
+
+
+The system is busy 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_abedea2869c4abedcee3657759334e14a}\label{class_t_net_1_1_lang_1_1_language_abedea2869c4abedcee3657759334e14a}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Server\+Loading@{Server\+Loading}}
+\index{Server\+Loading@{Server\+Loading}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Server\+Loading}{ServerLoading}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Server\+Loading = \char`\"{}The server is restarted, please wait...\char`\"{}}
+
+
+
+服务器正在重启中，请稍候... 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_af1a53ceca62027e4c711678a60e47e15}\label{class_t_net_1_1_lang_1_1_language_af1a53ceca62027e4c711678a60e47e15}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Server\+Maintain@{Server\+Maintain}}
+\index{Server\+Maintain@{Server\+Maintain}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Server\+Maintain}{ServerMaintain}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Server\+Maintain = \char`\"{}Server is being updated.\char`\"{}}
+
+
+
+服务器正在维护 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a04a6ba81965f6884f01627f1aebca2ff}\label{class_t_net_1_1_lang_1_1_language_a04a6ba81965f6884f01627f1aebca2ff}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Sign\+Error@{Sign\+Error}}
+\index{Sign\+Error@{Sign\+Error}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Sign\+Error}{SignError}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Sign\+Error = \char`\"{}Sign error.\char`\"{}}
+
+
+
+验签出错 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_adaad998ea9c55e29ca616238bb03a30c}\label{class_t_net_1_1_lang_1_1_language_adaad998ea9c55e29ca616238bb03a30c}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Timeout\+Code@{Timeout\+Code}}
+\index{Timeout\+Code@{Timeout\+Code}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Timeout\+Code}{TimeoutCode}}
+{\footnotesize\ttfamily int T\+Net.\+Lang.\+Language.\+Timeout\+Code = 10001}
+
+
+
+The no login or timeout code 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_aee2d4350d1336065f4e171e2bcf33b0b}\label{class_t_net_1_1_lang_1_1_language_aee2d4350d1336065f4e171e2bcf33b0b}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Url\+Element@{Url\+Element}}
+\index{Url\+Element@{Url\+Element}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Url\+Element}{UrlElement}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Url\+Element = \char`\"{}Request\textquotesingle{}s param error.\char`\"{}}
+
+
+
+param error 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_ae3b82b6ec41445ca014b29a974d397ab}\label{class_t_net_1_1_lang_1_1_language_ae3b82b6ec41445ca014b29a974d397ab}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Url\+No\+Param@{Url\+No\+Param}}
+\index{Url\+No\+Param@{Url\+No\+Param}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Url\+No\+Param}{UrlNoParam}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Url\+No\+Param = \char`\"{}Parameter name\+: \{0\} does not exist.\char`\"{}}
+
+
+
+参数名\+:\{0\}不存在 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_af907649d51b824cc1c9e4a5967e0e8c2}\label{class_t_net_1_1_lang_1_1_language_af907649d51b824cc1c9e4a5967e0e8c2}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Url\+Param\+Out\+Range@{Url\+Param\+Out\+Range}}
+\index{Url\+Param\+Out\+Range@{Url\+Param\+Out\+Range}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Url\+Param\+Out\+Range}{UrlParamOutRange}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Url\+Param\+Out\+Range = \char`\"{}Parameter name\+: \{0\} is out of range \mbox{[}\{1\} -\/ \{2\}\mbox{]}\char`\"{}}
+
+
+
+参数名\+:\{0\}超出范围\mbox{[}\{1\}-\/\{2\}\mbox{]} 
+
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_aee77bbbba94f1e261dc70a18e63c1ff2}\label{class_t_net_1_1_lang_1_1_language_aee77bbbba94f1e261dc70a18e63c1ff2}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Validate\+Code@{Validate\+Code}}
+\index{Validate\+Code@{Validate\+Code}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Validate\+Code}{ValidateCode}}
+{\footnotesize\ttfamily int T\+Net.\+Lang.\+Language.\+Validate\+Code = 10003}
+
+
+
+Request param error code 
+
+The validate code.\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a169ffa13ad898518ba25a8e6152cabea}\label{class_t_net_1_1_lang_1_1_language_a169ffa13ad898518ba25a8e6152cabea}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Validate\+Error@{Validate\+Error}}
+\index{Validate\+Error@{Validate\+Error}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Validate\+Error}{ValidateError}}
+{\footnotesize\ttfamily string T\+Net.\+Lang.\+Language.\+Validate\+Error = \char`\"{}Request\textquotesingle{}s param validate error.\char`\"{}}
+
+
+
+validate error 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_lang_1_1_language_a050dce524a6d108f4b39e6e5f47519bc}\label{class_t_net_1_1_lang_1_1_language_a050dce524a6d108f4b39e6e5f47519bc}} 
+\index{T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}!Instance@{Instance}}
+\index{Instance@{Instance}!T\+Net\+::\+Lang\+::\+Language@{T\+Net\+::\+Lang\+::\+Language}}
+\subsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily dynamic T\+Net.\+Lang.\+Language.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Get single language. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lang/Language.\+cs\end{DoxyCompactItemize}

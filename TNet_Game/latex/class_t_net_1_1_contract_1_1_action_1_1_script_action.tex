@@ -1,0 +1,191 @@
+\hypertarget{class_t_net_1_1_contract_1_1_action_1_1_script_action}{}\section{T\+Net.\+Contract.\+Action.\+Script\+Action Class Reference}
+\label{class_t_net_1_1_contract_1_1_action_1_1_script_action}\index{T\+Net.\+Contract.\+Action.\+Script\+Action@{T\+Net.\+Contract.\+Action.\+Script\+Action}}
+
+
+提供脚本支持  
+
+
+Inheritance diagram for T\+Net.\+Contract.\+Action.\+Script\+Action\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{class_t_net_1_1_contract_1_1_action_1_1_script_action}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_script_action_afa4475e55dc455325de49e46d300880c}{Script\+Action}} (\mbox{\hyperlink{namespace_t_net_1_1_contract_1_1_action_a490a546f8f01a9b9305b8a0f8b98eded}{Script\+Type}} script\+Type, int a\+Action\+Id, \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_a14dcf224eb5a73e2c0b3bee4fe359dd8}{action\+Getter}}, object script\+Scope, bool ignore\+Authorize)
+\begin{DoxyCompactList}\small\item\em / \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_script_action_a62f8da5926744674d545c2cb75d34ba7}{Get\+Url\+Element}} ()
+\begin{DoxyCompactList}\small\item\em 接收用户请求的参数，并根据相应类进行检测 \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_script_action_a93573bb7b31b15eccb5268ac64e2c41b}{Take\+Action}} ()
+\begin{DoxyCompactList}\small\item\em 子类实现\+Action处理 \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_script_action_a23cfcb658cff38a503301f66ca5e97b1}{Build\+Packet}} ()
+\begin{DoxyCompactList}\small\item\em 创建返回协议内容输出栈 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_script_action_a0e10cb82f7a96457248b836bcec83aa7}{Init\+Child\+Action}} ()
+\begin{DoxyCompactList}\small\item\em 子类实现 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly dynamic \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_script_action_a2250261d7a6c2454da845cfcc1dcccdb}{\+\_\+script\+Scope}}
+\begin{DoxyCompactList}\small\item\em The \+\_\+script scope. \end{DoxyCompactList}\item 
+dynamic \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_script_action_aabaeb9540ead488f73d5a59c26b8f98a}{\+\_\+url\+Param}}
+\begin{DoxyCompactList}\small\item\em The \+\_\+url parameter. \end{DoxyCompactList}\item 
+dynamic \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_script_action_a6f8c50eaddc7bc7744cbebd589838bef}{\+\_\+action\+Result}}
+\begin{DoxyCompactList}\small\item\em The \+\_\+action result. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_script_action_a3ca2a972899c24cb5d7590a4ff92137c}{Ignore\+Action\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 不检查的\+Action\+ID \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+提供脚本支持 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_script_action_afa4475e55dc455325de49e46d300880c}\label{class_t_net_1_1_contract_1_1_action_1_1_script_action_afa4475e55dc455325de49e46d300880c}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}!Script\+Action@{Script\+Action}}
+\index{Script\+Action@{Script\+Action}!T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}}
+\subsubsection{\texorpdfstring{Script\+Action()}{ScriptAction()}}
+{\footnotesize\ttfamily T\+Net.\+Contract.\+Action.\+Script\+Action.\+Script\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_t_net_1_1_contract_1_1_action_a490a546f8f01a9b9305b8a0f8b98eded}{Script\+Type}}}]{script\+Type,  }\item[{int}]{a\+Action\+Id,  }\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}}}]{action\+Getter,  }\item[{object}]{script\+Scope,  }\item[{bool}]{ignore\+Authorize }\end{DoxyParamCaption})}
+
+
+
+/ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em script\+Type} & \\
+\hline
+{\em a\+Action\+Id} & \\
+\hline
+{\em action\+Getter} & \\
+\hline
+{\em script\+Scope} & \\
+\hline
+{\em ignore\+Authorize} & 忽略授权\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_script_action_a23cfcb658cff38a503301f66ca5e97b1}\label{class_t_net_1_1_contract_1_1_action_1_1_script_action_a23cfcb658cff38a503301f66ca5e97b1}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}!Build\+Packet@{Build\+Packet}}
+\index{Build\+Packet@{Build\+Packet}!T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}}
+\subsubsection{\texorpdfstring{Build\+Packet()}{BuildPacket()}}
+{\footnotesize\ttfamily override void T\+Net.\+Contract.\+Action.\+Script\+Action.\+Build\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+创建返回协议内容输出栈 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_a07c2501acfc1957399e45b1c3539bc70}{T\+Net.\+Service.\+Game\+Struct}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_script_action_a62f8da5926744674d545c2cb75d34ba7}\label{class_t_net_1_1_contract_1_1_action_1_1_script_action_a62f8da5926744674d545c2cb75d34ba7}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}!Get\+Url\+Element@{Get\+Url\+Element}}
+\index{Get\+Url\+Element@{Get\+Url\+Element}!T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}}
+\subsubsection{\texorpdfstring{Get\+Url\+Element()}{GetUrlElement()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Contract.\+Action.\+Script\+Action.\+Get\+Url\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+接收用户请求的参数，并根据相应类进行检测 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_ad4167cb7ce62183a1336ebc30a848bfc}{T\+Net.\+Service.\+Game\+Struct}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_script_action_a0e10cb82f7a96457248b836bcec83aa7}\label{class_t_net_1_1_contract_1_1_action_1_1_script_action_a0e10cb82f7a96457248b836bcec83aa7}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}!Init\+Child\+Action@{Init\+Child\+Action}}
+\index{Init\+Child\+Action@{Init\+Child\+Action}!T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}}
+\subsubsection{\texorpdfstring{Init\+Child\+Action()}{InitChildAction()}}
+{\footnotesize\ttfamily override void T\+Net.\+Contract.\+Action.\+Script\+Action.\+Init\+Child\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+子类实现 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_ad2af7304687799ec4a7fe2036643d407}{T\+Net.\+Service.\+Base\+Struct}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_script_action_a93573bb7b31b15eccb5268ac64e2c41b}\label{class_t_net_1_1_contract_1_1_action_1_1_script_action_a93573bb7b31b15eccb5268ac64e2c41b}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}!Take\+Action@{Take\+Action}}
+\index{Take\+Action@{Take\+Action}!T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}}
+\subsubsection{\texorpdfstring{Take\+Action()}{TakeAction()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Contract.\+Action.\+Script\+Action.\+Take\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+子类实现\+Action处理 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a5a1250b74d925d42066aebdefa36f54a}{T\+Net.\+Service.\+Base\+Struct}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_script_action_a6f8c50eaddc7bc7744cbebd589838bef}\label{class_t_net_1_1_contract_1_1_action_1_1_script_action_a6f8c50eaddc7bc7744cbebd589838bef}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}!\+\_\+action\+Result@{\+\_\+action\+Result}}
+\index{\+\_\+action\+Result@{\+\_\+action\+Result}!T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}}
+\subsubsection{\texorpdfstring{\+\_\+action\+Result}{\_actionResult}}
+{\footnotesize\ttfamily dynamic T\+Net.\+Contract.\+Action.\+Script\+Action.\+\_\+action\+Result\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The \+\_\+action result. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_script_action_a2250261d7a6c2454da845cfcc1dcccdb}\label{class_t_net_1_1_contract_1_1_action_1_1_script_action_a2250261d7a6c2454da845cfcc1dcccdb}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}!\+\_\+script\+Scope@{\+\_\+script\+Scope}}
+\index{\+\_\+script\+Scope@{\+\_\+script\+Scope}!T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}}
+\subsubsection{\texorpdfstring{\+\_\+script\+Scope}{\_scriptScope}}
+{\footnotesize\ttfamily readonly dynamic T\+Net.\+Contract.\+Action.\+Script\+Action.\+\_\+script\+Scope\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The \+\_\+script scope. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_script_action_aabaeb9540ead488f73d5a59c26b8f98a}\label{class_t_net_1_1_contract_1_1_action_1_1_script_action_aabaeb9540ead488f73d5a59c26b8f98a}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}!\+\_\+url\+Param@{\+\_\+url\+Param}}
+\index{\+\_\+url\+Param@{\+\_\+url\+Param}!T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}}
+\subsubsection{\texorpdfstring{\+\_\+url\+Param}{\_urlParam}}
+{\footnotesize\ttfamily dynamic T\+Net.\+Contract.\+Action.\+Script\+Action.\+\_\+url\+Param\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The \+\_\+url parameter. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_script_action_a3ca2a972899c24cb5d7590a4ff92137c}\label{class_t_net_1_1_contract_1_1_action_1_1_script_action_a3ca2a972899c24cb5d7590a4ff92137c}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}!Ignore\+Action\+Id@{Ignore\+Action\+Id}}
+\index{Ignore\+Action\+Id@{Ignore\+Action\+Id}!T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Script\+Action}}
+\subsubsection{\texorpdfstring{Ignore\+Action\+Id}{IgnoreActionId}}
+{\footnotesize\ttfamily override bool T\+Net.\+Contract.\+Action.\+Script\+Action.\+Ignore\+Action\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+
+
+不检查的\+Action\+ID 
+
+{\ttfamily true} if ignore action identifier; otherwise, {\ttfamily false}.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract/\+Action/Script\+Action.\+cs\end{DoxyCompactItemize}

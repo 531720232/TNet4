@@ -1,0 +1,168 @@
+\hypertarget{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam}{}\section{T\+Net.\+Com.\+Exam.\+Abstract\+Exam$<$ T $>$ Class Template Reference}
+\label{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam}\index{T\+Net.\+Com.\+Exam.\+Abstract\+Exam$<$ T $>$@{T\+Net.\+Com.\+Exam.\+Abstract\+Exam$<$ T $>$}}
+
+
+答题中间件基类  
+
+
+Inheritance diagram for T\+Net.\+Com.\+Exam.\+Abstract\+Exam$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract List$<$ T $>$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a5c9f0c8798f5666caf68476f53d6d039}{Extract}} (int count, Predicate$<$ T $>$ ignore)
+\begin{DoxyCompactList}\small\item\em 选取题目 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a41cb0db1fede2a6522f57cdec4a21985}\label{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a41cb0db1fede2a6522f57cdec4a21985}} 
+void {\bfseries Do\+Answer} (int question\+Id, string answer)
+\item 
+abstract object \mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a51cd6f2f27ff58d597d666a17d73c0fd}{Get\+Prize}} ()
+\begin{DoxyCompactList}\small\item\em 获取奖励 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_acce351b521a6313beced5eb3d2d86a6b}{Abstract\+Exam}} (int user\+Id)
+\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a98039563cff59a78dd2f9bb3d1036123}{Check\+Answer}} (int question\+Id, string answer)
+\begin{DoxyCompactList}\small\item\em 是否答题正确 \end{DoxyCompactList}\item 
+abstract object \mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a3c5fa53128bdf41dc51686e299b52aa4}{Process\+Result}} (int question\+Id, bool answer\+Result)
+\begin{DoxyCompactList}\small\item\em 处理结果 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly int \mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a6da2ee3a695db3248702ca932298e70a}{User\+Id}}
+\begin{DoxyCompactList}\small\item\em The user identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+答题中间件基类 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Question\+Data}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_acce351b521a6313beced5eb3d2d86a6b}\label{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_acce351b521a6313beced5eb3d2d86a6b}} 
+\index{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam@{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam}!Abstract\+Exam@{Abstract\+Exam}}
+\index{Abstract\+Exam@{Abstract\+Exam}!T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam@{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam}}
+\subsubsection{\texorpdfstring{Abstract\+Exam()}{AbstractExam()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam}{T\+Net.\+Com.\+Exam.\+Abstract\+Exam}}$<$ T $>$.\mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam}{Abstract\+Exam}} (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a98039563cff59a78dd2f9bb3d1036123}\label{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a98039563cff59a78dd2f9bb3d1036123}} 
+\index{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam@{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam}!Check\+Answer@{Check\+Answer}}
+\index{Check\+Answer@{Check\+Answer}!T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam@{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam}}
+\subsubsection{\texorpdfstring{Check\+Answer()}{CheckAnswer()}}
+{\footnotesize\ttfamily abstract bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam}{T\+Net.\+Com.\+Exam.\+Abstract\+Exam}}$<$ T $>$.Check\+Answer (\begin{DoxyParamCaption}\item[{int}]{question\+Id,  }\item[{string}]{answer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+是否答题正确 
+
+
+\begin{DoxyParams}{Parameters}
+{\em question\+Id} & \\
+\hline
+{\em answer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_exam_question_acda26f165e3790cb094ee63d4c1d9cf5}{T\+Net.\+Com.\+Exam.\+Exam\+Question$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a5c9f0c8798f5666caf68476f53d6d039}\label{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a5c9f0c8798f5666caf68476f53d6d039}} 
+\index{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam@{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam}!Extract@{Extract}}
+\index{Extract@{Extract}!T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam@{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam}}
+\subsubsection{\texorpdfstring{Extract()}{Extract()}}
+{\footnotesize\ttfamily abstract List$<$T$>$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam}{T\+Net.\+Com.\+Exam.\+Abstract\+Exam}}$<$ T $>$.Extract (\begin{DoxyParamCaption}\item[{int}]{count,  }\item[{Predicate$<$ T $>$}]{ignore }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+选取题目 
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & 取的数量\\
+\hline
+{\em ignore} & 忽略的\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+summary$>$ 答题 /summary$>$ param name=\char`\"{}question\+Id\char`\"{}$>$题目编号
+
+param name=\char`\"{}answer\char`\"{}$>$答题
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_exam_question_a52cc7c3b0257b8a9ee5a9e9de4880ef2}{T\+Net.\+Com.\+Exam.\+Exam\+Question$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a51cd6f2f27ff58d597d666a17d73c0fd}\label{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a51cd6f2f27ff58d597d666a17d73c0fd}} 
+\index{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam@{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam}!Get\+Prize@{Get\+Prize}}
+\index{Get\+Prize@{Get\+Prize}!T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam@{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam}}
+\subsubsection{\texorpdfstring{Get\+Prize()}{GetPrize()}}
+{\footnotesize\ttfamily abstract object \mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam}{T\+Net.\+Com.\+Exam.\+Abstract\+Exam}}$<$ T $>$.Get\+Prize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+获取奖励 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a3c5fa53128bdf41dc51686e299b52aa4}\label{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a3c5fa53128bdf41dc51686e299b52aa4}} 
+\index{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam@{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam}!Process\+Result@{Process\+Result}}
+\index{Process\+Result@{Process\+Result}!T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam@{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam}}
+\subsubsection{\texorpdfstring{Process\+Result()}{ProcessResult()}}
+{\footnotesize\ttfamily abstract object \mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam}{T\+Net.\+Com.\+Exam.\+Abstract\+Exam}}$<$ T $>$.Process\+Result (\begin{DoxyParamCaption}\item[{int}]{question\+Id,  }\item[{bool}]{answer\+Result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+处理结果 
+
+
+\begin{DoxyParams}{Parameters}
+{\em question\+Id} & 题目编号\\
+\hline
+{\em answer\+Result} & 答题结果\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回处理结果(奖励)
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a6da2ee3a695db3248702ca932298e70a}\label{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam_a6da2ee3a695db3248702ca932298e70a}} 
+\index{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam@{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam}!User\+Id@{User\+Id}}
+\index{User\+Id@{User\+Id}!T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam@{T\+Net\+::\+Com\+::\+Exam\+::\+Abstract\+Exam}}
+\subsubsection{\texorpdfstring{User\+Id}{UserId}}
+{\footnotesize\ttfamily readonly int \mbox{\hyperlink{class_t_net_1_1_com_1_1_exam_1_1_abstract_exam}{T\+Net.\+Com.\+Exam.\+Abstract\+Exam}}$<$ T $>$.User\+Id\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The user identifier. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Com/\+Exam/Abstract\+Exam.\+cs\end{DoxyCompactItemize}

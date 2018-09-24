@@ -1,0 +1,121 @@
+\hypertarget{class_t_net_1_1_service_1_1_action_log}{}\section{T\+Net.\+Service.\+Action\+Log Class Reference}
+\label{class_t_net_1_1_service_1_1_action_log}\index{T\+Net.\+Service.\+Action\+Log@{T\+Net.\+Service.\+Action\+Log}}
+
+
+接口访问情况记录类  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_log_a9123f4bf9b56a7b221548c8fb278218e}{Action\+Log}} (int \+\_\+actionid, Date\+Time \+\_\+cur\+Date)
+\begin{DoxyCompactList}\small\item\em 构造方法 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_log_a49f7ab0ff5ad120f8314f165d771c68b}{Visitor}} (\mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_ac7fb463ce72bdf0b12b015c74d2d58da}{Game\+Struct.\+Log\+Action\+Stat}} a\+Stat)
+\begin{DoxyCompactList}\small\item\em 累加访问次数 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_log_ade384532839712937b50312c3a0a5920}{Insert\+DB}} (Date\+Time \+\_\+cur\+New\+Date)
+\begin{DoxyCompactList}\small\item\em 更新数据到\+D\+B，并数据清零 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_log_ac94f67c2ac6d9c588df9eb3d149a631f}{Suc\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 成功次数 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_log_a75e9dd7f1cb49dc0ac76a8ca7bfc2767}{Fail\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 失败次数 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_log_ab8db71b0579fa9a1ac072e4cd56d2fb5}{Total\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 当前累计的访问次数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+接口访问情况记录类 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_action_log_a9123f4bf9b56a7b221548c8fb278218e}\label{class_t_net_1_1_service_1_1_action_log_a9123f4bf9b56a7b221548c8fb278218e}} 
+\index{T\+Net\+::\+Service\+::\+Action\+Log@{T\+Net\+::\+Service\+::\+Action\+Log}!Action\+Log@{Action\+Log}}
+\index{Action\+Log@{Action\+Log}!T\+Net\+::\+Service\+::\+Action\+Log@{T\+Net\+::\+Service\+::\+Action\+Log}}
+\subsubsection{\texorpdfstring{Action\+Log()}{ActionLog()}}
+{\footnotesize\ttfamily T\+Net.\+Service.\+Action\+Log.\+Action\+Log (\begin{DoxyParamCaption}\item[{int}]{\+\_\+actionid,  }\item[{Date\+Time}]{\+\_\+cur\+Date }\end{DoxyParamCaption})}
+
+
+
+构造方法 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+actionid} & 接口编号\\
+\hline
+{\em \+\_\+cur\+Date} & 当前日期\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_action_log_ade384532839712937b50312c3a0a5920}\label{class_t_net_1_1_service_1_1_action_log_ade384532839712937b50312c3a0a5920}} 
+\index{T\+Net\+::\+Service\+::\+Action\+Log@{T\+Net\+::\+Service\+::\+Action\+Log}!Insert\+DB@{Insert\+DB}}
+\index{Insert\+DB@{Insert\+DB}!T\+Net\+::\+Service\+::\+Action\+Log@{T\+Net\+::\+Service\+::\+Action\+Log}}
+\subsubsection{\texorpdfstring{Insert\+D\+B()}{InsertDB()}}
+{\footnotesize\ttfamily void T\+Net.\+Service.\+Action\+Log.\+Insert\+DB (\begin{DoxyParamCaption}\item[{Date\+Time}]{\+\_\+cur\+New\+Date }\end{DoxyParamCaption})}
+
+
+
+更新数据到\+D\+B，并数据清零 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+cur\+New\+Date} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_action_log_a49f7ab0ff5ad120f8314f165d771c68b}\label{class_t_net_1_1_service_1_1_action_log_a49f7ab0ff5ad120f8314f165d771c68b}} 
+\index{T\+Net\+::\+Service\+::\+Action\+Log@{T\+Net\+::\+Service\+::\+Action\+Log}!Visitor@{Visitor}}
+\index{Visitor@{Visitor}!T\+Net\+::\+Service\+::\+Action\+Log@{T\+Net\+::\+Service\+::\+Action\+Log}}
+\subsubsection{\texorpdfstring{Visitor()}{Visitor()}}
+{\footnotesize\ttfamily void T\+Net.\+Service.\+Action\+Log.\+Visitor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_ac7fb463ce72bdf0b12b015c74d2d58da}{Game\+Struct.\+Log\+Action\+Stat}}}]{a\+Stat }\end{DoxyParamCaption})}
+
+
+
+累加访问次数 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Stat} & 接口访问是成功还是失败\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_action_log_a75e9dd7f1cb49dc0ac76a8ca7bfc2767}\label{class_t_net_1_1_service_1_1_action_log_a75e9dd7f1cb49dc0ac76a8ca7bfc2767}} 
+\index{T\+Net\+::\+Service\+::\+Action\+Log@{T\+Net\+::\+Service\+::\+Action\+Log}!Fail\+Count@{Fail\+Count}}
+\index{Fail\+Count@{Fail\+Count}!T\+Net\+::\+Service\+::\+Action\+Log@{T\+Net\+::\+Service\+::\+Action\+Log}}
+\subsubsection{\texorpdfstring{Fail\+Count}{FailCount}}
+{\footnotesize\ttfamily int T\+Net.\+Service.\+Action\+Log.\+Fail\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+失败次数 
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_action_log_ac94f67c2ac6d9c588df9eb3d149a631f}\label{class_t_net_1_1_service_1_1_action_log_ac94f67c2ac6d9c588df9eb3d149a631f}} 
+\index{T\+Net\+::\+Service\+::\+Action\+Log@{T\+Net\+::\+Service\+::\+Action\+Log}!Suc\+Count@{Suc\+Count}}
+\index{Suc\+Count@{Suc\+Count}!T\+Net\+::\+Service\+::\+Action\+Log@{T\+Net\+::\+Service\+::\+Action\+Log}}
+\subsubsection{\texorpdfstring{Suc\+Count}{SucCount}}
+{\footnotesize\ttfamily int T\+Net.\+Service.\+Action\+Log.\+Suc\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+成功次数 
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_action_log_ab8db71b0579fa9a1ac072e4cd56d2fb5}\label{class_t_net_1_1_service_1_1_action_log_ab8db71b0579fa9a1ac072e4cd56d2fb5}} 
+\index{T\+Net\+::\+Service\+::\+Action\+Log@{T\+Net\+::\+Service\+::\+Action\+Log}!Total\+Count@{Total\+Count}}
+\index{Total\+Count@{Total\+Count}!T\+Net\+::\+Service\+::\+Action\+Log@{T\+Net\+::\+Service\+::\+Action\+Log}}
+\subsubsection{\texorpdfstring{Total\+Count}{TotalCount}}
+{\footnotesize\ttfamily int T\+Net.\+Service.\+Action\+Log.\+Total\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+当前累计的访问次数 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Service/Action\+Count.\+cs\end{DoxyCompactItemize}

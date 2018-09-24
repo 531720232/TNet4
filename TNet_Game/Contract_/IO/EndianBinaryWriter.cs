@@ -379,13 +379,15 @@ namespace TNet.IO
         /// <returns></returns>
         public void WriteObj<T>(T obj)
         {
-            var se_bytes = MessagePack.LZ4MessagePackSerializer.Serialize(obj);
-
-            var code = MessagePack.LZ4MessagePackSerializer.ToLZ4Binary(se_bytes);
-            var length = code.Length;
+           
+            
+            var str = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
+            var bs = System.Text.Encoding.UTF8.GetBytes(str);
+       
+            var length = bs.Length;
 
             Write(length);
-            WriteInternal(code, length);
+            WriteInternal(bs, length);
 
 
         }

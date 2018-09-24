@@ -1,0 +1,147 @@
+\hypertarget{class_t_net_1_1_cache_1_1_whisper_cache_set}{}\section{T\+Net.\+Cache.\+Whisper\+Cache\+Set Class Reference}
+\label{class_t_net_1_1_cache_1_1_whisper_cache_set}\index{T\+Net.\+Cache.\+Whisper\+Cache\+Set@{T\+Net.\+Cache.\+Whisper\+Cache\+Set}}
+
+
+私聊缓存  
+
+
+Inheritance diagram for T\+Net.\+Cache.\+Whisper\+Cache\+Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_net_1_1_cache_1_1_whisper_cache_set}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_cache_1_1_whisper_cache_set_a15b655eac64df17e8ae33684b97b70c5}{Add}} (int user\+Id, \mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} message)
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_cache_1_1_whisper_cache_set_a5b9fb703be93bc78d3df1c8cd8e4a0ea}{Has\+Message}} (int user\+Id)
+\item 
+\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_cache_1_1_whisper_cache_set_a0e3727867bfd4158150a95e3ae0963f1}{Get\+Message}} (int user\+Id)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_cache_1_1_whisper_cache_set_a99ac6a03ed7af2e5de288132294786ea}{Load\+Factory}} (bool is\+Replace)
+\begin{DoxyCompactList}\small\item\em 加载数据工厂 \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_cache_1_1_whisper_cache_set_a298782e3470d365db9b032778a874590}{Load\+Item\+Factory}} (string key, bool is\+Replace)
+\begin{DoxyCompactList}\small\item\em 加载子项数据工厂 \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_cache_1_1_whisper_cache_set_ad3929c10b9f25cc680ad3ff0348f53d3}{Init\+Cache}} (List$<$ \mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} $>$ data\+List, int period\+Time, bool is\+Replace)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+私聊缓存 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_cache_1_1_whisper_cache_set_a15b655eac64df17e8ae33684b97b70c5}\label{class_t_net_1_1_cache_1_1_whisper_cache_set_a15b655eac64df17e8ae33684b97b70c5}} 
+\index{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set@{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set}!Add@{Add}}
+\index{Add@{Add}!T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set@{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void T\+Net.\+Cache.\+Whisper\+Cache\+Set.\+Add (\begin{DoxyParamCaption}\item[{int}]{user\+Id,  }\item[{\mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}}}]{message }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_cache_1_1_whisper_cache_set_a0e3727867bfd4158150a95e3ae0963f1}\label{class_t_net_1_1_cache_1_1_whisper_cache_set_a0e3727867bfd4158150a95e3ae0963f1}} 
+\index{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set@{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set}!Get\+Message@{Get\+Message}}
+\index{Get\+Message@{Get\+Message}!T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set@{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set}}
+\subsubsection{\texorpdfstring{Get\+Message()}{GetMessage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} \mbox{[}$\,$\mbox{]} T\+Net.\+Cache.\+Whisper\+Cache\+Set.\+Get\+Message (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_cache_1_1_whisper_cache_set_a5b9fb703be93bc78d3df1c8cd8e4a0ea}\label{class_t_net_1_1_cache_1_1_whisper_cache_set_a5b9fb703be93bc78d3df1c8cd8e4a0ea}} 
+\index{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set@{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set}!Has\+Message@{Has\+Message}}
+\index{Has\+Message@{Has\+Message}!T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set@{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set}}
+\subsubsection{\texorpdfstring{Has\+Message()}{HasMessage()}}
+{\footnotesize\ttfamily bool T\+Net.\+Cache.\+Whisper\+Cache\+Set.\+Has\+Message (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_cache_1_1_whisper_cache_set_ad3929c10b9f25cc680ad3ff0348f53d3}\label{class_t_net_1_1_cache_1_1_whisper_cache_set_ad3929c10b9f25cc680ad3ff0348f53d3}} 
+\index{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set@{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set}!Init\+Cache@{Init\+Cache}}
+\index{Init\+Cache@{Init\+Cache}!T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set@{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set}}
+\subsubsection{\texorpdfstring{Init\+Cache()}{InitCache()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Cache.\+Whisper\+Cache\+Set.\+Init\+Cache (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_t_net_1_1_model_1_1_chat_message}{Chat\+Message}} $>$}]{data\+List,  }\item[{int}]{period\+Time,  }\item[{bool}]{is\+Replace }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+List} & \\
+\hline
+{\em period\+Time} & \\
+\hline
+{\em is\+Replace} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_cache_1_1_whisper_cache_set_a99ac6a03ed7af2e5de288132294786ea}\label{class_t_net_1_1_cache_1_1_whisper_cache_set_a99ac6a03ed7af2e5de288132294786ea}} 
+\index{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set@{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set}!Load\+Factory@{Load\+Factory}}
+\index{Load\+Factory@{Load\+Factory}!T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set@{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set}}
+\subsubsection{\texorpdfstring{Load\+Factory()}{LoadFactory()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Cache.\+Whisper\+Cache\+Set.\+Load\+Factory (\begin{DoxyParamCaption}\item[{bool}]{is\+Replace }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+加载数据工厂 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_cache_1_1_whisper_cache_set_a298782e3470d365db9b032778a874590}\label{class_t_net_1_1_cache_1_1_whisper_cache_set_a298782e3470d365db9b032778a874590}} 
+\index{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set@{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set}!Load\+Item\+Factory@{Load\+Item\+Factory}}
+\index{Load\+Item\+Factory@{Load\+Item\+Factory}!T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set@{T\+Net\+::\+Cache\+::\+Whisper\+Cache\+Set}}
+\subsubsection{\texorpdfstring{Load\+Item\+Factory()}{LoadItemFactory()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Cache.\+Whisper\+Cache\+Set.\+Load\+Item\+Factory (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{bool}]{is\+Replace }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+加载子项数据工厂 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key.\\
+\hline
+{\em is\+Replace} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cache/Whisper\+Cache\+Set.\+cs\end{DoxyCompactItemize}

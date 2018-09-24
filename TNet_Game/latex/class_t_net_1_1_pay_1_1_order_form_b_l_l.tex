@@ -1,0 +1,187 @@
+\hypertarget{class_t_net_1_1_pay_1_1_order_form_b_l_l}{}\section{T\+Net.\+Pay.\+Order\+Form\+B\+LL Class Reference}
+\label{class_t_net_1_1_pay_1_1_order_form_b_l_l}\index{T\+Net.\+Pay.\+Order\+Form\+B\+LL@{T\+Net.\+Pay.\+Order\+Form\+B\+LL}}
+
+
+Order form BL.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_form_b_l_l_aca0c2ed0708f0e2a5b0d10b826bbcf40}{Add}} (\mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}} model)
+\begin{DoxyCompactList}\small\item\em Add the specified model. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_form_b_l_l_a23be1ab41b05a4e569a03f335241ee59}{Update}} (\mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}} model)
+\begin{DoxyCompactList}\small\item\em 修改状态 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_form_b_l_l_adef57874b4407e561135d60c130a04cb}{Get\+List}} (int game\+ID, int server\+ID, string p\+ID)
+\begin{DoxyCompactList}\small\item\em 获取游戏币. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_form_b_l_l_abb9441c27dba8de83257b614291bc39a}{Is\+Exists}} (string order\+No)
+\begin{DoxyCompactList}\small\item\em Determines whether this instance is exists the specified Order\+No. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_form_b_l_l_adb4d140843d6eb01eb78c2b319be6bd9}{Update\+By91}} (\mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}} model, bool callback)
+\begin{DoxyCompactList}\small\item\em Updates the by91. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_form_b_l_l_ad5797704f79a99f6162a4f260369a8b1}{Add91\+Pay}} (\mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}} order, bool callback)
+\begin{DoxyCompactList}\small\item\em Add91s the pay. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_form_b_l_l_ac48da1e64f8bd3f2555e086ffaf89f72}{Updatestr}} (string Order\+No)
+\begin{DoxyCompactList}\small\item\em Updatestr the specified Order\+No. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_pay_1_1_server_info}{Server\+Info}} \mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_form_b_l_l_afd0293f291f096f9a8115518dccedcb1}{Get\+Server\+Data}} (int game\+ID, int server\+ID)
+\begin{DoxyCompactList}\small\item\em 支付取游戏名改为直接查库-\/wuzf \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Order form BL. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_order_form_b_l_l_aca0c2ed0708f0e2a5b0d10b826bbcf40}\label{class_t_net_1_1_pay_1_1_order_form_b_l_l_aca0c2ed0708f0e2a5b0d10b826bbcf40}} 
+\index{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}!Add@{Add}}
+\index{Add@{Add}!T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily bool T\+Net.\+Pay.\+Order\+Form\+B\+L\+L.\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}}}]{model }\end{DoxyParamCaption})}
+
+
+
+Add the specified model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & \mbox{\hyperlink{namespace_t_net_1_1_model}{Model}}.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_order_form_b_l_l_ad5797704f79a99f6162a4f260369a8b1}\label{class_t_net_1_1_pay_1_1_order_form_b_l_l_ad5797704f79a99f6162a4f260369a8b1}} 
+\index{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}!Add91\+Pay@{Add91\+Pay}}
+\index{Add91\+Pay@{Add91\+Pay}!T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}}
+\subsubsection{\texorpdfstring{Add91\+Pay()}{Add91Pay()}}
+{\footnotesize\ttfamily bool T\+Net.\+Pay.\+Order\+Form\+B\+L\+L.\+Add91\+Pay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}}}]{order,  }\item[{bool}]{callback }\end{DoxyParamCaption})}
+
+
+
+Add91s the pay. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if pay was add91ed, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em order} & Order.\\
+\hline
+{\em callback} & If set to {\ttfamily true} callback.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_order_form_b_l_l_adef57874b4407e561135d60c130a04cb}\label{class_t_net_1_1_pay_1_1_order_form_b_l_l_adef57874b4407e561135d60c130a04cb}} 
+\index{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}!Get\+List@{Get\+List}}
+\index{Get\+List@{Get\+List}!T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}}
+\subsubsection{\texorpdfstring{Get\+List()}{GetList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}} \mbox{[}$\,$\mbox{]} T\+Net.\+Pay.\+Order\+Form\+B\+L\+L.\+Get\+List (\begin{DoxyParamCaption}\item[{int}]{game\+ID,  }\item[{int}]{server\+ID,  }\item[{string}]{p\+ID }\end{DoxyParamCaption})}
+
+
+
+获取游戏币. 
+
+\begin{DoxyReturn}{Returns}
+The list.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em game\+ID} & Game.\\
+\hline
+{\em server\+ID} & Server.\\
+\hline
+{\em p\+ID} & Account.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_order_form_b_l_l_afd0293f291f096f9a8115518dccedcb1}\label{class_t_net_1_1_pay_1_1_order_form_b_l_l_afd0293f291f096f9a8115518dccedcb1}} 
+\index{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}!Get\+Server\+Data@{Get\+Server\+Data}}
+\index{Get\+Server\+Data@{Get\+Server\+Data}!T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}}
+\subsubsection{\texorpdfstring{Get\+Server\+Data()}{GetServerData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_pay_1_1_server_info}{Server\+Info}} T\+Net.\+Pay.\+Order\+Form\+B\+L\+L.\+Get\+Server\+Data (\begin{DoxyParamCaption}\item[{int}]{game\+ID,  }\item[{int}]{server\+ID }\end{DoxyParamCaption})}
+
+
+
+支付取游戏名改为直接查库-\/wuzf 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+ID} & \\
+\hline
+{\em server\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_order_form_b_l_l_abb9441c27dba8de83257b614291bc39a}\label{class_t_net_1_1_pay_1_1_order_form_b_l_l_abb9441c27dba8de83257b614291bc39a}} 
+\index{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}!Is\+Exists@{Is\+Exists}}
+\index{Is\+Exists@{Is\+Exists}!T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}}
+\subsubsection{\texorpdfstring{Is\+Exists()}{IsExists()}}
+{\footnotesize\ttfamily bool T\+Net.\+Pay.\+Order\+Form\+B\+L\+L.\+Is\+Exists (\begin{DoxyParamCaption}\item[{string}]{order\+No }\end{DoxyParamCaption})}
+
+
+
+Determines whether this instance is exists the specified Order\+No. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this instance is exists the specified Order\+No; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em order\+No} & Order no.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_order_form_b_l_l_a23be1ab41b05a4e569a03f335241ee59}\label{class_t_net_1_1_pay_1_1_order_form_b_l_l_a23be1ab41b05a4e569a03f335241ee59}} 
+\index{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}!Update@{Update}}
+\index{Update@{Update}!T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily bool T\+Net.\+Pay.\+Order\+Form\+B\+L\+L.\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}}}]{model }\end{DoxyParamCaption})}
+
+
+
+修改状态 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_order_form_b_l_l_adb4d140843d6eb01eb78c2b319be6bd9}\label{class_t_net_1_1_pay_1_1_order_form_b_l_l_adb4d140843d6eb01eb78c2b319be6bd9}} 
+\index{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}!Update\+By91@{Update\+By91}}
+\index{Update\+By91@{Update\+By91}!T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}}
+\subsubsection{\texorpdfstring{Update\+By91()}{UpdateBy91()}}
+{\footnotesize\ttfamily bool T\+Net.\+Pay.\+Order\+Form\+B\+L\+L.\+Update\+By91 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}}}]{model,  }\item[{bool}]{callback }\end{DoxyParamCaption})}
+
+
+
+Updates the by91. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if by91 was updated, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em model} & \mbox{\hyperlink{namespace_t_net_1_1_model}{Model}}.\\
+\hline
+{\em callback} & If set to {\ttfamily true} callback.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_order_form_b_l_l_ac48da1e64f8bd3f2555e086ffaf89f72}\label{class_t_net_1_1_pay_1_1_order_form_b_l_l_ac48da1e64f8bd3f2555e086ffaf89f72}} 
+\index{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}!Updatestr@{Updatestr}}
+\index{Updatestr@{Updatestr}!T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL@{T\+Net\+::\+Pay\+::\+Order\+Form\+B\+LL}}
+\subsubsection{\texorpdfstring{Updatestr()}{Updatestr()}}
+{\footnotesize\ttfamily bool T\+Net.\+Pay.\+Order\+Form\+B\+L\+L.\+Updatestr (\begin{DoxyParamCaption}\item[{string}]{Order\+No }\end{DoxyParamCaption})}
+
+
+
+Updatestr the specified Order\+No. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Order\+No} & Order no.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pay/Order\+Form\+B\+L\+L.\+cs\end{DoxyCompactItemize}

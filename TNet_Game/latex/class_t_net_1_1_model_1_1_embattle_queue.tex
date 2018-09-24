@@ -1,0 +1,377 @@
+\hypertarget{class_t_net_1_1_model_1_1_embattle_queue}{}\section{T\+Net.\+Model.\+Embattle\+Queue Class Reference}
+\label{class_t_net_1_1_model_1_1_embattle_queue}\index{T\+Net.\+Model.\+Embattle\+Queue@{T\+Net.\+Model.\+Embattle\+Queue}}
+
+
+九宫格阵形队列  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a99080e1068b529b10c5f699665ec2562}{To\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Tos the queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_adbf3033c32a41df56da9fae493d2bca9}{Peek\+Wait\+General}} ()
+\begin{DoxyCompactList}\small\item\em Peeks the wait general. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a60c381ac8a0bcaf18f01c69e01e8b171}{Next\+General}} ()
+\begin{DoxyCompactList}\small\item\em 获取下一个可战斗佣兵 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a90e2405c7747f5763e3710a265bd8f3f}{Replace\+Wait\+General}} (int position, out \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} wait\+General)
+\begin{DoxyCompactList}\small\item\em 替换等待的佣兵 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a151f22a8eccfe84fd102fb37329605f7}{Has\+Combat}} ()
+\begin{DoxyCompactList}\small\item\em 是否可战斗 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_ab9d37b32ea438064104532f4ebecdb0e}{Reset\+General\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em 初始战斗入阵 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a5f40c4b5d05e4267105f18bfbda5e1ec}{Random\+General}} ()
+\begin{DoxyCompactList}\small\item\em 随机取 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_adfd1564b437f4b7b5338244f8e3655de}{Get\+General}} (int position)
+\begin{DoxyCompactList}\small\item\em 根据位置取 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a2d2d510eb2079c72f16a4474891128cb}{Find\+General}} (int position)
+\begin{DoxyCompactList}\small\item\em 获取被攻击将领通过设定的优先级查找 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_ad4f666319179cad16ce6abcfb59bd646}{Find\+Horizontal}} (int position)
+\begin{DoxyCompactList}\small\item\em 找横向 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a9fe4efc081860df81e6bc760fe7cec43}{Find\+Vertical}} (int position)
+\begin{DoxyCompactList}\small\item\em 找纵向 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_aaa5930044400403f36b6a318b130e43e}{Find\+All}} ()
+\begin{DoxyCompactList}\small\item\em Finds all. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a711c15dc22035e8d484988410606c1ba}{Find\+All}} (bool is\+All)
+\begin{DoxyCompactList}\small\item\em 找所有 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{[},\mbox{]} \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a520353f819d01fc5c04b8f2422abdbd7}{Priority\+Map\+List}}
+\begin{DoxyCompactList}\small\item\em The priority map list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a741b4aa1285df24f4d9f7590c1b89bad}{Set\+Queue}} (int index, \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} general)
+\begin{DoxyCompactList}\small\item\em Sets the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a81b6720bb3516426c03be0e8451ca766}{Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the items. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_t_net_1_1_model_a33d7abaa523c3472da9f2084152b79d3}{Embattle\+Role}} \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a5a8c80a0311eaa84762f04b6fca79bfb}{Role}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the role. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a75ed024e044d9b4953b5a56b2eda30db}{Is\+Over}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this instance is over. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_aadb3b7fbd15df46adb2201fc9b006d65}{Priority\+Num}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 优先值 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a6dc8368ec49a2508a2e0edb600015285}{General\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the general count. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_aa47598e0b355a8cfd63894c01cdfe3d2}{Number}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 当前轮次数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_model_1_1_embattle_queue_a7f896cd7b5c7f5ace0cdc102c8393481}{Has\+General}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 本轮是否存在佣兵 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+九宫格阵形队列 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_aaa5930044400403f36b6a318b130e43e}\label{class_t_net_1_1_model_1_1_embattle_queue_aaa5930044400403f36b6a318b130e43e}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Find\+All@{Find\+All}}
+\index{Find\+All@{Find\+All}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Find\+All()}{FindAll()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{[}$\,$\mbox{]} T\+Net.\+Model.\+Embattle\+Queue.\+Find\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Finds all. 
+
+\begin{DoxyReturn}{Returns}
+The all.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a711c15dc22035e8d484988410606c1ba}\label{class_t_net_1_1_model_1_1_embattle_queue_a711c15dc22035e8d484988410606c1ba}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Find\+All@{Find\+All}}
+\index{Find\+All@{Find\+All}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Find\+All()}{FindAll()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{[}$\,$\mbox{]} T\+Net.\+Model.\+Embattle\+Queue.\+Find\+All (\begin{DoxyParamCaption}\item[{bool}]{is\+All }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+找所有 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a2d2d510eb2079c72f16a4474891128cb}\label{class_t_net_1_1_model_1_1_embattle_queue_a2d2d510eb2079c72f16a4474891128cb}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Find\+General@{Find\+General}}
+\index{Find\+General@{Find\+General}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Find\+General()}{FindGeneral()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} T\+Net.\+Model.\+Embattle\+Queue.\+Find\+General (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+获取被攻击将领通过设定的优先级查找 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_ad4f666319179cad16ce6abcfb59bd646}\label{class_t_net_1_1_model_1_1_embattle_queue_ad4f666319179cad16ce6abcfb59bd646}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Find\+Horizontal@{Find\+Horizontal}}
+\index{Find\+Horizontal@{Find\+Horizontal}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Find\+Horizontal()}{FindHorizontal()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{[}$\,$\mbox{]} T\+Net.\+Model.\+Embattle\+Queue.\+Find\+Horizontal (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+找横向 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a9fe4efc081860df81e6bc760fe7cec43}\label{class_t_net_1_1_model_1_1_embattle_queue_a9fe4efc081860df81e6bc760fe7cec43}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Find\+Vertical@{Find\+Vertical}}
+\index{Find\+Vertical@{Find\+Vertical}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Find\+Vertical()}{FindVertical()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{[}$\,$\mbox{]} T\+Net.\+Model.\+Embattle\+Queue.\+Find\+Vertical (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+找纵向 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_adfd1564b437f4b7b5338244f8e3655de}\label{class_t_net_1_1_model_1_1_embattle_queue_adfd1564b437f4b7b5338244f8e3655de}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Get\+General@{Get\+General}}
+\index{Get\+General@{Get\+General}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Get\+General()}{GetGeneral()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} T\+Net.\+Model.\+Embattle\+Queue.\+Get\+General (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+根据位置取 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a151f22a8eccfe84fd102fb37329605f7}\label{class_t_net_1_1_model_1_1_embattle_queue_a151f22a8eccfe84fd102fb37329605f7}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Has\+Combat@{Has\+Combat}}
+\index{Has\+Combat@{Has\+Combat}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Has\+Combat()}{HasCombat()}}
+{\footnotesize\ttfamily bool T\+Net.\+Model.\+Embattle\+Queue.\+Has\+Combat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+是否可战斗 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a60c381ac8a0bcaf18f01c69e01e8b171}\label{class_t_net_1_1_model_1_1_embattle_queue_a60c381ac8a0bcaf18f01c69e01e8b171}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Next\+General@{Next\+General}}
+\index{Next\+General@{Next\+General}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Next\+General()}{NextGeneral()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} T\+Net.\+Model.\+Embattle\+Queue.\+Next\+General (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+获取下一个可战斗佣兵 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_adbf3033c32a41df56da9fae493d2bca9}\label{class_t_net_1_1_model_1_1_embattle_queue_adbf3033c32a41df56da9fae493d2bca9}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Peek\+Wait\+General@{Peek\+Wait\+General}}
+\index{Peek\+Wait\+General@{Peek\+Wait\+General}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Peek\+Wait\+General()}{PeekWaitGeneral()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} T\+Net.\+Model.\+Embattle\+Queue.\+Peek\+Wait\+General (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Peeks the wait general. 
+
+\begin{DoxyReturn}{Returns}
+The wait general.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a5f40c4b5d05e4267105f18bfbda5e1ec}\label{class_t_net_1_1_model_1_1_embattle_queue_a5f40c4b5d05e4267105f18bfbda5e1ec}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Random\+General@{Random\+General}}
+\index{Random\+General@{Random\+General}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Random\+General()}{RandomGeneral()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} T\+Net.\+Model.\+Embattle\+Queue.\+Random\+General (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+随机取 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a90e2405c7747f5763e3710a265bd8f3f}\label{class_t_net_1_1_model_1_1_embattle_queue_a90e2405c7747f5763e3710a265bd8f3f}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Replace\+Wait\+General@{Replace\+Wait\+General}}
+\index{Replace\+Wait\+General@{Replace\+Wait\+General}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Replace\+Wait\+General()}{ReplaceWaitGeneral()}}
+{\footnotesize\ttfamily bool T\+Net.\+Model.\+Embattle\+Queue.\+Replace\+Wait\+General (\begin{DoxyParamCaption}\item[{int}]{position,  }\item[{out \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}}}]{wait\+General }\end{DoxyParamCaption})}
+
+
+
+替换等待的佣兵 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & 替换的位置\\
+\hline
+{\em wait\+General} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_ab9d37b32ea438064104532f4ebecdb0e}\label{class_t_net_1_1_model_1_1_embattle_queue_ab9d37b32ea438064104532f4ebecdb0e}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Reset\+General\+Queue@{Reset\+General\+Queue}}
+\index{Reset\+General\+Queue@{Reset\+General\+Queue}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Reset\+General\+Queue()}{ResetGeneralQueue()}}
+{\footnotesize\ttfamily void T\+Net.\+Model.\+Embattle\+Queue.\+Reset\+General\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+初始战斗入阵 
+
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a741b4aa1285df24f4d9f7590c1b89bad}\label{class_t_net_1_1_model_1_1_embattle_queue_a741b4aa1285df24f4d9f7590c1b89bad}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Set\+Queue@{Set\+Queue}}
+\index{Set\+Queue@{Set\+Queue}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Set\+Queue()}{SetQueue()}}
+{\footnotesize\ttfamily void T\+Net.\+Model.\+Embattle\+Queue.\+Set\+Queue (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}}}]{general }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sets the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index.\\
+\hline
+{\em general} & General.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a99080e1068b529b10c5f699665ec2562}\label{class_t_net_1_1_model_1_1_embattle_queue_a99080e1068b529b10c5f699665ec2562}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!To\+Queue@{To\+Queue}}
+\index{To\+Queue@{To\+Queue}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{To\+Queue()}{ToQueue()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} T\+Net.\+Model.\+Embattle\+Queue.\+To\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tos the queue. 
+
+\begin{DoxyReturn}{Returns}
+The queue.
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a520353f819d01fc5c04b8f2422abdbd7}\label{class_t_net_1_1_model_1_1_embattle_queue_a520353f819d01fc5c04b8f2422abdbd7}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Priority\+Map\+List@{Priority\+Map\+List}}
+\index{Priority\+Map\+List@{Priority\+Map\+List}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Priority\+Map\+List}{PriorityMapList}}
+{\footnotesize\ttfamily int \mbox{[},\mbox{]} T\+Net.\+Model.\+Embattle\+Queue.\+Priority\+Map\+List\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new}[,]\{
+            \{3, 6, 9, 2, 5, 8, 1, 4, 7\},
+            \{1, 4, 7, 2, 5, 8, 3, 6, 9\},
+            \{2, 5, 8, 1, 4, 7, 3, 6, 9\}
+        \}
+\end{DoxyCode}
+
+
+The priority map list. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a6dc8368ec49a2508a2e0edb600015285}\label{class_t_net_1_1_model_1_1_embattle_queue_a6dc8368ec49a2508a2e0edb600015285}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!General\+Count@{General\+Count}}
+\index{General\+Count@{General\+Count}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{General\+Count}{GeneralCount}}
+{\footnotesize\ttfamily int T\+Net.\+Model.\+Embattle\+Queue.\+General\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the general count. 
+
+The general count.\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a7f896cd7b5c7f5ace0cdc102c8393481}\label{class_t_net_1_1_model_1_1_embattle_queue_a7f896cd7b5c7f5ace0cdc102c8393481}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Has\+General@{Has\+General}}
+\index{Has\+General@{Has\+General}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Has\+General}{HasGeneral}}
+{\footnotesize\ttfamily bool T\+Net.\+Model.\+Embattle\+Queue.\+Has\+General\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+本轮是否存在佣兵 
+
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a75ed024e044d9b4953b5a56b2eda30db}\label{class_t_net_1_1_model_1_1_embattle_queue_a75ed024e044d9b4953b5a56b2eda30db}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Is\+Over@{Is\+Over}}
+\index{Is\+Over@{Is\+Over}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Is\+Over}{IsOver}}
+{\footnotesize\ttfamily bool T\+Net.\+Model.\+Embattle\+Queue.\+Is\+Over\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether this instance is over. 
+
+{\ttfamily true} if this instance is over; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a81b6720bb3516426c03be0e8451ca766}\label{class_t_net_1_1_model_1_1_embattle_queue_a81b6720bb3516426c03be0e8451ca766}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Items@{Items}}
+\index{Items@{Items}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Items}{Items}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_t_net_1_1_model_1_1_i_general}{I\+General}} \mbox{[}$\,$\mbox{]} T\+Net.\+Model.\+Embattle\+Queue.\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the items. 
+
+The items.\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_aa47598e0b355a8cfd63894c01cdfe3d2}\label{class_t_net_1_1_model_1_1_embattle_queue_aa47598e0b355a8cfd63894c01cdfe3d2}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Number@{Number}}
+\index{Number@{Number}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Number}{Number}}
+{\footnotesize\ttfamily int T\+Net.\+Model.\+Embattle\+Queue.\+Number\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+当前轮次数 
+
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_aadb3b7fbd15df46adb2201fc9b006d65}\label{class_t_net_1_1_model_1_1_embattle_queue_aadb3b7fbd15df46adb2201fc9b006d65}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Priority\+Num@{Priority\+Num}}
+\index{Priority\+Num@{Priority\+Num}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Priority\+Num}{PriorityNum}}
+{\footnotesize\ttfamily int T\+Net.\+Model.\+Embattle\+Queue.\+Priority\+Num\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+优先值 
+
+\mbox{\Hypertarget{class_t_net_1_1_model_1_1_embattle_queue_a5a8c80a0311eaa84762f04b6fca79bfb}\label{class_t_net_1_1_model_1_1_embattle_queue_a5a8c80a0311eaa84762f04b6fca79bfb}} 
+\index{T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}!Role@{Role}}
+\index{Role@{Role}!T\+Net\+::\+Model\+::\+Embattle\+Queue@{T\+Net\+::\+Model\+::\+Embattle\+Queue}}
+\subsubsection{\texorpdfstring{Role}{Role}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_t_net_1_1_model_a33d7abaa523c3472da9f2084152b79d3}{Embattle\+Role}} T\+Net.\+Model.\+Embattle\+Queue.\+Role\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the role. 
+
+The role.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Model/Embattle\+Queue.\+cs\end{DoxyCompactItemize}

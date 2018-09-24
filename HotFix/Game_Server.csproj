@@ -33,12 +33,16 @@
 
   <ItemGroup>
     <Compile Remove="script\cs\action.action5317.cs" />
+    <Compile Remove="script\cs\action11.cs" />
     <Compile Remove="script\cs\action5317.cs" />
     <Compile Remove="script\cs\Class11.cs" />
     <Compile Remove="script\cs\Main.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="script\cs\action11.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="script\cs\action5317.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

@@ -1,0 +1,447 @@
+\hypertarget{class_t_net_1_1_service_1_1_base_struct}{}\section{T\+Net.\+Service.\+Base\+Struct Class Reference}
+\label{class_t_net_1_1_service_1_1_base_struct}\index{T\+Net.\+Service.\+Base\+Struct@{T\+Net.\+Service.\+Base\+Struct}}
+
+
+Base struct.  
+
+
+Inheritance diagram for T\+Net.\+Service.\+Base\+Struct\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_t_net_1_1_service_1_1_base_struct}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a5f4612defb16558fdaa7c0adaa8555d1}{Do\+Init}} ()
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a0773bbf960ad91ff35e47508ee8c903b}{Write\+Lock\+Timeout\+Action}} (\mbox{\hyperlink{class_t_net_1_1_service_1_1_base_game_response}{Base\+Game\+Response}} response, object error\+Target, long wait\+Time\+Out\+Num, bool is\+Write\+Info=true)
+\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a5a1250b74d925d42066aebdefa36f54a}{Take\+Action}} ()
+\begin{DoxyCompactList}\small\item\em 子类实现\+Action处理 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_ab81857764a905fac984798e4fd2e2323}{Take\+Action\+Affter}} (bool state)
+\begin{DoxyCompactList}\small\item\em 处理结束执行 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a1e1ae8e1d5e424c6d1858d375bc9e61d}{Check\+Action}} ()
+\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_ad55cbb354a9de58eb1c2d0608a7e21f2}{Do\+Action}} ()
+\begin{DoxyCompactList}\small\item\em 执行\+Action处理 \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_afa4a4e036ed31b2f0d2eba3b2ed8a99c}{Read\+Url\+Element}} ()
+\begin{DoxyCompactList}\small\item\em 读取\+Url参数 \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a21e7b48b27540f2b155cd9aa0eb7fb10}{Get\+Url\+Element}} ()
+\begin{DoxyCompactList}\small\item\em get url parameter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_adea489f13ef08bb121d64c89f1f868f4}{Debug\+Tips}} (string error\+Info)
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a92472634c6a34ade397024712ba33454}{Debug\+Tips}} (string error\+Info, int error\+Code)
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a91813acc6f5a913bea40d44ee86a17f7}{Tips}} (string error\+Info)
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a8ee6447a71fc8eb25d2e3b38fe170b34}{Tips}} (string error\+Info, int error\+Code)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_adf493fa9ef410d27eec2d82b8beea0e6}{Check\+Runloader}} (\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_a14dcf224eb5a73e2c0b3bee4fe359dd8}{action\+Getter}})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a7d2af70a22df08f708c9707a205f1161}{Base\+Struct}} (int a\+Action\+Id, \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_a14dcf224eb5a73e2c0b3bee4fe359dd8}{action\+Getter}})
+\begin{DoxyCompactList}\small\item\em 构造函数 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_ad2af7304687799ec4a7fe2036643d407}{Init\+Child\+Action}} ()
+\begin{DoxyCompactList}\small\item\em 子类实现 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_ae25296bf13a95d5f8a2b94c345d18ae6}{Reflesh\+St}} ()
+\begin{DoxyCompactList}\small\item\em 刷新时间缀 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_aed62419eda78ee2f769be582f02025e8}{Validate\+Element}} ()
+\begin{DoxyCompactList}\small\item\em 较验参数 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_ad113e67255dd3c3c625903fc746266b3}{Is\+Ignore\+Uid}} ()
+\begin{DoxyCompactList}\small\item\em 是否此请求忽略\+U\+I\+D参数 \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_ad194547c2bd8ffe7e438af37457b011a}{Save\+Action\+Log\+To\+DB}} (\mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_ac7fb463ce72bdf0b12b015c74d2d58da}{Log\+Action\+Stat}} action\+Stat, string cont)
+\begin{DoxyCompactList}\small\item\em 保存日志 \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a2ddf77dd978a1a2d5885a9ec44d5a384}{Decode\+Password}} (string password)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a04c1171f14d9ee44612f9966a8d61d30}{http\+Get}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 兼容子类变量名 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_abd5492b1808c5a9ab507efd9dbec0540}{Is\+Run\+Loader}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 是否是压力测试 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_adfb097298fcd97ee77da130c5f40c2b3}{Is\+Realse}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Base struct. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_a7d2af70a22df08f708c9707a205f1161}\label{class_t_net_1_1_service_1_1_base_struct_a7d2af70a22df08f708c9707a205f1161}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Base\+Struct@{Base\+Struct}}
+\index{Base\+Struct@{Base\+Struct}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Base\+Struct()}{BaseStruct()}}
+{\footnotesize\ttfamily T\+Net.\+Service.\+Base\+Struct.\+Base\+Struct (\begin{DoxyParamCaption}\item[{int}]{a\+Action\+Id,  }\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}}}]{action\+Getter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+构造函数 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Action\+Id} & \\
+\hline
+{\em action\+Getter} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_a1e1ae8e1d5e424c6d1858d375bc9e61d}\label{class_t_net_1_1_service_1_1_base_struct_a1e1ae8e1d5e424c6d1858d375bc9e61d}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Check\+Action@{Check\+Action}}
+\index{Check\+Action@{Check\+Action}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Check\+Action()}{CheckAction()}}
+{\footnotesize\ttfamily virtual bool T\+Net.\+Service.\+Base\+Struct.\+Check\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad91710333b360bfc9148f08228161467}{T\+Net.\+Contract.\+Action.\+Login\+Action}}, \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_register_action_a5e3d02e2ac91b5d26911619b59e65050}{T\+Net.\+Contract.\+Action.\+Register\+Action}}, \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ab0e2a7e8dacbac0da60cf5415ab5fcaf}{T\+Net.\+Contract.\+Action.\+Authorize\+Action}}, and \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_re_access_token_action_a7822fac32c456f1ac8cf613c5982cc30}{T\+Net.\+Contract.\+Action.\+Re\+Access\+Token\+Action}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_adf493fa9ef410d27eec2d82b8beea0e6}\label{class_t_net_1_1_service_1_1_base_struct_adf493fa9ef410d27eec2d82b8beea0e6}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Check\+Runloader@{Check\+Runloader}}
+\index{Check\+Runloader@{Check\+Runloader}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Check\+Runloader()}{CheckRunloader()}}
+{\footnotesize\ttfamily static bool T\+Net.\+Service.\+Base\+Struct.\+Check\+Runloader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}}}]{action\+Getter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Getter} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_adea489f13ef08bb121d64c89f1f868f4}\label{class_t_net_1_1_service_1_1_base_struct_adea489f13ef08bb121d64c89f1f868f4}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Debug\+Tips@{Debug\+Tips}}
+\index{Debug\+Tips@{Debug\+Tips}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Debug\+Tips()}{DebugTips()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void T\+Net.\+Service.\+Base\+Struct.\+Debug\+Tips (\begin{DoxyParamCaption}\item[{string}]{error\+Info }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Info} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_a92472634c6a34ade397024712ba33454}\label{class_t_net_1_1_service_1_1_base_struct_a92472634c6a34ade397024712ba33454}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Debug\+Tips@{Debug\+Tips}}
+\index{Debug\+Tips@{Debug\+Tips}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Debug\+Tips()}{DebugTips()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void T\+Net.\+Service.\+Base\+Struct.\+Debug\+Tips (\begin{DoxyParamCaption}\item[{string}]{error\+Info,  }\item[{int}]{error\+Code }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Info} & \\
+\hline
+{\em error\+Code} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_a2ddf77dd978a1a2d5885a9ec44d5a384}\label{class_t_net_1_1_service_1_1_base_struct_a2ddf77dd978a1a2d5885a9ec44d5a384}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Decode\+Password@{Decode\+Password}}
+\index{Decode\+Password@{Decode\+Password}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Decode\+Password()}{DecodePassword()}}
+{\footnotesize\ttfamily virtual string T\+Net.\+Service.\+Base\+Struct.\+Decode\+Password (\begin{DoxyParamCaption}\item[{string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_ad55cbb354a9de58eb1c2d0608a7e21f2}\label{class_t_net_1_1_service_1_1_base_struct_ad55cbb354a9de58eb1c2d0608a7e21f2}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Do\+Action@{Do\+Action}}
+\index{Do\+Action@{Do\+Action}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Do\+Action()}{DoAction()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Service.\+Base\+Struct.\+Do\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+执行\+Action处理 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_a7a4391eb55bba0a76637b1d58e6fdea9}{T\+Net.\+Service.\+Game\+Struct}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_a5f4612defb16558fdaa7c0adaa8555d1}\label{class_t_net_1_1_service_1_1_base_struct_a5f4612defb16558fdaa7c0adaa8555d1}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Do\+Init@{Do\+Init}}
+\index{Do\+Init@{Do\+Init}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Do\+Init()}{DoInit()}}
+{\footnotesize\ttfamily void T\+Net.\+Service.\+Base\+Struct.\+Do\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_a21e7b48b27540f2b155cd9aa0eb7fb10}\label{class_t_net_1_1_service_1_1_base_struct_a21e7b48b27540f2b155cd9aa0eb7fb10}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Get\+Url\+Element@{Get\+Url\+Element}}
+\index{Get\+Url\+Element@{Get\+Url\+Element}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Get\+Url\+Element()}{GetUrlElement()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Service.\+Base\+Struct.\+Get\+Url\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get url parameter 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_ad4167cb7ce62183a1336ebc30a848bfc}{T\+Net.\+Service.\+Game\+Struct}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_ad2af7304687799ec4a7fe2036643d407}\label{class_t_net_1_1_service_1_1_base_struct_ad2af7304687799ec4a7fe2036643d407}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Init\+Child\+Action@{Init\+Child\+Action}}
+\index{Init\+Child\+Action@{Init\+Child\+Action}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Init\+Child\+Action()}{InitChildAction()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Service.\+Base\+Struct.\+Init\+Child\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+子类实现 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_script_action_a0e10cb82f7a96457248b836bcec83aa7}{T\+Net.\+Contract.\+Action.\+Script\+Action}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_ad113e67255dd3c3c625903fc746266b3}\label{class_t_net_1_1_service_1_1_base_struct_ad113e67255dd3c3c625903fc746266b3}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Is\+Ignore\+Uid@{Is\+Ignore\+Uid}}
+\index{Is\+Ignore\+Uid@{Is\+Ignore\+Uid}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Is\+Ignore\+Uid()}{IsIgnoreUid()}}
+{\footnotesize\ttfamily virtual bool T\+Net.\+Service.\+Base\+Struct.\+Is\+Ignore\+Uid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+是否此请求忽略\+U\+I\+D参数 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad0ee65777c20af8acea8da0f24c977cf}{T\+Net.\+Contract.\+Action.\+Login\+Action}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_afa4a4e036ed31b2f0d2eba3b2ed8a99c}\label{class_t_net_1_1_service_1_1_base_struct_afa4a4e036ed31b2f0d2eba3b2ed8a99c}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Read\+Url\+Element@{Read\+Url\+Element}}
+\index{Read\+Url\+Element@{Read\+Url\+Element}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Read\+Url\+Element()}{ReadUrlElement()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Service.\+Base\+Struct.\+Read\+Url\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+读取\+Url参数 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_ab30ab74b0856742fd3da24539b94fb13}{T\+Net.\+Service.\+Game\+Struct}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_ae25296bf13a95d5f8a2b94c345d18ae6}\label{class_t_net_1_1_service_1_1_base_struct_ae25296bf13a95d5f8a2b94c345d18ae6}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Reflesh\+St@{Reflesh\+St}}
+\index{Reflesh\+St@{Reflesh\+St}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Reflesh\+St()}{RefleshSt()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Service.\+Base\+Struct.\+Reflesh\+St (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+刷新时间缀 
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_ad194547c2bd8ffe7e438af37457b011a}\label{class_t_net_1_1_service_1_1_base_struct_ad194547c2bd8ffe7e438af37457b011a}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Save\+Action\+Log\+To\+DB@{Save\+Action\+Log\+To\+DB}}
+\index{Save\+Action\+Log\+To\+DB@{Save\+Action\+Log\+To\+DB}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Save\+Action\+Log\+To\+D\+B()}{SaveActionLogToDB()}}
+{\footnotesize\ttfamily override void T\+Net.\+Service.\+Base\+Struct.\+Save\+Action\+Log\+To\+DB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_ac7fb463ce72bdf0b12b015c74d2d58da}{Log\+Action\+Stat}}}]{action\+Stat,  }\item[{string}]{cont }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+保存日志 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Stat} & \\
+\hline
+{\em cont} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_aff61ff71c1dd0a5ffef06af3f80f79ca}{T\+Net.\+Service.\+Game\+Struct}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_a5a1250b74d925d42066aebdefa36f54a}\label{class_t_net_1_1_service_1_1_base_struct_a5a1250b74d925d42066aebdefa36f54a}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Take\+Action@{Take\+Action}}
+\index{Take\+Action@{Take\+Action}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Take\+Action()}{TakeAction()}}
+{\footnotesize\ttfamily abstract bool T\+Net.\+Service.\+Base\+Struct.\+Take\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+子类实现\+Action处理 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_a6ebe6efbb40f61f586ac86f9a3428edf}{T\+Net.\+Contract.\+Action.\+Login\+Action}}, \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_register_action_ad8844eaa6365b2b6b200634a1e860e1e}{T\+Net.\+Contract.\+Action.\+Register\+Action}}, \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_pay_normal_action_aa8648c2a4c6bef0a27d694dcd953e516}{T\+Net.\+Contract.\+Action.\+Pay\+Normal\+Action}}, \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_script_action_a93573bb7b31b15eccb5268ac64e2c41b}{T\+Net.\+Contract.\+Action.\+Script\+Action}}, \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_app_store_pay_action_a23f443cab7cfe7507638e2bc32030e49}{T\+Net.\+Contract.\+Action.\+App\+Store\+Pay\+Action}}, \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_re_access_token_action_a43205d0d7be766ffd79fef9d8b6730d5}{T\+Net.\+Contract.\+Action.\+Re\+Access\+Token\+Action}}, \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_android_pay_action_aaadcdc3f7633432ae0a8925e4a287617}{T\+Net.\+Contract.\+Action.\+Android\+Pay\+Action}}, \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_sdk91_pay_action_a430e62dca404f98f769d4eef297c19e8}{T\+Net.\+Contract.\+Action.\+Sdk91\+Pay\+Action}}, and \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_app_store_detail_action_a16a7cfa158cd14c46c4c665c49c7ded4}{T\+Net.\+Contract.\+Action.\+App\+Store\+Detail\+Action}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_ab81857764a905fac984798e4fd2e2323}\label{class_t_net_1_1_service_1_1_base_struct_ab81857764a905fac984798e4fd2e2323}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Take\+Action\+Affter@{Take\+Action\+Affter}}
+\index{Take\+Action\+Affter@{Take\+Action\+Affter}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Take\+Action\+Affter()}{TakeActionAffter()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Service.\+Base\+Struct.\+Take\+Action\+Affter (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+处理结束执行 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_register_action_a76541dd3c1e60c99d2c5aa1f55be3f74}{T\+Net.\+Contract.\+Action.\+Register\+Action}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_a91813acc6f5a913bea40d44ee86a17f7}\label{class_t_net_1_1_service_1_1_base_struct_a91813acc6f5a913bea40d44ee86a17f7}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Tips@{Tips}}
+\index{Tips@{Tips}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Tips()}{Tips()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void T\+Net.\+Service.\+Base\+Struct.\+Tips (\begin{DoxyParamCaption}\item[{string}]{error\+Info }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Info} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_a8ee6447a71fc8eb25d2e3b38fe170b34}\label{class_t_net_1_1_service_1_1_base_struct_a8ee6447a71fc8eb25d2e3b38fe170b34}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Tips@{Tips}}
+\index{Tips@{Tips}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Tips()}{Tips()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void T\+Net.\+Service.\+Base\+Struct.\+Tips (\begin{DoxyParamCaption}\item[{string}]{error\+Info,  }\item[{int}]{error\+Code }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Info} & \\
+\hline
+{\em error\+Code} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_aed62419eda78ee2f769be582f02025e8}\label{class_t_net_1_1_service_1_1_base_struct_aed62419eda78ee2f769be582f02025e8}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Validate\+Element@{Validate\+Element}}
+\index{Validate\+Element@{Validate\+Element}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Validate\+Element()}{ValidateElement()}}
+{\footnotesize\ttfamily virtual bool T\+Net.\+Service.\+Base\+Struct.\+Validate\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+较验参数 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a71b0f279c0f6f2d32d371388a2fa0947}{T\+Net.\+Contract.\+Action.\+Authorize\+Action}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_a0773bbf960ad91ff35e47508ee8c903b}\label{class_t_net_1_1_service_1_1_base_struct_a0773bbf960ad91ff35e47508ee8c903b}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Write\+Lock\+Timeout\+Action@{Write\+Lock\+Timeout\+Action}}
+\index{Write\+Lock\+Timeout\+Action@{Write\+Lock\+Timeout\+Action}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Write\+Lock\+Timeout\+Action()}{WriteLockTimeoutAction()}}
+{\footnotesize\ttfamily void T\+Net.\+Service.\+Base\+Struct.\+Write\+Lock\+Timeout\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_base_game_response}{Base\+Game\+Response}}}]{response,  }\item[{object}]{error\+Target,  }\item[{long}]{wait\+Time\+Out\+Num,  }\item[{bool}]{is\+Write\+Info = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & \\
+\hline
+{\em error\+Target} & \\
+\hline
+{\em wait\+Time\+Out\+Num} & \\
+\hline
+{\em is\+Write\+Info} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_a04c1171f14d9ee44612f9966a8d61d30}\label{class_t_net_1_1_service_1_1_base_struct_a04c1171f14d9ee44612f9966a8d61d30}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!http\+Get@{http\+Get}}
+\index{http\+Get@{http\+Get}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{http\+Get}{httpGet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} T\+Net.\+Service.\+Base\+Struct.\+http\+Get\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+
+
+兼容子类变量名 
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_adfb097298fcd97ee77da130c5f40c2b3}\label{class_t_net_1_1_service_1_1_base_struct_adfb097298fcd97ee77da130c5f40c2b3}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Is\+Realse@{Is\+Realse}}
+\index{Is\+Realse@{Is\+Realse}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Is\+Realse}{IsRealse}}
+{\footnotesize\ttfamily bool T\+Net.\+Service.\+Base\+Struct.\+Is\+Realse\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_base_struct_abd5492b1808c5a9ab507efd9dbec0540}\label{class_t_net_1_1_service_1_1_base_struct_abd5492b1808c5a9ab507efd9dbec0540}} 
+\index{T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}!Is\+Run\+Loader@{Is\+Run\+Loader}}
+\index{Is\+Run\+Loader@{Is\+Run\+Loader}!T\+Net\+::\+Service\+::\+Base\+Struct@{T\+Net\+::\+Service\+::\+Base\+Struct}}
+\subsubsection{\texorpdfstring{Is\+Run\+Loader}{IsRunLoader}}
+{\footnotesize\ttfamily bool T\+Net.\+Service.\+Base\+Struct.\+Is\+Run\+Loader\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+
+
+是否是压力测试 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Service/Base\+Struct.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,300 @@
+\hypertarget{class_t_net_1_1_contract_1_1_game_base_host}{}\section{T\+Net.\+Contract.\+Game\+Base\+Host Class Reference}
+\label{class_t_net_1_1_contract_1_1_game_base_host}\index{T\+Net.\+Contract.\+Game\+Base\+Host@{T\+Net.\+Contract.\+Game\+Base\+Host}}
+
+
+ 
+
+
+Inheritance diagram for T\+Net.\+Contract.\+Game\+Base\+Host\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_t_net_1_1_contract_1_1_game_base_host}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_a0bd4b389a68a6922ee0b76b4cfe9a388}{Start}} (string\mbox{[}$\,$\mbox{]} args)
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_aadda55ed81d6461f0da196731c99a073}{Process\+Request}} (object package, object param)
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_aa20602c8a29aa52506336a861de32692}{Stop}} ()
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_aea75b7f594e1ec824cb1380ef1c6f18d}{Re\+Start}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_a82c725fe21b4ceeacbfe86dbacd48827}{On\+Service\+Stop}} ()
+\begin{DoxyCompactList}\small\item\em Raises the service stop event. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_a2941f10ee11c805eaa395c602c4f3399}{On\+Start\+Affer}} ()
+\begin{DoxyCompactList}\small\item\em Raises the start affer event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_ab6647ea8762677ab23df4be03043b00e}{Do\+Action}} (\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} action\+Getter, \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_game_response}{Base\+Game\+Response}} response)
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_a2a726288c921c8743a426fbc3ae2ccb9}{On\+Requested}} (\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} action\+Getter, \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_game_response}{Base\+Game\+Response}} response)
+\begin{DoxyCompactList}\small\item\em Raises the requested event. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_a04444ec9b97c907dc7bc49dbdfcc6ee1}{On\+Call\+Remote}} (string route\+Path, \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} action\+Getter, Message\+Structure response)
+\begin{DoxyCompactList}\small\item\em Call remote method \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_af31cfeb1a622a263f4d32bd56f41bc64}{Check\+Remote}} (string route, \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} action\+Getter)
+\begin{DoxyCompactList}\small\item\em Checks the remote. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_ad41941ac456ea489c0abbc0bc673533b}{Check\+Special\+Packge}} (\mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}} package, \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} session)
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_ac1394511cfb25f6692ccce54a83fdb9d}{On\+Heartbeat}} (\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} session)
+\begin{DoxyCompactList}\small\item\em 心跳包 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_a191e95fd9011f435370a84f22a15c3ff}{On\+Heartbeat\+Timeout}} (\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} session)
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_a1ee7a32afa8974fbd906e2dd4451f726}{Build\+Hearbeat\+Package}} (\mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}} package, \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} session)
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_base_host_a2614d516b774492909c22473fda82586}{On\+Disconnected}} (\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} session)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_a1ee7a32afa8974fbd906e2dd4451f726}\label{class_t_net_1_1_contract_1_1_game_base_host_a1ee7a32afa8974fbd906e2dd4451f726}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!Build\+Hearbeat\+Package@{Build\+Hearbeat\+Package}}
+\index{Build\+Hearbeat\+Package@{Build\+Hearbeat\+Package}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{Build\+Hearbeat\+Package()}{BuildHearbeatPackage()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Contract.\+Game\+Base\+Host.\+Build\+Hearbeat\+Package (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}}}]{package,  }\item[{\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}}]{session }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em package} & \\
+\hline
+{\em session} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_af31cfeb1a622a263f4d32bd56f41bc64}\label{class_t_net_1_1_contract_1_1_game_base_host_af31cfeb1a622a263f4d32bd56f41bc64}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!Check\+Remote@{Check\+Remote}}
+\index{Check\+Remote@{Check\+Remote}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{Check\+Remote()}{CheckRemote()}}
+{\footnotesize\ttfamily virtual bool T\+Net.\+Contract.\+Game\+Base\+Host.\+Check\+Remote (\begin{DoxyParamCaption}\item[{string}]{route,  }\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}}}]{action\+Getter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Checks the remote. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if remote was checked, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em route} & Route.\\
+\hline
+{\em action\+Getter} & Http get.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_ad41941ac456ea489c0abbc0bc673533b}\label{class_t_net_1_1_contract_1_1_game_base_host_ad41941ac456ea489c0abbc0bc673533b}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!Check\+Special\+Packge@{Check\+Special\+Packge}}
+\index{Check\+Special\+Packge@{Check\+Special\+Packge}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{Check\+Special\+Packge()}{CheckSpecialPackge()}}
+{\footnotesize\ttfamily virtual bool T\+Net.\+Contract.\+Game\+Base\+Host.\+Check\+Special\+Packge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}}}]{package,  }\item[{\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}}]{session }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em package} & \\
+\hline
+{\em session} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_ab6647ea8762677ab23df4be03043b00e}\label{class_t_net_1_1_contract_1_1_game_base_host_ab6647ea8762677ab23df4be03043b00e}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!Do\+Action@{Do\+Action}}
+\index{Do\+Action@{Do\+Action}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{Do\+Action()}{DoAction()}}
+{\footnotesize\ttfamily void T\+Net.\+Contract.\+Game\+Base\+Host.\+Do\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}}}]{action\+Getter,  }\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_base_game_response}{Base\+Game\+Response}}}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Getter} & \\
+\hline
+{\em response} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_a04444ec9b97c907dc7bc49dbdfcc6ee1}\label{class_t_net_1_1_contract_1_1_game_base_host_a04444ec9b97c907dc7bc49dbdfcc6ee1}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!On\+Call\+Remote@{On\+Call\+Remote}}
+\index{On\+Call\+Remote@{On\+Call\+Remote}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{On\+Call\+Remote()}{OnCallRemote()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Contract.\+Game\+Base\+Host.\+On\+Call\+Remote (\begin{DoxyParamCaption}\item[{string}]{route\+Path,  }\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}}}]{action\+Getter,  }\item[{Message\+Structure}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Call remote method 
+
+
+\begin{DoxyParams}{Parameters}
+{\em route\+Path} & \\
+\hline
+{\em action\+Getter} & \\
+\hline
+{\em response} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_a2614d516b774492909c22473fda82586}\label{class_t_net_1_1_contract_1_1_game_base_host_a2614d516b774492909c22473fda82586}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!On\+Disconnected@{On\+Disconnected}}
+\index{On\+Disconnected@{On\+Disconnected}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{On\+Disconnected()}{OnDisconnected()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Contract.\+Game\+Base\+Host.\+On\+Disconnected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}}]{session }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_ac1394511cfb25f6692ccce54a83fdb9d}\label{class_t_net_1_1_contract_1_1_game_base_host_ac1394511cfb25f6692ccce54a83fdb9d}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!On\+Heartbeat@{On\+Heartbeat}}
+\index{On\+Heartbeat@{On\+Heartbeat}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{On\+Heartbeat()}{OnHeartbeat()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Contract.\+Game\+Base\+Host.\+On\+Heartbeat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}}]{session }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+心跳包 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_a191e95fd9011f435370a84f22a15c3ff}\label{class_t_net_1_1_contract_1_1_game_base_host_a191e95fd9011f435370a84f22a15c3ff}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!On\+Heartbeat\+Timeout@{On\+Heartbeat\+Timeout}}
+\index{On\+Heartbeat\+Timeout@{On\+Heartbeat\+Timeout}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{On\+Heartbeat\+Timeout()}{OnHeartbeatTimeout()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Contract.\+Game\+Base\+Host.\+On\+Heartbeat\+Timeout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}}]{session }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_a2a726288c921c8743a426fbc3ae2ccb9}\label{class_t_net_1_1_contract_1_1_game_base_host_a2a726288c921c8743a426fbc3ae2ccb9}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!On\+Requested@{On\+Requested}}
+\index{On\+Requested@{On\+Requested}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{On\+Requested()}{OnRequested()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Contract.\+Game\+Base\+Host.\+On\+Requested (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}}}]{action\+Getter,  }\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_base_game_response}{Base\+Game\+Response}}}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Raises the requested event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Getter} & Http get.\\
+\hline
+{\em response} & Response.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_a82c725fe21b4ceeacbfe86dbacd48827}\label{class_t_net_1_1_contract_1_1_game_base_host_a82c725fe21b4ceeacbfe86dbacd48827}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!On\+Service\+Stop@{On\+Service\+Stop}}
+\index{On\+Service\+Stop@{On\+Service\+Stop}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{On\+Service\+Stop()}{OnServiceStop()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Contract.\+Game\+Base\+Host.\+On\+Service\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Raises the service stop event. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_a2941f10ee11c805eaa395c602c4f3399}\label{class_t_net_1_1_contract_1_1_game_base_host_a2941f10ee11c805eaa395c602c4f3399}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!On\+Start\+Affer@{On\+Start\+Affer}}
+\index{On\+Start\+Affer@{On\+Start\+Affer}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{On\+Start\+Affer()}{OnStartAffer()}}
+{\footnotesize\ttfamily abstract void T\+Net.\+Contract.\+Game\+Base\+Host.\+On\+Start\+Affer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Raises the start affer event. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_aadda55ed81d6461f0da196731c99a073}\label{class_t_net_1_1_contract_1_1_game_base_host_aadda55ed81d6461f0da196731c99a073}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!Process\+Request@{Process\+Request}}
+\index{Process\+Request@{Process\+Request}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{Process\+Request()}{ProcessRequest()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+Contract.\+Game\+Base\+Host.\+Process\+Request (\begin{DoxyParamCaption}\item[{object}]{package,  }\item[{object}]{param }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em package} & \\
+\hline
+{\em param} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_aea75b7f594e1ec824cb1380ef1c6f18d}\label{class_t_net_1_1_contract_1_1_game_base_host_aea75b7f594e1ec824cb1380ef1c6f18d}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!Re\+Start@{Re\+Start}}
+\index{Re\+Start@{Re\+Start}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{Re\+Start()}{ReStart()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Contract.\+Game\+Base\+Host.\+Re\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_a0bd4b389a68a6922ee0b76b4cfe9a388}\label{class_t_net_1_1_contract_1_1_game_base_host_a0bd4b389a68a6922ee0b76b4cfe9a388}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!Start@{Start}}
+\index{Start@{Start}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Contract.\+Game\+Base\+Host.\+Start (\begin{DoxyParamCaption}\item[{string \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_socket_host_a5ed0b1074c4e59abb3ff7e60eee2ceec}{T\+Net.\+Contract.\+Game\+Socket\+Host}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_base_host_aa20602c8a29aa52506336a861de32692}\label{class_t_net_1_1_contract_1_1_game_base_host_aa20602c8a29aa52506336a861de32692}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}!Stop@{Stop}}
+\index{Stop@{Stop}!T\+Net\+::\+Contract\+::\+Game\+Base\+Host@{T\+Net\+::\+Contract\+::\+Game\+Base\+Host}}
+\subsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Contract.\+Game\+Base\+Host.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+
+
+Reimplemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_socket_host_a598542dacf31acc5a7a7602ff14a0b73}{T\+Net.\+Contract.\+Game\+Socket\+Host}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract\+\_\+/Game\+Base\+Host.\+cs\end{DoxyCompactItemize}

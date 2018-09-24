@@ -1,0 +1,360 @@
+\hypertarget{class_t_net_1_1_sns_1_1_sns_center_user}{}\section{T\+Net.\+Sns.\+Sns\+Center\+User Class Reference}
+\label{class_t_net_1_1_sns_1_1_sns_center_user}\index{T\+Net.\+Sns.\+Sns\+Center\+User@{T\+Net.\+Sns.\+Sns\+Center\+User}}
+
+
+\mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user}{Sns\+Center\+User}} 的摘要说明  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_aae47844f2311e542bfd6a8b20452c2b0}{Sns\+Center\+User}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user}{T\+Net.\+Sns.\+Sns\+Center\+User}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_a090385842d9c88af0432eaacd61c0338}{Sns\+Center\+User}} (string s\+Passport\+Id, string passport\+Pwd, string imei)
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_a37ba1edc71233c8f87cd3aa8060ef750}{Validate\+Passport}} (\mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} sns\+User)
+\begin{DoxyCompactList}\small\item\em 验证 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_a3485d2287fabece6bde73022df1b354d}{Get\+User\+By\+Device\+Id}} (string imei)
+\begin{DoxyCompactList}\small\item\em 是否有绑定\+Device\+ID \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_a00e6fa5fc8a537ca1fcb0a5b115bb5ac}{Insert\+Sns\+User}} (string\mbox{[}$\,$\mbox{]} param\+Names, string\mbox{[}$\,$\mbox{]} param\+Values, bool is\+Custom)
+\begin{DoxyCompactList}\small\item\em Inserts the sns user. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_a4aa37fd81f9d4b3401995d2329a6d4ed}{Insert\+Sns\+User}} (bool is\+Custom)
+\begin{DoxyCompactList}\small\item\em 向社区中心添加用户 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_a84d2ca90d4068a0f506758de490de577}{Change\+Pass}} (string user\+Id, bool is\+Reset=false)
+\begin{DoxyCompactList}\small\item\em 修改密码 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_ab96e678bd2b50fd3c5f395c119d4ca50}{Get\+User\+Info}} (string passport\+Id)
+\item 
+\mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_af46e361389c79d0524b6c0954cf25253}{Get\+User\+Info}} (string retail\+ID, string retail\+User)
+\item 
+\mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_a587b74d0e06690b4275b30ccaef2dddb}{Get\+User\+By\+Weixin}} (string open\+Id)
+\begin{DoxyCompactList}\small\item\em 通过微信号 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_a9406de7c4124b5dfb3061fdac1f60985}{Password\+Encrypt\+Md5}} (string str)
+\begin{DoxyCompactList}\small\item\em Passwords the encrypt md5. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_a96b414c603449fb5c66f730429d26cf0}{Check\+Device}} (string device)
+\item 
+static void \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_aa5dc23bca56d74c24aeafd509bafb12e}{Add\+Login\+Log}} (string device\+ID, string passport\+ID)
+\begin{DoxyCompactList}\small\item\em Adds the login log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_ab24f18caf839ae0c76339ecb57dbdfd9}\label{class_t_net_1_1_sns_1_1_sns_center_user_ab24f18caf839ae0c76339ecb57dbdfd9}} 
+int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_ab24f18caf839ae0c76339ecb57dbdfd9}{User\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 获得用户\+ID \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_abf70c3bed11cd1f81afe5ba30e483412}{Passport\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the passport identifier. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_a9063f05c104fcc146a8a87bafadf5eea}{Password}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the password. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_a946b7ee270887becc6cb2e02b5174946}{Retail\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the retail I. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_af63ab8e0d91da916bd8586abe8779cdd}{Weixin\+Code}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the weixin code. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_a7ee732c4983084e2f9a9c1553f89e455}{Retail\+User}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the retail user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_t_net_1_1_sns_a338402ea3c5dbc36f95f0a7e4c1cd3a2}{Reg\+Type}} \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user_a4cb16ce1802c310d74f6b60e26df6290}{Reg\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the type of the reg. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user}{Sns\+Center\+User}} 的摘要说明 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_aae47844f2311e542bfd6a8b20452c2b0}\label{class_t_net_1_1_sns_1_1_sns_center_user_aae47844f2311e542bfd6a8b20452c2b0}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Sns\+Center\+User@{Sns\+Center\+User}}
+\index{Sns\+Center\+User@{Sns\+Center\+User}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Sns\+Center\+User()}{SnsCenterUser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T\+Net.\+Sns.\+Sns\+Center\+User.\+Sns\+Center\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_center_user}{T\+Net.\+Sns.\+Sns\+Center\+User}} class. 
+
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_a090385842d9c88af0432eaacd61c0338}\label{class_t_net_1_1_sns_1_1_sns_center_user_a090385842d9c88af0432eaacd61c0338}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Sns\+Center\+User@{Sns\+Center\+User}}
+\index{Sns\+Center\+User@{Sns\+Center\+User}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Sns\+Center\+User()}{SnsCenterUser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T\+Net.\+Sns.\+Sns\+Center\+User.\+Sns\+Center\+User (\begin{DoxyParamCaption}\item[{string}]{s\+Passport\+Id,  }\item[{string}]{passport\+Pwd,  }\item[{string}]{imei }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em s\+Passport\+Id} & \\
+\hline
+{\em passport\+Pwd} & \\
+\hline
+{\em imei} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_aa5dc23bca56d74c24aeafd509bafb12e}\label{class_t_net_1_1_sns_1_1_sns_center_user_aa5dc23bca56d74c24aeafd509bafb12e}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Add\+Login\+Log@{Add\+Login\+Log}}
+\index{Add\+Login\+Log@{Add\+Login\+Log}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Add\+Login\+Log()}{AddLoginLog()}}
+{\footnotesize\ttfamily static void T\+Net.\+Sns.\+Sns\+Center\+User.\+Add\+Login\+Log (\begin{DoxyParamCaption}\item[{string}]{device\+ID,  }\item[{string}]{passport\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds the login log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+ID} & Device I.\\
+\hline
+{\em passport\+ID} & Passport I.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_a84d2ca90d4068a0f506758de490de577}\label{class_t_net_1_1_sns_1_1_sns_center_user_a84d2ca90d4068a0f506758de490de577}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Change\+Pass@{Change\+Pass}}
+\index{Change\+Pass@{Change\+Pass}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Change\+Pass()}{ChangePass()}}
+{\footnotesize\ttfamily int T\+Net.\+Sns.\+Sns\+Center\+User.\+Change\+Pass (\begin{DoxyParamCaption}\item[{string}]{user\+Id,  }\item[{bool}]{is\+Reset = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+修改密码 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+{\em is\+Reset} & 只重置密码\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_a96b414c603449fb5c66f730429d26cf0}\label{class_t_net_1_1_sns_1_1_sns_center_user_a96b414c603449fb5c66f730429d26cf0}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Check\+Device@{Check\+Device}}
+\index{Check\+Device@{Check\+Device}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Check\+Device()}{CheckDevice()}}
+{\footnotesize\ttfamily static bool T\+Net.\+Sns.\+Sns\+Center\+User.\+Check\+Device (\begin{DoxyParamCaption}\item[{string}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_a3485d2287fabece6bde73022df1b354d}\label{class_t_net_1_1_sns_1_1_sns_center_user_a3485d2287fabece6bde73022df1b354d}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Get\+User\+By\+Device\+Id@{Get\+User\+By\+Device\+Id}}
+\index{Get\+User\+By\+Device\+Id@{Get\+User\+By\+Device\+Id}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Get\+User\+By\+Device\+Id()}{GetUserByDeviceId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} T\+Net.\+Sns.\+Sns\+Center\+User.\+Get\+User\+By\+Device\+Id (\begin{DoxyParamCaption}\item[{string}]{imei }\end{DoxyParamCaption})}
+
+
+
+是否有绑定\+Device\+ID 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_a587b74d0e06690b4275b30ccaef2dddb}\label{class_t_net_1_1_sns_1_1_sns_center_user_a587b74d0e06690b4275b30ccaef2dddb}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Get\+User\+By\+Weixin@{Get\+User\+By\+Weixin}}
+\index{Get\+User\+By\+Weixin@{Get\+User\+By\+Weixin}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Get\+User\+By\+Weixin()}{GetUserByWeixin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} T\+Net.\+Sns.\+Sns\+Center\+User.\+Get\+User\+By\+Weixin (\begin{DoxyParamCaption}\item[{string}]{open\+Id }\end{DoxyParamCaption})}
+
+
+
+通过微信号 
+
+
+\begin{DoxyParams}{Parameters}
+{\em open\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_ab96e678bd2b50fd3c5f395c119d4ca50}\label{class_t_net_1_1_sns_1_1_sns_center_user_ab96e678bd2b50fd3c5f395c119d4ca50}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Get\+User\+Info@{Get\+User\+Info}}
+\index{Get\+User\+Info@{Get\+User\+Info}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Get\+User\+Info()}{GetUserInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} T\+Net.\+Sns.\+Sns\+Center\+User.\+Get\+User\+Info (\begin{DoxyParamCaption}\item[{string}]{passport\+Id }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em passport\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_af46e361389c79d0524b6c0954cf25253}\label{class_t_net_1_1_sns_1_1_sns_center_user_af46e361389c79d0524b6c0954cf25253}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Get\+User\+Info@{Get\+User\+Info}}
+\index{Get\+User\+Info@{Get\+User\+Info}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Get\+User\+Info()}{GetUserInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}} T\+Net.\+Sns.\+Sns\+Center\+User.\+Get\+User\+Info (\begin{DoxyParamCaption}\item[{string}]{retail\+ID,  }\item[{string}]{retail\+User }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em retail\+ID} & \\
+\hline
+{\em retail\+User} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_a00e6fa5fc8a537ca1fcb0a5b115bb5ac}\label{class_t_net_1_1_sns_1_1_sns_center_user_a00e6fa5fc8a537ca1fcb0a5b115bb5ac}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Insert\+Sns\+User@{Insert\+Sns\+User}}
+\index{Insert\+Sns\+User@{Insert\+Sns\+User}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Insert\+Sns\+User()}{InsertSnsUser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int T\+Net.\+Sns.\+Sns\+Center\+User.\+Insert\+Sns\+User (\begin{DoxyParamCaption}\item[{string \mbox{[}$\,$\mbox{]}}]{param\+Names,  }\item[{string \mbox{[}$\,$\mbox{]}}]{param\+Values,  }\item[{bool}]{is\+Custom }\end{DoxyParamCaption})}
+
+
+
+Inserts the sns user. 
+
+\begin{DoxyReturn}{Returns}
+The sns user.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Names} & Parameter names.\\
+\hline
+{\em param\+Values} & Parameter values.\\
+\hline
+{\em is\+Custom} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_a4aa37fd81f9d4b3401995d2329a6d4ed}\label{class_t_net_1_1_sns_1_1_sns_center_user_a4aa37fd81f9d4b3401995d2329a6d4ed}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Insert\+Sns\+User@{Insert\+Sns\+User}}
+\index{Insert\+Sns\+User@{Insert\+Sns\+User}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Insert\+Sns\+User()}{InsertSnsUser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int T\+Net.\+Sns.\+Sns\+Center\+User.\+Insert\+Sns\+User (\begin{DoxyParamCaption}\item[{bool}]{is\+Custom }\end{DoxyParamCaption})}
+
+
+
+向社区中心添加用户 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_a9406de7c4124b5dfb3061fdac1f60985}\label{class_t_net_1_1_sns_1_1_sns_center_user_a9406de7c4124b5dfb3061fdac1f60985}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Password\+Encrypt\+Md5@{Password\+Encrypt\+Md5}}
+\index{Password\+Encrypt\+Md5@{Password\+Encrypt\+Md5}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Password\+Encrypt\+Md5()}{PasswordEncryptMd5()}}
+{\footnotesize\ttfamily static string T\+Net.\+Sns.\+Sns\+Center\+User.\+Password\+Encrypt\+Md5 (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Passwords the encrypt md5. 
+
+\begin{DoxyReturn}{Returns}
+The encrypt md5.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_a37ba1edc71233c8f87cd3aa8060ef750}\label{class_t_net_1_1_sns_1_1_sns_center_user_a37ba1edc71233c8f87cd3aa8060ef750}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Validate\+Passport@{Validate\+Passport}}
+\index{Validate\+Passport@{Validate\+Passport}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Validate\+Passport()}{ValidatePassport()}}
+{\footnotesize\ttfamily bool T\+Net.\+Sns.\+Sns\+Center\+User.\+Validate\+Passport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_sns_1_1_sns_user}{Sns\+User}}}]{sns\+User }\end{DoxyParamCaption})}
+
+
+
+验证 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sns\+User} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_abf70c3bed11cd1f81afe5ba30e483412}\label{class_t_net_1_1_sns_1_1_sns_center_user_abf70c3bed11cd1f81afe5ba30e483412}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Passport\+Id@{Passport\+Id}}
+\index{Passport\+Id@{Passport\+Id}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Passport\+Id}{PassportId}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Sns\+Center\+User.\+Passport\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the passport identifier. 
+
+The passport identifier.\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_a9063f05c104fcc146a8a87bafadf5eea}\label{class_t_net_1_1_sns_1_1_sns_center_user_a9063f05c104fcc146a8a87bafadf5eea}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Password@{Password}}
+\index{Password@{Password}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Password}{Password}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Sns\+Center\+User.\+Password\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the password. 
+
+The password.\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_a4cb16ce1802c310d74f6b60e26df6290}\label{class_t_net_1_1_sns_1_1_sns_center_user_a4cb16ce1802c310d74f6b60e26df6290}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Reg\+Type@{Reg\+Type}}
+\index{Reg\+Type@{Reg\+Type}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Reg\+Type}{RegType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_t_net_1_1_sns_a338402ea3c5dbc36f95f0a7e4c1cd3a2}{Reg\+Type}} T\+Net.\+Sns.\+Sns\+Center\+User.\+Reg\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the type of the reg. 
+
+The type of the reg.\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_a946b7ee270887becc6cb2e02b5174946}\label{class_t_net_1_1_sns_1_1_sns_center_user_a946b7ee270887becc6cb2e02b5174946}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Retail\+ID@{Retail\+ID}}
+\index{Retail\+ID@{Retail\+ID}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Retail\+ID}{RetailID}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Sns\+Center\+User.\+Retail\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the retail I. 
+
+The retail I.\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_a7ee732c4983084e2f9a9c1553f89e455}\label{class_t_net_1_1_sns_1_1_sns_center_user_a7ee732c4983084e2f9a9c1553f89e455}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Retail\+User@{Retail\+User}}
+\index{Retail\+User@{Retail\+User}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Retail\+User}{RetailUser}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Sns\+Center\+User.\+Retail\+User\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the retail user. 
+
+The retail user.\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_sns_center_user_af63ab8e0d91da916bd8586abe8779cdd}\label{class_t_net_1_1_sns_1_1_sns_center_user_af63ab8e0d91da916bd8586abe8779cdd}} 
+\index{T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}!Weixin\+Code@{Weixin\+Code}}
+\index{Weixin\+Code@{Weixin\+Code}!T\+Net\+::\+Sns\+::\+Sns\+Center\+User@{T\+Net\+::\+Sns\+::\+Sns\+Center\+User}}
+\subsubsection{\texorpdfstring{Weixin\+Code}{WeixinCode}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Sns\+Center\+User.\+Weixin\+Code\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the weixin code. 
+
+The weixin code.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sns/Sns\+Center\+User.\+cs\end{DoxyCompactItemize}

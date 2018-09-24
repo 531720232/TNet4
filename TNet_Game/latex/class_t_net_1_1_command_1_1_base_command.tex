@@ -1,0 +1,127 @@
+\hypertarget{class_t_net_1_1_command_1_1_base_command}{}\section{T\+Net.\+Command.\+Base\+Command Class Reference}
+\label{class_t_net_1_1_command_1_1_base_command}\index{T\+Net.\+Command.\+Base\+Command@{T\+Net.\+Command.\+Base\+Command}}
+
+
+G\+M命令基类  
+
+
+Inheritance diagram for T\+Net.\+Command.\+Base\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_net_1_1_command_1_1_base_command}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_t_net_1_1_command_1_1_base_command_a9b6c6ebf3f49efbf7b12321b954fbe19}{Check}} (string command)
+\item 
+static void \mbox{\hyperlink{class_t_net_1_1_command_1_1_base_command_a4037d7f82a3f915f944c2b2ee3ce267c}{Run}} (string user\+Id, string command, string assembly\+Name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em 运行\+G\+M命令解析 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_command_1_1_base_command_add73971418b21606e67278ebbc265210}{Base\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_command_1_1_base_command}{T\+Net.\+Command.\+Base\+Command}} class. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_t_net_1_1_command_1_1_base_command_a7074bfedc9614ab46da40606cfefa4e0}{Process\+Cmd}} (string\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em Processes the cmd. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_command_1_1_base_command_a3778c95edf8643bbe4936566f964eebb}{User\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the user I. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+G\+M命令基类 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_command_1_1_base_command_add73971418b21606e67278ebbc265210}\label{class_t_net_1_1_command_1_1_base_command_add73971418b21606e67278ebbc265210}} 
+\index{T\+Net\+::\+Command\+::\+Base\+Command@{T\+Net\+::\+Command\+::\+Base\+Command}!Base\+Command@{Base\+Command}}
+\index{Base\+Command@{Base\+Command}!T\+Net\+::\+Command\+::\+Base\+Command@{T\+Net\+::\+Command\+::\+Base\+Command}}
+\subsubsection{\texorpdfstring{Base\+Command()}{BaseCommand()}}
+{\footnotesize\ttfamily T\+Net.\+Command.\+Base\+Command.\+Base\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_command_1_1_base_command}{T\+Net.\+Command.\+Base\+Command}} class. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_command_1_1_base_command_a9b6c6ebf3f49efbf7b12321b954fbe19}\label{class_t_net_1_1_command_1_1_base_command_a9b6c6ebf3f49efbf7b12321b954fbe19}} 
+\index{T\+Net\+::\+Command\+::\+Base\+Command@{T\+Net\+::\+Command\+::\+Base\+Command}!Check@{Check}}
+\index{Check@{Check}!T\+Net\+::\+Command\+::\+Base\+Command@{T\+Net\+::\+Command\+::\+Base\+Command}}
+\subsubsection{\texorpdfstring{Check()}{Check()}}
+{\footnotesize\ttfamily static bool T\+Net.\+Command.\+Base\+Command.\+Check (\begin{DoxyParamCaption}\item[{string}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_command_1_1_base_command_a7074bfedc9614ab46da40606cfefa4e0}\label{class_t_net_1_1_command_1_1_base_command_a7074bfedc9614ab46da40606cfefa4e0}} 
+\index{T\+Net\+::\+Command\+::\+Base\+Command@{T\+Net\+::\+Command\+::\+Base\+Command}!Process\+Cmd@{Process\+Cmd}}
+\index{Process\+Cmd@{Process\+Cmd}!T\+Net\+::\+Command\+::\+Base\+Command@{T\+Net\+::\+Command\+::\+Base\+Command}}
+\subsubsection{\texorpdfstring{Process\+Cmd()}{ProcessCmd()}}
+{\footnotesize\ttfamily abstract void T\+Net.\+Command.\+Base\+Command.\+Process\+Cmd (\begin{DoxyParamCaption}\item[{string \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Processes the cmd. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Arguments.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_command_1_1_script_command_a69b8d968f851b261e006e233de4ebee0}{T\+Net.\+Command.\+Script\+Command}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_command_1_1_base_command_a4037d7f82a3f915f944c2b2ee3ce267c}\label{class_t_net_1_1_command_1_1_base_command_a4037d7f82a3f915f944c2b2ee3ce267c}} 
+\index{T\+Net\+::\+Command\+::\+Base\+Command@{T\+Net\+::\+Command\+::\+Base\+Command}!Run@{Run}}
+\index{Run@{Run}!T\+Net\+::\+Command\+::\+Base\+Command@{T\+Net\+::\+Command\+::\+Base\+Command}}
+\subsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily static void T\+Net.\+Command.\+Base\+Command.\+Run (\begin{DoxyParamCaption}\item[{string}]{user\+Id,  }\item[{string}]{command,  }\item[{string}]{assembly\+Name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+运行\+G\+M命令解析 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & 发送\+G\+M命令者\\
+\hline
+{\em command} & G\+M命令\\
+\hline
+{\em assembly\+Name} & 指定解析的程序集\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_command_1_1_base_command_a3778c95edf8643bbe4936566f964eebb}\label{class_t_net_1_1_command_1_1_base_command_a3778c95edf8643bbe4936566f964eebb}} 
+\index{T\+Net\+::\+Command\+::\+Base\+Command@{T\+Net\+::\+Command\+::\+Base\+Command}!User\+ID@{User\+ID}}
+\index{User\+ID@{User\+ID}!T\+Net\+::\+Command\+::\+Base\+Command@{T\+Net\+::\+Command\+::\+Base\+Command}}
+\subsubsection{\texorpdfstring{User\+ID}{UserID}}
+{\footnotesize\ttfamily string T\+Net.\+Command.\+Base\+Command.\+User\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the user I. 
+
+The user I.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Command/Base\+Command.\+cs\end{DoxyCompactItemize}

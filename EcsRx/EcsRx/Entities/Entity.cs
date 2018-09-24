@@ -30,6 +30,7 @@ namespace EcsRx.Entities
 
         public IComponent AddComponent(IComponent component)
         {
+            component.Entity = this;
             _components.Add(component.GetType(), component);
             EventSystem.Publish(new ComponentsAddedEvent(this, new []{component}));
             return component;
@@ -38,7 +39,7 @@ namespace EcsRx.Entities
         public void AddComponents(params IComponent[] components)
         {
             for (var i = components.Length - 1; i >= 0; i--)
-            { _components.Add(components[i].GetType(), components[i]); }
+            { components[i].Entity = this; _components.Add(components[i].GetType(), components[i]); }
             
             EventSystem.Publish(new ComponentsAddedEvent(this, components));
         }

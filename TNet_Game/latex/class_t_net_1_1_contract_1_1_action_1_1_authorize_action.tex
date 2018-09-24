@@ -1,0 +1,221 @@
+\hypertarget{class_t_net_1_1_contract_1_1_action_1_1_authorize_action}{}\section{T\+Net.\+Contract.\+Action.\+Authorize\+Action Class Reference}
+\label{class_t_net_1_1_contract_1_1_action_1_1_authorize_action}\index{T\+Net.\+Contract.\+Action.\+Authorize\+Action@{T\+Net.\+Contract.\+Action.\+Authorize\+Action}}
+
+
+授权访问的\+Action  
+
+
+Inheritance diagram for T\+Net.\+Contract.\+Action.\+Authorize\+Action\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.243243cm]{class_t_net_1_1_contract_1_1_action_1_1_authorize_action}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ab0e2a7e8dacbac0da60cf5415ab5fcaf}{Check\+Action}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ab04a11cc2032cab9ce1145baa9abbad8}{Authorize\+Action}} (int \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_a8c3c761a891a0da9d72d17d34a0f7446}{action\+Id}}, \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_a14dcf224eb5a73e2c0b3bee4fe359dd8}{action\+Getter}})
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action}{T\+Net.\+Contract.\+Action.\+Authorize\+Action}} class. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a71b0f279c0f6f2d32d371388a2fa0947}{Validate\+Element}} ()
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ac74f37a7a4d61b947685906ac606ff0e}{Check\+Validity\+Period}} (Time\+Span min\+Interval, Time\+Span max\+Interval)
+\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a4c2e19926211024dd9f2cf2ec32af57e}{Check\+User\+Is\+Locked}} (\mbox{\hyperlink{interface_t_net_1_1_context___1_1_i_user}{I\+User}} user)
+\item 
+\mbox{\hyperlink{namespace_t_net_1_1_service_a6aea7ec0b2c4f3e53963bbcb309a1dea}{Login\+Status}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a2567869e51116af31c0ee0c51ce616fc}{Check\+User}} (out \mbox{\hyperlink{interface_t_net_1_1_context___1_1_i_user}{I\+User}} user)
+\begin{DoxyCompactList}\small\item\em Checks the user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ab23b91a9451baf629cd5e18be072628b}{Do\+Refresh}} (int \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_a8c3c761a891a0da9d72d17d34a0f7446}{action\+Id}}, \mbox{\hyperlink{interface_t_net_1_1_context___1_1_i_user}{I\+User}} game\+User)
+\begin{DoxyCompactList}\small\item\em Dos the refresh. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a22f58f4ebbc08d816d6f1b1c3dbf5891}{Enable\+Web\+Socket}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ab2d1d0cfc64ce89f0ad2ddb4e75665ad}{Enable\+Pay\+Notify}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 开启支付通知 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a40942af7311c5678d254dd2f482a8253}{Is\+Refresh}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this instance is refresh. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a330f349810f533614068354233af4a64}{Ignore\+Action\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 不检查的\+Action\+ID \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+授权访问的\+Action 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ab04a11cc2032cab9ce1145baa9abbad8}\label{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ab04a11cc2032cab9ce1145baa9abbad8}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}!Authorize\+Action@{Authorize\+Action}}
+\index{Authorize\+Action@{Authorize\+Action}!T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}}
+\subsubsection{\texorpdfstring{Authorize\+Action()}{AuthorizeAction()}}
+{\footnotesize\ttfamily T\+Net.\+Contract.\+Action.\+Authorize\+Action.\+Authorize\+Action (\begin{DoxyParamCaption}\item[{int}]{action\+Id,  }\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}}}]{action\+Getter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_authorize_action}{T\+Net.\+Contract.\+Action.\+Authorize\+Action}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Id} & \mbox{\hyperlink{namespace_t_net_1_1_contract_1_1_action}{Action}} I.\\
+\hline
+{\em action\+Getter} & Http get.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ab0e2a7e8dacbac0da60cf5415ab5fcaf}\label{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ab0e2a7e8dacbac0da60cf5415ab5fcaf}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}!Check\+Action@{Check\+Action}}
+\index{Check\+Action@{Check\+Action}!T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}}
+\subsubsection{\texorpdfstring{Check\+Action()}{CheckAction()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Contract.\+Action.\+Authorize\+Action.\+Check\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a1e1ae8e1d5e424c6d1858d375bc9e61d}{T\+Net.\+Service.\+Base\+Struct}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a2567869e51116af31c0ee0c51ce616fc}\label{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a2567869e51116af31c0ee0c51ce616fc}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}!Check\+User@{Check\+User}}
+\index{Check\+User@{Check\+User}!T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}}
+\subsubsection{\texorpdfstring{Check\+User()}{CheckUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_t_net_1_1_service_a6aea7ec0b2c4f3e53963bbcb309a1dea}{Login\+Status}} T\+Net.\+Contract.\+Action.\+Authorize\+Action.\+Check\+User (\begin{DoxyParamCaption}\item[{out \mbox{\hyperlink{interface_t_net_1_1_context___1_1_i_user}{I\+User}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Checks the user. 
+
+\begin{DoxyReturn}{Returns}
+The user.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em user} & Game user.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a4c2e19926211024dd9f2cf2ec32af57e}\label{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a4c2e19926211024dd9f2cf2ec32af57e}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}!Check\+User\+Is\+Locked@{Check\+User\+Is\+Locked}}
+\index{Check\+User\+Is\+Locked@{Check\+User\+Is\+Locked}!T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}}
+\subsubsection{\texorpdfstring{Check\+User\+Is\+Locked()}{CheckUserIsLocked()}}
+{\footnotesize\ttfamily virtual bool T\+Net.\+Contract.\+Action.\+Authorize\+Action.\+Check\+User\+Is\+Locked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_t_net_1_1_context___1_1_i_user}{I\+User}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ac74f37a7a4d61b947685906ac606ff0e}\label{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ac74f37a7a4d61b947685906ac606ff0e}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}!Check\+Validity\+Period@{Check\+Validity\+Period}}
+\index{Check\+Validity\+Period@{Check\+Validity\+Period}!T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}}
+\subsubsection{\texorpdfstring{Check\+Validity\+Period()}{CheckValidityPeriod()}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Action.\+Authorize\+Action.\+Check\+Validity\+Period (\begin{DoxyParamCaption}\item[{Time\+Span}]{min\+Interval,  }\item[{Time\+Span}]{max\+Interval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ab23b91a9451baf629cd5e18be072628b}\label{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ab23b91a9451baf629cd5e18be072628b}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}!Do\+Refresh@{Do\+Refresh}}
+\index{Do\+Refresh@{Do\+Refresh}!T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}}
+\subsubsection{\texorpdfstring{Do\+Refresh()}{DoRefresh()}}
+{\footnotesize\ttfamily void T\+Net.\+Contract.\+Action.\+Authorize\+Action.\+Do\+Refresh (\begin{DoxyParamCaption}\item[{int}]{action\+Id,  }\item[{\mbox{\hyperlink{interface_t_net_1_1_context___1_1_i_user}{I\+User}}}]{game\+User }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dos the refresh. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Id} & \mbox{\hyperlink{namespace_t_net_1_1_contract_1_1_action}{Action}} identifier.\\
+\hline
+{\em game\+User} & Game user.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a71b0f279c0f6f2d32d371388a2fa0947}\label{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a71b0f279c0f6f2d32d371388a2fa0947}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}!Validate\+Element@{Validate\+Element}}
+\index{Validate\+Element@{Validate\+Element}!T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}}
+\subsubsection{\texorpdfstring{Validate\+Element()}{ValidateElement()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Contract.\+Action.\+Authorize\+Action.\+Validate\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_aed62419eda78ee2f769be582f02025e8}{T\+Net.\+Service.\+Base\+Struct}}.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ab2d1d0cfc64ce89f0ad2ddb4e75665ad}\label{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_ab2d1d0cfc64ce89f0ad2ddb4e75665ad}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}!Enable\+Pay\+Notify@{Enable\+Pay\+Notify}}
+\index{Enable\+Pay\+Notify@{Enable\+Pay\+Notify}!T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}}
+\subsubsection{\texorpdfstring{Enable\+Pay\+Notify}{EnablePayNotify}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Action.\+Authorize\+Action.\+Enable\+Pay\+Notify\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+开启支付通知 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a22f58f4ebbc08d816d6f1b1c3dbf5891}\label{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a22f58f4ebbc08d816d6f1b1c3dbf5891}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}!Enable\+Web\+Socket@{Enable\+Web\+Socket}}
+\index{Enable\+Web\+Socket@{Enable\+Web\+Socket}!T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}}
+\subsubsection{\texorpdfstring{Enable\+Web\+Socket}{EnableWebSocket}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Action.\+Authorize\+Action.\+Enable\+Web\+Socket\hspace{0.3cm}{\ttfamily [set]}, {\ttfamily [protected]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a330f349810f533614068354233af4a64}\label{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a330f349810f533614068354233af4a64}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}!Ignore\+Action\+Id@{Ignore\+Action\+Id}}
+\index{Ignore\+Action\+Id@{Ignore\+Action\+Id}!T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}}
+\subsubsection{\texorpdfstring{Ignore\+Action\+Id}{IgnoreActionId}}
+{\footnotesize\ttfamily virtual bool T\+Net.\+Contract.\+Action.\+Authorize\+Action.\+Ignore\+Action\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+
+
+不检查的\+Action\+ID 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a40942af7311c5678d254dd2f482a8253}\label{class_t_net_1_1_contract_1_1_action_1_1_authorize_action_a40942af7311c5678d254dd2f482a8253}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}!Is\+Refresh@{Is\+Refresh}}
+\index{Is\+Refresh@{Is\+Refresh}!T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Authorize\+Action}}
+\subsubsection{\texorpdfstring{Is\+Refresh}{IsRefresh}}
+{\footnotesize\ttfamily virtual bool T\+Net.\+Contract.\+Action.\+Authorize\+Action.\+Is\+Refresh\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+
+
+Gets a value indicating whether this instance is refresh. 
+
+{\ttfamily true} if this instance is refresh; otherwise, {\ttfamily false}.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract/\+Action/Authorize\+Action.\+cs\end{DoxyCompactItemize}

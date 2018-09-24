@@ -1,0 +1,508 @@
+\hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer}{}\section{T\+Net.\+I\+O.\+Endian\+Binary\+Writer Class Reference}
+\label{class_t_net_1_1_i_o_1_1_endian_binary_writer}\index{T\+Net.\+I\+O.\+Endian\+Binary\+Writer@{T\+Net.\+I\+O.\+Endian\+Binary\+Writer}}
+
+
+Equivalent of System.\+I\+O.\+Binary\+Writer, but with either endianness, depending on the \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} it is constructed with.  
+
+
+Inheritance diagram for T\+Net.\+I\+O.\+Endian\+Binary\+Writer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_net_1_1_i_o_1_1_endian_binary_writer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_ac0797444b37f38d00da40ce86afa5b53}{Dispose}} ()
+\begin{DoxyCompactList}\small\item\em Disposes of the underlying stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a3e6bc74a2340282fa8ca4d5613bb1012}{Endian\+Binary\+Writer}} (\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} bit\+Converter, Stream stream)
+\begin{DoxyCompactList}\small\item\em Constructs a new binary writer with the given bit converter, writing to the given stream, using U\+T\+F-\/8 encoding. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_acd0e9fbe6e0482fc70983ebfcee982b7}{Endian\+Binary\+Writer}} (\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} bit\+Converter, Stream stream, \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a0148eabc0f952c96b0a43d364c60c03b}{Encoding}} encoding)
+\begin{DoxyCompactList}\small\item\em Constructs a new binary writer with the given bit converter, writing to the given stream, using the given encoding. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a28eb1d1d1ef4b2f5cc765ea7c07bb518}{Close}} ()
+\begin{DoxyCompactList}\small\item\em Closes the writer, including the underlying stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a85a03d23017436099171177d580bc490}{Flush}} ()
+\begin{DoxyCompactList}\small\item\em Flushes the underlying stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a6d8eafe0d496d74d19ef83fc9f5ec8bf}{Seek}} (int offset, Seek\+Origin origin)
+\begin{DoxyCompactList}\small\item\em Seeks within the stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a52b49263c5a6784ef18a9494bdfeac47}{Write}} (bool value)
+\begin{DoxyCompactList}\small\item\em Writes a boolean value to the stream. 1 byte is written. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a9582cfc803bd67c7b183d7c8c139b033}{Write}} (short value)
+\begin{DoxyCompactList}\small\item\em Writes a 16-\/bit signed integer to the stream, using the bit converter for this writer. 2 bytes are written. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_aed3d83ac90ac9124864072acb22e0833}{Write}} (int value)
+\begin{DoxyCompactList}\small\item\em Writes a 32-\/bit signed integer to the stream, using the bit converter for this writer. 4 bytes are written. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_ac00e25e106c3d5d83b9ae0b615304325}{Write}} (long value)
+\begin{DoxyCompactList}\small\item\em Writes a 64-\/bit signed integer to the stream, using the bit converter for this writer. 8 bytes are written. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a5df654e5cc0a63088b5a38c1f63c81ba}{Write}} (ushort value)
+\begin{DoxyCompactList}\small\item\em Writes a 16-\/bit unsigned integer to the stream, using the bit converter for this writer. 2 bytes are written. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a4cccab9063a2a0f199248ccd34aeb6df}{Write}} (uint value)
+\begin{DoxyCompactList}\small\item\em Writes a 32-\/bit unsigned integer to the stream, using the bit converter for this writer. 4 bytes are written. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_af263971a67afaaac4aa920fe9cbace06}{Write}} (ulong value)
+\begin{DoxyCompactList}\small\item\em Writes a 64-\/bit unsigned integer to the stream, using the bit converter for this writer. 8 bytes are written. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a409db831b5ba46bd1c0cec923669e71a}{Write}} (float value)
+\begin{DoxyCompactList}\small\item\em Writes a single-\/precision floating-\/point value to the stream, using the bit converter for this writer. 4 bytes are written. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a9754ae46a8054f3949eba2576a5e15a0}{Write}} (double value)
+\begin{DoxyCompactList}\small\item\em Writes a double-\/precision floating-\/point value to the stream, using the bit converter for this writer. 8 bytes are written. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a60aeee8bbb41fcc3f6b47a4fe7ca05e1}{Write}} (decimal value)
+\begin{DoxyCompactList}\small\item\em Writes a decimal value to the stream, using the bit converter for this writer. 16 bytes are written. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_afcd2041bb036d51b0c43e54079056164}{Write}} (byte value)
+\begin{DoxyCompactList}\small\item\em Writes a signed byte to the stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a7049eb981b6df90c439d2d628f214d00}{Write}} (sbyte value)
+\begin{DoxyCompactList}\small\item\em Writes an unsigned byte to the stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a1553ebc4c48f14bf512eba2c225fe837}{Write}} (byte\mbox{[}$\,$\mbox{]} value)
+\begin{DoxyCompactList}\small\item\em Writes an array of bytes to the stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_af2f985c31a87205aef4ca584ff025f2f}{Write}} (byte\mbox{[}$\,$\mbox{]} value, int offset, int count)
+\begin{DoxyCompactList}\small\item\em Writes a portion of an array of bytes to the stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a0fddd902dbf14a6b7a1d48682667fecb}{Write}} (char value)
+\begin{DoxyCompactList}\small\item\em Writes a single character to the stream, using the encoding for this writer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_add56922a40bf9ad7755738d80bd57cd2}{Write}} (char\mbox{[}$\,$\mbox{]} value)
+\begin{DoxyCompactList}\small\item\em Writes an array of characters to the stream, using the encoding for this writer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_ad372269995f4662f6288848ab2e6d2d9}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_ad372269995f4662f6288848ab2e6d2d9}} 
+byte \mbox{[}$\,$\mbox{]} {\bfseries To7\+Z\+Bytes} ()
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_adef01f367590629ad047981e27eea4f2}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_adef01f367590629ad047981e27eea4f2}} 
+byte \mbox{[}$\,$\mbox{]} {\bfseries To\+Bytes} ()
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a457b0c305afc6ba5d1fccec7c5904ef3}{Write}} (string value)
+\begin{DoxyCompactList}\small\item\em Writes a string to the stream, using the encoding for this writer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_aa472b542d540fc5d4cf03003f475c718}{Write7\+Bit\+Encoded\+Int}} (int value)
+\begin{DoxyCompactList}\small\item\em Writes a 7-\/bit encoded integer from the stream. This is stored with the least significant information first, with 7 bits of information per byte of value, and the top bit as a continuation flag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_aa95805d0a303250d0607c54baee77e96}{Write\+Obj$<$ T $>$}} (T obj)
+\begin{DoxyCompactList}\small\item\em write a object to bson \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_aacec393d39a3f2df0286c9b6590832b3}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_aacec393d39a3f2df0286c9b6590832b3}} 
+\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader}{Endian\+Binary\+Reader}} {\bfseries To\+Reader} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a8c822aded2ba7d9f2769f94a49d01c2e}{Bit\+Converter}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The bit converter used to write values to the stream \end{DoxyCompactList}\item 
+Encoding \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a0148eabc0f952c96b0a43d364c60c03b}{Encoding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The encoding used to write strings \end{DoxyCompactList}\item 
+Stream \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a17f6eb3691c16b9c4ddfb9b2d1ef12d2}{Base\+Stream}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the underlying stream of the \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer}{Endian\+Binary\+Writer}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Equivalent of System.\+I\+O.\+Binary\+Writer, but with either endianness, depending on the \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} it is constructed with. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a3e6bc74a2340282fa8ca4d5613bb1012}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a3e6bc74a2340282fa8ca4d5613bb1012}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Endian\+Binary\+Writer@{Endian\+Binary\+Writer}}
+\index{Endian\+Binary\+Writer@{Endian\+Binary\+Writer}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Endian\+Binary\+Writer()}{EndianBinaryWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Endian\+Binary\+Writer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}}}]{bit\+Converter,  }\item[{Stream}]{stream }\end{DoxyParamCaption})}
+
+
+
+Constructs a new binary writer with the given bit converter, writing to the given stream, using U\+T\+F-\/8 encoding. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+Converter} & Converter to use when writing data\\
+\hline
+{\em stream} & Stream to write data to\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_acd0e9fbe6e0482fc70983ebfcee982b7}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_acd0e9fbe6e0482fc70983ebfcee982b7}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Endian\+Binary\+Writer@{Endian\+Binary\+Writer}}
+\index{Endian\+Binary\+Writer@{Endian\+Binary\+Writer}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Endian\+Binary\+Writer()}{EndianBinaryWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Endian\+Binary\+Writer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}}}]{bit\+Converter,  }\item[{Stream}]{stream,  }\item[{\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer_a0148eabc0f952c96b0a43d364c60c03b}{Encoding}}}]{encoding }\end{DoxyParamCaption})}
+
+
+
+Constructs a new binary writer with the given bit converter, writing to the given stream, using the given encoding. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+Converter} & Converter to use when writing data\\
+\hline
+{\em stream} & Stream to write data to\\
+\hline
+{\em encoding} & Encoding to use when writing character data\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a28eb1d1d1ef4b2f5cc765ea7c07bb518}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a28eb1d1d1ef4b2f5cc765ea7c07bb518}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Close@{Close}}
+\index{Close@{Close}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Closes the writer, including the underlying stream. 
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_ac0797444b37f38d00da40ce86afa5b53}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_ac0797444b37f38d00da40ce86afa5b53}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disposes of the underlying stream. 
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a85a03d23017436099171177d580bc490}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a85a03d23017436099171177d580bc490}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Flush@{Flush}}
+\index{Flush@{Flush}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Flushes the underlying stream. 
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a6d8eafe0d496d74d19ef83fc9f5ec8bf}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a6d8eafe0d496d74d19ef83fc9f5ec8bf}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Seek@{Seek}}
+\index{Seek@{Seek}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Seek (\begin{DoxyParamCaption}\item[{int}]{offset,  }\item[{Seek\+Origin}]{origin }\end{DoxyParamCaption})}
+
+
+
+Seeks within the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & Offset to seek to.\\
+\hline
+{\em origin} & Origin of seek operation.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a52b49263c5a6784ef18a9494bdfeac47}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a52b49263c5a6784ef18a9494bdfeac47}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a boolean value to the stream. 1 byte is written. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a9582cfc803bd67c7b183d7c8c139b033}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a9582cfc803bd67c7b183d7c8c139b033}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{short}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a 16-\/bit signed integer to the stream, using the bit converter for this writer. 2 bytes are written. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_aed3d83ac90ac9124864072acb22e0833}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_aed3d83ac90ac9124864072acb22e0833}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [3/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a 32-\/bit signed integer to the stream, using the bit converter for this writer. 4 bytes are written. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_ac00e25e106c3d5d83b9ae0b615304325}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_ac00e25e106c3d5d83b9ae0b615304325}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [4/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{long}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a 64-\/bit signed integer to the stream, using the bit converter for this writer. 8 bytes are written. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a5df654e5cc0a63088b5a38c1f63c81ba}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a5df654e5cc0a63088b5a38c1f63c81ba}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [5/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{ushort}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a 16-\/bit unsigned integer to the stream, using the bit converter for this writer. 2 bytes are written. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a4cccab9063a2a0f199248ccd34aeb6df}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a4cccab9063a2a0f199248ccd34aeb6df}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [6/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{uint}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a 32-\/bit unsigned integer to the stream, using the bit converter for this writer. 4 bytes are written. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_af263971a67afaaac4aa920fe9cbace06}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_af263971a67afaaac4aa920fe9cbace06}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [7/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{ulong}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a 64-\/bit unsigned integer to the stream, using the bit converter for this writer. 8 bytes are written. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a409db831b5ba46bd1c0cec923669e71a}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a409db831b5ba46bd1c0cec923669e71a}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [8/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a single-\/precision floating-\/point value to the stream, using the bit converter for this writer. 4 bytes are written. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a9754ae46a8054f3949eba2576a5e15a0}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a9754ae46a8054f3949eba2576a5e15a0}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [9/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a double-\/precision floating-\/point value to the stream, using the bit converter for this writer. 8 bytes are written. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a60aeee8bbb41fcc3f6b47a4fe7ca05e1}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a60aeee8bbb41fcc3f6b47a4fe7ca05e1}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [10/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{decimal}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a decimal value to the stream, using the bit converter for this writer. 16 bytes are written. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_afcd2041bb036d51b0c43e54079056164}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_afcd2041bb036d51b0c43e54079056164}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [11/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{byte}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a signed byte to the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a7049eb981b6df90c439d2d628f214d00}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a7049eb981b6df90c439d2d628f214d00}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [12/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{sbyte}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes an unsigned byte to the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a1553ebc4c48f14bf512eba2c225fe837}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a1553ebc4c48f14bf512eba2c225fe837}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [13/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes an array of bytes to the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The values to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_af2f985c31a87205aef4ca584ff025f2f}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_af2f985c31a87205aef4ca584ff025f2f}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [14/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{value,  }\item[{int}]{offset,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Writes a portion of an array of bytes to the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array containing the bytes to write\\
+\hline
+{\em offset} & The index of the first byte to write within the array\\
+\hline
+{\em count} & The number of bytes to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a0fddd902dbf14a6b7a1d48682667fecb}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a0fddd902dbf14a6b7a1d48682667fecb}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [15/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{char}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a single character to the stream, using the encoding for this writer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_add56922a40bf9ad7755738d80bd57cd2}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_add56922a40bf9ad7755738d80bd57cd2}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [16/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{char \mbox{[}$\,$\mbox{]}}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes an array of characters to the stream, using the encoding for this writer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & An array containing the characters to write\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a457b0c305afc6ba5d1fccec7c5904ef3}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a457b0c305afc6ba5d1fccec7c5904ef3}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write@{Write}}
+\index{Write@{Write}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [17/17]}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write (\begin{DoxyParamCaption}\item[{string}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a string to the stream, using the encoding for this writer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to write. Must not be null.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & value is null\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_aa472b542d540fc5d4cf03003f475c718}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_aa472b542d540fc5d4cf03003f475c718}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write7\+Bit\+Encoded\+Int@{Write7\+Bit\+Encoded\+Int}}
+\index{Write7\+Bit\+Encoded\+Int@{Write7\+Bit\+Encoded\+Int}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write7\+Bit\+Encoded\+Int()}{Write7BitEncodedInt()}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write7\+Bit\+Encoded\+Int (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Writes a 7-\/bit encoded integer from the stream. This is stored with the least significant information first, with 7 bits of information per byte of value, and the top bit as a continuation flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The 7-\/bit encoded integer to write to the stream\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_aa95805d0a303250d0607c54baee77e96}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_aa95805d0a303250d0607c54baee77e96}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Write\+Obj$<$ T $>$@{Write\+Obj$<$ T $>$}}
+\index{Write\+Obj$<$ T $>$@{Write\+Obj$<$ T $>$}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Write\+Obj$<$ T $>$()}{WriteObj< T >()}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Write\+Obj$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{obj }\end{DoxyParamCaption})}
+
+
+
+write a object to bson 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a17f6eb3691c16b9c4ddfb9b2d1ef12d2}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a17f6eb3691c16b9c4ddfb9b2d1ef12d2}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Base\+Stream@{Base\+Stream}}
+\index{Base\+Stream@{Base\+Stream}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Base\+Stream}{BaseStream}}
+{\footnotesize\ttfamily Stream T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Base\+Stream\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the underlying stream of the \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer}{Endian\+Binary\+Writer}}. 
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a8c822aded2ba7d9f2769f94a49d01c2e}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a8c822aded2ba7d9f2769f94a49d01c2e}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Bit\+Converter@{Bit\+Converter}}
+\index{Bit\+Converter@{Bit\+Converter}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Bit\+Converter}{BitConverter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Bit\+Converter\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The bit converter used to write values to the stream 
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_writer_a0148eabc0f952c96b0a43d364c60c03b}\label{class_t_net_1_1_i_o_1_1_endian_binary_writer_a0148eabc0f952c96b0a43d364c60c03b}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}!Encoding@{Encoding}}
+\index{Encoding@{Encoding}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Writer}}
+\subsubsection{\texorpdfstring{Encoding}{Encoding}}
+{\footnotesize\ttfamily Encoding T\+Net.\+I\+O.\+Endian\+Binary\+Writer.\+Encoding\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The encoding used to write strings 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract\+\_\+/\+I\+O/Endian\+Binary\+Writer.\+cs\end{DoxyCompactItemize}

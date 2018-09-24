@@ -1,0 +1,264 @@
+\hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler}{}\section{T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler Class Reference}
+\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler}\index{T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler@{T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler}}
+
+
+ 
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a4231bc4480d621ece1a90177718b09d7}{Process\+Request}} (Http\+Context context)
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_af5d8b3bebfde005aa40daaebac2465bd}{Process\+Request}} (I\+Http\+Request\+Context context)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a4b01de0bebb9b1cf6824f64125a8e352}{On\+Request}} (I\+Http\+Request\+Context context, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_response_body}{Response\+Body}} body)
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_ad9df58a935f69c481e0b7e2e7b20900b}{On\+Request}} (Http\+Context context, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_response_body}{Response\+Body}} body)
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a6dd0afc5a230965c534b1b572d3b4211}{Process\+Response}} (Http\+Response http\+Response, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_response_body}{Response\+Body}} body)
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a86da36f6ecc6db342fe0d123f9b68b37}{Process\+Response}} (I\+Http\+Request\+Context context, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_response_body}{Response\+Body}} body)
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a2bdf1ead4d4eabcb1cccd47aee01819a}{Set\+Response\+Head}} (Http\+Response http\+Response)
+\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_af83c27783bc3aefefb3e146a74d4f4eb}{Check\+Sign}} (Http\+Request request, out string param)
+\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_afd502e27ed2724fc755cc3a2c58dfb73}{Check\+Sign}} (I\+Http\+Request\+Context context, out string param)
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_aa451fd4a14a0db7170290e889fa0a7f7}{Try\+Url\+Query\+Parse}} (string query, out \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_handler_data}{Handler\+Data}} handler\+Data)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_t_net_1_1_sns_1_1_service_1_1_i_response_formater}{I\+Response\+Formater}} \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_af114c540aaa94654298d945e37b5f9b6}{Response\+Formater}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ac6e96f45529b532afd48a137e408ce35}{Response\+Type}} \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a40a29599cba9fe1bee4b189d5700f3d9}{Response\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a242d960fdfeafdec3be33e344f5a5802}{Is\+Reusable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_af83c27783bc3aefefb3e146a74d4f4eb}\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_af83c27783bc3aefefb3e146a74d4f4eb}} 
+\index{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}!Check\+Sign@{Check\+Sign}}
+\index{Check\+Sign@{Check\+Sign}!T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}}
+\subsubsection{\texorpdfstring{Check\+Sign()}{CheckSign()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler.\+Check\+Sign (\begin{DoxyParamCaption}\item[{Http\+Request}]{request,  }\item[{out string}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+{\em param} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_afd502e27ed2724fc755cc3a2c58dfb73}\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_afd502e27ed2724fc755cc3a2c58dfb73}} 
+\index{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}!Check\+Sign@{Check\+Sign}}
+\index{Check\+Sign@{Check\+Sign}!T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}}
+\subsubsection{\texorpdfstring{Check\+Sign()}{CheckSign()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler.\+Check\+Sign (\begin{DoxyParamCaption}\item[{I\+Http\+Request\+Context}]{context,  }\item[{out string}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & \\
+\hline
+{\em param} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a4b01de0bebb9b1cf6824f64125a8e352}\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a4b01de0bebb9b1cf6824f64125a8e352}} 
+\index{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}!On\+Request@{On\+Request}}
+\index{On\+Request@{On\+Request}!T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}}
+\subsubsection{\texorpdfstring{On\+Request()}{OnRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler.\+On\+Request (\begin{DoxyParamCaption}\item[{I\+Http\+Request\+Context}]{context,  }\item[{\mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_response_body}{Response\+Body}}}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & \\
+\hline
+{\em body} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_ad9df58a935f69c481e0b7e2e7b20900b}\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_ad9df58a935f69c481e0b7e2e7b20900b}} 
+\index{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}!On\+Request@{On\+Request}}
+\index{On\+Request@{On\+Request}!T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}}
+\subsubsection{\texorpdfstring{On\+Request()}{OnRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler.\+On\+Request (\begin{DoxyParamCaption}\item[{Http\+Context}]{context,  }\item[{\mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_response_body}{Response\+Body}}}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & \\
+\hline
+{\em body} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a4231bc4480d621ece1a90177718b09d7}\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a4231bc4480d621ece1a90177718b09d7}} 
+\index{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}!Process\+Request@{Process\+Request}}
+\index{Process\+Request@{Process\+Request}!T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}}
+\subsubsection{\texorpdfstring{Process\+Request()}{ProcessRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler.\+Process\+Request (\begin{DoxyParamCaption}\item[{Http\+Context}]{context }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_af5d8b3bebfde005aa40daaebac2465bd}\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_af5d8b3bebfde005aa40daaebac2465bd}} 
+\index{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}!Process\+Request@{Process\+Request}}
+\index{Process\+Request@{Process\+Request}!T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}}
+\subsubsection{\texorpdfstring{Process\+Request()}{ProcessRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler.\+Process\+Request (\begin{DoxyParamCaption}\item[{I\+Http\+Request\+Context}]{context }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a6dd0afc5a230965c534b1b572d3b4211}\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a6dd0afc5a230965c534b1b572d3b4211}} 
+\index{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}!Process\+Response@{Process\+Response}}
+\index{Process\+Response@{Process\+Response}!T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}}
+\subsubsection{\texorpdfstring{Process\+Response()}{ProcessResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler.\+Process\+Response (\begin{DoxyParamCaption}\item[{Http\+Response}]{http\+Response,  }\item[{\mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_response_body}{Response\+Body}}}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Response} & \\
+\hline
+{\em body} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a86da36f6ecc6db342fe0d123f9b68b37}\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a86da36f6ecc6db342fe0d123f9b68b37}} 
+\index{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}!Process\+Response@{Process\+Response}}
+\index{Process\+Response@{Process\+Response}!T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}}
+\subsubsection{\texorpdfstring{Process\+Response()}{ProcessResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler.\+Process\+Response (\begin{DoxyParamCaption}\item[{I\+Http\+Request\+Context}]{context,  }\item[{\mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_response_body}{Response\+Body}}}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & \\
+\hline
+{\em body} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a2bdf1ead4d4eabcb1cccd47aee01819a}\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a2bdf1ead4d4eabcb1cccd47aee01819a}} 
+\index{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}!Set\+Response\+Head@{Set\+Response\+Head}}
+\index{Set\+Response\+Head@{Set\+Response\+Head}!T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}}
+\subsubsection{\texorpdfstring{Set\+Response\+Head()}{SetResponseHead()}}
+{\footnotesize\ttfamily void T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler.\+Set\+Response\+Head (\begin{DoxyParamCaption}\item[{Http\+Response}]{http\+Response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Response} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_aa451fd4a14a0db7170290e889fa0a7f7}\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_aa451fd4a14a0db7170290e889fa0a7f7}} 
+\index{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}!Try\+Url\+Query\+Parse@{Try\+Url\+Query\+Parse}}
+\index{Try\+Url\+Query\+Parse@{Try\+Url\+Query\+Parse}!T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}}
+\subsubsection{\texorpdfstring{Try\+Url\+Query\+Parse()}{TryUrlQueryParse()}}
+{\footnotesize\ttfamily bool T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler.\+Try\+Url\+Query\+Parse (\begin{DoxyParamCaption}\item[{string}]{query,  }\item[{out \mbox{\hyperlink{class_t_net_1_1_sns_1_1_service_1_1_handler_data}{Handler\+Data}}}]{handler\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & \\
+\hline
+{\em handler\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a242d960fdfeafdec3be33e344f5a5802}\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a242d960fdfeafdec3be33e344f5a5802}} 
+\index{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}!Is\+Reusable@{Is\+Reusable}}
+\index{Is\+Reusable@{Is\+Reusable}!T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}}
+\subsubsection{\texorpdfstring{Is\+Reusable}{IsReusable}}
+{\footnotesize\ttfamily bool T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler.\+Is\+Reusable\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_af114c540aaa94654298d945e37b5f9b6}\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_af114c540aaa94654298d945e37b5f9b6}} 
+\index{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}!Response\+Formater@{Response\+Formater}}
+\index{Response\+Formater@{Response\+Formater}!T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}}
+\subsubsection{\texorpdfstring{Response\+Formater}{ResponseFormater}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_t_net_1_1_sns_1_1_service_1_1_i_response_formater}{I\+Response\+Formater}} T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler.\+Response\+Formater\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a40a29599cba9fe1bee4b189d5700f3d9}\label{class_t_net_1_1_sns_1_1_service_1_1_base_http_handler_a40a29599cba9fe1bee4b189d5700f3d9}} 
+\index{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}!Response\+Type@{Response\+Type}}
+\index{Response\+Type@{Response\+Type}!T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler@{T\+Net\+::\+Sns\+::\+Service\+::\+Base\+Http\+Handler}}
+\subsubsection{\texorpdfstring{Response\+Type}{ResponseType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_t_net_1_1_sns_1_1_service_ac6e96f45529b532afd48a137e408ce35}{Response\+Type}} T\+Net.\+Sns.\+Service.\+Base\+Http\+Handler.\+Response\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+
+
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sns/\+Service/Base\+Http\+Handler.\+cs\end{DoxyCompactItemize}

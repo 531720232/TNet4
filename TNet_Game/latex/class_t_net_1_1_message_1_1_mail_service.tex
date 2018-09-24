@@ -1,0 +1,196 @@
+\hypertarget{class_t_net_1_1_message_1_1_mail_service}{}\section{T\+Net.\+Message.\+Mail\+Service$<$ T $>$ Class Template Reference}
+\label{class_t_net_1_1_message_1_1_mail_service}\index{T\+Net.\+Message.\+Mail\+Service$<$ T $>$@{T\+Net.\+Message.\+Mail\+Service$<$ T $>$}}
+
+
+邮件服务  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service_ae69234029e3cf358aa911f7af6741119}{Load}} (string personal\+Id)
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service_a38058f57f66bb97aa3824cedf4044690}{Send}} (T message)
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service_a53266fa807f2906979e686dafd43eb38}{Remove}} (T t)
+\item 
+T \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service_a13bc939f5a0541bddf47ac47ae6a6bc4}{Read\+Mail}} (string personal\+Id, params object\mbox{[}$\,$\mbox{]} keys)
+\item 
+abstract List$<$ T $>$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service_ac933afe67fdb7c55c59b1a2a07e76866}{Get\+Mail}} (out int un\+Read\+Count)
+\begin{DoxyCompactList}\small\item\em 获取消息 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service_a1dca54bac3380cfca71c53893be4f529}{Mail\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the class. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service_af6edeb506a9cb90c2e727f50f33ef161}{Set\+Read}} (T t)
+\begin{DoxyCompactList}\small\item\em 设置已读 \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service_aba7a5b7bb0a76c846ab5a43e29361c64}{Is\+Un\+Read}} (T message)
+\begin{DoxyCompactList}\small\item\em 是否已读 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Personal\+Cache\+Struct$<$ T $>$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service_a04a917f7ef30a7d77ff1172fad8d82ed}{Mail\+Cache\+Set}}
+\begin{DoxyCompactList}\small\item\em The mail cache set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+邮件服务 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_message}{Mail\+Message}}}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_mail_service_a1dca54bac3380cfca71c53893be4f529}\label{class_t_net_1_1_message_1_1_mail_service_a1dca54bac3380cfca71c53893be4f529}} 
+\index{T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}!Mail\+Service@{Mail\+Service}}
+\index{Mail\+Service@{Mail\+Service}!T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}}
+\subsubsection{\texorpdfstring{Mail\+Service()}{MailService()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service}{T\+Net.\+Message.\+Mail\+Service}}$<$ T $>$.\mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service}{Mail\+Service}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the class. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_mail_service_ac933afe67fdb7c55c59b1a2a07e76866}\label{class_t_net_1_1_message_1_1_mail_service_ac933afe67fdb7c55c59b1a2a07e76866}} 
+\index{T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}!Get\+Mail@{Get\+Mail}}
+\index{Get\+Mail@{Get\+Mail}!T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}}
+\subsubsection{\texorpdfstring{Get\+Mail()}{GetMail()}}
+{\footnotesize\ttfamily abstract List$<$T$>$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service}{T\+Net.\+Message.\+Mail\+Service}}$<$ T $>$.Get\+Mail (\begin{DoxyParamCaption}\item[{out int}]{un\+Read\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+获取消息 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un\+Read\+Count} & 未读条数\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_mail_service_aba7a5b7bb0a76c846ab5a43e29361c64}\label{class_t_net_1_1_message_1_1_mail_service_aba7a5b7bb0a76c846ab5a43e29361c64}} 
+\index{T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}!Is\+Un\+Read@{Is\+Un\+Read}}
+\index{Is\+Un\+Read@{Is\+Un\+Read}!T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}}
+\subsubsection{\texorpdfstring{Is\+Un\+Read()}{IsUnRead()}}
+{\footnotesize\ttfamily abstract bool \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service}{T\+Net.\+Message.\+Mail\+Service}}$<$ T $>$.Is\+Un\+Read (\begin{DoxyParamCaption}\item[{T}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+是否已读 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_mail_service_ae69234029e3cf358aa911f7af6741119}\label{class_t_net_1_1_message_1_1_mail_service_ae69234029e3cf358aa911f7af6741119}} 
+\index{T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}!Load@{Load}}
+\index{Load@{Load}!T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}}
+\subsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service}{T\+Net.\+Message.\+Mail\+Service}}$<$ T $>$.Load (\begin{DoxyParamCaption}\item[{string}]{personal\+Id }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em personal\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_mail_service_a13bc939f5a0541bddf47ac47ae6a6bc4}\label{class_t_net_1_1_message_1_1_mail_service_a13bc939f5a0541bddf47ac47ae6a6bc4}} 
+\index{T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}!Read\+Mail@{Read\+Mail}}
+\index{Read\+Mail@{Read\+Mail}!T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}}
+\subsubsection{\texorpdfstring{Read\+Mail()}{ReadMail()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service}{T\+Net.\+Message.\+Mail\+Service}}$<$ T $>$.Read\+Mail (\begin{DoxyParamCaption}\item[{string}]{personal\+Id,  }\item[{params object \mbox{[}$\,$\mbox{]}}]{keys }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em personal\+Id} & \\
+\hline
+{\em keys} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_mail_service_a53266fa807f2906979e686dafd43eb38}\label{class_t_net_1_1_message_1_1_mail_service_a53266fa807f2906979e686dafd43eb38}} 
+\index{T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}!Remove@{Remove}}
+\index{Remove@{Remove}!T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service}{T\+Net.\+Message.\+Mail\+Service}}$<$ T $>$.Remove (\begin{DoxyParamCaption}\item[{T}]{t }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_mail_service_a38058f57f66bb97aa3824cedf4044690}\label{class_t_net_1_1_message_1_1_mail_service_a38058f57f66bb97aa3824cedf4044690}} 
+\index{T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}!Send@{Send}}
+\index{Send@{Send}!T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}}
+\subsubsection{\texorpdfstring{Send()}{Send()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service}{T\+Net.\+Message.\+Mail\+Service}}$<$ T $>$.Send (\begin{DoxyParamCaption}\item[{T}]{message }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_mail_service_af6edeb506a9cb90c2e727f50f33ef161}\label{class_t_net_1_1_message_1_1_mail_service_af6edeb506a9cb90c2e727f50f33ef161}} 
+\index{T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}!Set\+Read@{Set\+Read}}
+\index{Set\+Read@{Set\+Read}!T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}}
+\subsubsection{\texorpdfstring{Set\+Read()}{SetRead()}}
+{\footnotesize\ttfamily abstract void \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service}{T\+Net.\+Message.\+Mail\+Service}}$<$ T $>$.Set\+Read (\begin{DoxyParamCaption}\item[{T}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+设置已读 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_mail_service_a04a917f7ef30a7d77ff1172fad8d82ed}\label{class_t_net_1_1_message_1_1_mail_service_a04a917f7ef30a7d77ff1172fad8d82ed}} 
+\index{T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}!Mail\+Cache\+Set@{Mail\+Cache\+Set}}
+\index{Mail\+Cache\+Set@{Mail\+Cache\+Set}!T\+Net\+::\+Message\+::\+Mail\+Service@{T\+Net\+::\+Message\+::\+Mail\+Service}}
+\subsubsection{\texorpdfstring{Mail\+Cache\+Set}{MailCacheSet}}
+{\footnotesize\ttfamily Personal\+Cache\+Struct$<$T$>$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_mail_service}{T\+Net.\+Message.\+Mail\+Service}}$<$ T $>$.Mail\+Cache\+Set\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The mail cache set. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Message/Mail\+Service.\+cs\end{DoxyCompactItemize}

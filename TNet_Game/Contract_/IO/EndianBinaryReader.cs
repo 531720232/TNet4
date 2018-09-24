@@ -504,8 +504,8 @@ namespace TNet.IO
 
             var data = new byte[bytesToRead];
             ReadInternal(data, bytesToRead);
-            var decode = MessagePack.LZ4MessagePackSerializer.Decode(data);
-            var obj = MessagePack.LZ4MessagePackSerializer.Deserialize<T>(decode);
+            var str = System.Text.Encoding.UTF8.GetString(data);
+            var obj =Newtonsoft.Json.JsonConvert.DeserializeObject<T>(str);
 
             return obj;
         }

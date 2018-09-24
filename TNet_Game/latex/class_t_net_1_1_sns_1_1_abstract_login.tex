@@ -1,0 +1,291 @@
+\hypertarget{class_t_net_1_1_sns_1_1_abstract_login}{}\section{T\+Net.\+Sns.\+Abstract\+Login Class Reference}
+\label{class_t_net_1_1_sns_1_1_abstract_login}\index{T\+Net.\+Sns.\+Abstract\+Login@{T\+Net.\+Sns.\+Abstract\+Login}}
+
+
+登录处理基类  
+
+
+Inheritance diagram for T\+Net.\+Sns.\+Abstract\+Login\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_t_net_1_1_sns_1_1_abstract_login}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a3930eb564bb4804e1b646d749f20907a}{Get\+Reg\+Passport}} ()
+\begin{DoxyCompactList}\small\item\em 注册通行证 \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a6b5dac3d6d46efb7b1e4049e674105e5}{Check\+Login}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_ad89dd0e8baeffa08b2d5d28e6a2d68cd}{Get\+Session\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Gets the session identifier. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a008f335a0c0edbc4acbfc56f60f6875e}{A\+M\+D5}} (string str1)
+\begin{DoxyCompactList}\small\item\em A\+Ms the d5. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_af9da7affc6d7191fb81cc639182dfc6d}{S\+H\+A256}} (string str)
+\begin{DoxyCompactList}\small\item\em S\+Hs the a256. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a6d39f88db81a7b1d7c1c037e66d61df2}{Hash\+To\+M\+D5\+Hex}} (string source\+Str)
+\begin{DoxyCompactList}\small\item\em U\+T\+F8编码字符串计算\+M\+D5值(十六进制编码字符串) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a7443d7a6fbe9b4a838009ba3a3d4eaf7}{Passport\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a84c2c79d324c433e09df48c153cd6cc5}{User\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a73234745fc924d827c1c4874dc925e55}{Password}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_afd4e53c78e39e35b859045471a245bbb}{Session\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a080946053e08bac5da2a18e2ad0dadc5}{User\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a88107ddbca6aad411a730f4faeece874}{Device\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a5395c6a721eec239e2dc240dab4551ad}{Access\+Token}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a82f16394d78e06151ff007f00b4b5b1f}{Refesh\+Token}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a004e37e0ff64b7b354cac2aa65b9c4ab}{Qihoo\+User\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a438733e7e8946ccab4d17e8e479f543d}{Expires\+In}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_sns_1_1_abstract_login_a2c1b82feaf9d1fa3fbeda427215f03d7}{Scope}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+登录处理基类 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a008f335a0c0edbc4acbfc56f60f6875e}\label{class_t_net_1_1_sns_1_1_abstract_login_a008f335a0c0edbc4acbfc56f60f6875e}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!A\+M\+D5@{A\+M\+D5}}
+\index{A\+M\+D5@{A\+M\+D5}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{A\+M\+D5()}{AMD5()}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Abstract\+Login.\+A\+M\+D5 (\begin{DoxyParamCaption}\item[{string}]{str1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A\+Ms the d5. 
+
+\begin{DoxyReturn}{Returns}
+The d5.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em str1} & Str1.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a6b5dac3d6d46efb7b1e4049e674105e5}\label{class_t_net_1_1_sns_1_1_abstract_login_a6b5dac3d6d46efb7b1e4049e674105e5}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!Check\+Login@{Check\+Login}}
+\index{Check\+Login@{Check\+Login}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{Check\+Login()}{CheckLogin()}}
+{\footnotesize\ttfamily abstract bool T\+Net.\+Sns.\+Abstract\+Login.\+Check\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_t_net_1_1_sns_1_1_i_login_a55b0a846946c8ea19a120d8fdb2d7b86}{T\+Net.\+Sns.\+I\+Login}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_u_c_a1b22d8f5a48d7f62243e6cce124535ea}{T\+Net.\+Sns.\+Login\+UC}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_m_i_u_i_adcc9f0d697a5d8b1dece2f44028d8301}{T\+Net.\+Sns.\+Login\+M\+I\+UI}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_mei_zu_a75e7963ccdc475af8d4378efc4becf70}{T\+Net.\+Sns.\+Login\+Mei\+Zu}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_dan_le_a1b2ba443fc79ee95c2f6db09f9ff5283}{T\+Net.\+Sns.\+Login\+Dan\+Le}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_any_sdk_a88210952068fcd88986d273ea6b04e86}{T\+Net.\+Sns.\+Login\+Any\+Sdk}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_n_d_a2a3876bdd12ed6e5cc2bd6a653c2d2d0}{T\+Net.\+Sns.\+Login\+ND}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login360___v2_a2f0d6e19eeca9cf6e86522568767eec1}{T\+Net.\+Sns.\+Login360\+\_\+\+V2}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login91sdk_a7fb59241eea5837cf4dc7c0698502d98}{T\+Net.\+Sns.\+Login91sdk}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_dan_le_v2_aa75919b2831492c20ce5952e1c506564}{T\+Net.\+Sns.\+Login\+Dan\+Le\+V2}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login36you_a87ec454ab2e41a350763b10827f1b179}{T\+Net.\+Sns.\+Login36you}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_tencent_a47d0173c57f79fd4c14c5652046b2086}{T\+Net.\+Sns.\+Login\+Tencent}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_g_fan_abdd4ebf96e43f40d650e107f598109dc}{T\+Net.\+Sns.\+Login\+G\+Fan}}, and \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_feiliu_a05c5de3660d07218535a0dd4fb77c748}{T\+Net.\+Sns.\+Login\+Feiliu}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a3930eb564bb4804e1b646d749f20907a}\label{class_t_net_1_1_sns_1_1_abstract_login_a3930eb564bb4804e1b646d749f20907a}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!Get\+Reg\+Passport@{Get\+Reg\+Passport}}
+\index{Get\+Reg\+Passport@{Get\+Reg\+Passport}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{Get\+Reg\+Passport()}{GetRegPassport()}}
+{\footnotesize\ttfamily abstract string T\+Net.\+Sns.\+Abstract\+Login.\+Get\+Reg\+Passport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+注册通行证 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_t_net_1_1_sns_1_1_i_login_a74bd2db9f18c212d23fa01462bb0a845}{T\+Net.\+Sns.\+I\+Login}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_u_c_a6ba22f5ef4dbee94a5f59020d79f4b58}{T\+Net.\+Sns.\+Login\+UC}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_m_i_u_i_a600a638293acdeb2e299f047b7f339f5}{T\+Net.\+Sns.\+Login\+M\+I\+UI}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_mei_zu_a1a3c3c30ba18024e819f0aa8518eedb8}{T\+Net.\+Sns.\+Login\+Mei\+Zu}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_dan_le_a8f4d8299a72d87be61454902c240f2a2}{T\+Net.\+Sns.\+Login\+Dan\+Le}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_any_sdk_a70ac7a7b2956ddc6c3d9c7bbba4d99c5}{T\+Net.\+Sns.\+Login\+Any\+Sdk}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_n_d_a3f84b2292edbc7310abbe64f757f37db}{T\+Net.\+Sns.\+Login\+ND}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login360___v2_a81e62cff8c92b5b35e922e2948202d8a}{T\+Net.\+Sns.\+Login360\+\_\+\+V2}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login91sdk_a036829f25d9543f335e23a33bcf229b6}{T\+Net.\+Sns.\+Login91sdk}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_dan_le_v2_a10382c3e563022d2f0c4f37769f35107}{T\+Net.\+Sns.\+Login\+Dan\+Le\+V2}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_tencent_abc09c476353f85c5e8a135d235bcb5c6}{T\+Net.\+Sns.\+Login\+Tencent}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_g_fan_aaa467dca1a6f8fc8eb55139f9bfad0ca}{T\+Net.\+Sns.\+Login\+G\+Fan}}, \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login36you_a01060a26e8212aaac7e29b634263001a}{T\+Net.\+Sns.\+Login36you}}, and \mbox{\hyperlink{class_t_net_1_1_sns_1_1_login_feiliu_a9a146d3872f6c613a650ad832fd2d68b}{T\+Net.\+Sns.\+Login\+Feiliu}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_ad89dd0e8baeffa08b2d5d28e6a2d68cd}\label{class_t_net_1_1_sns_1_1_abstract_login_ad89dd0e8baeffa08b2d5d28e6a2d68cd}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!Get\+Session\+Id@{Get\+Session\+Id}}
+\index{Get\+Session\+Id@{Get\+Session\+Id}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{Get\+Session\+Id()}{GetSessionId()}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Abstract\+Login.\+Get\+Session\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Gets the session identifier. 
+
+\begin{DoxyReturn}{Returns}
+The session identifier.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a6d39f88db81a7b1d7c1c037e66d61df2}\label{class_t_net_1_1_sns_1_1_abstract_login_a6d39f88db81a7b1d7c1c037e66d61df2}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!Hash\+To\+M\+D5\+Hex@{Hash\+To\+M\+D5\+Hex}}
+\index{Hash\+To\+M\+D5\+Hex@{Hash\+To\+M\+D5\+Hex}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{Hash\+To\+M\+D5\+Hex()}{HashToMD5Hex()}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Abstract\+Login.\+Hash\+To\+M\+D5\+Hex (\begin{DoxyParamCaption}\item[{string}]{source\+Str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+U\+T\+F8编码字符串计算\+M\+D5值(十六进制编码字符串) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Str} & U\+T\+F8编码的字符串\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+M\+D5(十六进制编码字符串)
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_af9da7affc6d7191fb81cc639182dfc6d}\label{class_t_net_1_1_sns_1_1_abstract_login_af9da7affc6d7191fb81cc639182dfc6d}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!S\+H\+A256@{S\+H\+A256}}
+\index{S\+H\+A256@{S\+H\+A256}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{S\+H\+A256()}{SHA256()}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Abstract\+Login.\+S\+H\+A256 (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+S\+Hs the a256. 
+
+\begin{DoxyReturn}{Returns}
+The a256.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a5395c6a721eec239e2dc240dab4551ad}\label{class_t_net_1_1_sns_1_1_abstract_login_a5395c6a721eec239e2dc240dab4551ad}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!Access\+Token@{Access\+Token}}
+\index{Access\+Token@{Access\+Token}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{Access\+Token}{AccessToken}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Abstract\+Login.\+Access\+Token\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a88107ddbca6aad411a730f4faeece874}\label{class_t_net_1_1_sns_1_1_abstract_login_a88107ddbca6aad411a730f4faeece874}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!Device\+ID@{Device\+ID}}
+\index{Device\+ID@{Device\+ID}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{Device\+ID}{DeviceID}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Abstract\+Login.\+Device\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a438733e7e8946ccab4d17e8e479f543d}\label{class_t_net_1_1_sns_1_1_abstract_login_a438733e7e8946ccab4d17e8e479f543d}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!Expires\+In@{Expires\+In}}
+\index{Expires\+In@{Expires\+In}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{Expires\+In}{ExpiresIn}}
+{\footnotesize\ttfamily int T\+Net.\+Sns.\+Abstract\+Login.\+Expires\+In\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a7443d7a6fbe9b4a838009ba3a3d4eaf7}\label{class_t_net_1_1_sns_1_1_abstract_login_a7443d7a6fbe9b4a838009ba3a3d4eaf7}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!Passport\+ID@{Passport\+ID}}
+\index{Passport\+ID@{Passport\+ID}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{Passport\+ID}{PassportID}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Abstract\+Login.\+Passport\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+
+
+The passport I.\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a73234745fc924d827c1c4874dc925e55}\label{class_t_net_1_1_sns_1_1_abstract_login_a73234745fc924d827c1c4874dc925e55}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!Password@{Password}}
+\index{Password@{Password}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{Password}{Password}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Abstract\+Login.\+Password\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+The password.\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a004e37e0ff64b7b354cac2aa65b9c4ab}\label{class_t_net_1_1_sns_1_1_abstract_login_a004e37e0ff64b7b354cac2aa65b9c4ab}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!Qihoo\+User\+ID@{Qihoo\+User\+ID}}
+\index{Qihoo\+User\+ID@{Qihoo\+User\+ID}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{Qihoo\+User\+ID}{QihooUserID}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Abstract\+Login.\+Qihoo\+User\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a82f16394d78e06151ff007f00b4b5b1f}\label{class_t_net_1_1_sns_1_1_abstract_login_a82f16394d78e06151ff007f00b4b5b1f}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!Refesh\+Token@{Refesh\+Token}}
+\index{Refesh\+Token@{Refesh\+Token}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{Refesh\+Token}{RefeshToken}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Abstract\+Login.\+Refesh\+Token\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a2c1b82feaf9d1fa3fbeda427215f03d7}\label{class_t_net_1_1_sns_1_1_abstract_login_a2c1b82feaf9d1fa3fbeda427215f03d7}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!Scope@{Scope}}
+\index{Scope@{Scope}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{Scope}{Scope}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Abstract\+Login.\+Scope\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_afd4e53c78e39e35b859045471a245bbb}\label{class_t_net_1_1_sns_1_1_abstract_login_afd4e53c78e39e35b859045471a245bbb}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!Session\+ID@{Session\+ID}}
+\index{Session\+ID@{Session\+ID}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{Session\+ID}{SessionID}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Abstract\+Login.\+Session\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+
+
+The session I.\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a84c2c79d324c433e09df48c153cd6cc5}\label{class_t_net_1_1_sns_1_1_abstract_login_a84c2c79d324c433e09df48c153cd6cc5}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!User\+ID@{User\+ID}}
+\index{User\+ID@{User\+ID}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{User\+ID}{UserID}}
+{\footnotesize\ttfamily string T\+Net.\+Sns.\+Abstract\+Login.\+User\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+
+
+The user I.\mbox{\Hypertarget{class_t_net_1_1_sns_1_1_abstract_login_a080946053e08bac5da2a18e2ad0dadc5}\label{class_t_net_1_1_sns_1_1_abstract_login_a080946053e08bac5da2a18e2ad0dadc5}} 
+\index{T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}!User\+Type@{User\+Type}}
+\index{User\+Type@{User\+Type}!T\+Net\+::\+Sns\+::\+Abstract\+Login@{T\+Net\+::\+Sns\+::\+Abstract\+Login}}
+\subsubsection{\texorpdfstring{User\+Type}{UserType}}
+{\footnotesize\ttfamily int T\+Net.\+Sns.\+Abstract\+Login.\+User\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sns/Abstract\+Login.\+cs\end{DoxyCompactItemize}

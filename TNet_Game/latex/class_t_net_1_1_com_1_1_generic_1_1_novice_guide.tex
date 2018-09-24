@@ -1,0 +1,270 @@
+\hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{}\section{T\+Net.\+Com.\+Generic.\+Novice\+Guide$<$ T, V $>$ Class Template Reference}
+\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}\index{T\+Net.\+Com.\+Generic.\+Novice\+Guide$<$ T, V $>$@{T\+Net.\+Com.\+Generic.\+Novice\+Guide$<$ T, V $>$}}
+
+
+新手引导  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a6116a7001e7fa1d1215d4d3cdff887b2}{Check}} (out \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_guide_progress_item}{Guide\+Progress\+Item}} progress)
+\begin{DoxyCompactList}\small\item\em 检测是否有引导 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a90971688f10f54b2b8b66ce922de9ffa}{Do\+Complated}} (int guide\+Id)
+\begin{DoxyCompactList}\small\item\em 处理引导完成 \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_ad9598c5930cb709bb07afddc075bcc02}{Do\+Prize}} (int guide\+Id)
+\begin{DoxyCompactList}\small\item\em 处理奖励 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a0a32c098c04bc4f268c37da3ebb1951e}{Novice\+Guide}} (int user\+Id)
+\item 
+abstract T \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a4e664a19eff9710675bf6d52a1772ec6}{Create\+User\+Guide}} ()
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_af180522ec3bb2bce8ad5ca4460533181}{Check\+User\+Guide}} ()
+\item 
+virtual object \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a365215600b1c63812c82960a0f8e374c}{Process\+Prize}} ()
+\begin{DoxyCompactList}\small\item\em 子类实现奖励 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a0043577aa2f0a58e1916704c603a56c4}{Close\+Guide}} ()
+\begin{DoxyCompactList}\small\item\em 完成引导 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a2d479ba8ed5d702f77d15d144c5ac450}{Try\+Get\+Progress}} (int guide\+Id, out \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_guide_progress_item}{Guide\+Progress\+Item}} progress)
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a41bd2181c36625e467852e5e5b6b881e}{Try\+Get\+Or\+Add\+Progress}} (int guide\+Id, out \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_guide_progress_item}{Guide\+Progress\+Item}} progress)
+\begin{DoxyCompactList}\small\item\em 尝试获取引导进度 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a47503d08e3a71fcd07cad5d944ad5a9f}{Try\+Get\+Next\+Id}} (int guide\+Id, out V guide\+Data)
+\begin{DoxyCompactList}\small\item\em 尝试获取下个引导，未找到引导完成 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly int \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_ae42de26a1b9434d9d8b52d9e60db5fcf}{User\+Id}}
+\begin{DoxyCompactList}\small\item\em The user identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a6871908367874066d44f6317a2cfdcf1}{Has\+Close}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 是否完成引导 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_guide_progress_item}{Guide\+Progress\+Item}} \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_aa0107d519798262e332eba9a3a36d3ea}{Current\+Progress}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 获取当前引导 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+新手引导 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em User\+Guide}]\item[{\em T} : {\em new()}]\item[{\em V} : {\em Guide\+Data}]\item[{\em V} : {\em new()}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a0a32c098c04bc4f268c37da3ebb1951e}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a0a32c098c04bc4f268c37da3ebb1951e}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!Novice\+Guide@{Novice\+Guide}}
+\index{Novice\+Guide@{Novice\+Guide}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{Novice\+Guide()}{NoviceGuide()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.\mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{Novice\+Guide}} (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a6116a7001e7fa1d1215d4d3cdff887b2}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a6116a7001e7fa1d1215d4d3cdff887b2}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!Check@{Check}}
+\index{Check@{Check}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{Check()}{Check()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.Check (\begin{DoxyParamCaption}\item[{out \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_guide_progress_item}{Guide\+Progress\+Item}}}]{progress }\end{DoxyParamCaption})}
+
+
+
+检测是否有引导 
+
+
+\begin{DoxyParams}{Parameters}
+{\em progress} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_af180522ec3bb2bce8ad5ca4460533181}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_af180522ec3bb2bce8ad5ca4460533181}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!Check\+User\+Guide@{Check\+User\+Guide}}
+\index{Check\+User\+Guide@{Check\+User\+Guide}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{Check\+User\+Guide()}{CheckUserGuide()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.Check\+User\+Guide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a0043577aa2f0a58e1916704c603a56c4}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a0043577aa2f0a58e1916704c603a56c4}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!Close\+Guide@{Close\+Guide}}
+\index{Close\+Guide@{Close\+Guide}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{Close\+Guide()}{CloseGuide()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.Close\+Guide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+完成引导 
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a4e664a19eff9710675bf6d52a1772ec6}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a4e664a19eff9710675bf6d52a1772ec6}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!Create\+User\+Guide@{Create\+User\+Guide}}
+\index{Create\+User\+Guide@{Create\+User\+Guide}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{Create\+User\+Guide()}{CreateUserGuide()}}
+{\footnotesize\ttfamily abstract T \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.Create\+User\+Guide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a90971688f10f54b2b8b66ce922de9ffa}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a90971688f10f54b2b8b66ce922de9ffa}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!Do\+Complated@{Do\+Complated}}
+\index{Do\+Complated@{Do\+Complated}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{Do\+Complated()}{DoComplated()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.Do\+Complated (\begin{DoxyParamCaption}\item[{int}]{guide\+Id }\end{DoxyParamCaption})}
+
+
+
+处理引导完成 
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_ad9598c5930cb709bb07afddc075bcc02}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_ad9598c5930cb709bb07afddc075bcc02}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!Do\+Prize@{Do\+Prize}}
+\index{Do\+Prize@{Do\+Prize}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{Do\+Prize()}{DoPrize()}}
+{\footnotesize\ttfamily object \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.Do\+Prize (\begin{DoxyParamCaption}\item[{int}]{guide\+Id }\end{DoxyParamCaption})}
+
+
+
+处理奖励 
+
+
+\begin{DoxyParams}{Parameters}
+{\em guide\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a365215600b1c63812c82960a0f8e374c}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a365215600b1c63812c82960a0f8e374c}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!Process\+Prize@{Process\+Prize}}
+\index{Process\+Prize@{Process\+Prize}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{Process\+Prize()}{ProcessPrize()}}
+{\footnotesize\ttfamily virtual object \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.Process\+Prize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+子类实现奖励 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a47503d08e3a71fcd07cad5d944ad5a9f}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a47503d08e3a71fcd07cad5d944ad5a9f}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!Try\+Get\+Next\+Id@{Try\+Get\+Next\+Id}}
+\index{Try\+Get\+Next\+Id@{Try\+Get\+Next\+Id}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{Try\+Get\+Next\+Id()}{TryGetNextId()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.Try\+Get\+Next\+Id (\begin{DoxyParamCaption}\item[{int}]{guide\+Id,  }\item[{out V}]{guide\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+尝试获取下个引导，未找到引导完成 
+
+
+\begin{DoxyParams}{Parameters}
+{\em guide\+Id} & \\
+\hline
+{\em guide\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a41bd2181c36625e467852e5e5b6b881e}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a41bd2181c36625e467852e5e5b6b881e}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!Try\+Get\+Or\+Add\+Progress@{Try\+Get\+Or\+Add\+Progress}}
+\index{Try\+Get\+Or\+Add\+Progress@{Try\+Get\+Or\+Add\+Progress}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{Try\+Get\+Or\+Add\+Progress()}{TryGetOrAddProgress()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.Try\+Get\+Or\+Add\+Progress (\begin{DoxyParamCaption}\item[{int}]{guide\+Id,  }\item[{out \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_guide_progress_item}{Guide\+Progress\+Item}}}]{progress }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+尝试获取引导进度 
+
+
+\begin{DoxyParams}{Parameters}
+{\em guide\+Id} & \\
+\hline
+{\em progress} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a2d479ba8ed5d702f77d15d144c5ac450}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a2d479ba8ed5d702f77d15d144c5ac450}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!Try\+Get\+Progress@{Try\+Get\+Progress}}
+\index{Try\+Get\+Progress@{Try\+Get\+Progress}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{Try\+Get\+Progress()}{TryGetProgress()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.Try\+Get\+Progress (\begin{DoxyParamCaption}\item[{int}]{guide\+Id,  }\item[{out \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_guide_progress_item}{Guide\+Progress\+Item}}}]{progress }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em guide\+Id} & \\
+\hline
+{\em progress} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_ae42de26a1b9434d9d8b52d9e60db5fcf}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_ae42de26a1b9434d9d8b52d9e60db5fcf}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!User\+Id@{User\+Id}}
+\index{User\+Id@{User\+Id}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{User\+Id}{UserId}}
+{\footnotesize\ttfamily readonly int \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.User\+Id\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The user identifier. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_aa0107d519798262e332eba9a3a36d3ea}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_aa0107d519798262e332eba9a3a36d3ea}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!Current\+Progress@{Current\+Progress}}
+\index{Current\+Progress@{Current\+Progress}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{Current\+Progress}{CurrentProgress}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_guide_progress_item}{Guide\+Progress\+Item}} \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.Current\+Progress\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+获取当前引导 
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a6871908367874066d44f6317a2cfdcf1}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_guide_a6871908367874066d44f6317a2cfdcf1}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}!Has\+Close@{Has\+Close}}
+\index{Has\+Close@{Has\+Close}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Guide}}
+\subsubsection{\texorpdfstring{Has\+Close}{HasClose}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_guide}{T\+Net.\+Com.\+Generic.\+Novice\+Guide}}$<$ T, V $>$.Has\+Close\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+是否完成引导 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Com/\+Generic/Novice\+Guide.\+cs\end{DoxyCompactItemize}

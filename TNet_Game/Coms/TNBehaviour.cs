@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EcsRx.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace TNet.Coms{
             Init();
 
         }
-
+        public IEntity Entity { get; set; }
         public static System.Collections.Concurrent.ConcurrentBag<Action> starts = new System.Collections.Concurrent.ConcurrentBag<Action>();
 
         public static System.Collections.Concurrent.ConcurrentBag<Action> updates = new System.Collections.Concurrent.ConcurrentBag<Action>();

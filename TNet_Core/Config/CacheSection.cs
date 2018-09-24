@@ -15,12 +15,12 @@ namespace TNet.Config
         /// </summary>
         public CacheSection()
         {
-            UpdateInterval = ConfigUtils.GetSetting("Cache.update.interval", 600); //10 Minute
+            UpdateInterval = ConfigUtils.GetSetting("Cache.update.interval", 6); //10 Minute 600
             ExpiredInterval = ConfigUtils.GetSetting("Cache.expired.interval", 600);
             IsStorageToDb = ConfigUtils.GetSetting("Cache.IsStorageToDb", false);
             SerializerType = ConfigUtils.GetSetting("Cache.Serializer", "Protobuf");
             ShareExpirePeriod = ConfigUtils.GetSetting("Cache.global.period", 3 * 86400); //72 hour
-            PersonalExpirePeriod = ConfigUtils.GetSetting("Cache.user.period", 86400); //24 hour
+            PersonalExpirePeriod = ConfigUtils.GetSetting("Cache.user.period", 6); //24 hour 86400
         }
 
         /// <summary>

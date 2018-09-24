@@ -1,0 +1,274 @@
+\hypertarget{class_t_net_1_1_contract_1_1_package_reader}{}\section{T\+Net.\+Contract.\+Package\+Reader Class Reference}
+\label{class_t_net_1_1_contract_1_1_package_reader}\index{T\+Net.\+Contract.\+Package\+Reader@{T\+Net.\+Contract.\+Package\+Reader}}
+
+
+ 
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader_aa579fe95418e73d3620cce6505620316}{Package\+Reader}} (byte\mbox{[}$\,$\mbox{]} data, Encoding encoding)
+\item 
+\mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader_a8a8051d877e966722ccf57194b29d938}{Package\+Reader}} (string param\+String, Stream input\+Stream, Encoding encoding)
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader_a0da79ea3158748f966c1b33ce5d8ef69}{Contains\+Key}} (string name)
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader_a9e545aba8588acff3fa714103129eb99}{Try\+Get\+Param}} (string name, out string value)
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader_acb4228af36efa0a6ba79b45b780378f2}{Try\+Get\+Param}} (string name, out int value)
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader_a3fb508437fc11c379e8b7552bd9e98e2}{Try\+Get\+Param}} (string name, out Guid value)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_ac687aa5f4c62056c7fcdcea3d063bf1e}\label{class_t_net_1_1_contract_1_1_package_reader_ac687aa5f4c62056c7fcdcea3d063bf1e}} 
+Dictionary$<$ string, string $>$ {\bfseries \+\_\+params} = new Dictionary$<$string, string$>$(String\+Comparer.\+Invariant\+Culture\+Ignore\+Case)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader_a58d7d559d7fd096b245fbb12e8011656}{Enter\+Char}} = Encoding.\+U\+T\+F8.\+Get\+Bytes(\char`\"{}\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader_a2f4888f329d5b167b1f6683a7c76e1be}{Parse\+Param\+String}} (string param\+String)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader_a29f56ae38116d008987d129e970296f3}{this\mbox{[}string name\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader_a89ff50826bab14520f49e6d1cb8eae97}{Route\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader_a4cd6ac1eaf949d251cf1f2dec6b19f5e}{Raw\+Param}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader_afd829c2a58411b4b3db8619dd8c2e431}{Input\+Stream}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Binary data, use \textquotesingle{}~\newline
+~\newline
+\textquotesingle{} split. \end{DoxyCompactList}\item 
+Dictionary$<$ string, string $>$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader_af82b6779f0adda251996091edd512379}{Params}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_aa579fe95418e73d3620cce6505620316}\label{class_t_net_1_1_contract_1_1_package_reader_aa579fe95418e73d3620cce6505620316}} 
+\index{T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}!Package\+Reader@{Package\+Reader}}
+\index{Package\+Reader@{Package\+Reader}!T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}}
+\subsubsection{\texorpdfstring{Package\+Reader()}{PackageReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T\+Net.\+Contract.\+Package\+Reader.\+Package\+Reader (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{data,  }\item[{Encoding}]{encoding }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+{\em encoding} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_a8a8051d877e966722ccf57194b29d938}\label{class_t_net_1_1_contract_1_1_package_reader_a8a8051d877e966722ccf57194b29d938}} 
+\index{T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}!Package\+Reader@{Package\+Reader}}
+\index{Package\+Reader@{Package\+Reader}!T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}}
+\subsubsection{\texorpdfstring{Package\+Reader()}{PackageReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T\+Net.\+Contract.\+Package\+Reader.\+Package\+Reader (\begin{DoxyParamCaption}\item[{string}]{param\+String,  }\item[{Stream}]{input\+Stream,  }\item[{Encoding}]{encoding }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+String} & decode data\\
+\hline
+{\em input\+Stream} & \\
+\hline
+{\em encoding} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_a0da79ea3158748f966c1b33ce5d8ef69}\label{class_t_net_1_1_contract_1_1_package_reader_a0da79ea3158748f966c1b33ce5d8ef69}} 
+\index{T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}!Contains\+Key@{Contains\+Key}}
+\index{Contains\+Key@{Contains\+Key}!T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}}
+\subsubsection{\texorpdfstring{Contains\+Key()}{ContainsKey()}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Package\+Reader.\+Contains\+Key (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_a2f4888f329d5b167b1f6683a7c76e1be}\label{class_t_net_1_1_contract_1_1_package_reader_a2f4888f329d5b167b1f6683a7c76e1be}} 
+\index{T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}!Parse\+Param\+String@{Parse\+Param\+String}}
+\index{Parse\+Param\+String@{Parse\+Param\+String}!T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}}
+\subsubsection{\texorpdfstring{Parse\+Param\+String()}{ParseParamString()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Contract.\+Package\+Reader.\+Parse\+Param\+String (\begin{DoxyParamCaption}\item[{string}]{param\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+String} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_a9e545aba8588acff3fa714103129eb99}\label{class_t_net_1_1_contract_1_1_package_reader_a9e545aba8588acff3fa714103129eb99}} 
+\index{T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}!Try\+Get\+Param@{Try\+Get\+Param}}
+\index{Try\+Get\+Param@{Try\+Get\+Param}!T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}}
+\subsubsection{\texorpdfstring{Try\+Get\+Param()}{TryGetParam()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Package\+Reader.\+Try\+Get\+Param (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{out string}]{value }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_acb4228af36efa0a6ba79b45b780378f2}\label{class_t_net_1_1_contract_1_1_package_reader_acb4228af36efa0a6ba79b45b780378f2}} 
+\index{T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}!Try\+Get\+Param@{Try\+Get\+Param}}
+\index{Try\+Get\+Param@{Try\+Get\+Param}!T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}}
+\subsubsection{\texorpdfstring{Try\+Get\+Param()}{TryGetParam()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Package\+Reader.\+Try\+Get\+Param (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{out int}]{value }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_a3fb508437fc11c379e8b7552bd9e98e2}\label{class_t_net_1_1_contract_1_1_package_reader_a3fb508437fc11c379e8b7552bd9e98e2}} 
+\index{T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}!Try\+Get\+Param@{Try\+Get\+Param}}
+\index{Try\+Get\+Param@{Try\+Get\+Param}!T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}}
+\subsubsection{\texorpdfstring{Try\+Get\+Param()}{TryGetParam()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Package\+Reader.\+Try\+Get\+Param (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{out Guid}]{value }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_a58d7d559d7fd096b245fbb12e8011656}\label{class_t_net_1_1_contract_1_1_package_reader_a58d7d559d7fd096b245fbb12e8011656}} 
+\index{T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}!Enter\+Char@{Enter\+Char}}
+\index{Enter\+Char@{Enter\+Char}!T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}}
+\subsubsection{\texorpdfstring{Enter\+Char}{EnterChar}}
+{\footnotesize\ttfamily readonly byte \mbox{[}$\,$\mbox{]} T\+Net.\+Contract.\+Package\+Reader.\+Enter\+Char = Encoding.\+U\+T\+F8.\+Get\+Bytes(\char`\"{}\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_afd829c2a58411b4b3db8619dd8c2e431}\label{class_t_net_1_1_contract_1_1_package_reader_afd829c2a58411b4b3db8619dd8c2e431}} 
+\index{T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}!Input\+Stream@{Input\+Stream}}
+\index{Input\+Stream@{Input\+Stream}!T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}}
+\subsubsection{\texorpdfstring{Input\+Stream}{InputStream}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+Contract.\+Package\+Reader.\+Input\+Stream\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Binary data, use \textquotesingle{}~\newline
+~\newline
+\textquotesingle{} split. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_af82b6779f0adda251996091edd512379}\label{class_t_net_1_1_contract_1_1_package_reader_af82b6779f0adda251996091edd512379}} 
+\index{T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}!Params@{Params}}
+\index{Params@{Params}!T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}}
+\subsubsection{\texorpdfstring{Params}{Params}}
+{\footnotesize\ttfamily Dictionary$<$string, string$>$ T\+Net.\+Contract.\+Package\+Reader.\+Params\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_a4cd6ac1eaf949d251cf1f2dec6b19f5e}\label{class_t_net_1_1_contract_1_1_package_reader_a4cd6ac1eaf949d251cf1f2dec6b19f5e}} 
+\index{T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}!Raw\+Param@{Raw\+Param}}
+\index{Raw\+Param@{Raw\+Param}!T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}}
+\subsubsection{\texorpdfstring{Raw\+Param}{RawParam}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Package\+Reader.\+Raw\+Param\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_a89ff50826bab14520f49e6d1cb8eae97}\label{class_t_net_1_1_contract_1_1_package_reader_a89ff50826bab14520f49e6d1cb8eae97}} 
+\index{T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}!Route\+Name@{Route\+Name}}
+\index{Route\+Name@{Route\+Name}!T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}}
+\subsubsection{\texorpdfstring{Route\+Name}{RouteName}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Package\+Reader.\+Route\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_package_reader_a29f56ae38116d008987d129e970296f3}\label{class_t_net_1_1_contract_1_1_package_reader_a29f56ae38116d008987d129e970296f3}} 
+\index{T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}!this\mbox{[}string name\mbox{]}@{this[string name]}}
+\index{this\mbox{[}string name\mbox{]}@{this[string name]}!T\+Net\+::\+Contract\+::\+Package\+Reader@{T\+Net\+::\+Contract\+::\+Package\+Reader}}
+\subsubsection{\texorpdfstring{this[string name]}{this[string name]}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Package\+Reader.\+this\mbox{[}string name\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract/Package\+Reader.\+cs\end{DoxyCompactItemize}

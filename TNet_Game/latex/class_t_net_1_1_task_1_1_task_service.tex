@@ -1,0 +1,148 @@
+\hypertarget{class_t_net_1_1_task_1_1_task_service}{}\section{T\+Net.\+Task.\+Task\+Service$<$ T, TC $>$ Class Template Reference}
+\label{class_t_net_1_1_task_1_1_task_service}\index{T\+Net.\+Task.\+Task\+Service$<$ T, T\+C $>$@{T\+Net.\+Task.\+Task\+Service$<$ T, T\+C $>$}}
+
+
+游戏任务服务  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service_add7ae97d69dfa53e3450d9325ec89c53}{Task\+Service}} (int user\+Id)
+\item 
+virtual List$<$ T $>$ \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service_a87bf52d031b6abdc00452653346b74d5}{Get}} (int curr\+Task\+Id)
+\begin{DoxyCompactList}\small\item\em 获取玩家未结束的任务 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service_a66961e472811a4fa542e61111e2a6272}{Accept}} (int task\+Id)
+\begin{DoxyCompactList}\small\item\em 接受任务 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service_af1fe4f5eb651a1257e735f1a16f4dfad}{Delivery}} (int task\+Id)
+\begin{DoxyCompactList}\small\item\em 交付 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service_a160b3a3823aaeeb214fe082d96983913}{Receive\+Prize}} (int task\+Id)
+\begin{DoxyCompactList}\small\item\em 领取奖励 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service_a32dad4237cfce9ec978060a85f8f557e}{Init\+Task}} ()
+\begin{DoxyCompactList}\small\item\em Inits the task. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly int \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service_aca210228a695a1f110af99bcce5808aa}{User\+Id}}
+\begin{DoxyCompactList}\small\item\em The user identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+游戏任务服务 
+
+$<$!\mbox{[}C\+D\+A\+TA\mbox{[} def get(user\+Id, curr\+Task\+Id)\+: return list;
+
+def accept\+Task(user\+Id, task\+Id)\+:\#接受任务 return True;
+
+def delivery\+Task(user\+Id, task\+Id)\+:\#交付任务 return True;
+
+def receive\+Prize(user\+Id, task\+Id)\+:\#领取奖励 return True;
+
+\mbox{]}\mbox{]}$>$ \begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{interface_t_net_1_1_task_1_1_i_task_item}{I\+Task\+Item}}}]\item[{\em TC} : {\em \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_base_config}{Task\+Base\+Config}}}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_task_1_1_task_service_add7ae97d69dfa53e3450d9325ec89c53}\label{class_t_net_1_1_task_1_1_task_service_add7ae97d69dfa53e3450d9325ec89c53}} 
+\index{T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}!Task\+Service@{Task\+Service}}
+\index{Task\+Service@{Task\+Service}!T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}}
+\subsubsection{\texorpdfstring{Task\+Service()}{TaskService()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service}{T\+Net.\+Task.\+Task\+Service}}$<$ T, TC $>$.\mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service}{Task\+Service}} (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_task_1_1_task_service_a66961e472811a4fa542e61111e2a6272}\label{class_t_net_1_1_task_1_1_task_service_a66961e472811a4fa542e61111e2a6272}} 
+\index{T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}!Accept@{Accept}}
+\index{Accept@{Accept}!T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}}
+\subsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service}{T\+Net.\+Task.\+Task\+Service}}$<$ T, TC $>$.Accept (\begin{DoxyParamCaption}\item[{int}]{task\+Id }\end{DoxyParamCaption})}
+
+
+
+接受任务 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_task_1_1_task_service_af1fe4f5eb651a1257e735f1a16f4dfad}\label{class_t_net_1_1_task_1_1_task_service_af1fe4f5eb651a1257e735f1a16f4dfad}} 
+\index{T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}!Delivery@{Delivery}}
+\index{Delivery@{Delivery}!T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}}
+\subsubsection{\texorpdfstring{Delivery()}{Delivery()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service}{T\+Net.\+Task.\+Task\+Service}}$<$ T, TC $>$.Delivery (\begin{DoxyParamCaption}\item[{int}]{task\+Id }\end{DoxyParamCaption})}
+
+
+
+交付 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_task_1_1_task_service_a87bf52d031b6abdc00452653346b74d5}\label{class_t_net_1_1_task_1_1_task_service_a87bf52d031b6abdc00452653346b74d5}} 
+\index{T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}!Get@{Get}}
+\index{Get@{Get}!T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily virtual List$<$T$>$ \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service}{T\+Net.\+Task.\+Task\+Service}}$<$ T, TC $>$.Get (\begin{DoxyParamCaption}\item[{int}]{curr\+Task\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+获取玩家未结束的任务 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_task_1_1_task_service_a32dad4237cfce9ec978060a85f8f557e}\label{class_t_net_1_1_task_1_1_task_service_a32dad4237cfce9ec978060a85f8f557e}} 
+\index{T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}!Init\+Task@{Init\+Task}}
+\index{Init\+Task@{Init\+Task}!T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}}
+\subsubsection{\texorpdfstring{Init\+Task()}{InitTask()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service}{T\+Net.\+Task.\+Task\+Service}}$<$ T, TC $>$.Init\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Inits the task. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if task was inited, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_task_1_1_task_service_a160b3a3823aaeeb214fe082d96983913}\label{class_t_net_1_1_task_1_1_task_service_a160b3a3823aaeeb214fe082d96983913}} 
+\index{T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}!Receive\+Prize@{Receive\+Prize}}
+\index{Receive\+Prize@{Receive\+Prize}!T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}}
+\subsubsection{\texorpdfstring{Receive\+Prize()}{ReceivePrize()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service}{T\+Net.\+Task.\+Task\+Service}}$<$ T, TC $>$.Receive\+Prize (\begin{DoxyParamCaption}\item[{int}]{task\+Id }\end{DoxyParamCaption})}
+
+
+
+领取奖励 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_task_1_1_task_service_aca210228a695a1f110af99bcce5808aa}\label{class_t_net_1_1_task_1_1_task_service_aca210228a695a1f110af99bcce5808aa}} 
+\index{T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}!User\+Id@{User\+Id}}
+\index{User\+Id@{User\+Id}!T\+Net\+::\+Task\+::\+Task\+Service@{T\+Net\+::\+Task\+::\+Task\+Service}}
+\subsubsection{\texorpdfstring{User\+Id}{UserId}}
+{\footnotesize\ttfamily readonly int \mbox{\hyperlink{class_t_net_1_1_task_1_1_task_service}{T\+Net.\+Task.\+Task\+Service}}$<$ T, TC $>$.User\+Id\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The user identifier. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Task/Task\+Service.\+cs\end{DoxyCompactItemize}

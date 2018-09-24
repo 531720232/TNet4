@@ -1,0 +1,245 @@
+\hypertarget{class_t_net_1_1_pay_1_1_pay_manager}{}\section{T\+Net.\+Pay.\+Pay\+Manager Class Reference}
+\label{class_t_net_1_1_pay_1_1_pay_manager}\index{T\+Net.\+Pay.\+Pay\+Manager@{T\+Net.\+Pay.\+Pay\+Manager}}
+
+
+ 
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_pay_1_1_pay_manager_a720c7d49d6a20743f5e986ca00020439}{get\+Payment}} (int game, int Server, string Account)
+\begin{DoxyCompactList}\small\item\em 获取个人充值未下发全部信息 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_t_net_1_1_pay_1_1_pay_manager_a4a0eb775ccd6ed63c45de576f95bedf9}{get91\+Pay\+Info}} (int game, int Server, string Account, string Service\+Name, string order\+No, string Retail\+ID, string user\+Id=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Get91s the pay info. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_t_net_1_1_pay_1_1_pay_manager_a8f091eee672ae17aee932a02ee511dcb}{App\+Store\+Pay}} (int game, int Server, string Account, int Silver, int Amount, string order\+No, string Retail\+ID, string Member\+Mac, bool pay\+State=true, string user\+Id=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em appstroe充值 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_t_net_1_1_pay_1_1_pay_manager_a194666a9e9d3e886a13ea097c88d9214}{Abnormal}} (string Order\+NO)
+\begin{DoxyCompactList}\small\item\em Abnormal the specified Order\+NO. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_t_net_1_1_pay_1_1_pay_manager_a817c81b4ccfe14359e22fb66a9774dbc}{Modify\+Order}} (string order\+No, int game, int server, string passport)
+\begin{DoxyCompactList}\small\item\em 补订单 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_t_net_1_1_pay_1_1_pay_manager_a7a1dec7054d26efe78284184aedc8dc0}{Pay\+Success}} (string order\+No, \mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}} order\+Info)
+\begin{DoxyCompactList}\small\item\em 更新订单支付成功状态 \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_t_net_1_1_pay_1_1_pay_manager_abbcf45a23c290ab29146ae0efa5341dc}{Add\+Order\+Info}} (string order\+No, decimal amount, string passportid, int server\+ID, int game\+ID, int game\+Conis, string deviceid, string Retail\+ID)
+\begin{DoxyCompactList}\small\item\em 触控android订单 \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_t_net_1_1_pay_1_1_pay_manager_ab1aa823b8ab62c631d85e88a88ca7076}{Add\+Order}} (\mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}} order\+Info)
+\begin{DoxyCompactList}\small\item\em Adds the order. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_t_net_1_1_pay_1_1_pay_operator}{Pay\+Operator}} \mbox{\hyperlink{class_t_net_1_1_pay_1_1_pay_manager_acf2fef0bec3662e64f9da07d2a36b7ce}{Operator}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_pay_manager_a194666a9e9d3e886a13ea097c88d9214}\label{class_t_net_1_1_pay_1_1_pay_manager_a194666a9e9d3e886a13ea097c88d9214}} 
+\index{T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}!Abnormal@{Abnormal}}
+\index{Abnormal@{Abnormal}!T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}}
+\subsubsection{\texorpdfstring{Abnormal()}{Abnormal()}}
+{\footnotesize\ttfamily static void T\+Net.\+Pay.\+Pay\+Manager.\+Abnormal (\begin{DoxyParamCaption}\item[{string}]{Order\+NO }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Abnormal the specified Order\+NO. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Order\+NO} & Order N.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_pay_manager_ab1aa823b8ab62c631d85e88a88ca7076}\label{class_t_net_1_1_pay_1_1_pay_manager_ab1aa823b8ab62c631d85e88a88ca7076}} 
+\index{T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}!Add\+Order@{Add\+Order}}
+\index{Add\+Order@{Add\+Order}!T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Order()}{AddOrder()}}
+{\footnotesize\ttfamily static bool T\+Net.\+Pay.\+Pay\+Manager.\+Add\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}}}]{order\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds the order. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if order was added, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em order\+Info} & Order info.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_pay_manager_abbcf45a23c290ab29146ae0efa5341dc}\label{class_t_net_1_1_pay_1_1_pay_manager_abbcf45a23c290ab29146ae0efa5341dc}} 
+\index{T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}!Add\+Order\+Info@{Add\+Order\+Info}}
+\index{Add\+Order\+Info@{Add\+Order\+Info}!T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}}
+\subsubsection{\texorpdfstring{Add\+Order\+Info()}{AddOrderInfo()}}
+{\footnotesize\ttfamily static void T\+Net.\+Pay.\+Pay\+Manager.\+Add\+Order\+Info (\begin{DoxyParamCaption}\item[{string}]{order\+No,  }\item[{decimal}]{amount,  }\item[{string}]{passportid,  }\item[{int}]{server\+ID,  }\item[{int}]{game\+ID,  }\item[{int}]{game\+Conis,  }\item[{string}]{deviceid,  }\item[{string}]{Retail\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+触控android订单 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order\+No} & \\
+\hline
+{\em amount} & \\
+\hline
+{\em passportid} & \\
+\hline
+{\em server\+ID} & \\
+\hline
+{\em game\+ID} & \\
+\hline
+{\em game\+Conis} & \\
+\hline
+{\em deviceid} & \\
+\hline
+{\em Retail\+ID} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_pay_manager_a8f091eee672ae17aee932a02ee511dcb}\label{class_t_net_1_1_pay_1_1_pay_manager_a8f091eee672ae17aee932a02ee511dcb}} 
+\index{T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}!App\+Store\+Pay@{App\+Store\+Pay}}
+\index{App\+Store\+Pay@{App\+Store\+Pay}!T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}}
+\subsubsection{\texorpdfstring{App\+Store\+Pay()}{AppStorePay()}}
+{\footnotesize\ttfamily static void T\+Net.\+Pay.\+Pay\+Manager.\+App\+Store\+Pay (\begin{DoxyParamCaption}\item[{int}]{game,  }\item[{int}]{Server,  }\item[{string}]{Account,  }\item[{int}]{Silver,  }\item[{int}]{Amount,  }\item[{string}]{order\+No,  }\item[{string}]{Retail\+ID,  }\item[{string}]{Member\+Mac,  }\item[{bool}]{pay\+State = {\ttfamily true},  }\item[{string}]{user\+Id = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+appstroe充值 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Game.\\
+\hline
+{\em Server} & Server.\\
+\hline
+{\em Account} & Account.\\
+\hline
+{\em Silver} & Silver.\\
+\hline
+{\em Amount} & Amount.\\
+\hline
+{\em order\+No} & Order no.\\
+\hline
+{\em Retail\+ID} & Retail I.\\
+\hline
+{\em Member\+Mac} & Member mac.\\
+\hline
+{\em pay\+State} & \\
+\hline
+{\em user\+Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_pay_manager_a4a0eb775ccd6ed63c45de576f95bedf9}\label{class_t_net_1_1_pay_1_1_pay_manager_a4a0eb775ccd6ed63c45de576f95bedf9}} 
+\index{T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}!get91\+Pay\+Info@{get91\+Pay\+Info}}
+\index{get91\+Pay\+Info@{get91\+Pay\+Info}!T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}}
+\subsubsection{\texorpdfstring{get91\+Pay\+Info()}{get91PayInfo()}}
+{\footnotesize\ttfamily static void T\+Net.\+Pay.\+Pay\+Manager.\+get91\+Pay\+Info (\begin{DoxyParamCaption}\item[{int}]{game,  }\item[{int}]{Server,  }\item[{string}]{Account,  }\item[{string}]{Service\+Name,  }\item[{string}]{order\+No,  }\item[{string}]{Retail\+ID,  }\item[{string}]{user\+Id = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get91s the pay info. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Game.\\
+\hline
+{\em Server} & Server.\\
+\hline
+{\em Account} & Account.\\
+\hline
+{\em Service\+Name} & \mbox{\hyperlink{namespace_t_net_1_1_service}{Service}} name.\\
+\hline
+{\em order\+No} & Order no.\\
+\hline
+{\em Retail\+ID} & Retail I.\\
+\hline
+{\em user\+Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_pay_manager_a720c7d49d6a20743f5e986ca00020439}\label{class_t_net_1_1_pay_1_1_pay_manager_a720c7d49d6a20743f5e986ca00020439}} 
+\index{T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}!get\+Payment@{get\+Payment}}
+\index{get\+Payment@{get\+Payment}!T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}}
+\subsubsection{\texorpdfstring{get\+Payment()}{getPayment()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}} \mbox{[}$\,$\mbox{]} T\+Net.\+Pay.\+Pay\+Manager.\+get\+Payment (\begin{DoxyParamCaption}\item[{int}]{game,  }\item[{int}]{Server,  }\item[{string}]{Account }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+获取个人充值未下发全部信息 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & \\
+\hline
+{\em Server} & \\
+\hline
+{\em Account} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_pay_manager_a817c81b4ccfe14359e22fb66a9774dbc}\label{class_t_net_1_1_pay_1_1_pay_manager_a817c81b4ccfe14359e22fb66a9774dbc}} 
+\index{T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}!Modify\+Order@{Modify\+Order}}
+\index{Modify\+Order@{Modify\+Order}!T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}}
+\subsubsection{\texorpdfstring{Modify\+Order()}{ModifyOrder()}}
+{\footnotesize\ttfamily static bool T\+Net.\+Pay.\+Pay\+Manager.\+Modify\+Order (\begin{DoxyParamCaption}\item[{string}]{order\+No,  }\item[{int}]{game,  }\item[{int}]{server,  }\item[{string}]{passport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+补订单 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order\+No} & \\
+\hline
+{\em game} & \\
+\hline
+{\em server} & \\
+\hline
+{\em passport} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_pay_manager_a7a1dec7054d26efe78284184aedc8dc0}\label{class_t_net_1_1_pay_1_1_pay_manager_a7a1dec7054d26efe78284184aedc8dc0}} 
+\index{T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}!Pay\+Success@{Pay\+Success}}
+\index{Pay\+Success@{Pay\+Success}!T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}}
+\subsubsection{\texorpdfstring{Pay\+Success()}{PaySuccess()}}
+{\footnotesize\ttfamily static bool T\+Net.\+Pay.\+Pay\+Manager.\+Pay\+Success (\begin{DoxyParamCaption}\item[{string}]{order\+No,  }\item[{\mbox{\hyperlink{class_t_net_1_1_pay_1_1_order_info}{Order\+Info}}}]{order\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+更新订单支付成功状态 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order\+No} & \\
+\hline
+{\em order\+Info} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_pay_1_1_pay_manager_acf2fef0bec3662e64f9da07d2a36b7ce}\label{class_t_net_1_1_pay_1_1_pay_manager_acf2fef0bec3662e64f9da07d2a36b7ce}} 
+\index{T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}!Operator@{Operator}}
+\index{Operator@{Operator}!T\+Net\+::\+Pay\+::\+Pay\+Manager@{T\+Net\+::\+Pay\+::\+Pay\+Manager}}
+\subsubsection{\texorpdfstring{Operator}{Operator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_pay_1_1_pay_operator}{Pay\+Operator}} T\+Net.\+Pay.\+Pay\+Manager.\+Operator\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pay/Pay\+Manager.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,825 @@
+\hypertarget{class_t_net_1_1_contract_1_1_game_session}{}\section{T\+Net.\+Contract.\+Game\+Session Class Reference}
+\label{class_t_net_1_1_contract_1_1_game_session}\index{T\+Net.\+Contract.\+Game\+Session@{T\+Net.\+Contract.\+Game\+Session}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a3d1ecf889379710ce2325d2a6f989777}{Enter\+Lock}} (int action\+Id, object agr1, out object arg2, out long wait\+Time\+Out\+Num)
+\begin{DoxyCompactList}\small\item\em 获得锁 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a4efe81b2af17ed61332d2ae55fa3c2d0}{Exit\+Lock}} (int action\+Id)
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a41824bc87bd23b84c8ae338b092d1769}{Refresh}} ()
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a6edaf71a2d0a9c2a64c722d173363b28}{Set\+Expired}} ()
+\begin{DoxyCompactList}\small\item\em 设置过期 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_aed518bd0b305cc10225ef785f7d7f86f}{Bind}} (\mbox{\hyperlink{interface_t_net_1_1_context___1_1_i_user}{I\+User}} user)
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_ac416de59932c8bef0c435a2fdad6f9f0}{Un\+Bind}} ()
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a3fefc89d3c01bc507d858ef6a38af8f3}{Close}} ()
+\begin{DoxyCompactList}\small\item\em Close \end{DoxyCompactList}\item 
+async System.\+Threading.\+Tasks.\+Task$<$ bool $>$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a2168e48814137103de9d8c581dfdd144}{Send\+Async}} (byte\mbox{[}$\,$\mbox{]} data, int offset, int count)
+\item 
+async System.\+Threading.\+Tasks.\+Task$<$ bool $>$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a503bc88411d6e9b6ae7f38afd266cf30}{Send\+Async}} (sbyte op\+Code, byte\mbox{[}$\,$\mbox{]} data, int offset, int count, Action$<$ Socket\+Async\+Result $>$ callback)
+\begin{DoxyCompactList}\small\item\em Send async, add 16 len head \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_abdf2337f56bee6ba4e1924bb2e4d2d09}{Clear\+Session}} (\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} session)
+\item 
+static void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a5990f377ea7a34e25d57fa244f99e581}{Clear\+Session}} (Predicate$<$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} $>$ match)
+\item 
+static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a4c3a59a0d42f93edb6a7d74b51f13fa9}{Create\+New}} (Guid key\+Code, Http\+Request request)
+\begin{DoxyCompactList}\small\item\em Add session to cache \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_aa13f6734b52da1108bc677898f09f2ca}{Create\+New}} (Guid key\+Code, Http\+Listener\+Request request)
+\begin{DoxyCompactList}\small\item\em Add session to cache \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a6142a8d48d3693d3dfb7f43d6cddb8e9}{Create\+New}} (Guid key\+Code)
+\item 
+static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a9dd16391327609b53ff9e154919e9aba}{Create\+New}} (Guid key\+Code, T\+N\+Socket socket, I\+Socket app\+Server)
+\begin{DoxyCompactList}\small\item\em Add session to cache \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a0c8928b8df7f3eb09c61107d1ce5efe6}{Recover}} (\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} session, Guid new\+Session\+Key, T\+N\+Socket socket, I\+Socket app\+Server)
+\begin{DoxyCompactList}\small\item\em Recover session \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_ad564fa7fcacfe5b3dfb72936e9a14c68}{Get}} (int user\+Id)
+\begin{DoxyCompactList}\small\item\em Get session by userid \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a4d88c16d0dfac967a8cfc3ff4821dc86}{Get}} (string session\+Id)
+\begin{DoxyCompactList}\small\item\em Get session by sessionid. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a74777e0bec09dbd6d58814300a768103}{Try\+Parse\+Session\+Id}} (string session\+Id, out Guid sid)
+\item 
+static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_afd9b824a348ce50e5c8dbdeffdb32cba}{Get}} (Guid key)
+\begin{DoxyCompactList}\small\item\em Get session by Ex\+Socket. \end{DoxyCompactList}\item 
+static I\+Enumerable$<$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} $>$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a2b1701baee2a3c8d412568e6173a56fd}{Get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Get all session \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_ab8b4c73cc5f7eac0d342961fc786566f}{Get\+Remote}} (string proxy\+Id)
+\item 
+static List$<$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} $>$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a5f5c60f6e01d8a088c49052bc3e15d4c}{Get\+Remote\+All}} ()
+\begin{DoxyCompactList}\small\item\em Get remote all \end{DoxyCompactList}\item 
+static I\+Enumerable$<$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} $>$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_aab7cf66a8f8f6ef04984e841e687dc39}{Get\+Online\+All}} ()
+\item 
+static I\+Enumerable$<$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} $>$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a51a967642069f84b731ac6445bf57c94}{Get\+Online\+All}} (int delay\+Time)
+\item 
+static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a078671e511ff0dac6876d5276debd67c}{Get\+Session\+By\+Cookie}} (Http\+Request request)
+\item 
+static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a91b4ed06efebff3da2bb64742e0fb678}{Get\+Session\+By\+Cookie}} (Http\+Listener\+Request request)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a911f83049924402e92f0fbf126ea5be3}{Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Count \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a51d727aeae11ff9ebb3dface99ec3900}{Heartbeat\+Timeout}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Heartbeat timeout(sec), default 60s \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a5e5ba1d8bcec84365cea3f8af002e047}{Timeout}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em session timeout(sec), default 2h \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a4f99e4c3546154849543963fb25ffb96}{Request\+Timeout}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Request timeout(ms), default 1s \end{DoxyCompactList}\item 
+I\+Socket \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a9ee24201071d062e841780111bbea753}{App\+Server}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_ad03b44148a490d15c8d7247f0c2b44b7}{Remote\+Address}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Remote end address \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a16626113ee15db8c866c7eed89bf2c72}{End\+Address}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Remote end address \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_ac0c3ca85d545afe8f2f2a60529032854}{Is\+Replaced}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 对象被踢出 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a64c0a626d6f3174a8047e2e1d11c02a4}{Old\+Session\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 标记此对象被踢出 \end{DoxyCompactList}\item 
+Guid \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_ab78301468af6afbaac6ce66d5ced19f0}{Key\+Code}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em key code \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_aa2037d2f9dbbb66c5fdc946d4f90ad79}{Session\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Session\+Id \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a3acae323bf7aaf378c059b75f2c56145}{User\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em login User\+Id \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_t_net_1_1_context___1_1_i_user}{I\+User}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a19c2703e318f5fa3b526d1db034c93a1}{User}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em User \end{DoxyCompactList}\item 
+Guid \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a535f2fc1984de615058ba55605450bd1}{Proxy\+Sid}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 远程代理客户端的会话\+ID \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_aa0661d025f42ea11c4725296f2d5ba63}{Last\+Activity\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 最后活动时间 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_ae85dc776c93c91b1a4ca8744025b1d66}{Is\+Timeout}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 是否会话超时 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_ad67a5a483bf8769f470588952d6b08e0}{Is\+Heartbeat\+Timeout}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_aa0b6edbe40e494459fa84ab4b0e62198}{Proxy\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 远程代理客户端的标识\+ID \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_aea76b83afb834569e1789e1350ba1eeb}{Is\+Closed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 是否标识关闭状态 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a13ec39939fbc5e4c37c7f8b0f2f9b109}{Connected}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 是否已连接 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a0c7336e0097b1ffef7a9b5dac9e62d3b}{Is\+Socket}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em is socket \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_af097b017eda9fad5d725f6de9ab2fb48}{Is\+Web\+Socket}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em is websocket \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a55b26d78f5e34afba751751ead401581}{Is\+Authorized}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is authorized. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_af38f3efaf0800ece1df95aa811bcdc71}{Is\+Proxy\+Server}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is proxy server session \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a8bf7547ea326bfc61d421f745bc789b7}{Is\+Remote}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} $>$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session_a20dadeea8c09220c6f3938bfe62fe16b}{Heartbeat\+Timeout\+Handle}}
+\begin{DoxyCompactList}\small\item\em Heartbeat Timeout event \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_aed518bd0b305cc10225ef785f7d7f86f}\label{class_t_net_1_1_contract_1_1_game_session_aed518bd0b305cc10225ef785f7d7f86f}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Bind@{Bind}}
+\index{Bind@{Bind}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Bind()}{Bind()}}
+{\footnotesize\ttfamily void T\+Net.\+Contract.\+Game\+Session.\+Bind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_t_net_1_1_context___1_1_i_user}{I\+User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_abdf2337f56bee6ba4e1924bb2e4d2d09}\label{class_t_net_1_1_contract_1_1_game_session_abdf2337f56bee6ba4e1924bb2e4d2d09}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Clear\+Session@{Clear\+Session}}
+\index{Clear\+Session@{Clear\+Session}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Clear\+Session()}{ClearSession()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void T\+Net.\+Contract.\+Game\+Session.\+Clear\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}}]{session }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a5990f377ea7a34e25d57fa244f99e581}\label{class_t_net_1_1_contract_1_1_game_session_a5990f377ea7a34e25d57fa244f99e581}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Clear\+Session@{Clear\+Session}}
+\index{Clear\+Session@{Clear\+Session}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Clear\+Session()}{ClearSession()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void T\+Net.\+Contract.\+Game\+Session.\+Clear\+Session (\begin{DoxyParamCaption}\item[{Predicate$<$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} $>$}]{match }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a3fefc89d3c01bc507d858ef6a38af8f3}\label{class_t_net_1_1_contract_1_1_game_session_a3fefc89d3c01bc507d858ef6a38af8f3}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Close@{Close}}
+\index{Close@{Close}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void T\+Net.\+Contract.\+Game\+Session.\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Close 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a4c3a59a0d42f93edb6a7d74b51f13fa9}\label{class_t_net_1_1_contract_1_1_game_session_a4c3a59a0d42f93edb6a7d74b51f13fa9}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Create\+New@{Create\+New}}
+\index{Create\+New@{Create\+New}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Create\+New()}{CreateNew()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} T\+Net.\+Contract.\+Game\+Session.\+Create\+New (\begin{DoxyParamCaption}\item[{Guid}]{key\+Code,  }\item[{Http\+Request}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add session to cache 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & \\
+\hline
+{\em request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_aa13f6734b52da1108bc677898f09f2ca}\label{class_t_net_1_1_contract_1_1_game_session_aa13f6734b52da1108bc677898f09f2ca}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Create\+New@{Create\+New}}
+\index{Create\+New@{Create\+New}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Create\+New()}{CreateNew()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} T\+Net.\+Contract.\+Game\+Session.\+Create\+New (\begin{DoxyParamCaption}\item[{Guid}]{key\+Code,  }\item[{Http\+Listener\+Request}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add session to cache 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & \\
+\hline
+{\em request} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a6142a8d48d3693d3dfb7f43d6cddb8e9}\label{class_t_net_1_1_contract_1_1_game_session_a6142a8d48d3693d3dfb7f43d6cddb8e9}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Create\+New@{Create\+New}}
+\index{Create\+New@{Create\+New}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Create\+New()}{CreateNew()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} T\+Net.\+Contract.\+Game\+Session.\+Create\+New (\begin{DoxyParamCaption}\item[{Guid}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a9dd16391327609b53ff9e154919e9aba}\label{class_t_net_1_1_contract_1_1_game_session_a9dd16391327609b53ff9e154919e9aba}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Create\+New@{Create\+New}}
+\index{Create\+New@{Create\+New}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Create\+New()}{CreateNew()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} T\+Net.\+Contract.\+Game\+Session.\+Create\+New (\begin{DoxyParamCaption}\item[{Guid}]{key\+Code,  }\item[{T\+N\+Socket}]{socket,  }\item[{I\+Socket}]{app\+Server }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add session to cache 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & \\
+\hline
+{\em socket} & \\
+\hline
+{\em app\+Server} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a3d1ecf889379710ce2325d2a6f989777}\label{class_t_net_1_1_contract_1_1_game_session_a3d1ecf889379710ce2325d2a6f989777}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Enter\+Lock@{Enter\+Lock}}
+\index{Enter\+Lock@{Enter\+Lock}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Enter\+Lock()}{EnterLock()}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Game\+Session.\+Enter\+Lock (\begin{DoxyParamCaption}\item[{int}]{action\+Id,  }\item[{object}]{agr1,  }\item[{out object}]{arg2,  }\item[{out long}]{wait\+Time\+Out\+Num }\end{DoxyParamCaption})}
+
+
+
+获得锁 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a4efe81b2af17ed61332d2ae55fa3c2d0}\label{class_t_net_1_1_contract_1_1_game_session_a4efe81b2af17ed61332d2ae55fa3c2d0}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Exit\+Lock@{Exit\+Lock}}
+\index{Exit\+Lock@{Exit\+Lock}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Exit\+Lock()}{ExitLock()}}
+{\footnotesize\ttfamily void T\+Net.\+Contract.\+Game\+Session.\+Exit\+Lock (\begin{DoxyParamCaption}\item[{int}]{action\+Id }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_ad564fa7fcacfe5b3dfb72936e9a14c68}\label{class_t_net_1_1_contract_1_1_game_session_ad564fa7fcacfe5b3dfb72936e9a14c68}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Get@{Get}}
+\index{Get@{Get}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} T\+Net.\+Contract.\+Game\+Session.\+Get (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get session by userid 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a4d88c16d0dfac967a8cfc3ff4821dc86}\label{class_t_net_1_1_contract_1_1_game_session_a4d88c16d0dfac967a8cfc3ff4821dc86}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Get@{Get}}
+\index{Get@{Get}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} T\+Net.\+Contract.\+Game\+Session.\+Get (\begin{DoxyParamCaption}\item[{string}]{session\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get session by sessionid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_afd9b824a348ce50e5c8dbdeffdb32cba}\label{class_t_net_1_1_contract_1_1_game_session_afd9b824a348ce50e5c8dbdeffdb32cba}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Get@{Get}}
+\index{Get@{Get}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} T\+Net.\+Contract.\+Game\+Session.\+Get (\begin{DoxyParamCaption}\item[{Guid}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get session by Ex\+Socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a2b1701baee2a3c8d412568e6173a56fd}\label{class_t_net_1_1_contract_1_1_game_session_a2b1701baee2a3c8d412568e6173a56fd}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Get\+All@{Get\+All}}
+\index{Get\+All@{Get\+All}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Get\+All()}{GetAll()}}
+{\footnotesize\ttfamily static I\+Enumerable$<$\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}$>$ T\+Net.\+Contract.\+Game\+Session.\+Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get all session 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_aab7cf66a8f8f6ef04984e841e687dc39}\label{class_t_net_1_1_contract_1_1_game_session_aab7cf66a8f8f6ef04984e841e687dc39}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Get\+Online\+All@{Get\+Online\+All}}
+\index{Get\+Online\+All@{Get\+Online\+All}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Get\+Online\+All()}{GetOnlineAll()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static I\+Enumerable$<$\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}$>$ T\+Net.\+Contract.\+Game\+Session.\+Get\+Online\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a51a967642069f84b731ac6445bf57c94}\label{class_t_net_1_1_contract_1_1_game_session_a51a967642069f84b731ac6445bf57c94}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Get\+Online\+All@{Get\+Online\+All}}
+\index{Get\+Online\+All@{Get\+Online\+All}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Get\+Online\+All()}{GetOnlineAll()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static I\+Enumerable$<$\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}$>$ T\+Net.\+Contract.\+Game\+Session.\+Get\+Online\+All (\begin{DoxyParamCaption}\item[{int}]{delay\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_ab8b4c73cc5f7eac0d342961fc786566f}\label{class_t_net_1_1_contract_1_1_game_session_ab8b4c73cc5f7eac0d342961fc786566f}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Get\+Remote@{Get\+Remote}}
+\index{Get\+Remote@{Get\+Remote}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Get\+Remote()}{GetRemote()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} T\+Net.\+Contract.\+Game\+Session.\+Get\+Remote (\begin{DoxyParamCaption}\item[{string}]{proxy\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em proxy\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a5f5c60f6e01d8a088c49052bc3e15d4c}\label{class_t_net_1_1_contract_1_1_game_session_a5f5c60f6e01d8a088c49052bc3e15d4c}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Get\+Remote\+All@{Get\+Remote\+All}}
+\index{Get\+Remote\+All@{Get\+Remote\+All}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Get\+Remote\+All()}{GetRemoteAll()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}$>$ T\+Net.\+Contract.\+Game\+Session.\+Get\+Remote\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get remote all 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a078671e511ff0dac6876d5276debd67c}\label{class_t_net_1_1_contract_1_1_game_session_a078671e511ff0dac6876d5276debd67c}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Get\+Session\+By\+Cookie@{Get\+Session\+By\+Cookie}}
+\index{Get\+Session\+By\+Cookie@{Get\+Session\+By\+Cookie}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Get\+Session\+By\+Cookie()}{GetSessionByCookie()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} T\+Net.\+Contract.\+Game\+Session.\+Get\+Session\+By\+Cookie (\begin{DoxyParamCaption}\item[{Http\+Request}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a91b4ed06efebff3da2bb64742e0fb678}\label{class_t_net_1_1_contract_1_1_game_session_a91b4ed06efebff3da2bb64742e0fb678}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Get\+Session\+By\+Cookie@{Get\+Session\+By\+Cookie}}
+\index{Get\+Session\+By\+Cookie@{Get\+Session\+By\+Cookie}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Get\+Session\+By\+Cookie()}{GetSessionByCookie()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} T\+Net.\+Contract.\+Game\+Session.\+Get\+Session\+By\+Cookie (\begin{DoxyParamCaption}\item[{Http\+Listener\+Request}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a0c8928b8df7f3eb09c61107d1ce5efe6}\label{class_t_net_1_1_contract_1_1_game_session_a0c8928b8df7f3eb09c61107d1ce5efe6}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Recover@{Recover}}
+\index{Recover@{Recover}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Recover()}{Recover()}}
+{\footnotesize\ttfamily static void T\+Net.\+Contract.\+Game\+Session.\+Recover (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}}]{session,  }\item[{Guid}]{new\+Session\+Key,  }\item[{T\+N\+Socket}]{socket,  }\item[{I\+Socket}]{app\+Server }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Recover session 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+{\em new\+Session\+Key} & \\
+\hline
+{\em socket} & \\
+\hline
+{\em app\+Server} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a41824bc87bd23b84c8ae338b092d1769}\label{class_t_net_1_1_contract_1_1_game_session_a41824bc87bd23b84c8ae338b092d1769}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily void T\+Net.\+Contract.\+Game\+Session.\+Refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a2168e48814137103de9d8c581dfdd144}\label{class_t_net_1_1_contract_1_1_game_session_a2168e48814137103de9d8c581dfdd144}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Send\+Async@{Send\+Async}}
+\index{Send\+Async@{Send\+Async}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Send\+Async()}{SendAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async System.\+Threading.\+Tasks.\+Task$<$bool$>$ T\+Net.\+Contract.\+Game\+Session.\+Send\+Async (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{data,  }\item[{int}]{offset,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+{\em offset} & \\
+\hline
+{\em count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a503bc88411d6e9b6ae7f38afd266cf30}\label{class_t_net_1_1_contract_1_1_game_session_a503bc88411d6e9b6ae7f38afd266cf30}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Send\+Async@{Send\+Async}}
+\index{Send\+Async@{Send\+Async}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Send\+Async()}{SendAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async System.\+Threading.\+Tasks.\+Task$<$bool$>$ T\+Net.\+Contract.\+Game\+Session.\+Send\+Async (\begin{DoxyParamCaption}\item[{sbyte}]{op\+Code,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data,  }\item[{int}]{offset,  }\item[{int}]{count,  }\item[{Action$<$ Socket\+Async\+Result $>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Send async, add 16 len head 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op\+Code} & \\
+\hline
+{\em data} & \\
+\hline
+{\em offset} & \\
+\hline
+{\em count} & \\
+\hline
+{\em callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a6edaf71a2d0a9c2a64c722d173363b28}\label{class_t_net_1_1_contract_1_1_game_session_a6edaf71a2d0a9c2a64c722d173363b28}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Set\+Expired@{Set\+Expired}}
+\index{Set\+Expired@{Set\+Expired}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Set\+Expired()}{SetExpired()}}
+{\footnotesize\ttfamily void T\+Net.\+Contract.\+Game\+Session.\+Set\+Expired (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+设置过期 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a74777e0bec09dbd6d58814300a768103}\label{class_t_net_1_1_contract_1_1_game_session_a74777e0bec09dbd6d58814300a768103}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Try\+Parse\+Session\+Id@{Try\+Parse\+Session\+Id}}
+\index{Try\+Parse\+Session\+Id@{Try\+Parse\+Session\+Id}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Try\+Parse\+Session\+Id()}{TryParseSessionId()}}
+{\footnotesize\ttfamily static bool T\+Net.\+Contract.\+Game\+Session.\+Try\+Parse\+Session\+Id (\begin{DoxyParamCaption}\item[{string}]{session\+Id,  }\item[{out Guid}]{sid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\+Id} & \\
+\hline
+{\em sid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_ac416de59932c8bef0c435a2fdad6f9f0}\label{class_t_net_1_1_contract_1_1_game_session_ac416de59932c8bef0c435a2fdad6f9f0}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Un\+Bind@{Un\+Bind}}
+\index{Un\+Bind@{Un\+Bind}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Un\+Bind()}{UnBind()}}
+{\footnotesize\ttfamily void T\+Net.\+Contract.\+Game\+Session.\+Un\+Bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a9ee24201071d062e841780111bbea753}\label{class_t_net_1_1_contract_1_1_game_session_a9ee24201071d062e841780111bbea753}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!App\+Server@{App\+Server}}
+\index{App\+Server@{App\+Server}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{App\+Server}{AppServer}}
+{\footnotesize\ttfamily I\+Socket T\+Net.\+Contract.\+Game\+Session.\+App\+Server\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a13ec39939fbc5e4c37c7f8b0f2f9b109}\label{class_t_net_1_1_contract_1_1_game_session_a13ec39939fbc5e4c37c7f8b0f2f9b109}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Connected@{Connected}}
+\index{Connected@{Connected}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Connected}{Connected}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Game\+Session.\+Connected\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+是否已连接 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a911f83049924402e92f0fbf126ea5be3}\label{class_t_net_1_1_contract_1_1_game_session_a911f83049924402e92f0fbf126ea5be3}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Count@{Count}}
+\index{Count@{Count}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int T\+Net.\+Contract.\+Game\+Session.\+Count\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Count 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a16626113ee15db8c866c7eed89bf2c72}\label{class_t_net_1_1_contract_1_1_game_session_a16626113ee15db8c866c7eed89bf2c72}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!End\+Address@{End\+Address}}
+\index{End\+Address@{End\+Address}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{End\+Address}{EndAddress}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Game\+Session.\+End\+Address\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Remote end address 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a51d727aeae11ff9ebb3dface99ec3900}\label{class_t_net_1_1_contract_1_1_game_session_a51d727aeae11ff9ebb3dface99ec3900}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Heartbeat\+Timeout@{Heartbeat\+Timeout}}
+\index{Heartbeat\+Timeout@{Heartbeat\+Timeout}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Heartbeat\+Timeout}{HeartbeatTimeout}}
+{\footnotesize\ttfamily int T\+Net.\+Contract.\+Game\+Session.\+Heartbeat\+Timeout\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Heartbeat timeout(sec), default 60s 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a55b26d78f5e34afba751751ead401581}\label{class_t_net_1_1_contract_1_1_game_session_a55b26d78f5e34afba751751ead401581}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Is\+Authorized@{Is\+Authorized}}
+\index{Is\+Authorized@{Is\+Authorized}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Is\+Authorized}{IsAuthorized}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Game\+Session.\+Is\+Authorized\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Is authorized. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_aea76b83afb834569e1789e1350ba1eeb}\label{class_t_net_1_1_contract_1_1_game_session_aea76b83afb834569e1789e1350ba1eeb}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Is\+Closed@{Is\+Closed}}
+\index{Is\+Closed@{Is\+Closed}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Is\+Closed}{IsClosed}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Game\+Session.\+Is\+Closed\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+是否标识关闭状态 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_ad67a5a483bf8769f470588952d6b08e0}\label{class_t_net_1_1_contract_1_1_game_session_ad67a5a483bf8769f470588952d6b08e0}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Is\+Heartbeat\+Timeout@{Is\+Heartbeat\+Timeout}}
+\index{Is\+Heartbeat\+Timeout@{Is\+Heartbeat\+Timeout}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Is\+Heartbeat\+Timeout}{IsHeartbeatTimeout}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Game\+Session.\+Is\+Heartbeat\+Timeout\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_af38f3efaf0800ece1df95aa811bcdc71}\label{class_t_net_1_1_contract_1_1_game_session_af38f3efaf0800ece1df95aa811bcdc71}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Is\+Proxy\+Server@{Is\+Proxy\+Server}}
+\index{Is\+Proxy\+Server@{Is\+Proxy\+Server}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Is\+Proxy\+Server}{IsProxyServer}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Game\+Session.\+Is\+Proxy\+Server\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Is proxy server session 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a8bf7547ea326bfc61d421f745bc789b7}\label{class_t_net_1_1_contract_1_1_game_session_a8bf7547ea326bfc61d421f745bc789b7}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Is\+Remote@{Is\+Remote}}
+\index{Is\+Remote@{Is\+Remote}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Is\+Remote}{IsRemote}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Game\+Session.\+Is\+Remote\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_ac0c3ca85d545afe8f2f2a60529032854}\label{class_t_net_1_1_contract_1_1_game_session_ac0c3ca85d545afe8f2f2a60529032854}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Is\+Replaced@{Is\+Replaced}}
+\index{Is\+Replaced@{Is\+Replaced}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Is\+Replaced}{IsReplaced}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Game\+Session.\+Is\+Replaced\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+对象被踢出 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a0c7336e0097b1ffef7a9b5dac9e62d3b}\label{class_t_net_1_1_contract_1_1_game_session_a0c7336e0097b1ffef7a9b5dac9e62d3b}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Is\+Socket@{Is\+Socket}}
+\index{Is\+Socket@{Is\+Socket}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Is\+Socket}{IsSocket}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Game\+Session.\+Is\+Socket\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+is socket 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_ae85dc776c93c91b1a4ca8744025b1d66}\label{class_t_net_1_1_contract_1_1_game_session_ae85dc776c93c91b1a4ca8744025b1d66}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Is\+Timeout@{Is\+Timeout}}
+\index{Is\+Timeout@{Is\+Timeout}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Is\+Timeout}{IsTimeout}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Game\+Session.\+Is\+Timeout\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+是否会话超时 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_af097b017eda9fad5d725f6de9ab2fb48}\label{class_t_net_1_1_contract_1_1_game_session_af097b017eda9fad5d725f6de9ab2fb48}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Is\+Web\+Socket@{Is\+Web\+Socket}}
+\index{Is\+Web\+Socket@{Is\+Web\+Socket}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Is\+Web\+Socket}{IsWebSocket}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Game\+Session.\+Is\+Web\+Socket\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+is websocket 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_ab78301468af6afbaac6ce66d5ced19f0}\label{class_t_net_1_1_contract_1_1_game_session_ab78301468af6afbaac6ce66d5ced19f0}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Key\+Code@{Key\+Code}}
+\index{Key\+Code@{Key\+Code}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Key\+Code}{KeyCode}}
+{\footnotesize\ttfamily Guid T\+Net.\+Contract.\+Game\+Session.\+Key\+Code\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+key code 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_aa0661d025f42ea11c4725296f2d5ba63}\label{class_t_net_1_1_contract_1_1_game_session_aa0661d025f42ea11c4725296f2d5ba63}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Last\+Activity\+Time@{Last\+Activity\+Time}}
+\index{Last\+Activity\+Time@{Last\+Activity\+Time}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Last\+Activity\+Time}{LastActivityTime}}
+{\footnotesize\ttfamily Date\+Time T\+Net.\+Contract.\+Game\+Session.\+Last\+Activity\+Time\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+最后活动时间 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a64c0a626d6f3174a8047e2e1d11c02a4}\label{class_t_net_1_1_contract_1_1_game_session_a64c0a626d6f3174a8047e2e1d11c02a4}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Old\+Session\+Id@{Old\+Session\+Id}}
+\index{Old\+Session\+Id@{Old\+Session\+Id}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Old\+Session\+Id}{OldSessionId}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Game\+Session.\+Old\+Session\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+标记此对象被踢出 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_aa0b6edbe40e494459fa84ab4b0e62198}\label{class_t_net_1_1_contract_1_1_game_session_aa0b6edbe40e494459fa84ab4b0e62198}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Proxy\+Id@{Proxy\+Id}}
+\index{Proxy\+Id@{Proxy\+Id}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Proxy\+Id}{ProxyId}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Game\+Session.\+Proxy\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+远程代理客户端的标识\+ID 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a535f2fc1984de615058ba55605450bd1}\label{class_t_net_1_1_contract_1_1_game_session_a535f2fc1984de615058ba55605450bd1}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Proxy\+Sid@{Proxy\+Sid}}
+\index{Proxy\+Sid@{Proxy\+Sid}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Proxy\+Sid}{ProxySid}}
+{\footnotesize\ttfamily Guid T\+Net.\+Contract.\+Game\+Session.\+Proxy\+Sid\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+远程代理客户端的会话\+ID 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_ad03b44148a490d15c8d7247f0c2b44b7}\label{class_t_net_1_1_contract_1_1_game_session_ad03b44148a490d15c8d7247f0c2b44b7}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Remote\+Address@{Remote\+Address}}
+\index{Remote\+Address@{Remote\+Address}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Remote\+Address}{RemoteAddress}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Game\+Session.\+Remote\+Address\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Remote end address 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a4f99e4c3546154849543963fb25ffb96}\label{class_t_net_1_1_contract_1_1_game_session_a4f99e4c3546154849543963fb25ffb96}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Request\+Timeout@{Request\+Timeout}}
+\index{Request\+Timeout@{Request\+Timeout}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Request\+Timeout}{RequestTimeout}}
+{\footnotesize\ttfamily int T\+Net.\+Contract.\+Game\+Session.\+Request\+Timeout\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Request timeout(ms), default 1s 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_aa2037d2f9dbbb66c5fdc946d4f90ad79}\label{class_t_net_1_1_contract_1_1_game_session_aa2037d2f9dbbb66c5fdc946d4f90ad79}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Session\+Id@{Session\+Id}}
+\index{Session\+Id@{Session\+Id}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Session\+Id}{SessionId}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Game\+Session.\+Session\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Session\+Id 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a5e5ba1d8bcec84365cea3f8af002e047}\label{class_t_net_1_1_contract_1_1_game_session_a5e5ba1d8bcec84365cea3f8af002e047}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Timeout@{Timeout}}
+\index{Timeout@{Timeout}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Timeout}{Timeout}}
+{\footnotesize\ttfamily int T\+Net.\+Contract.\+Game\+Session.\+Timeout\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+session timeout(sec), default 2h 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a19c2703e318f5fa3b526d1db034c93a1}\label{class_t_net_1_1_contract_1_1_game_session_a19c2703e318f5fa3b526d1db034c93a1}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!User@{User}}
+\index{User@{User}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{User}{User}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_t_net_1_1_context___1_1_i_user}{I\+User}} T\+Net.\+Contract.\+Game\+Session.\+User\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+User 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a3acae323bf7aaf378c059b75f2c56145}\label{class_t_net_1_1_contract_1_1_game_session_a3acae323bf7aaf378c059b75f2c56145}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!User\+Id@{User\+Id}}
+\index{User\+Id@{User\+Id}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{User\+Id}{UserId}}
+{\footnotesize\ttfamily int T\+Net.\+Contract.\+Game\+Session.\+User\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+login User\+Id 
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_game_session_a20dadeea8c09220c6f3938bfe62fe16b}\label{class_t_net_1_1_contract_1_1_game_session_a20dadeea8c09220c6f3938bfe62fe16b}} 
+\index{T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}!Heartbeat\+Timeout\+Handle@{Heartbeat\+Timeout\+Handle}}
+\index{Heartbeat\+Timeout\+Handle@{Heartbeat\+Timeout\+Handle}!T\+Net\+::\+Contract\+::\+Game\+Session@{T\+Net\+::\+Contract\+::\+Game\+Session}}
+\subsubsection{\texorpdfstring{Heartbeat\+Timeout\+Handle}{HeartbeatTimeoutHandle}}
+{\footnotesize\ttfamily Action$<$\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}$>$ T\+Net.\+Contract.\+Game\+Session.\+Heartbeat\+Timeout\+Handle}
+
+
+
+Heartbeat Timeout event 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract\+\_\+/Game\+Session.\+cs\end{DoxyCompactItemize}

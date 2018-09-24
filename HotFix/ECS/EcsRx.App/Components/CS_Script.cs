@@ -1,4 +1,5 @@
 ﻿
+using EcsRx.Entities;
 using IronPython.Hosting;
 using Microsoft.Scripting.Hosting;
 using System;
@@ -13,6 +14,7 @@ namespace mjsg
     {
         public string cs_path = "/script/cs/";
         public string py_path = "/script/py/";
+        public IEntity Entity { get; set; }
         public CS_Script()
         {
           

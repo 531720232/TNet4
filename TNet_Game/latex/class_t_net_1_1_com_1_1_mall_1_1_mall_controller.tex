@@ -1,0 +1,235 @@
+\hypertarget{class_t_net_1_1_com_1_1_mall_1_1_mall_controller}{}\section{T\+Net.\+Com.\+Mall.\+Mall\+Controller Class Reference}
+\label{class_t_net_1_1_com_1_1_mall_1_1_mall_controller}\index{T\+Net.\+Com.\+Mall.\+Mall\+Controller@{T\+Net.\+Com.\+Mall.\+Mall\+Controller}}
+
+
+商场管理员  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract I\+List$<$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}} $>$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a0eb2b857ce9b0a9257c1562d98c2bbb1}{Load\+Goods\+Data}} (int merchant\+Id)
+\begin{DoxyCompactList}\small\item\em 加载商品数据 \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a9f8a3ef5e8a2596e49346c9393e5bed8}{Sort\+Goods}} (\mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}} x, \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}} y)
+\begin{DoxyCompactList}\small\item\em 商品排序规则 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_aa9318fbb45e817b88ccbaaf88c2c9ab0}{Trade\+Goods}} (\mbox{\hyperlink{class_t_net_1_1_context___1_1_base_user}{Base\+User}} user, \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}} goods, int goods\+Num, out \mbox{\hyperlink{namespace_t_net_1_1_com_1_1_mall_a8ed58f71da1d1495830104612fc5667a}{Trade\+Error\+Code}} error\+Code)
+\begin{DoxyCompactList}\small\item\em Trades the goods. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_ac450c5bdf31251e38f119be0cdf24358}{Mall\+Controller}} (\mbox{\hyperlink{interface_t_net_1_1_com_1_1_mall_1_1_i_trade}{I\+Trade}} trade\+Strategy)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_mall_controller}{T\+Net.\+Com.\+Mall.\+Mall\+Controller}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_ae629794a89e165653eb59684d8008231}{Trade\+Success}} (\mbox{\hyperlink{class_t_net_1_1_context___1_1_base_user}{Base\+User}} user, \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}} goods, int goods\+Num, double pay\+Amount, object items)
+\begin{DoxyCompactList}\small\item\em 交易成功 \end{DoxyCompactList}\item 
+abstract object \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a1efdfb3c460fb04a007732ae3610bbfa}{Produce\+Goods}} (\mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}} goods, int goods\+Num)
+\begin{DoxyCompactList}\small\item\em 生产物品 \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_ac3b0d39cba36e863413c9e192f6e98a5}{Has\+Traded}} (\mbox{\hyperlink{class_t_net_1_1_context___1_1_base_user}{Base\+User}} user, \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}} goods, int goods\+Num, out double amount, out \mbox{\hyperlink{namespace_t_net_1_1_com_1_1_mall_a8ed58f71da1d1495830104612fc5667a}{Trade\+Error\+Code}} error\+Code)
+\begin{DoxyCompactList}\small\item\em 检查是否可交易 \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a7e2ab42797c7217aa8f593b8a25e070b}{Pay\+Amount}} (\mbox{\hyperlink{class_t_net_1_1_context___1_1_base_user}{Base\+User}} user, int trade\+Type, double pay\+Amount)
+\begin{DoxyCompactList}\small\item\em 支付代币 \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a1954dac300006b686ac6a936bfd141b2}{Send\+Goods}} (\mbox{\hyperlink{class_t_net_1_1_context___1_1_base_user}{Base\+User}} user, object items)
+\begin{DoxyCompactList}\small\item\em 派送商品 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+商场管理员 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_ac450c5bdf31251e38f119be0cdf24358}\label{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_ac450c5bdf31251e38f119be0cdf24358}} 
+\index{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}!Mall\+Controller@{Mall\+Controller}}
+\index{Mall\+Controller@{Mall\+Controller}!T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}}
+\subsubsection{\texorpdfstring{Mall\+Controller()}{MallController()}}
+{\footnotesize\ttfamily T\+Net.\+Com.\+Mall.\+Mall\+Controller.\+Mall\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_t_net_1_1_com_1_1_mall_1_1_i_trade}{I\+Trade}}}]{trade\+Strategy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_com_1_1_mall_1_1_mall_controller}{T\+Net.\+Com.\+Mall.\+Mall\+Controller}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trade\+Strategy} & Trade strategy.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_ac3b0d39cba36e863413c9e192f6e98a5}\label{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_ac3b0d39cba36e863413c9e192f6e98a5}} 
+\index{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}!Has\+Traded@{Has\+Traded}}
+\index{Has\+Traded@{Has\+Traded}!T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}}
+\subsubsection{\texorpdfstring{Has\+Traded()}{HasTraded()}}
+{\footnotesize\ttfamily abstract bool T\+Net.\+Com.\+Mall.\+Mall\+Controller.\+Has\+Traded (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_context___1_1_base_user}{Base\+User}}}]{user,  }\item[{\mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}}}]{goods,  }\item[{int}]{goods\+Num,  }\item[{out double}]{amount,  }\item[{out \mbox{\hyperlink{namespace_t_net_1_1_com_1_1_mall_a8ed58f71da1d1495830104612fc5667a}{Trade\+Error\+Code}}}]{error\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+检查是否可交易 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em goods} & \\
+\hline
+{\em goods\+Num} & \\
+\hline
+{\em amount} & \\
+\hline
+{\em error\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a0eb2b857ce9b0a9257c1562d98c2bbb1}\label{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a0eb2b857ce9b0a9257c1562d98c2bbb1}} 
+\index{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}!Load\+Goods\+Data@{Load\+Goods\+Data}}
+\index{Load\+Goods\+Data@{Load\+Goods\+Data}!T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}}
+\subsubsection{\texorpdfstring{Load\+Goods\+Data()}{LoadGoodsData()}}
+{\footnotesize\ttfamily abstract I\+List$<$\mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}}$>$ T\+Net.\+Com.\+Mall.\+Mall\+Controller.\+Load\+Goods\+Data (\begin{DoxyParamCaption}\item[{int}]{merchant\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+加载商品数据 
+
+
+\begin{DoxyParams}{Parameters}
+{\em merchant\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a7e2ab42797c7217aa8f593b8a25e070b}\label{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a7e2ab42797c7217aa8f593b8a25e070b}} 
+\index{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}!Pay\+Amount@{Pay\+Amount}}
+\index{Pay\+Amount@{Pay\+Amount}!T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}}
+\subsubsection{\texorpdfstring{Pay\+Amount()}{PayAmount()}}
+{\footnotesize\ttfamily abstract bool T\+Net.\+Com.\+Mall.\+Mall\+Controller.\+Pay\+Amount (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_context___1_1_base_user}{Base\+User}}}]{user,  }\item[{int}]{trade\+Type,  }\item[{double}]{pay\+Amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+支付代币 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em trade\+Type} & \\
+\hline
+{\em pay\+Amount} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a1efdfb3c460fb04a007732ae3610bbfa}\label{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a1efdfb3c460fb04a007732ae3610bbfa}} 
+\index{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}!Produce\+Goods@{Produce\+Goods}}
+\index{Produce\+Goods@{Produce\+Goods}!T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}}
+\subsubsection{\texorpdfstring{Produce\+Goods()}{ProduceGoods()}}
+{\footnotesize\ttfamily abstract object T\+Net.\+Com.\+Mall.\+Mall\+Controller.\+Produce\+Goods (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}}}]{goods,  }\item[{int}]{goods\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+生产物品 
+
+
+\begin{DoxyParams}{Parameters}
+{\em goods} & \\
+\hline
+{\em goods\+Num} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a1954dac300006b686ac6a936bfd141b2}\label{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a1954dac300006b686ac6a936bfd141b2}} 
+\index{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}!Send\+Goods@{Send\+Goods}}
+\index{Send\+Goods@{Send\+Goods}!T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}}
+\subsubsection{\texorpdfstring{Send\+Goods()}{SendGoods()}}
+{\footnotesize\ttfamily abstract bool T\+Net.\+Com.\+Mall.\+Mall\+Controller.\+Send\+Goods (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_context___1_1_base_user}{Base\+User}}}]{user,  }\item[{object}]{items }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+派送商品 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em items} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a9f8a3ef5e8a2596e49346c9393e5bed8}\label{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_a9f8a3ef5e8a2596e49346c9393e5bed8}} 
+\index{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}!Sort\+Goods@{Sort\+Goods}}
+\index{Sort\+Goods@{Sort\+Goods}!T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}}
+\subsubsection{\texorpdfstring{Sort\+Goods()}{SortGoods()}}
+{\footnotesize\ttfamily virtual int T\+Net.\+Com.\+Mall.\+Mall\+Controller.\+Sort\+Goods (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}}}]{x,  }\item[{\mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+商品排序规则 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_aa9318fbb45e817b88ccbaaf88c2c9ab0}\label{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_aa9318fbb45e817b88ccbaaf88c2c9ab0}} 
+\index{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}!Trade\+Goods@{Trade\+Goods}}
+\index{Trade\+Goods@{Trade\+Goods}!T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}}
+\subsubsection{\texorpdfstring{Trade\+Goods()}{TradeGoods()}}
+{\footnotesize\ttfamily bool T\+Net.\+Com.\+Mall.\+Mall\+Controller.\+Trade\+Goods (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_context___1_1_base_user}{Base\+User}}}]{user,  }\item[{\mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}}}]{goods,  }\item[{int}]{goods\+Num,  }\item[{out \mbox{\hyperlink{namespace_t_net_1_1_com_1_1_mall_a8ed58f71da1d1495830104612fc5667a}{Trade\+Error\+Code}}}]{error\+Code }\end{DoxyParamCaption})}
+
+
+
+Trades the goods. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if goods was traded, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User.\\
+\hline
+{\em goods} & Goods.\\
+\hline
+{\em goods\+Num} & Goods number.\\
+\hline
+{\em error\+Code} & Error code.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_ae629794a89e165653eb59684d8008231}\label{class_t_net_1_1_com_1_1_mall_1_1_mall_controller_ae629794a89e165653eb59684d8008231}} 
+\index{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}!Trade\+Success@{Trade\+Success}}
+\index{Trade\+Success@{Trade\+Success}!T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller@{T\+Net\+::\+Com\+::\+Mall\+::\+Mall\+Controller}}
+\subsubsection{\texorpdfstring{Trade\+Success()}{TradeSuccess()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Com.\+Mall.\+Mall\+Controller.\+Trade\+Success (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_context___1_1_base_user}{Base\+User}}}]{user,  }\item[{\mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_goods_data}{Goods\+Data}}}]{goods,  }\item[{int}]{goods\+Num,  }\item[{double}]{pay\+Amount,  }\item[{object}]{items }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+交易成功 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em goods} & \\
+\hline
+{\em goods\+Num} & \\
+\hline
+{\em pay\+Amount} & \\
+\hline
+{\em items} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Com/\+Mall/Mall\+Controller.\+cs\end{DoxyCompactItemize}

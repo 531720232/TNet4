@@ -138,6 +138,7 @@ namespace TNet.Runtime
                 ScriptEngines.StopMainProgram();
                 GameZone.WaitStop().Wait();
                 TraceLog.WriteLine("{0} Server has stoped successfully!", DateTime.Now.ToString("HH:mm:ss"));
+
             }
             catch (Exception ex)
             {
@@ -191,7 +192,25 @@ namespace TNet.Runtime
               //  var obj = Script.ScriptEngines.Execute("Game.Script.Action2017", "Game.Script.Action2017", new TNet.Service.ActionGetter(null,null));
                 Microsoft.AspNetCore.WebHost.CreateDefaultBuilder(null).UseStartup<Web.Startup>().Start("http://127.0.0.1:666");
                 //  var obj = Script.ScriptEngines.Execute("code", "Game.Script.Action2017");
+                //   TNet.Cache.GameDataCacheSet.ContextCacheSet<TNet.Cache.Generic.CacheItem> ca=new ContextCacheSet<CacheItem>("item");
+                PersonalCacheStruct<TNet.Com.Model.ExGiftNoviceCard> personal=new PersonalCacheStruct<Com.Model.ExGiftNoviceCard>();
+                //    ca.TryAdd("fyindex", new CacheItem() { Item = "fafff" ,IsInCache=true});
 
+                var tabl = new Model.SchemaTable();
+                tabl.Keys = new string[] {"xsk" };
+                tabl.EntityName = "fyindex";
+                tabl.StorageType = Model.StorageType.ReadWriteRedis;
+             
+                TNet.Model.EntitySchemaSet.AddSchema(typeof(TNet.Com.Model.ExGiftNoviceCard), tabl);
+                personal.LoadFrom((x) => { return true; });
+                // var b = new Com.Model.ExGiftNoviceCard { CardNo = "fff" };
+                //           var rr=     personal.Count;
+      var rrr=          personal.Find("1",(x)=> {return x.CardNo == "fff"; });
+                var rwrr = personal.FindKey("1", "xsk");
+                var kr = personal.ChildrenItem[0].GetItem() as TNet.Cache.Generic.CacheCollection;// ("xsk",(x)=> { return x.CardNo == "fff"; });
+                                                                                                  //              personal.Update(true);
+                var krr = kr.TryGetValue("xsk", out TNet.Com.Model.ExGiftNoviceCard sw);
+                // personal.Update
                 TraceLog.WriteLine("# Server exit command \"Ctrl+C\" or \"Ctrl+Break\".");
             }
        

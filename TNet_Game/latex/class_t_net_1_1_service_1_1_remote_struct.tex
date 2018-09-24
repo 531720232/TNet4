@@ -1,0 +1,183 @@
+\hypertarget{class_t_net_1_1_service_1_1_remote_struct}{}\section{T\+Net.\+Service.\+Remote\+Struct Class Reference}
+\label{class_t_net_1_1_service_1_1_remote_struct}\index{T\+Net.\+Service.\+Remote\+Struct@{T\+Net.\+Service.\+Remote\+Struct}}
+
+
+Remote struct  
+
+
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_service_1_1_remote_struct_a8a7dc68ea6f1c71c7c59c099c981fede}{Remote\+Struct}} (\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} \mbox{\hyperlink{class_t_net_1_1_service_1_1_remote_struct_aa28ecde1dab94de21f6da421afbafc4c}{param\+Getter}}, Message\+Structure \mbox{\hyperlink{class_t_net_1_1_service_1_1_remote_struct_a1759bb0f1f894a8bcd48d8277330d57e}{response}})
+\begin{DoxyCompactList}\small\item\em init \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_service_1_1_remote_struct_ad7a02002079c9d56c4f8fa3dbc16b023}{Write\+Response}} ()
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_service_1_1_remote_struct_ab9233749a42d8131f7024a08ddb9a352}{Write\+Error}} ()
+\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_service_1_1_remote_struct_a928f5ff2f97d1ec5ad88160befa91941}{Check}} ()
+\item 
+abstract void \mbox{\hyperlink{class_t_net_1_1_service_1_1_remote_struct_afa351a99bae78b432260517bc78401dc}{Take\+Remote}} ()
+\item 
+abstract void \mbox{\hyperlink{class_t_net_1_1_service_1_1_remote_struct_ae136ebdadcbb19579175014053f56651}{Build\+Packet}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} \mbox{\hyperlink{class_t_net_1_1_service_1_1_remote_struct_aa28ecde1dab94de21f6da421afbafc4c}{param\+Getter}}
+\item 
+readonly Message\+Structure \mbox{\hyperlink{class_t_net_1_1_service_1_1_remote_struct_a1759bb0f1f894a8bcd48d8277330d57e}{response}}
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_service_1_1_remote_struct_a165a18173bdc8a5f996b52e722fedff6}{Is\+Not\+Respond}}
+\begin{DoxyCompactList}\small\item\em 是否影响输出, True：不响应 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_t_net_1_1_service_1_1_remote_struct_ad338c82b3b71c4efd256c5917235fb6f}{Error\+Code}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_service_1_1_remote_struct_adc032929cd29262d5070b3ab0d078ecc}{Error\+Info}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Remote struct 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_remote_struct_a8a7dc68ea6f1c71c7c59c099c981fede}\label{class_t_net_1_1_service_1_1_remote_struct_a8a7dc68ea6f1c71c7c59c099c981fede}} 
+\index{T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}!Remote\+Struct@{Remote\+Struct}}
+\index{Remote\+Struct@{Remote\+Struct}!T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}}
+\subsubsection{\texorpdfstring{Remote\+Struct()}{RemoteStruct()}}
+{\footnotesize\ttfamily T\+Net.\+Service.\+Remote\+Struct.\+Remote\+Struct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}}}]{param\+Getter,  }\item[{Message\+Structure}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+init 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Getter} & \\
+\hline
+{\em response} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_remote_struct_ae136ebdadcbb19579175014053f56651}\label{class_t_net_1_1_service_1_1_remote_struct_ae136ebdadcbb19579175014053f56651}} 
+\index{T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}!Build\+Packet@{Build\+Packet}}
+\index{Build\+Packet@{Build\+Packet}!T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}}
+\subsubsection{\texorpdfstring{Build\+Packet()}{BuildPacket()}}
+{\footnotesize\ttfamily abstract void T\+Net.\+Service.\+Remote\+Struct.\+Build\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_remote_struct_a928f5ff2f97d1ec5ad88160befa91941}\label{class_t_net_1_1_service_1_1_remote_struct_a928f5ff2f97d1ec5ad88160befa91941}} 
+\index{T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}!Check@{Check}}
+\index{Check@{Check}!T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}}
+\subsubsection{\texorpdfstring{Check()}{Check()}}
+{\footnotesize\ttfamily abstract bool T\+Net.\+Service.\+Remote\+Struct.\+Check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_remote_struct_afa351a99bae78b432260517bc78401dc}\label{class_t_net_1_1_service_1_1_remote_struct_afa351a99bae78b432260517bc78401dc}} 
+\index{T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}!Take\+Remote@{Take\+Remote}}
+\index{Take\+Remote@{Take\+Remote}!T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}}
+\subsubsection{\texorpdfstring{Take\+Remote()}{TakeRemote()}}
+{\footnotesize\ttfamily abstract void T\+Net.\+Service.\+Remote\+Struct.\+Take\+Remote (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_remote_struct_ab9233749a42d8131f7024a08ddb9a352}\label{class_t_net_1_1_service_1_1_remote_struct_ab9233749a42d8131f7024a08ddb9a352}} 
+\index{T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}!Write\+Error@{Write\+Error}}
+\index{Write\+Error@{Write\+Error}!T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}}
+\subsubsection{\texorpdfstring{Write\+Error()}{WriteError()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Service.\+Remote\+Struct.\+Write\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_remote_struct_ad7a02002079c9d56c4f8fa3dbc16b023}\label{class_t_net_1_1_service_1_1_remote_struct_ad7a02002079c9d56c4f8fa3dbc16b023}} 
+\index{T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}!Write\+Response@{Write\+Response}}
+\index{Write\+Response@{Write\+Response}!T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}}
+\subsubsection{\texorpdfstring{Write\+Response()}{WriteResponse()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Service.\+Remote\+Struct.\+Write\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_remote_struct_a165a18173bdc8a5f996b52e722fedff6}\label{class_t_net_1_1_service_1_1_remote_struct_a165a18173bdc8a5f996b52e722fedff6}} 
+\index{T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}!Is\+Not\+Respond@{Is\+Not\+Respond}}
+\index{Is\+Not\+Respond@{Is\+Not\+Respond}!T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}}
+\subsubsection{\texorpdfstring{Is\+Not\+Respond}{IsNotRespond}}
+{\footnotesize\ttfamily bool T\+Net.\+Service.\+Remote\+Struct.\+Is\+Not\+Respond\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+是否影响输出, True：不响应 
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_remote_struct_aa28ecde1dab94de21f6da421afbafc4c}\label{class_t_net_1_1_service_1_1_remote_struct_aa28ecde1dab94de21f6da421afbafc4c}} 
+\index{T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}!param\+Getter@{param\+Getter}}
+\index{param\+Getter@{param\+Getter}!T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}}
+\subsubsection{\texorpdfstring{param\+Getter}{paramGetter}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} T\+Net.\+Service.\+Remote\+Struct.\+param\+Getter\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_remote_struct_a1759bb0f1f894a8bcd48d8277330d57e}\label{class_t_net_1_1_service_1_1_remote_struct_a1759bb0f1f894a8bcd48d8277330d57e}} 
+\index{T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}!response@{response}}
+\index{response@{response}!T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}}
+\subsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily readonly Message\+Structure T\+Net.\+Service.\+Remote\+Struct.\+response\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_remote_struct_ad338c82b3b71c4efd256c5917235fb6f}\label{class_t_net_1_1_service_1_1_remote_struct_ad338c82b3b71c4efd256c5917235fb6f}} 
+\index{T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}!Error\+Code@{Error\+Code}}
+\index{Error\+Code@{Error\+Code}!T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}}
+\subsubsection{\texorpdfstring{Error\+Code}{ErrorCode}}
+{\footnotesize\ttfamily int T\+Net.\+Service.\+Remote\+Struct.\+Error\+Code\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_service_1_1_remote_struct_adc032929cd29262d5070b3ab0d078ecc}\label{class_t_net_1_1_service_1_1_remote_struct_adc032929cd29262d5070b3ab0d078ecc}} 
+\index{T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}!Error\+Info@{Error\+Info}}
+\index{Error\+Info@{Error\+Info}!T\+Net\+::\+Service\+::\+Remote\+Struct@{T\+Net\+::\+Service\+::\+Remote\+Struct}}
+\subsubsection{\texorpdfstring{Error\+Info}{ErrorInfo}}
+{\footnotesize\ttfamily string T\+Net.\+Service.\+Remote\+Struct.\+Error\+Info\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+
+
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Service/Remote\+Struct.\+cs\end{DoxyCompactItemize}

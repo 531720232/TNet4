@@ -1,4 +1,5 @@
 ﻿using EcsRx.Components;
+using EcsRx.Entities;
 
 namespace EcsRx.Views.Components
 {
@@ -6,5 +7,6 @@ namespace EcsRx.Views.Components
     {
         public bool DestroyWithView { get; set; }
         public object View { get; set; }
+        public IEntity Entity { get; set ; }
     }
 }

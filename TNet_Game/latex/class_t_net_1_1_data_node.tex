@@ -1,0 +1,405 @@
+\hypertarget{class_t_net_1_1_data_node}{}\section{T\+Net.\+Data\+Node Class Reference}
+\label{class_t_net_1_1_data_node}\index{T\+Net.\+Data\+Node@{T\+Net.\+Data\+Node}}
+
+
+Implementing the I\+Data\+Node\+Serializable interface in your class will make it possible to serialize that class into the Data Node format more efficiently.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a189406ddb96cfd4cbd15b22a24977667}\label{class_t_net_1_1_data_node_a189406ddb96cfd4cbd15b22a24977667}} 
+void {\bfseries Write} (object b)
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_data_node_aeee3533c97576d333c7834e15613bb6d}\label{class_t_net_1_1_data_node_aeee3533c97576d333c7834e15613bb6d}} 
+T {\bfseries Read$<$ T $>$} ()
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a9c42a6522d4d605587559eefe84cedbc}\label{class_t_net_1_1_data_node_a9c42a6522d4d605587559eefe84cedbc}} 
+object {\bfseries Read} ()
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a0117a34bdb3c03665d000abe26be1e04}\label{class_t_net_1_1_data_node_a0117a34bdb3c03665d000abe26be1e04}} 
+{\bfseries Data\+Node} (string \mbox{\hyperlink{class_t_net_1_1_data_node_aaf44a44fb25aad98dd115faf7607858c}{name}})
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a4cd127bd7d2bd1b31025fd5f2b1a5511}\label{class_t_net_1_1_data_node_a4cd127bd7d2bd1b31025fd5f2b1a5511}} 
+{\bfseries Data\+Node} (string \mbox{\hyperlink{class_t_net_1_1_data_node_aaf44a44fb25aad98dd115faf7607858c}{name}}, string \mbox{\hyperlink{class_t_net_1_1_data_node_ab1b718ef512ce7e5ebff5aa1a6c8e37b}{value}})
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_data_node_a2b256944bcfce5d20366975fb5433db7}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the value and the list of children. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{class_t_net_1_1_data_node_a8118d9feb33d0db66367d8dd9629ae6f}{Get}} (Type \mbox{\hyperlink{class_t_net_1_1_data_node_a7a6d9db4eb81d226651ef3573655d975}{type}})
+\begin{DoxyCompactList}\small\item\em Get the node\textquotesingle{}s value cast into the specified type. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_t_net_1_1_data_node_a5255fbb293b4743c2cd4410f8d288353}{Get$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the value cast into the appropriate type. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_t_net_1_1_data_node_a82f3c118d970fd1e2b0b7a9f50d776c9}{Get$<$ T $>$}} (T default\+Val)
+\begin{DoxyCompactList}\small\item\em Retrieve the value cast into the appropriate type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} \mbox{\hyperlink{class_t_net_1_1_data_node_a379707c85e05f5019e726547ee666e3a}{Add\+Child}} ()
+\begin{DoxyCompactList}\small\item\em Convenience function to add a new child node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} \mbox{\hyperlink{class_t_net_1_1_data_node_aad50f0be4fc418656afa91b2cbcd713d}{Add\+Child}} (string \mbox{\hyperlink{class_t_net_1_1_data_node_aaf44a44fb25aad98dd115faf7607858c}{name}})
+\begin{DoxyCompactList}\small\item\em Add a new child node without checking to see if another child with the same name already exists. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} \mbox{\hyperlink{class_t_net_1_1_data_node_a5b319a56a06eb157048a66a62b5b6787}{Add\+Child}} (string \mbox{\hyperlink{class_t_net_1_1_data_node_aaf44a44fb25aad98dd115faf7607858c}{name}}, string \mbox{\hyperlink{class_t_net_1_1_data_node_ab1b718ef512ce7e5ebff5aa1a6c8e37b}{value}})
+\begin{DoxyCompactList}\small\item\em Add a new child node without checking to see if another child with the same name already exists. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} \mbox{\hyperlink{class_t_net_1_1_data_node_a746ea0c61bbba5fadf93038b4becffce}{Add\+Missing\+Child}} (string \mbox{\hyperlink{class_t_net_1_1_data_node_aaf44a44fb25aad98dd115faf7607858c}{name}}, string \mbox{\hyperlink{class_t_net_1_1_data_node_ab1b718ef512ce7e5ebff5aa1a6c8e37b}{value}})
+\begin{DoxyCompactList}\small\item\em Add a new child node after checking to see if it already exists. If it does, the existing value is returned. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} \mbox{\hyperlink{class_t_net_1_1_data_node_ae0cc7801b9ce856d64025fd5fd758e6b}{Replace\+Child}} (\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} child)
+\begin{DoxyCompactList}\small\item\em Set the specified child, replacing an existing one if one already exists with the same name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} \mbox{\hyperlink{class_t_net_1_1_data_node_a952008873fb2317d354d1eb5e5ef66e4}{Set\+Child}} (string \mbox{\hyperlink{class_t_net_1_1_data_node_aaf44a44fb25aad98dd115faf7607858c}{name}}, object \mbox{\hyperlink{class_t_net_1_1_data_node_ab1b718ef512ce7e5ebff5aa1a6c8e37b}{value}})
+\begin{DoxyCompactList}\small\item\em Set a child value. Will add a new child if a child with the same name is not already present. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} \mbox{\hyperlink{class_t_net_1_1_data_node_afc1fb219f0560f952f36a13f004b50b1}{Get\+Hierarchy}} (string path)
+\begin{DoxyCompactList}\small\item\em Retrieve a child by its path. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_t_net_1_1_data_node_a19317391ffe961fd72efb77da1d0df79}{Get\+Hierarchy$<$ T $>$}} (string path)
+\begin{DoxyCompactList}\small\item\em Retrieve a child by its path. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_t_net_1_1_data_node_a4a906909adb289e2b6978033316dcff4}{Get\+Hierarchy$<$ T $>$}} (string path, T default\+Value)
+\begin{DoxyCompactList}\small\item\em Retrieve a child by its path. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_data_node_ae42a7365cd1b0b11a3a9e93ab3002f7f}{Try\+Get\+Hierarchy$<$ T $>$}} (string path, out T out\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Retrieve a child by its path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} \mbox{\hyperlink{class_t_net_1_1_data_node_a2bc2cd72d6ab059e99cb792a5c21ee13}{Set\+Hierarchy}} (string path, object obj)
+\begin{DoxyCompactList}\small\item\em Set a node\textquotesingle{}s value given its hierarchical path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} \mbox{\hyperlink{class_t_net_1_1_data_node_ae1cef396b65b5722575952647af4eaa7}{Remove\+Hierarchy}} (string path)
+\begin{DoxyCompactList}\small\item\em Remove the specified child from the list. Returns the parent node of the removed node if successful. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} \mbox{\hyperlink{class_t_net_1_1_data_node_aebf32646f6e54e2127ce51090549dd98}{Get\+Child}} (string \mbox{\hyperlink{class_t_net_1_1_data_node_aaf44a44fb25aad98dd115faf7607858c}{name}}, bool create\+If\+Missing=false)
+\begin{DoxyCompactList}\small\item\em Retrieve a child by name, optionally creating a new one if the child doesn\textquotesingle{}t already exist. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_t_net_1_1_data_node_ad48daa0909e1dbc05bd680735aec2d09}{Get\+Child$<$ T $>$}} (string \mbox{\hyperlink{class_t_net_1_1_data_node_aaf44a44fb25aad98dd115faf7607858c}{name}})
+\begin{DoxyCompactList}\small\item\em Get the value of the existing child. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_t_net_1_1_data_node_a557421fb2b9b29bb88f2d5ae83a2f145}{Get\+Child$<$ T $>$}} (string \mbox{\hyperlink{class_t_net_1_1_data_node_aaf44a44fb25aad98dd115faf7607858c}{name}}, T default\+Value)
+\begin{DoxyCompactList}\small\item\em Get the value of the existing child or the default value if the child is not present. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_data_node_a7dc59562ed15384020ade6799fde0fcc}{Remove\+Child}} (string \mbox{\hyperlink{class_t_net_1_1_data_node_aaf44a44fb25aad98dd115faf7607858c}{name}})
+\begin{DoxyCompactList}\small\item\em Remove the specified child from the list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} \mbox{\hyperlink{class_t_net_1_1_data_node_ab1e844adb5b3c40e3a1b62519045ca45}{Clone}} ()
+\begin{DoxyCompactList}\small\item\em Clone the \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}}, creating a copy. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_data_node_a4edda6eca33ee5c14a2d4d0c9d3473ad}{Merge}} (\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} other, bool replace\+Existing=true)
+\begin{DoxyCompactList}\small\item\em Read the node hierarchy from the specified buffer. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_t_net_1_1_data_node_ad8aa51ff34bafbbc04d1c366f143784a}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Convenience function for easy debugging -- convert the entire data into the string representation form. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_data_node_a1c32b63d37a41d31b69aa41c5aa8ba2c}{To\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Convert the \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} into a binary array of specified type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_data_node_aaf44a44fb25aad98dd115faf7607858c}{name}}
+\begin{DoxyCompactList}\small\item\em Data node\textquotesingle{}s name. \end{DoxyCompactList}\item 
+System.\+Collections.\+Generic.\+List$<$ \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} $>$ \mbox{\hyperlink{class_t_net_1_1_data_node_ae70b404163bd692a010aa03505c884da}{children}} = new System.\+Collections.\+Generic.\+List$<$\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}}$>$()
+\begin{DoxyCompactList}\small\item\em List of child nodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_data_node_ac3c529ecc3db3604d3a7b5717d78bbc9}\label{class_t_net_1_1_data_node_ac3c529ecc3db3604d3a7b5717d78bbc9}} 
+\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} {\bfseries this\mbox{[}string path\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+object \mbox{\hyperlink{class_t_net_1_1_data_node_ab1b718ef512ce7e5ebff5aa1a6c8e37b}{value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Data node\textquotesingle{}s value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_data_node_a1e69f98d665e5bd58a398fc88ec37763}{is\+Serializable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether this node is serializable or not. A node must have a value or children for it to be serialized. Otherwise there isn\textquotesingle{}t much point in doing so. \end{DoxyCompactList}\item 
+Type \mbox{\hyperlink{class_t_net_1_1_data_node_a7a6d9db4eb81d226651ef3573655d975}{type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Type the value is currently in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementing the I\+Data\+Node\+Serializable interface in your class will make it possible to serialize that class into the Data Node format more efficiently. 
+
+Data Node is a hierarchical data type containing a name and a value, as well as a variable number of children. Data Nodes can be serialized to and from \mbox{\hyperlink{namespace_t_net_1_1_i_o}{IO}} data streams. Think of it as an alternative to having to include a huge 1 M\+B+ X\+ML parsing library in your project.
+
+Basic Usage\+: To create a new node\+: new \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} (name, value). To add a new child node\+: data\+Node.\+Add\+Child(\char`\"{}\+Scale\char`\"{}, Vector3.\+one). To retrieve a Vector3 value\+: data\+Node.\+Get\+Child$<$\+Vector3$>$(\char`\"{}\+Scale\char`\"{}). 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a379707c85e05f5019e726547ee666e3a}\label{class_t_net_1_1_data_node_a379707c85e05f5019e726547ee666e3a}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Add\+Child@{Add\+Child}}
+\index{Add\+Child@{Add\+Child}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Add\+Child()}{AddChild()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} T\+Net.\+Data\+Node.\+Add\+Child (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Convenience function to add a new child node. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_aad50f0be4fc418656afa91b2cbcd713d}\label{class_t_net_1_1_data_node_aad50f0be4fc418656afa91b2cbcd713d}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Add\+Child@{Add\+Child}}
+\index{Add\+Child@{Add\+Child}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Add\+Child()}{AddChild()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} T\+Net.\+Data\+Node.\+Add\+Child (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Add a new child node without checking to see if another child with the same name already exists. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a5b319a56a06eb157048a66a62b5b6787}\label{class_t_net_1_1_data_node_a5b319a56a06eb157048a66a62b5b6787}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Add\+Child@{Add\+Child}}
+\index{Add\+Child@{Add\+Child}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Add\+Child()}{AddChild()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} T\+Net.\+Data\+Node.\+Add\+Child (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{value }\end{DoxyParamCaption})}
+
+
+
+Add a new child node without checking to see if another child with the same name already exists. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a746ea0c61bbba5fadf93038b4becffce}\label{class_t_net_1_1_data_node_a746ea0c61bbba5fadf93038b4becffce}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Add\+Missing\+Child@{Add\+Missing\+Child}}
+\index{Add\+Missing\+Child@{Add\+Missing\+Child}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Add\+Missing\+Child()}{AddMissingChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} T\+Net.\+Data\+Node.\+Add\+Missing\+Child (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{value }\end{DoxyParamCaption})}
+
+
+
+Add a new child node after checking to see if it already exists. If it does, the existing value is returned. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a2b256944bcfce5d20366975fb5433db7}\label{class_t_net_1_1_data_node_a2b256944bcfce5d20366975fb5433db7}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Clear@{Clear}}
+\index{Clear@{Clear}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void T\+Net.\+Data\+Node.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear the value and the list of children. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_ab1e844adb5b3c40e3a1b62519045ca45}\label{class_t_net_1_1_data_node_ab1e844adb5b3c40e3a1b62519045ca45}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Clone@{Clone}}
+\index{Clone@{Clone}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} T\+Net.\+Data\+Node.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clone the \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}}, creating a copy. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a8118d9feb33d0db66367d8dd9629ae6f}\label{class_t_net_1_1_data_node_a8118d9feb33d0db66367d8dd9629ae6f}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Get@{Get}}
+\index{Get@{Get}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily object T\+Net.\+Data\+Node.\+Get (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})}
+
+
+
+Get the node\textquotesingle{}s value cast into the specified type. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a5255fbb293b4743c2cd4410f8d288353}\label{class_t_net_1_1_data_node_a5255fbb293b4743c2cd4410f8d288353}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Get$<$ T $>$@{Get$<$ T $>$}}
+\index{Get$<$ T $>$@{Get$<$ T $>$}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Get$<$ T $>$()}{Get< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_t_net_1_1_data_node_a8118d9feb33d0db66367d8dd9629ae6f}{T\+Net.\+Data\+Node.\+Get}}$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieve the value cast into the appropriate type. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a82f3c118d970fd1e2b0b7a9f50d776c9}\label{class_t_net_1_1_data_node_a82f3c118d970fd1e2b0b7a9f50d776c9}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Get$<$ T $>$@{Get$<$ T $>$}}
+\index{Get$<$ T $>$@{Get$<$ T $>$}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Get$<$ T $>$()}{Get< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_t_net_1_1_data_node_a8118d9feb33d0db66367d8dd9629ae6f}{T\+Net.\+Data\+Node.\+Get}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{default\+Val }\end{DoxyParamCaption})}
+
+
+
+Retrieve the value cast into the appropriate type. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_aebf32646f6e54e2127ce51090549dd98}\label{class_t_net_1_1_data_node_aebf32646f6e54e2127ce51090549dd98}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Get\+Child@{Get\+Child}}
+\index{Get\+Child@{Get\+Child}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Get\+Child()}{GetChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} T\+Net.\+Data\+Node.\+Get\+Child (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{bool}]{create\+If\+Missing = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Retrieve a child by name, optionally creating a new one if the child doesn\textquotesingle{}t already exist. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_ad48daa0909e1dbc05bd680735aec2d09}\label{class_t_net_1_1_data_node_ad48daa0909e1dbc05bd680735aec2d09}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Get\+Child$<$ T $>$@{Get\+Child$<$ T $>$}}
+\index{Get\+Child$<$ T $>$@{Get\+Child$<$ T $>$}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Get\+Child$<$ T $>$()}{GetChild< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_t_net_1_1_data_node_aebf32646f6e54e2127ce51090549dd98}{T\+Net.\+Data\+Node.\+Get\+Child}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Get the value of the existing child. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a557421fb2b9b29bb88f2d5ae83a2f145}\label{class_t_net_1_1_data_node_a557421fb2b9b29bb88f2d5ae83a2f145}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Get\+Child$<$ T $>$@{Get\+Child$<$ T $>$}}
+\index{Get\+Child$<$ T $>$@{Get\+Child$<$ T $>$}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Get\+Child$<$ T $>$()}{GetChild< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_t_net_1_1_data_node_aebf32646f6e54e2127ce51090549dd98}{T\+Net.\+Data\+Node.\+Get\+Child}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{T}]{default\+Value }\end{DoxyParamCaption})}
+
+
+
+Get the value of the existing child or the default value if the child is not present. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_afc1fb219f0560f952f36a13f004b50b1}\label{class_t_net_1_1_data_node_afc1fb219f0560f952f36a13f004b50b1}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Get\+Hierarchy@{Get\+Hierarchy}}
+\index{Get\+Hierarchy@{Get\+Hierarchy}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Get\+Hierarchy()}{GetHierarchy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} T\+Net.\+Data\+Node.\+Get\+Hierarchy (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Retrieve a child by its path. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a19317391ffe961fd72efb77da1d0df79}\label{class_t_net_1_1_data_node_a19317391ffe961fd72efb77da1d0df79}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Get\+Hierarchy$<$ T $>$@{Get\+Hierarchy$<$ T $>$}}
+\index{Get\+Hierarchy$<$ T $>$@{Get\+Hierarchy$<$ T $>$}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Get\+Hierarchy$<$ T $>$()}{GetHierarchy< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_t_net_1_1_data_node_afc1fb219f0560f952f36a13f004b50b1}{T\+Net.\+Data\+Node.\+Get\+Hierarchy}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Retrieve a child by its path. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a4a906909adb289e2b6978033316dcff4}\label{class_t_net_1_1_data_node_a4a906909adb289e2b6978033316dcff4}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Get\+Hierarchy$<$ T $>$@{Get\+Hierarchy$<$ T $>$}}
+\index{Get\+Hierarchy$<$ T $>$@{Get\+Hierarchy$<$ T $>$}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Get\+Hierarchy$<$ T $>$()}{GetHierarchy< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_t_net_1_1_data_node_afc1fb219f0560f952f36a13f004b50b1}{T\+Net.\+Data\+Node.\+Get\+Hierarchy}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{T}]{default\+Value }\end{DoxyParamCaption})}
+
+
+
+Retrieve a child by its path. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a4edda6eca33ee5c14a2d4d0c9d3473ad}\label{class_t_net_1_1_data_node_a4edda6eca33ee5c14a2d4d0c9d3473ad}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Merge@{Merge}}
+\index{Merge@{Merge}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Merge()}{Merge()}}
+{\footnotesize\ttfamily bool T\+Net.\+Data\+Node.\+Merge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}}}]{other,  }\item[{bool}]{replace\+Existing = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Read the node hierarchy from the specified buffer. 
+
+Just here for consistency. 
+
+Merge the current data with the specified. Returns whether some node\textquotesingle{}s value was replaced. \mbox{\Hypertarget{class_t_net_1_1_data_node_a7dc59562ed15384020ade6799fde0fcc}\label{class_t_net_1_1_data_node_a7dc59562ed15384020ade6799fde0fcc}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Remove\+Child@{Remove\+Child}}
+\index{Remove\+Child@{Remove\+Child}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Remove\+Child()}{RemoveChild()}}
+{\footnotesize\ttfamily bool T\+Net.\+Data\+Node.\+Remove\+Child (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Remove the specified child from the list. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_ae1cef396b65b5722575952647af4eaa7}\label{class_t_net_1_1_data_node_ae1cef396b65b5722575952647af4eaa7}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Remove\+Hierarchy@{Remove\+Hierarchy}}
+\index{Remove\+Hierarchy@{Remove\+Hierarchy}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Remove\+Hierarchy()}{RemoveHierarchy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} T\+Net.\+Data\+Node.\+Remove\+Hierarchy (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Remove the specified child from the list. Returns the parent node of the removed node if successful. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_ae0cc7801b9ce856d64025fd5fd758e6b}\label{class_t_net_1_1_data_node_ae0cc7801b9ce856d64025fd5fd758e6b}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Replace\+Child@{Replace\+Child}}
+\index{Replace\+Child@{Replace\+Child}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Replace\+Child()}{ReplaceChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} T\+Net.\+Data\+Node.\+Replace\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}}}]{child }\end{DoxyParamCaption})}
+
+
+
+Set the specified child, replacing an existing one if one already exists with the same name. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a952008873fb2317d354d1eb5e5ef66e4}\label{class_t_net_1_1_data_node_a952008873fb2317d354d1eb5e5ef66e4}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Set\+Child@{Set\+Child}}
+\index{Set\+Child@{Set\+Child}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Set\+Child()}{SetChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} T\+Net.\+Data\+Node.\+Set\+Child (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{object}]{value }\end{DoxyParamCaption})}
+
+
+
+Set a child value. Will add a new child if a child with the same name is not already present. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a2bc2cd72d6ab059e99cb792a5c21ee13}\label{class_t_net_1_1_data_node_a2bc2cd72d6ab059e99cb792a5c21ee13}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Set\+Hierarchy@{Set\+Hierarchy}}
+\index{Set\+Hierarchy@{Set\+Hierarchy}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Set\+Hierarchy()}{SetHierarchy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} T\+Net.\+Data\+Node.\+Set\+Hierarchy (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Set a node\textquotesingle{}s value given its hierarchical path. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a1c32b63d37a41d31b69aa41c5aa8ba2c}\label{class_t_net_1_1_data_node_a1c32b63d37a41d31b69aa41c5aa8ba2c}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!To\+Array@{To\+Array}}
+\index{To\+Array@{To\+Array}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{To\+Array()}{ToArray()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+Data\+Node.\+To\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Convert the \mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} into a binary array of specified type. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_ad8aa51ff34bafbbc04d1c366f143784a}\label{class_t_net_1_1_data_node_ad8aa51ff34bafbbc04d1c366f143784a}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override string T\+Net.\+Data\+Node.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Convenience function for easy debugging -- convert the entire data into the string representation form. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_ae42a7365cd1b0b11a3a9e93ab3002f7f}\label{class_t_net_1_1_data_node_ae42a7365cd1b0b11a3a9e93ab3002f7f}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!Try\+Get\+Hierarchy$<$ T $>$@{Try\+Get\+Hierarchy$<$ T $>$}}
+\index{Try\+Get\+Hierarchy$<$ T $>$@{Try\+Get\+Hierarchy$<$ T $>$}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{Try\+Get\+Hierarchy$<$ T $>$()}{TryGetHierarchy< T >()}}
+{\footnotesize\ttfamily bool T\+Net.\+Data\+Node.\+Try\+Get\+Hierarchy$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{out T}]{out\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Retrieve a child by its path. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_data_node_ae70b404163bd692a010aa03505c884da}\label{class_t_net_1_1_data_node_ae70b404163bd692a010aa03505c884da}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!children@{children}}
+\index{children@{children}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{children}{children}}
+{\footnotesize\ttfamily System.\+Collections.\+Generic.\+List$<$\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}}$>$ T\+Net.\+Data\+Node.\+children = new System.\+Collections.\+Generic.\+List$<$\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}}$>$()}
+
+
+
+List of child nodes. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_aaf44a44fb25aad98dd115faf7607858c}\label{class_t_net_1_1_data_node_aaf44a44fb25aad98dd115faf7607858c}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!name@{name}}
+\index{name@{name}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string T\+Net.\+Data\+Node.\+name}
+
+
+
+Data node\textquotesingle{}s name. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a1e69f98d665e5bd58a398fc88ec37763}\label{class_t_net_1_1_data_node_a1e69f98d665e5bd58a398fc88ec37763}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!is\+Serializable@{is\+Serializable}}
+\index{is\+Serializable@{is\+Serializable}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{is\+Serializable}{isSerializable}}
+{\footnotesize\ttfamily bool T\+Net.\+Data\+Node.\+is\+Serializable\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Whether this node is serializable or not. A node must have a value or children for it to be serialized. Otherwise there isn\textquotesingle{}t much point in doing so. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_a7a6d9db4eb81d226651ef3573655d975}\label{class_t_net_1_1_data_node_a7a6d9db4eb81d226651ef3573655d975}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!type@{type}}
+\index{type@{type}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily Type T\+Net.\+Data\+Node.\+type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Type the value is currently in. 
+
+\mbox{\Hypertarget{class_t_net_1_1_data_node_ab1b718ef512ce7e5ebff5aa1a6c8e37b}\label{class_t_net_1_1_data_node_ab1b718ef512ce7e5ebff5aa1a6c8e37b}} 
+\index{T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}!value@{value}}
+\index{value@{value}!T\+Net\+::\+Data\+Node@{T\+Net\+::\+Data\+Node}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily object T\+Net.\+Data\+Node.\+value\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Data node\textquotesingle{}s value. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract\+\_\+/\+T\+Net\+Ex/Data\+Node.\+cs\end{DoxyCompactItemize}

@@ -2,6 +2,6 @@
 {
     public interface IComponent
     {
-
+       Entities.IEntity Entity { get; set; }
     }
 }

@@ -28,6 +28,7 @@ public abstract class ChatService
     /// <param name="userId">User identifier.</param>
     protected ChatService(int userId)
     {
+     
         _userId = userId;
         _chatCacheSet = new ChatCacheSet();
         _whisperCacheSet = new WhisperCacheSet();
@@ -60,6 +61,7 @@ public abstract class ChatService
     {
         message.ExpiredTime = message.SendDate;
         _chatCacheSet.Add(message);
+       
         WriteLog(message);
     }
     /// <summary>

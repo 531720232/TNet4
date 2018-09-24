@@ -1,0 +1,401 @@
+\hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action}{}\section{T\+Net.\+Contract.\+Action.\+Login\+Action Class Reference}
+\label{class_t_net_1_1_contract_1_1_action_1_1_login_action}\index{T\+Net.\+Contract.\+Action.\+Login\+Action@{T\+Net.\+Contract.\+Action.\+Login\+Action}}
+
+
+Login action.  
+
+
+Inheritance diagram for T\+Net.\+Contract.\+Action.\+Login\+Action\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_t_net_1_1_contract_1_1_action_1_1_login_action}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_abad56bdb3d581655eb0f5b7ea13f529e}{Build\+Packet}} ()
+\begin{DoxyCompactList}\small\item\em 创建返回协议内容输出栈 \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_af7e51da954d6f20e1663c128fefe82b4}{Get\+Url\+Element}} ()
+\begin{DoxyCompactList}\small\item\em 接收用户请求的参数，并根据相应类进行检测 \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad91710333b360bfc9148f08228161467}{Check\+Action}} ()
+\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_a6ebe6efbb40f61f586ac86f9a3428edf}{Take\+Action}} ()
+\begin{DoxyCompactList}\small\item\em 子类实现\+Action处理 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_a74b64e33c1265a2ab57ca5f05b05ed9a}{Login\+Action}} (short \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_a8c3c761a891a0da9d72d17d34a0f7446}{action\+Id}}, \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a04c1171f14d9ee44612f9966a8d61d30}{http\+Get}})
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action}{T\+Net.\+Contract.\+Action.\+Login\+Action}} class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{interface_t_net_1_1_sns_1_1_i_login}{I\+Login}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad7b35a9e1ee115580305c4f254f7a65c}{Create\+Login}} ()
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad4750b6afd91d543a6e9236c15c6ab54}{Do\+Login\+Fail}} (\mbox{\hyperlink{interface_t_net_1_1_sns_1_1_i_login}{I\+Login}} login)
+\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_afae30f8780ef8786430723a9f99e3612}{Set\+Parameter}} (\mbox{\hyperlink{interface_t_net_1_1_sns_1_1_i_login}{I\+Login}} login)
+\begin{DoxyCompactList}\small\item\em Sets the parameter. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad0ee65777c20af8acea8da0f24c977cf}{Is\+Ignore\+Uid}} ()
+\begin{DoxyCompactList}\small\item\em 是否此请求忽略\+U\+I\+D参数 \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_a37c617c336f549bff501efa11163474e}{Do\+Success}} (int user\+Id, out \mbox{\hyperlink{interface_t_net_1_1_context___1_1_i_user}{I\+User}} user)
+\begin{DoxyCompactList}\small\item\em Dos the success. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_t_net_1_1_service_a4153b2b37cffc4fde5d14a462ea83c7b}{Mobile\+Type}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad997a94914fad1a688f53680f45c0505}{Mobile\+Type}}
+\begin{DoxyCompactList}\small\item\em The type of the mobile. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_a1d4dc6d3e381c37f7654307f3b8cf0c6}{Passport\+Id}} = string.\+Empty
+\begin{DoxyCompactList}\small\item\em The passport identifier. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_a9d05ce4cc7ab75c68bdf4ea07a5c55cb}{Password}} = string.\+Empty
+\begin{DoxyCompactList}\small\item\em The password. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_a9f4abc568b75ffa5f79441be185f6785}{Device\+ID}} = string.\+Empty
+\begin{DoxyCompactList}\small\item\em The device I. \end{DoxyCompactList}\item 
+byte \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_a4e2689358001d253efde345a1eaecf92}{Sex}}
+\begin{DoxyCompactList}\small\item\em The sex. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_ac707e0eb8ef3c023be38ae1855c46189}{Nick\+Name}} = string.\+Empty
+\begin{DoxyCompactList}\small\item\em The name of the nick. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_abbcd92ab638dc2fc171ef8310424e9d5}{Head\+ID}} = string.\+Empty
+\begin{DoxyCompactList}\small\item\em The head I. \end{DoxyCompactList}\item 
+Int16 \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_a07399f95476bf1fe72780a95789e9a12}{ScreenX}}
+\begin{DoxyCompactList}\small\item\em The screen x. \end{DoxyCompactList}\item 
+Int16 \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_a4eb99d885efdf97331ee79371e7d8280}{ScreenY}}
+\begin{DoxyCompactList}\small\item\em The screen y. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_a254b740791128ce8e81079a2db472db5}{Retail\+ID}} = string.\+Empty
+\begin{DoxyCompactList}\small\item\em The retail I. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_aa1c17e3fcec110d360c533da3f32ec31}{User\+Type}}
+\begin{DoxyCompactList}\small\item\em The type of the user. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_aebfb80b612500108dedaa2bacc10d093}{Server\+ID}}
+\begin{DoxyCompactList}\small\item\em The server I. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_ac7b7e0e031e1b81166b5731dfa2edcd6}{Game\+Type}}
+\begin{DoxyCompactList}\small\item\em The type of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action_a8a8ce4c73db727db16e6af6635b2ac04}{Guide\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the guide identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Login action. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_a74b64e33c1265a2ab57ca5f05b05ed9a}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_a74b64e33c1265a2ab57ca5f05b05ed9a}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Login\+Action@{Login\+Action}}
+\index{Login\+Action@{Login\+Action}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Login\+Action()}{LoginAction()}}
+{\footnotesize\ttfamily T\+Net.\+Contract.\+Action.\+Login\+Action.\+Login\+Action (\begin{DoxyParamCaption}\item[{short}]{action\+Id,  }\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}}}]{http\+Get }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_action}{T\+Net.\+Contract.\+Action.\+Login\+Action}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Id} & \mbox{\hyperlink{namespace_t_net_1_1_contract_1_1_action}{Action}} identifier.\\
+\hline
+{\em http\+Get} & Http get.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_abad56bdb3d581655eb0f5b7ea13f529e}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_abad56bdb3d581655eb0f5b7ea13f529e}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Build\+Packet@{Build\+Packet}}
+\index{Build\+Packet@{Build\+Packet}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Build\+Packet()}{BuildPacket()}}
+{\footnotesize\ttfamily override void T\+Net.\+Contract.\+Action.\+Login\+Action.\+Build\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+创建返回协议内容输出栈 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_a07c2501acfc1957399e45b1c3539bc70}{T\+Net.\+Service.\+Game\+Struct}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_extend_action_a44cd85d17ec24e8fa99317d243bb2aa2}{T\+Net.\+Contract.\+Action.\+Login\+Extend\+Action}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad91710333b360bfc9148f08228161467}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad91710333b360bfc9148f08228161467}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Check\+Action@{Check\+Action}}
+\index{Check\+Action@{Check\+Action}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Check\+Action()}{CheckAction()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Contract.\+Action.\+Login\+Action.\+Check\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a1e1ae8e1d5e424c6d1858d375bc9e61d}{T\+Net.\+Service.\+Base\+Struct}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad7b35a9e1ee115580305c4f254f7a65c}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad7b35a9e1ee115580305c4f254f7a65c}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Create\+Login@{Create\+Login}}
+\index{Create\+Login@{Create\+Login}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Create\+Login()}{CreateLogin()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{interface_t_net_1_1_sns_1_1_i_login}{I\+Login}} T\+Net.\+Contract.\+Action.\+Login\+Action.\+Create\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad4750b6afd91d543a6e9236c15c6ab54}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad4750b6afd91d543a6e9236c15c6ab54}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Do\+Login\+Fail@{Do\+Login\+Fail}}
+\index{Do\+Login\+Fail@{Do\+Login\+Fail}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Do\+Login\+Fail()}{DoLoginFail()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Contract.\+Action.\+Login\+Action.\+Do\+Login\+Fail (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_t_net_1_1_sns_1_1_i_login}{I\+Login}}}]{login }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_a37c617c336f549bff501efa11163474e}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_a37c617c336f549bff501efa11163474e}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Do\+Success@{Do\+Success}}
+\index{Do\+Success@{Do\+Success}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Do\+Success()}{DoSuccess()}}
+{\footnotesize\ttfamily abstract bool T\+Net.\+Contract.\+Action.\+Login\+Action.\+Do\+Success (\begin{DoxyParamCaption}\item[{int}]{user\+Id,  }\item[{out \mbox{\hyperlink{interface_t_net_1_1_context___1_1_i_user}{I\+User}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Dos the success. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if success was done, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & User identifier.\\
+\hline
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_af7e51da954d6f20e1663c128fefe82b4}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_af7e51da954d6f20e1663c128fefe82b4}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Get\+Url\+Element@{Get\+Url\+Element}}
+\index{Get\+Url\+Element@{Get\+Url\+Element}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Get\+Url\+Element()}{GetUrlElement()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Contract.\+Action.\+Login\+Action.\+Get\+Url\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+接收用户请求的参数，并根据相应类进行检测 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_t_net_1_1_service_1_1_game_struct_ad4167cb7ce62183a1336ebc30a848bfc}{T\+Net.\+Service.\+Game\+Struct}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad0ee65777c20af8acea8da0f24c977cf}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad0ee65777c20af8acea8da0f24c977cf}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Is\+Ignore\+Uid@{Is\+Ignore\+Uid}}
+\index{Is\+Ignore\+Uid@{Is\+Ignore\+Uid}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Is\+Ignore\+Uid()}{IsIgnoreUid()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Contract.\+Action.\+Login\+Action.\+Is\+Ignore\+Uid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+是否此请求忽略\+U\+I\+D参数 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_ad113e67255dd3c3c625903fc746266b3}{T\+Net.\+Service.\+Base\+Struct}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_afae30f8780ef8786430723a9f99e3612}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_afae30f8780ef8786430723a9f99e3612}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Set\+Parameter@{Set\+Parameter}}
+\index{Set\+Parameter@{Set\+Parameter}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Set\+Parameter()}{SetParameter()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Contract.\+Action.\+Login\+Action.\+Set\+Parameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_t_net_1_1_sns_1_1_i_login}{I\+Login}}}]{login }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Sets the parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em login} & Login.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_t_net_1_1_contract_1_1_action_1_1_login_extend_action_a1d6f667177382314d1e9ee12180b65ea}{T\+Net.\+Contract.\+Action.\+Login\+Extend\+Action}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_a6ebe6efbb40f61f586ac86f9a3428edf}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_a6ebe6efbb40f61f586ac86f9a3428edf}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Take\+Action@{Take\+Action}}
+\index{Take\+Action@{Take\+Action}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Take\+Action()}{TakeAction()}}
+{\footnotesize\ttfamily override bool T\+Net.\+Contract.\+Action.\+Login\+Action.\+Take\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+子类实现\+Action处理 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_t_net_1_1_service_1_1_base_struct_a5a1250b74d925d42066aebdefa36f54a}{T\+Net.\+Service.\+Base\+Struct}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_a9f4abc568b75ffa5f79441be185f6785}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_a9f4abc568b75ffa5f79441be185f6785}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Device\+ID@{Device\+ID}}
+\index{Device\+ID@{Device\+ID}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Device\+ID}{DeviceID}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Action.\+Login\+Action.\+Device\+ID = string.\+Empty\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The device I. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_ac7b7e0e031e1b81166b5731dfa2edcd6}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_ac7b7e0e031e1b81166b5731dfa2edcd6}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Game\+Type@{Game\+Type}}
+\index{Game\+Type@{Game\+Type}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Game\+Type}{GameType}}
+{\footnotesize\ttfamily int T\+Net.\+Contract.\+Action.\+Login\+Action.\+Game\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The type of the game. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_abbcd92ab638dc2fc171ef8310424e9d5}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_abbcd92ab638dc2fc171ef8310424e9d5}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Head\+ID@{Head\+ID}}
+\index{Head\+ID@{Head\+ID}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Head\+ID}{HeadID}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Action.\+Login\+Action.\+Head\+ID = string.\+Empty\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The head I. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad997a94914fad1a688f53680f45c0505}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_ad997a94914fad1a688f53680f45c0505}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Mobile\+Type@{Mobile\+Type}}
+\index{Mobile\+Type@{Mobile\+Type}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Mobile\+Type}{MobileType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_t_net_1_1_service_a4153b2b37cffc4fde5d14a462ea83c7b}{Mobile\+Type}} T\+Net.\+Contract.\+Action.\+Login\+Action.\+Mobile\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The type of the mobile. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_ac707e0eb8ef3c023be38ae1855c46189}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_ac707e0eb8ef3c023be38ae1855c46189}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Nick\+Name@{Nick\+Name}}
+\index{Nick\+Name@{Nick\+Name}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Nick\+Name}{NickName}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Action.\+Login\+Action.\+Nick\+Name = string.\+Empty\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The name of the nick. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_a1d4dc6d3e381c37f7654307f3b8cf0c6}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_a1d4dc6d3e381c37f7654307f3b8cf0c6}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Passport\+Id@{Passport\+Id}}
+\index{Passport\+Id@{Passport\+Id}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Passport\+Id}{PassportId}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Action.\+Login\+Action.\+Passport\+Id = string.\+Empty\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The passport identifier. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_a9d05ce4cc7ab75c68bdf4ea07a5c55cb}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_a9d05ce4cc7ab75c68bdf4ea07a5c55cb}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Password@{Password}}
+\index{Password@{Password}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Password}{Password}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Action.\+Login\+Action.\+Password = string.\+Empty\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The password. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_a254b740791128ce8e81079a2db472db5}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_a254b740791128ce8e81079a2db472db5}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Retail\+ID@{Retail\+ID}}
+\index{Retail\+ID@{Retail\+ID}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Retail\+ID}{RetailID}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Action.\+Login\+Action.\+Retail\+ID = string.\+Empty\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The retail I. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_a07399f95476bf1fe72780a95789e9a12}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_a07399f95476bf1fe72780a95789e9a12}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!ScreenX@{ScreenX}}
+\index{ScreenX@{ScreenX}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{ScreenX}{ScreenX}}
+{\footnotesize\ttfamily Int16 T\+Net.\+Contract.\+Action.\+Login\+Action.\+ScreenX\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The screen x. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_a4eb99d885efdf97331ee79371e7d8280}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_a4eb99d885efdf97331ee79371e7d8280}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!ScreenY@{ScreenY}}
+\index{ScreenY@{ScreenY}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{ScreenY}{ScreenY}}
+{\footnotesize\ttfamily Int16 T\+Net.\+Contract.\+Action.\+Login\+Action.\+ScreenY\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The screen y. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_aebfb80b612500108dedaa2bacc10d093}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_aebfb80b612500108dedaa2bacc10d093}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Server\+ID@{Server\+ID}}
+\index{Server\+ID@{Server\+ID}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Server\+ID}{ServerID}}
+{\footnotesize\ttfamily int T\+Net.\+Contract.\+Action.\+Login\+Action.\+Server\+ID\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The server I. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_a4e2689358001d253efde345a1eaecf92}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_a4e2689358001d253efde345a1eaecf92}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Sex@{Sex}}
+\index{Sex@{Sex}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Sex}{Sex}}
+{\footnotesize\ttfamily byte T\+Net.\+Contract.\+Action.\+Login\+Action.\+Sex\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The sex. 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_aa1c17e3fcec110d360c533da3f32ec31}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_aa1c17e3fcec110d360c533da3f32ec31}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!User\+Type@{User\+Type}}
+\index{User\+Type@{User\+Type}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{User\+Type}{UserType}}
+{\footnotesize\ttfamily int T\+Net.\+Contract.\+Action.\+Login\+Action.\+User\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The type of the user. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_action_1_1_login_action_a8a8ce4c73db727db16e6af6635b2ac04}\label{class_t_net_1_1_contract_1_1_action_1_1_login_action_a8a8ce4c73db727db16e6af6635b2ac04}} 
+\index{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}!Guide\+Id@{Guide\+Id}}
+\index{Guide\+Id@{Guide\+Id}!T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action@{T\+Net\+::\+Contract\+::\+Action\+::\+Login\+Action}}
+\subsubsection{\texorpdfstring{Guide\+Id}{GuideId}}
+{\footnotesize\ttfamily int T\+Net.\+Contract.\+Action.\+Login\+Action.\+Guide\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+
+
+Gets or sets the guide identifier. 
+
+The guide identifier.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract/\+Action/Login\+Action.\+cs\end{DoxyCompactItemize}

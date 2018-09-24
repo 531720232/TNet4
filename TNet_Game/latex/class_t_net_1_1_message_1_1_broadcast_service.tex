@@ -1,0 +1,343 @@
+\hypertarget{class_t_net_1_1_message_1_1_broadcast_service}{}\section{T\+Net.\+Message.\+Broadcast\+Service Class Reference}
+\label{class_t_net_1_1_message_1_1_broadcast_service}\index{T\+Net.\+Message.\+Broadcast\+Service@{T\+Net.\+Message.\+Broadcast\+Service}}
+
+
+广播系统  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_ac6632327f88046a0fd4cea4e25a5c76f}{Has\+Message}} (int version\+Id)
+\begin{DoxyCompactList}\small\item\em 是否有新消息 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_a7cfb5cab46ef3ea185f756ef6f7775ae}{Create}} (\mbox{\hyperlink{namespace_t_net_1_1_model_a84a982245a4f84ccbdcd9cb3763269b6}{Notice\+Type}} notice\+Type, string content)
+\begin{DoxyCompactList}\small\item\em 创建广播消息对象 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_a7edd4881d20763fd96951b8be216ba95}{Create}} (\mbox{\hyperlink{namespace_t_net_1_1_model_a84a982245a4f84ccbdcd9cb3763269b6}{Notice\+Type}} notice\+Type, string content, string title, Date\+Time expiry\+Date)
+\begin{DoxyCompactList}\small\item\em 创建广播消息对象 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_a5ad42f9251c0a03422fce8141221c7f0}{Send}} (\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} message)
+\begin{DoxyCompactList}\small\item\em 发送消息 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_a8054c86d758370b540e602ca7163ce5e}{Remove}} (Guid message\+Id)
+\begin{DoxyCompactList}\small\item\em 移除消息 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_affa11f7e915ceb928701abd35609694c}{Remove}} (Predicate$<$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} $>$ match)
+\begin{DoxyCompactList}\small\item\em 移除消息 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_a20899b271214c545784a3d1481f3965a}{Send\+Timer}} (\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} message, string begin\+Time, string end\+Time, bool is\+Cycle, int second\+Interval)
+\begin{DoxyCompactList}\small\item\em 定时发送 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_ab9b0c9f3be5fee94d7fc5c3406e4c27c}{Send\+Timer}} (\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} message, Day\+Of\+Week week, string begin\+Time, string end\+Time, bool is\+Cycle, int second\+Interval)
+\begin{DoxyCompactList}\small\item\em 定时发送 \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} $>$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_a0318c6f8ae57ed66119f88a385626126}{Get\+Messages}} (int version\+Id, int max\+Count)
+\begin{DoxyCompactList}\small\item\em 获取消息 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_af3378690a5b7dc64ad09e983c5b72b40}{Broadcast\+Service}} ()
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_a9e08a12f289f26b74c099b1bbe5e2fef}{Timer\+Callback}} (\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} message)
+\begin{DoxyCompactList}\small\item\em Timers the callback. \end{DoxyCompactList}\item 
+virtual List$<$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} $>$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_add615e0b3e5565dacee3460a14a7a0b2}{Get\+Range}} (List$<$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} $>$ msg\+List, int max\+Count)
+\begin{DoxyCompactList}\small\item\em 截取条数 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_a1b6f22fe5ff9d2f4c52aa9a288f3e5f5}{Has\+Receive}} (int version\+Id, \mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} message)
+\begin{DoxyCompactList}\small\item\em 是否可以接收 \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_a1fd74813f1821180ecd9bc9fd52667f7}{Set\+Version\+Id}} (int version\+Id)
+\begin{DoxyCompactList}\small\item\em Sets the version identifier. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_abb5f6c7e9682d075d5aebfe2fffaa5b7}{Write\+Log}} (\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} message)
+\begin{DoxyCompactList}\small\item\em 写日志 \end{DoxyCompactList}\item 
+abstract string \mbox{\hyperlink{class_t_net_1_1_message_1_1_broadcast_service_af6fd9b9301071729c799c11caa7601e9}{Filter\+Message}} (string message)
+\begin{DoxyCompactList}\small\item\em 过滤屏蔽词 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+广播系统 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_af3378690a5b7dc64ad09e983c5b72b40}\label{class_t_net_1_1_message_1_1_broadcast_service_af3378690a5b7dc64ad09e983c5b72b40}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Broadcast\+Service@{Broadcast\+Service}}
+\index{Broadcast\+Service@{Broadcast\+Service}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Broadcast\+Service()}{BroadcastService()}}
+{\footnotesize\ttfamily T\+Net.\+Message.\+Broadcast\+Service.\+Broadcast\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_a7cfb5cab46ef3ea185f756ef6f7775ae}\label{class_t_net_1_1_message_1_1_broadcast_service_a7cfb5cab46ef3ea185f756ef6f7775ae}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Create@{Create}}
+\index{Create@{Create}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} T\+Net.\+Message.\+Broadcast\+Service.\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_t_net_1_1_model_a84a982245a4f84ccbdcd9cb3763269b6}{Notice\+Type}}}]{notice\+Type,  }\item[{string}]{content }\end{DoxyParamCaption})}
+
+
+
+创建广播消息对象 
+
+
+\begin{DoxyParams}{Parameters}
+{\em notice\+Type} & \\
+\hline
+{\em content} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_a7edd4881d20763fd96951b8be216ba95}\label{class_t_net_1_1_message_1_1_broadcast_service_a7edd4881d20763fd96951b8be216ba95}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Create@{Create}}
+\index{Create@{Create}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} T\+Net.\+Message.\+Broadcast\+Service.\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_t_net_1_1_model_a84a982245a4f84ccbdcd9cb3763269b6}{Notice\+Type}}}]{notice\+Type,  }\item[{string}]{content,  }\item[{string}]{title,  }\item[{Date\+Time}]{expiry\+Date }\end{DoxyParamCaption})}
+
+
+
+创建广播消息对象 
+
+
+\begin{DoxyParams}{Parameters}
+{\em notice\+Type} & 类型\\
+\hline
+{\em content} & 内容\\
+\hline
+{\em title} & 标题\\
+\hline
+{\em expiry\+Date} & 过期时间\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_af6fd9b9301071729c799c11caa7601e9}\label{class_t_net_1_1_message_1_1_broadcast_service_af6fd9b9301071729c799c11caa7601e9}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Filter\+Message@{Filter\+Message}}
+\index{Filter\+Message@{Filter\+Message}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Filter\+Message()}{FilterMessage()}}
+{\footnotesize\ttfamily abstract string T\+Net.\+Message.\+Broadcast\+Service.\+Filter\+Message (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+过滤屏蔽词 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_a0318c6f8ae57ed66119f88a385626126}\label{class_t_net_1_1_message_1_1_broadcast_service_a0318c6f8ae57ed66119f88a385626126}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Get\+Messages@{Get\+Messages}}
+\index{Get\+Messages@{Get\+Messages}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Get\+Messages()}{GetMessages()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}}$>$ T\+Net.\+Message.\+Broadcast\+Service.\+Get\+Messages (\begin{DoxyParamCaption}\item[{int}]{version\+Id,  }\item[{int}]{max\+Count }\end{DoxyParamCaption})}
+
+
+
+获取消息 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_add615e0b3e5565dacee3460a14a7a0b2}\label{class_t_net_1_1_message_1_1_broadcast_service_add615e0b3e5565dacee3460a14a7a0b2}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Get\+Range@{Get\+Range}}
+\index{Get\+Range@{Get\+Range}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Get\+Range()}{GetRange()}}
+{\footnotesize\ttfamily virtual List$<$\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}}$>$ T\+Net.\+Message.\+Broadcast\+Service.\+Get\+Range (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} $>$}]{msg\+List,  }\item[{int}]{max\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+截取条数 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg\+List} & \\
+\hline
+{\em max\+Count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_ac6632327f88046a0fd4cea4e25a5c76f}\label{class_t_net_1_1_message_1_1_broadcast_service_ac6632327f88046a0fd4cea4e25a5c76f}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Has\+Message@{Has\+Message}}
+\index{Has\+Message@{Has\+Message}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Has\+Message()}{HasMessage()}}
+{\footnotesize\ttfamily bool T\+Net.\+Message.\+Broadcast\+Service.\+Has\+Message (\begin{DoxyParamCaption}\item[{int}]{version\+Id }\end{DoxyParamCaption})}
+
+
+
+是否有新消息 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_a1b6f22fe5ff9d2f4c52aa9a288f3e5f5}\label{class_t_net_1_1_message_1_1_broadcast_service_a1b6f22fe5ff9d2f4c52aa9a288f3e5f5}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Has\+Receive@{Has\+Receive}}
+\index{Has\+Receive@{Has\+Receive}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Has\+Receive()}{HasReceive()}}
+{\footnotesize\ttfamily virtual bool T\+Net.\+Message.\+Broadcast\+Service.\+Has\+Receive (\begin{DoxyParamCaption}\item[{int}]{version\+Id,  }\item[{\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}}}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+是否可以接收 
+
+
+\begin{DoxyParams}{Parameters}
+{\em version\+Id} & \\
+\hline
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_a8054c86d758370b540e602ca7163ce5e}\label{class_t_net_1_1_message_1_1_broadcast_service_a8054c86d758370b540e602ca7163ce5e}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Remove@{Remove}}
+\index{Remove@{Remove}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool T\+Net.\+Message.\+Broadcast\+Service.\+Remove (\begin{DoxyParamCaption}\item[{Guid}]{message\+Id }\end{DoxyParamCaption})}
+
+
+
+移除消息 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_affa11f7e915ceb928701abd35609694c}\label{class_t_net_1_1_message_1_1_broadcast_service_affa11f7e915ceb928701abd35609694c}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Remove@{Remove}}
+\index{Remove@{Remove}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool T\+Net.\+Message.\+Broadcast\+Service.\+Remove (\begin{DoxyParamCaption}\item[{Predicate$<$ \mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}} $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+移除消息 
+
+
+\begin{DoxyParams}{Parameters}
+{\em match} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_a5ad42f9251c0a03422fce8141221c7f0}\label{class_t_net_1_1_message_1_1_broadcast_service_a5ad42f9251c0a03422fce8141221c7f0}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Send@{Send}}
+\index{Send@{Send}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Send()}{Send()}}
+{\footnotesize\ttfamily void T\+Net.\+Message.\+Broadcast\+Service.\+Send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}}}]{message }\end{DoxyParamCaption})}
+
+
+
+发送消息 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_a20899b271214c545784a3d1481f3965a}\label{class_t_net_1_1_message_1_1_broadcast_service_a20899b271214c545784a3d1481f3965a}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Send\+Timer@{Send\+Timer}}
+\index{Send\+Timer@{Send\+Timer}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Send\+Timer()}{SendTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void T\+Net.\+Message.\+Broadcast\+Service.\+Send\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}}}]{message,  }\item[{string}]{begin\+Time,  }\item[{string}]{end\+Time,  }\item[{bool}]{is\+Cycle,  }\item[{int}]{second\+Interval }\end{DoxyParamCaption})}
+
+
+
+定时发送 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & 消息对象\\
+\hline
+{\em begin\+Time} & 开启时间段 hh\+:mm\\
+\hline
+{\em end\+Time} & 结束时间段\\
+\hline
+{\em is\+Cycle} & 是否循环发送\\
+\hline
+{\em second\+Interval} & 间隔多久发送一次（秒）\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_ab9b0c9f3be5fee94d7fc5c3406e4c27c}\label{class_t_net_1_1_message_1_1_broadcast_service_ab9b0c9f3be5fee94d7fc5c3406e4c27c}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Send\+Timer@{Send\+Timer}}
+\index{Send\+Timer@{Send\+Timer}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Send\+Timer()}{SendTimer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void T\+Net.\+Message.\+Broadcast\+Service.\+Send\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}}}]{message,  }\item[{Day\+Of\+Week}]{week,  }\item[{string}]{begin\+Time,  }\item[{string}]{end\+Time,  }\item[{bool}]{is\+Cycle,  }\item[{int}]{second\+Interval }\end{DoxyParamCaption})}
+
+
+
+定时发送 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+{\em week} & 按每周几发送\\
+\hline
+{\em begin\+Time} & \\
+\hline
+{\em end\+Time} & \\
+\hline
+{\em is\+Cycle} & \\
+\hline
+{\em second\+Interval} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_a1fd74813f1821180ecd9bc9fd52667f7}\label{class_t_net_1_1_message_1_1_broadcast_service_a1fd74813f1821180ecd9bc9fd52667f7}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Set\+Version\+Id@{Set\+Version\+Id}}
+\index{Set\+Version\+Id@{Set\+Version\+Id}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Set\+Version\+Id()}{SetVersionId()}}
+{\footnotesize\ttfamily abstract void T\+Net.\+Message.\+Broadcast\+Service.\+Set\+Version\+Id (\begin{DoxyParamCaption}\item[{int}]{version\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Sets the version identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em version\+Id} & Version identifier.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_a9e08a12f289f26b74c099b1bbe5e2fef}\label{class_t_net_1_1_message_1_1_broadcast_service_a9e08a12f289f26b74c099b1bbe5e2fef}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Timer\+Callback@{Timer\+Callback}}
+\index{Timer\+Callback@{Timer\+Callback}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Timer\+Callback()}{TimerCallback()}}
+{\footnotesize\ttfamily void T\+Net.\+Message.\+Broadcast\+Service.\+Timer\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}}}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Timers the callback. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \mbox{\hyperlink{namespace_t_net_1_1_message}{Message}}.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_message_1_1_broadcast_service_abb5f6c7e9682d075d5aebfe2fffaa5b7}\label{class_t_net_1_1_message_1_1_broadcast_service_abb5f6c7e9682d075d5aebfe2fffaa5b7}} 
+\index{T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}!Write\+Log@{Write\+Log}}
+\index{Write\+Log@{Write\+Log}!T\+Net\+::\+Message\+::\+Broadcast\+Service@{T\+Net\+::\+Message\+::\+Broadcast\+Service}}
+\subsubsection{\texorpdfstring{Write\+Log()}{WriteLog()}}
+{\footnotesize\ttfamily virtual void T\+Net.\+Message.\+Broadcast\+Service.\+Write\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_message_1_1_notice_message}{Notice\+Message}}}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+写日志 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Message/Broadcast\+Service.\+cs\end{DoxyCompactItemize}

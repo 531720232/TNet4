@@ -21,6 +21,7 @@ namespace TNet.Runtime
         {
          
             base.ApplicationStarted();
+
             Start();
            
         }

@@ -1,0 +1,86 @@
+\hypertarget{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher}{}\section{T\+Net.\+Coms.\+F\+F.\+T\+N\+\_\+\+Handler\+Dispatcher Class Reference}
+\label{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher}\index{T\+Net.\+Coms.\+F\+F.\+T\+N\+\_\+\+Handler\+Dispatcher@{T\+Net.\+Coms.\+F\+F.\+T\+N\+\_\+\+Handler\+Dispatcher}}
+
+
+句柄分发  
+
+
+Inheritance diagram for T\+Net.\+Coms.\+F\+F.\+T\+N\+\_\+\+Handler\+Dispatcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher_a156c80ee10645d289757d324945040f2}\label{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher_a156c80ee10645d289757d324945040f2}} 
+\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} {\bfseries Get\+Action\+Getter} (\mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}} e, \mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} session)
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher_a6f4ae769f23e643131d2040b9e0674f8}{Response\+Error}} (\mbox{\hyperlink{class_t_net_1_1_service_1_1_base_game_response}{Base\+Game\+Response}} response, \mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}} action\+Getter, int error\+Code, string error\+Info)
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher_a2f6e398fba6f5bad6313208f8a8a43d2}\label{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher_a2f6e398fba6f5bad6313208f8a8a43d2}} 
+bool {\bfseries Try\+De\+Pack} (Connection\+Event\+Args e, out \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}} package)
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher_a4af2153784a6508cefccd1daf02d4508}\label{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher_a4af2153784a6508cefccd1daf02d4508}} 
+bool {\bfseries Try\+De\+Pack} (Http\+Listener\+Context context, out \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}} package)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher_a2355b40ee512c5d479c3da514332f115}{Try\+Build\+Package}} (\mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader}{Package\+Reader}} package\+Reader, out \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}} package)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+句柄分发 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher_a6f4ae769f23e643131d2040b9e0674f8}\label{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher_a6f4ae769f23e643131d2040b9e0674f8}} 
+\index{T\+Net\+::\+Coms\+::\+F\+F\+::\+T\+N\+\_\+\+Handler\+Dispatcher@{T\+Net\+::\+Coms\+::\+F\+F\+::\+T\+N\+\_\+\+Handler\+Dispatcher}!Response\+Error@{Response\+Error}}
+\index{Response\+Error@{Response\+Error}!T\+Net\+::\+Coms\+::\+F\+F\+::\+T\+N\+\_\+\+Handler\+Dispatcher@{T\+Net\+::\+Coms\+::\+F\+F\+::\+T\+N\+\_\+\+Handler\+Dispatcher}}
+\subsubsection{\texorpdfstring{Response\+Error()}{ResponseError()}}
+{\footnotesize\ttfamily void T\+Net.\+Coms.\+F\+F.\+T\+N\+\_\+\+Handler\+Dispatcher.\+Response\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_base_game_response}{Base\+Game\+Response}}}]{response,  }\item[{\mbox{\hyperlink{class_t_net_1_1_service_1_1_action_getter}{Action\+Getter}}}]{action\+Getter,  }\item[{int}]{error\+Code,  }\item[{string}]{error\+Info }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & \\
+\hline
+{\em action\+Getter} & \\
+\hline
+{\em error\+Code} & \\
+\hline
+{\em error\+Info} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_t_net_1_1_coms_1_1_f_f_1_1_i_handler_dispatcher_a4959df41bf7ae8325dd7137957080523}{T\+Net.\+Coms.\+F\+F.\+I\+Handler\+Dispatcher}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher_a2355b40ee512c5d479c3da514332f115}\label{class_t_net_1_1_coms_1_1_f_f_1_1_t_n___handler_dispatcher_a2355b40ee512c5d479c3da514332f115}} 
+\index{T\+Net\+::\+Coms\+::\+F\+F\+::\+T\+N\+\_\+\+Handler\+Dispatcher@{T\+Net\+::\+Coms\+::\+F\+F\+::\+T\+N\+\_\+\+Handler\+Dispatcher}!Try\+Build\+Package@{Try\+Build\+Package}}
+\index{Try\+Build\+Package@{Try\+Build\+Package}!T\+Net\+::\+Coms\+::\+F\+F\+::\+T\+N\+\_\+\+Handler\+Dispatcher@{T\+Net\+::\+Coms\+::\+F\+F\+::\+T\+N\+\_\+\+Handler\+Dispatcher}}
+\subsubsection{\texorpdfstring{Try\+Build\+Package()}{TryBuildPackage()}}
+{\footnotesize\ttfamily virtual bool T\+Net.\+Coms.\+F\+F.\+T\+N\+\_\+\+Handler\+Dispatcher.\+Try\+Build\+Package (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_contract_1_1_package_reader}{Package\+Reader}}}]{package\+Reader,  }\item[{out \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package}{Request\+Package}}}]{package }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em package\+Reader} & \\
+\hline
+{\em package} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Coms/\+F\+F/I\+Action\+Dispatcher.\+cs\end{DoxyCompactItemize}

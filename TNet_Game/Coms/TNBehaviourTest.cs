@@ -21,7 +21,7 @@ namespace TNet.Coms
             base.Update();
            if(Console.ReadKey().Key==ConsoleKey.A)
             {
-              
+           
             }
          
         }

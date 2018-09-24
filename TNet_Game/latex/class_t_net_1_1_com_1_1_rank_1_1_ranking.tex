@@ -1,0 +1,443 @@
+\hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking}{}\section{T\+Net.\+Com.\+Rank.\+Ranking$<$ T $>$ Class Template Reference}
+\label{class_t_net_1_1_com_1_1_rank_1_1_ranking}\index{T\+Net.\+Com.\+Rank.\+Ranking$<$ T $>$@{T\+Net.\+Com.\+Rank.\+Ranking$<$ T $>$}}
+
+
+排行榜基类  
+
+
+Inheritance diagram for T\+Net.\+Com.\+Rank.\+Ranking$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_net_1_1_com_1_1_rank_1_1_ranking}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a4458c9bb281a9a2401580aca4e7cf28b}{Refresh}} ()
+\begin{DoxyCompactList}\small\item\em 刷新排行榜 \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a0e273e472490b5168b2f4af14304c2ea}{Get\+Enumerator}} ()
+\begin{DoxyCompactList}\small\item\em 枚举器 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a87f2f0e31e3c4ecc18e1b7d8f65c0131}{Get\+Rank\+No}} (Predicate$<$ T $>$ match)
+\begin{DoxyCompactList}\small\item\em 获取在排行中第几名 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a7fb6e93324626737052a355bf6c79fab}{Try\+Get\+Rank\+No}} (Predicate$<$ T $>$ match, out int rank\+Id)
+\begin{DoxyCompactList}\small\item\em 获取排名 \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a4ca04c20afe14ff6cb3b421387151234}{Find}} (Predicate$<$ T $>$ match)
+\begin{DoxyCompactList}\small\item\em 查找 \end{DoxyCompactList}\item 
+I\+List$<$ T $>$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a403ec872217c9a7fc2d45af230346864}{Get\+Range}} (int page\+Index, int page\+Size, out int page\+Cout)
+\begin{DoxyCompactList}\small\item\em 获取分页数据 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_ad341394025d00b4392735c940300967b}{Try\+Move}} (int from\+Rank\+Id, int to\+Rank\+Id)
+\begin{DoxyCompactList}\small\item\em 调整排名 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a4737a6906c00419471c5bfa87cd3c4c0}{Try\+Append}} (T item)
+\begin{DoxyCompactList}\small\item\em 增加到排行榜 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_ab8bbf4eab0e0844151200e9e2414ab70}{Try\+Insert}} (T item)
+\begin{DoxyCompactList}\small\item\em 插入到排行榜 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a73fc28984b075257dca19b9c4ba6bc2b}{Ranking}} (string key)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a4f443d2a327457092ee3943b8cff922c}{Ranking}} (string key, int top)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a23464bac5898e26b7de225c9be93f32d}{Ranking}} (string key, int top, int interval\+Times)
+\item 
+abstract int \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a085c725ac3fa351a51bfebf6a9596901}{Comparer\+To}} (T x, T y)
+\begin{DoxyCompactList}\small\item\em 排序方式 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a0f478ed3382d31882ec78c0b452df8fc}{On\+Update\+Cache}} ()
+\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a38c2dae9aa30ad815b0d1bf9bf5e2445}{Initialize\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 初始化数据源 \end{DoxyCompactList}\item 
+virtual List$<$ T $>$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a5ac68ac1d83bcd80291fca368d3a63f7}{Do\+Initialize\+After}} (List$<$ T $>$ list)
+\begin{DoxyCompactList}\small\item\em 初始化之后处理 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_ae6e494ecbec1bc1b6945bd7e66c46ac4}{Reflesh\+Rank\+Id}} (List$<$ T $>$ list)
+\begin{DoxyCompactList}\small\item\em 刷新排行 \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a39db6cc97d4eccc287831119a5d24359}{Change\+Rank\+No}} (T item)
+\begin{DoxyCompactList}\small\item\em 设置排行\+ID \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a6412dd1b302d90a6c982228bf1235c7f}{Ignore\+Item}} (T item)
+\begin{DoxyCompactList}\small\item\em 忽略的数据项 \end{DoxyCompactList}\item 
+abstract I\+List$<$ T $>$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_ae0000a540fbbf11d5ca86eeff68423f3}{Get\+Cache\+List}} ()
+\begin{DoxyCompactList}\small\item\em 获取排行数据 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a2707e2072a0dc2cfe75135da1d8ad921}{Rank\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 排名数 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_af43d1404d153d185cdd4329ea511c31f}{Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking_a6e4dde8ff8f596a60ed9efb7a058079d}{Key}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 排行榜键 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+排行榜基类 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Ranking\+Item}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a73fc28984b075257dca19b9c4ba6bc2b}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a73fc28984b075257dca19b9c4ba6bc2b}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Ranking@{Ranking}}
+\index{Ranking@{Ranking}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Ranking()}{Ranking()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.\mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{Ranking}} (\begin{DoxyParamCaption}\item[{string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a4f443d2a327457092ee3943b8cff922c}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a4f443d2a327457092ee3943b8cff922c}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Ranking@{Ranking}}
+\index{Ranking@{Ranking}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Ranking()}{Ranking()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.\mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{Ranking}} (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{int}]{top }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key.\\
+\hline
+{\em top} & Top.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a23464bac5898e26b7de225c9be93f32d}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a23464bac5898e26b7de225c9be93f32d}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Ranking@{Ranking}}
+\index{Ranking@{Ranking}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Ranking()}{Ranking()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.\mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{Ranking}} (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{int}]{top,  }\item[{int}]{interval\+Times }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em top} & \\
+\hline
+{\em interval\+Times} & 刷新间隔\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a39db6cc97d4eccc287831119a5d24359}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a39db6cc97d4eccc287831119a5d24359}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Change\+Rank\+No@{Change\+Rank\+No}}
+\index{Change\+Rank\+No@{Change\+Rank\+No}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Change\+Rank\+No()}{ChangeRankNo()}}
+{\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Change\+Rank\+No (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+设置排行\+ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a085c725ac3fa351a51bfebf6a9596901}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a085c725ac3fa351a51bfebf6a9596901}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Comparer\+To@{Comparer\+To}}
+\index{Comparer\+To@{Comparer\+To}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Comparer\+To()}{ComparerTo()}}
+{\footnotesize\ttfamily abstract int \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Comparer\+To (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+排序方式 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a5ac68ac1d83bcd80291fca368d3a63f7}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a5ac68ac1d83bcd80291fca368d3a63f7}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Do\+Initialize\+After@{Do\+Initialize\+After}}
+\index{Do\+Initialize\+After@{Do\+Initialize\+After}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Do\+Initialize\+After()}{DoInitializeAfter()}}
+{\footnotesize\ttfamily virtual List$<$T$>$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Do\+Initialize\+After (\begin{DoxyParamCaption}\item[{List$<$ T $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+初始化之后处理 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a4ca04c20afe14ff6cb3b421387151234}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a4ca04c20afe14ff6cb3b421387151234}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Find@{Find}}
+\index{Find@{Find}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Find (\begin{DoxyParamCaption}\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+查找 
+
+
+\begin{DoxyParams}{Parameters}
+{\em match} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_ae0000a540fbbf11d5ca86eeff68423f3}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_ae0000a540fbbf11d5ca86eeff68423f3}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Get\+Cache\+List@{Get\+Cache\+List}}
+\index{Get\+Cache\+List@{Get\+Cache\+List}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Get\+Cache\+List()}{GetCacheList()}}
+{\footnotesize\ttfamily abstract I\+List$<$T$>$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Get\+Cache\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+获取排行数据 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_t_net_1_1_controllers_1_1_sample_rank_1_1_s_ranking_a91a2f72ebdb7fef162dd51f25939e3db}{T\+Net.\+Controllers.\+Sample\+Rank.\+S\+Ranking}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a0e273e472490b5168b2f4af14304c2ea}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a0e273e472490b5168b2f4af14304c2ea}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Get\+Enumerator@{Get\+Enumerator}}
+\index{Get\+Enumerator@{Get\+Enumerator}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Get\+Enumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily I\+Enumerator \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+枚举器 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_t_net_1_1_com_1_1_rank_1_1_i_ranking_ade93bc13af64d753103e3aa4d94b0d76}{T\+Net.\+Com.\+Rank.\+I\+Ranking}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a403ec872217c9a7fc2d45af230346864}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a403ec872217c9a7fc2d45af230346864}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Get\+Range@{Get\+Range}}
+\index{Get\+Range@{Get\+Range}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Get\+Range()}{GetRange()}}
+{\footnotesize\ttfamily I\+List$<$T$>$ \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Get\+Range (\begin{DoxyParamCaption}\item[{int}]{page\+Index,  }\item[{int}]{page\+Size,  }\item[{out int}]{page\+Cout }\end{DoxyParamCaption})}
+
+
+
+获取分页数据 
+
+
+\begin{DoxyParams}{Parameters}
+{\em page\+Index} & \\
+\hline
+{\em page\+Size} & \\
+\hline
+{\em page\+Cout} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a87f2f0e31e3c4ecc18e1b7d8f65c0131}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a87f2f0e31e3c4ecc18e1b7d8f65c0131}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Get\+Rank\+No@{Get\+Rank\+No}}
+\index{Get\+Rank\+No@{Get\+Rank\+No}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Get\+Rank\+No()}{GetRankNo()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Get\+Rank\+No (\begin{DoxyParamCaption}\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+获取在排行中第几名 
+
+\begin{DoxyReturn}{Returns}
+-\/1\+:不在排行榜中
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a6412dd1b302d90a6c982228bf1235c7f}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a6412dd1b302d90a6c982228bf1235c7f}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Ignore\+Item@{Ignore\+Item}}
+\index{Ignore\+Item@{Ignore\+Item}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Ignore\+Item()}{IgnoreItem()}}
+{\footnotesize\ttfamily virtual bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Ignore\+Item (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+忽略的数据项 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a38c2dae9aa30ad815b0d1bf9bf5e2445}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a38c2dae9aa30ad815b0d1bf9bf5e2445}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Initialize\+Data@{Initialize\+Data}}
+\index{Initialize\+Data@{Initialize\+Data}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Initialize\+Data()}{InitializeData()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Initialize\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+初始化数据源 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a0f478ed3382d31882ec78c0b452df8fc}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a0f478ed3382d31882ec78c0b452df8fc}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!On\+Update\+Cache@{On\+Update\+Cache}}
+\index{On\+Update\+Cache@{On\+Update\+Cache}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{On\+Update\+Cache()}{OnUpdateCache()}}
+{\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.On\+Update\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_ae6e494ecbec1bc1b6945bd7e66c46ac4}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_ae6e494ecbec1bc1b6945bd7e66c46ac4}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Reflesh\+Rank\+Id@{Reflesh\+Rank\+Id}}
+\index{Reflesh\+Rank\+Id@{Reflesh\+Rank\+Id}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Reflesh\+Rank\+Id()}{RefleshRankId()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Reflesh\+Rank\+Id (\begin{DoxyParamCaption}\item[{List$<$ T $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+刷新排行 
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a4458c9bb281a9a2401580aca4e7cf28b}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a4458c9bb281a9a2401580aca4e7cf28b}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Refresh@{Refresh}}
+\index{Refresh@{Refresh}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Refresh()}{Refresh()}}
+{\footnotesize\ttfamily virtual bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+刷新排行榜 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_t_net_1_1_com_1_1_rank_1_1_i_ranking_afe72ec8ff768035ea3747fe935e01893}{T\+Net.\+Com.\+Rank.\+I\+Ranking}}.
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a4737a6906c00419471c5bfa87cd3c4c0}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a4737a6906c00419471c5bfa87cd3c4c0}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Try\+Append@{Try\+Append}}
+\index{Try\+Append@{Try\+Append}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Try\+Append()}{TryAppend()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Try\+Append (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})}
+
+
+
+增加到排行榜 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a7fb6e93324626737052a355bf6c79fab}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a7fb6e93324626737052a355bf6c79fab}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Try\+Get\+Rank\+No@{Try\+Get\+Rank\+No}}
+\index{Try\+Get\+Rank\+No@{Try\+Get\+Rank\+No}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Try\+Get\+Rank\+No()}{TryGetRankNo()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Try\+Get\+Rank\+No (\begin{DoxyParamCaption}\item[{Predicate$<$ T $>$}]{match,  }\item[{out int}]{rank\+Id }\end{DoxyParamCaption})}
+
+
+
+获取排名 
+
+
+\begin{DoxyParams}{Parameters}
+{\em match} & \\
+\hline
+{\em rank\+Id} & 排名\+ID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_ab8bbf4eab0e0844151200e9e2414ab70}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_ab8bbf4eab0e0844151200e9e2414ab70}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Try\+Insert@{Try\+Insert}}
+\index{Try\+Insert@{Try\+Insert}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Try\+Insert()}{TryInsert()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Try\+Insert (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})}
+
+
+
+插入到排行榜 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_ad341394025d00b4392735c940300967b}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_ad341394025d00b4392735c940300967b}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Try\+Move@{Try\+Move}}
+\index{Try\+Move@{Try\+Move}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Try\+Move()}{TryMove()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Try\+Move (\begin{DoxyParamCaption}\item[{int}]{from\+Rank\+Id,  }\item[{int}]{to\+Rank\+Id }\end{DoxyParamCaption})}
+
+
+
+调整排名 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+Rank\+Id} & 原始排名\\
+\hline
+{\em to\+Rank\+Id} & 移动到新排名\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_af43d1404d153d185cdd4329ea511c31f}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_af43d1404d153d185cdd4329ea511c31f}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Count@{Count}}
+\index{Count@{Count}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a6e4dde8ff8f596a60ed9efb7a058079d}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a6e4dde8ff8f596a60ed9efb7a058079d}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Key@{Key}}
+\index{Key@{Key}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Key}{Key}}
+{\footnotesize\ttfamily string \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Key\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+排行榜键 
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_rank_1_1_ranking_a2707e2072a0dc2cfe75135da1d8ad921}\label{class_t_net_1_1_com_1_1_rank_1_1_ranking_a2707e2072a0dc2cfe75135da1d8ad921}} 
+\index{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}!Rank\+Count@{Rank\+Count}}
+\index{Rank\+Count@{Rank\+Count}!T\+Net\+::\+Com\+::\+Rank\+::\+Ranking@{T\+Net\+::\+Com\+::\+Rank\+::\+Ranking}}
+\subsubsection{\texorpdfstring{Rank\+Count}{RankCount}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_t_net_1_1_com_1_1_rank_1_1_ranking}{T\+Net.\+Com.\+Rank.\+Ranking}}$<$ T $>$.Rank\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+排名数 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Com/\+Rank/Ranking.\+cs\end{DoxyCompactItemize}

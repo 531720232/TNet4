@@ -1,0 +1,247 @@
+\hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card}{}\section{T\+Net.\+Com.\+Generic.\+Novice\+Card Class Reference}
+\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card}\index{T\+Net.\+Com.\+Generic.\+Novice\+Card@{T\+Net.\+Com.\+Generic.\+Novice\+Card}}
+
+
+新手卡  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a589481260d0da4cc4c0021767c065405}{Check\+Generate\+Card}} ()
+\begin{DoxyCompactList}\small\item\em 检查是否生成新手卡 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a753787e657ffed35df4ed30aab904a71}{Activate}} (string card\+Id)
+\begin{DoxyCompactList}\small\item\em 激活 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a359744065cd2cf4ed1d8e9253ed81207}{Check\+Lv\+Prize}} (short user\+Lv, string card\+Id)
+\begin{DoxyCompactList}\small\item\em 领取奖励 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a41541b8fc43aee68657721d8159e867a}{Novice\+Card}} (int user\+Id)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card}{T\+Net.\+Com.\+Generic.\+Novice\+Card}} class. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a80dcdabe9c68586d677e88b65439ed4a}{Do\+Generate}} (string generate\+ID)
+\begin{DoxyCompactList}\small\item\em Dos the generate. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card_ab6a0d591d0d80b86504b2ce28a7163b5}{Generate\+ID}} ()
+\begin{DoxyCompactList}\small\item\em 生成卡号 \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a88e0f12dc663a720fee86affd0c49941}{Do\+Activate\+Card}} (string card\+Id, int card\+User\+Id)
+\begin{DoxyCompactList}\small\item\em Dos the activate card. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a7832e2e74ec1b8d29a2645290ea8dd67}{Do\+Prize}} (string card\+Id, int card\+User\+Id, short lv)
+\begin{DoxyCompactList}\small\item\em Dos the prize. \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a4b8f5febe9ada8709a3c7d86320f2147}{Has\+Prize}} (short user\+Lv, short prize\+Lv)
+\begin{DoxyCompactList}\small\item\em Determines whether this instance has prize the specified user\+Lv prize\+Lv. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card_aa432c24541c200d1418c9dd5c2c88d3d}{Curr\+User\+Id}}
+\begin{DoxyCompactList}\small\item\em The curr user identifier. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card_aae34a6dd1483bfde59e5e1b81de377d8}{Card\+Length}} = 10
+\begin{DoxyCompactList}\small\item\em The length of the card. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a6c1f693e61792492952a012eac501d54}{Has\+Generate\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this instance has generate I. \end{DoxyCompactList}\item 
+abstract string \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a06c38204b7a0e49bf453ee0e341b2505}{Package\+Prize\+Lv}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the package prize lv. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+新手卡 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a41541b8fc43aee68657721d8159e867a}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a41541b8fc43aee68657721d8159e867a}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}!Novice\+Card@{Novice\+Card}}
+\index{Novice\+Card@{Novice\+Card}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}}
+\subsubsection{\texorpdfstring{Novice\+Card()}{NoviceCard()}}
+{\footnotesize\ttfamily T\+Net.\+Com.\+Generic.\+Novice\+Card.\+Novice\+Card (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_novice_card}{T\+Net.\+Com.\+Generic.\+Novice\+Card}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & User identifier.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a753787e657ffed35df4ed30aab904a71}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a753787e657ffed35df4ed30aab904a71}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}!Activate@{Activate}}
+\index{Activate@{Activate}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}}
+\subsubsection{\texorpdfstring{Activate()}{Activate()}}
+{\footnotesize\ttfamily bool T\+Net.\+Com.\+Generic.\+Novice\+Card.\+Activate (\begin{DoxyParamCaption}\item[{string}]{card\+Id }\end{DoxyParamCaption})}
+
+
+
+激活 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a589481260d0da4cc4c0021767c065405}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a589481260d0da4cc4c0021767c065405}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}!Check\+Generate\+Card@{Check\+Generate\+Card}}
+\index{Check\+Generate\+Card@{Check\+Generate\+Card}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}}
+\subsubsection{\texorpdfstring{Check\+Generate\+Card()}{CheckGenerateCard()}}
+{\footnotesize\ttfamily void T\+Net.\+Com.\+Generic.\+Novice\+Card.\+Check\+Generate\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+检查是否生成新手卡 
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a359744065cd2cf4ed1d8e9253ed81207}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a359744065cd2cf4ed1d8e9253ed81207}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}!Check\+Lv\+Prize@{Check\+Lv\+Prize}}
+\index{Check\+Lv\+Prize@{Check\+Lv\+Prize}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}}
+\subsubsection{\texorpdfstring{Check\+Lv\+Prize()}{CheckLvPrize()}}
+{\footnotesize\ttfamily bool T\+Net.\+Com.\+Generic.\+Novice\+Card.\+Check\+Lv\+Prize (\begin{DoxyParamCaption}\item[{short}]{user\+Lv,  }\item[{string}]{card\+Id }\end{DoxyParamCaption})}
+
+
+
+领取奖励 
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a88e0f12dc663a720fee86affd0c49941}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a88e0f12dc663a720fee86affd0c49941}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}!Do\+Activate\+Card@{Do\+Activate\+Card}}
+\index{Do\+Activate\+Card@{Do\+Activate\+Card}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}}
+\subsubsection{\texorpdfstring{Do\+Activate\+Card()}{DoActivateCard()}}
+{\footnotesize\ttfamily abstract bool T\+Net.\+Com.\+Generic.\+Novice\+Card.\+Do\+Activate\+Card (\begin{DoxyParamCaption}\item[{string}]{card\+Id,  }\item[{int}]{card\+User\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Dos the activate card. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if activate card was done, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em card\+Id} & Card identifier.\\
+\hline
+{\em card\+User\+Id} & Card user identifier.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a80dcdabe9c68586d677e88b65439ed4a}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a80dcdabe9c68586d677e88b65439ed4a}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}!Do\+Generate@{Do\+Generate}}
+\index{Do\+Generate@{Do\+Generate}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}}
+\subsubsection{\texorpdfstring{Do\+Generate()}{DoGenerate()}}
+{\footnotesize\ttfamily abstract void T\+Net.\+Com.\+Generic.\+Novice\+Card.\+Do\+Generate (\begin{DoxyParamCaption}\item[{string}]{generate\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Dos the generate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em generate\+ID} & Generate I.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a7832e2e74ec1b8d29a2645290ea8dd67}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a7832e2e74ec1b8d29a2645290ea8dd67}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}!Do\+Prize@{Do\+Prize}}
+\index{Do\+Prize@{Do\+Prize}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}}
+\subsubsection{\texorpdfstring{Do\+Prize()}{DoPrize()}}
+{\footnotesize\ttfamily abstract void T\+Net.\+Com.\+Generic.\+Novice\+Card.\+Do\+Prize (\begin{DoxyParamCaption}\item[{string}]{card\+Id,  }\item[{int}]{card\+User\+Id,  }\item[{short}]{lv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Dos the prize. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card\+Id} & Card identifier.\\
+\hline
+{\em card\+User\+Id} & Card user identifier.\\
+\hline
+{\em lv} & Lv.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card_ab6a0d591d0d80b86504b2ce28a7163b5}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card_ab6a0d591d0d80b86504b2ce28a7163b5}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}!Generate\+ID@{Generate\+ID}}
+\index{Generate\+ID@{Generate\+ID}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}}
+\subsubsection{\texorpdfstring{Generate\+I\+D()}{GenerateID()}}
+{\footnotesize\ttfamily virtual string T\+Net.\+Com.\+Generic.\+Novice\+Card.\+Generate\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+生成卡号 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a4b8f5febe9ada8709a3c7d86320f2147}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a4b8f5febe9ada8709a3c7d86320f2147}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}!Has\+Prize@{Has\+Prize}}
+\index{Has\+Prize@{Has\+Prize}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}}
+\subsubsection{\texorpdfstring{Has\+Prize()}{HasPrize()}}
+{\footnotesize\ttfamily abstract bool T\+Net.\+Com.\+Generic.\+Novice\+Card.\+Has\+Prize (\begin{DoxyParamCaption}\item[{short}]{user\+Lv,  }\item[{short}]{prize\+Lv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Determines whether this instance has prize the specified user\+Lv prize\+Lv. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this instance has prize the specified user\+Lv prize\+Lv; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Lv} & User lv.\\
+\hline
+{\em prize\+Lv} & Prize lv.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card_aae34a6dd1483bfde59e5e1b81de377d8}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card_aae34a6dd1483bfde59e5e1b81de377d8}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}!Card\+Length@{Card\+Length}}
+\index{Card\+Length@{Card\+Length}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}}
+\subsubsection{\texorpdfstring{Card\+Length}{CardLength}}
+{\footnotesize\ttfamily int T\+Net.\+Com.\+Generic.\+Novice\+Card.\+Card\+Length = 10\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The length of the card. 
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card_aa432c24541c200d1418c9dd5c2c88d3d}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card_aa432c24541c200d1418c9dd5c2c88d3d}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}!Curr\+User\+Id@{Curr\+User\+Id}}
+\index{Curr\+User\+Id@{Curr\+User\+Id}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}}
+\subsubsection{\texorpdfstring{Curr\+User\+Id}{CurrUserId}}
+{\footnotesize\ttfamily int T\+Net.\+Com.\+Generic.\+Novice\+Card.\+Curr\+User\+Id\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The curr user identifier. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a6c1f693e61792492952a012eac501d54}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a6c1f693e61792492952a012eac501d54}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}!Has\+Generate\+ID@{Has\+Generate\+ID}}
+\index{Has\+Generate\+ID@{Has\+Generate\+ID}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}}
+\subsubsection{\texorpdfstring{Has\+Generate\+ID}{HasGenerateID}}
+{\footnotesize\ttfamily abstract bool T\+Net.\+Com.\+Generic.\+Novice\+Card.\+Has\+Generate\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+
+
+Gets a value indicating whether this instance has generate I. 
+
+{\ttfamily true} if this instance has generate I; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a06c38204b7a0e49bf453ee0e341b2505}\label{class_t_net_1_1_com_1_1_generic_1_1_novice_card_a06c38204b7a0e49bf453ee0e341b2505}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}!Package\+Prize\+Lv@{Package\+Prize\+Lv}}
+\index{Package\+Prize\+Lv@{Package\+Prize\+Lv}!T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card@{T\+Net\+::\+Com\+::\+Generic\+::\+Novice\+Card}}
+\subsubsection{\texorpdfstring{Package\+Prize\+Lv}{PackagePrizeLv}}
+{\footnotesize\ttfamily abstract string \mbox{[}$\,$\mbox{]} T\+Net.\+Com.\+Generic.\+Novice\+Card.\+Package\+Prize\+Lv\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+
+
+Gets the package prize lv. 
+
+The package prize lv.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Com/\+Generic/Novice\+Card.\+cs\end{DoxyCompactItemize}

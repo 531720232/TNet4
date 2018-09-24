@@ -1,0 +1,509 @@
+\hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader}{}\section{T\+Net.\+I\+O.\+Endian\+Binary\+Reader Class Reference}
+\label{class_t_net_1_1_i_o_1_1_endian_binary_reader}\index{T\+Net.\+I\+O.\+Endian\+Binary\+Reader@{T\+Net.\+I\+O.\+Endian\+Binary\+Reader}}
+
+
+Equivalent of System.\+I\+O.\+Binary\+Reader, but with either endianness, depending on the \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} it is constructed with. No data is buffered in the reader; the client may seek within the stream at will.  
+
+
+Inheritance diagram for T\+Net.\+I\+O.\+Endian\+Binary\+Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_net_1_1_i_o_1_1_endian_binary_reader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a9ef5db6cb6554c36fcd2bfb3aa5fc3ce}{Dispose}} ()
+\begin{DoxyCompactList}\small\item\em Disposes of the underlying stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_aafe4ad76a51e032b04cf5cb1571d90de}{Endian\+Binary\+Reader}} (\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} bit\+Converter, Stream stream)
+\begin{DoxyCompactList}\small\item\em Equivalent of System.\+I\+O.\+Binary\+Writer, but with either endianness, depending on the \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} it is constructed with. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_acd3b2751b1fe637b86604d533092ecc7}{Endian\+Binary\+Reader}} (\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} bit\+Converter, Stream stream, \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_acd6eb5fbc4f1ce36f7ba50c1b3fc2d8d}{Encoding}} encoding)
+\begin{DoxyCompactList}\small\item\em Constructs a new binary reader with the given bit converter, reading to the given stream, using the given encoding. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a151cf96c3448d97e8961a58a9f172524}{Close}} ()
+\begin{DoxyCompactList}\small\item\em Closes the reader, including the underlying stream.. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a3820798fc511f4ecedd0407461ffb359}{Seek}} (int offset, Seek\+Origin origin)
+\begin{DoxyCompactList}\small\item\em Seeks within the stream. \end{DoxyCompactList}\item 
+byte \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_ac68abe7686ebf47317658260a7e46c05}{Read\+Byte}} ()
+\begin{DoxyCompactList}\small\item\em Reads a single byte from the stream. \end{DoxyCompactList}\item 
+sbyte \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a1160226e25216f979b76fe7f1990991e}{Read\+S\+Byte}} ()
+\begin{DoxyCompactList}\small\item\em Reads a single signed byte from the stream. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a23eba8362b660682eb20797b04e3bf3f}{Read\+Boolean}} ()
+\begin{DoxyCompactList}\small\item\em Reads a boolean from the stream. 1 byte is read. \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a6e160055b65116bd439d27956ee13569}{Read\+Int16}} ()
+\begin{DoxyCompactList}\small\item\em Reads a 16-\/bit signed integer from the stream, using the bit converter for this reader. 2 bytes are read. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_adcc78fb1a9961b47818c2a9d4c9f71bd}{Read\+Int32}} ()
+\begin{DoxyCompactList}\small\item\em Reads a 32-\/bit signed integer from the stream, using the bit converter for this reader. 4 bytes are read. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_aa8f5880eef1ba052963a1728f4f263fd}{Read\+Int64}} ()
+\begin{DoxyCompactList}\small\item\em Reads a 64-\/bit signed integer from the stream, using the bit converter for this reader. 8 bytes are read. \end{DoxyCompactList}\item 
+ushort \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a7c106faa6d6df6a658ed98c50b529b7b}{Read\+U\+Int16}} ()
+\begin{DoxyCompactList}\small\item\em Reads a 16-\/bit unsigned integer from the stream, using the bit converter for this reader. 2 bytes are read. \end{DoxyCompactList}\item 
+uint \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_ae5a1827eb24391ffb6fac5472433cb68}{Read\+U\+Int32}} ()
+\begin{DoxyCompactList}\small\item\em Reads a 32-\/bit unsigned integer from the stream, using the bit converter for this reader. 4 bytes are read. \end{DoxyCompactList}\item 
+ulong \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a1099cd78f47f8d191142cf344f8c12cb}{Read\+U\+Int64}} ()
+\begin{DoxyCompactList}\small\item\em Reads a 64-\/bit unsigned integer from the stream, using the bit converter for this reader. 8 bytes are read. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a5b8372852eb61c258d3c3bb76f0f0d1e}{Read\+Single}} ()
+\begin{DoxyCompactList}\small\item\em Reads a single-\/precision floating-\/point value from the stream, using the bit converter for this reader. 4 bytes are read. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a17a0fbf3fff03a507af84dbf824d4915}{Read\+Double}} ()
+\begin{DoxyCompactList}\small\item\em Reads a double-\/precision floating-\/point value from the stream, using the bit converter for this reader. 8 bytes are read. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_aa4b6ba813801ec1f4587396c5ab1be3c}{Read\+Decimal}} ()
+\begin{DoxyCompactList}\small\item\em Reads a decimal value from the stream, using the bit converter for this reader. 16 bytes are read. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a267313b4e6fb36b67bf31174bb6319c3}{Read}} ()
+\begin{DoxyCompactList}\small\item\em Reads a single character from the stream, using the character encoding for this reader. If no characters have been fully read by the time the stream ends, -\/1 is returned. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a9d6d1fd5e959469c969c75aed6228039}{Read}} (char\mbox{[}$\,$\mbox{]} data, int index, int count)
+\begin{DoxyCompactList}\small\item\em Reads the specified number of characters into the given buffer, starting at the given index. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_ae1da6709fb1dbce8a8936ed7b0e95db4}{Read}} (byte\mbox{[}$\,$\mbox{]} buffer, int index, int count)
+\begin{DoxyCompactList}\small\item\em Reads the specified number of bytes into the given buffer, starting at the given index. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_ad06f8519f7c57b123ec9ba2616f35440}{Read\+Bytes}} (int count)
+\begin{DoxyCompactList}\small\item\em Reads the specified number of bytes, returning them in a new byte array. If not enough bytes are available before the end of the stream, this method will return what is available. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_aa192e348d6dc146c53a7aa9bd218c197}{Read\+Bytes\+Or\+Throw}} (int count)
+\begin{DoxyCompactList}\small\item\em Reads the specified number of bytes, returning them in a new byte array. If not enough bytes are available before the end of the stream, this method will throw an I\+O\+Exception. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a4c125e7d627fedbd4d9146a99c53e3fb}{Read7\+Bit\+Encoded\+Int}} ()
+\begin{DoxyCompactList}\small\item\em Reads a 7-\/bit encoded integer from the stream. This is stored with the least significant information first, with 7 bits of information per byte of value, and the top bit as a continuation flag. This method is not affected by the endianness of the bit converter. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a2826f200bdff02c21228316410d828a7}{Read\+Big\+Endian7\+Bit\+Encoded\+Int}} ()
+\begin{DoxyCompactList}\small\item\em Reads a 7-\/bit encoded integer from the stream. This is stored with the most significant information first, with 7 bits of information per byte of value, and the top bit as a continuation flag. This method is not affected by the endianness of the bit converter. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a62e1e8719419bc1b9f25e2fb58782039}{Read\+String}} ()
+\begin{DoxyCompactList}\small\item\em Reads a length-\/prefixed string from the stream, using the encoding for this reader. A 7-\/bit encoded integer is first read, which specifies the number of bytes to read from the stream. These bytes are then converted into a string with the encoding for this reader. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_affb384d7c877291a2e2aa449f95c780b}{Read\+Obj$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em read a object from bson \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a003c25fc74556eabb23bce8925b37483}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a003c25fc74556eabb23bce8925b37483}} 
+byte \mbox{[}$\,$\mbox{]} {\bfseries To7\+Z\+Bytes} ()
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_ab1b069f1fe4dd98eed25ca00f74a23df}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_ab1b069f1fe4dd98eed25ca00f74a23df}} 
+byte \mbox{[}$\,$\mbox{]} {\bfseries To\+Bytes} ()
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_afbdea4b151d2bee6b8863349042785f5}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_afbdea4b151d2bee6b8863349042785f5}} 
+\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer}{Endian\+Binary\+Writer}} {\bfseries To\+Writer} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a903e43c694cca98444db4d072d520b62}{Bit\+Converter}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The bit converter used to read values from the stream \end{DoxyCompactList}\item 
+Encoding \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_acd6eb5fbc4f1ce36f7ba50c1b3fc2d8d}{Encoding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The encoding used to read strings \end{DoxyCompactList}\item 
+Stream \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_a610b56aeb9ffefa9b1354880e5e7cc91}{Base\+Stream}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the underlying stream of the \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader}{Endian\+Binary\+Reader}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Equivalent of System.\+I\+O.\+Binary\+Reader, but with either endianness, depending on the \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} it is constructed with. No data is buffered in the reader; the client may seek within the stream at will. 
+
+Equivalent of System.\+I\+O.\+Binary\+Reader, but with either endianness, depending on the \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} it is constructed with. No data is buffered in the reader; the client may seek within the stream at will. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_aafe4ad76a51e032b04cf5cb1571d90de}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_aafe4ad76a51e032b04cf5cb1571d90de}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Endian\+Binary\+Reader@{Endian\+Binary\+Reader}}
+\index{Endian\+Binary\+Reader@{Endian\+Binary\+Reader}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Endian\+Binary\+Reader()}{EndianBinaryReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Endian\+Binary\+Reader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}}}]{bit\+Converter,  }\item[{Stream}]{stream }\end{DoxyParamCaption})}
+
+
+
+Equivalent of System.\+I\+O.\+Binary\+Writer, but with either endianness, depending on the \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} it is constructed with. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+Converter} & Converter to use when reading data\\
+\hline
+{\em stream} & Stream to read data from\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_acd3b2751b1fe637b86604d533092ecc7}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_acd3b2751b1fe637b86604d533092ecc7}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Endian\+Binary\+Reader@{Endian\+Binary\+Reader}}
+\index{Endian\+Binary\+Reader@{Endian\+Binary\+Reader}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Endian\+Binary\+Reader()}{EndianBinaryReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Endian\+Binary\+Reader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}}}]{bit\+Converter,  }\item[{Stream}]{stream,  }\item[{\mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader_acd6eb5fbc4f1ce36f7ba50c1b3fc2d8d}{Encoding}}}]{encoding }\end{DoxyParamCaption})}
+
+
+
+Constructs a new binary reader with the given bit converter, reading to the given stream, using the given encoding. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+Converter} & Converter to use when reading data\\
+\hline
+{\em stream} & Stream to read data from\\
+\hline
+{\em encoding} & Encoding to use when reading character data\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a151cf96c3448d97e8961a58a9f172524}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a151cf96c3448d97e8961a58a9f172524}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Close@{Close}}
+\index{Close@{Close}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Closes the reader, including the underlying stream.. 
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a9ef5db6cb6554c36fcd2bfb3aa5fc3ce}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a9ef5db6cb6554c36fcd2bfb3aa5fc3ce}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disposes of the underlying stream. 
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a267313b4e6fb36b67bf31174bb6319c3}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a267313b4e6fb36b67bf31174bb6319c3}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read@{Read}}
+\index{Read@{Read}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read()}{Read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a single character from the stream, using the character encoding for this reader. If no characters have been fully read by the time the stream ends, -\/1 is returned. 
+
+\begin{DoxyReturn}{Returns}
+The character read, or -\/1 for end of stream.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a9d6d1fd5e959469c969c75aed6228039}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a9d6d1fd5e959469c969c75aed6228039}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read@{Read}}
+\index{Read@{Read}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read()}{Read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read (\begin{DoxyParamCaption}\item[{char \mbox{[}$\,$\mbox{]}}]{data,  }\item[{int}]{index,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Reads the specified number of characters into the given buffer, starting at the given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The buffer to copy data into\\
+\hline
+{\em index} & The first index to copy data into\\
+\hline
+{\em count} & The number of characters to read\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of characters actually read. This will only be less than the requested number of characters if the end of the stream is reached. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_ae1da6709fb1dbce8a8936ed7b0e95db4}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_ae1da6709fb1dbce8a8936ed7b0e95db4}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read@{Read}}
+\index{Read@{Read}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read()}{Read()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{index,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Reads the specified number of bytes into the given buffer, starting at the given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer to copy data into\\
+\hline
+{\em index} & The first index to copy data into\\
+\hline
+{\em count} & The number of bytes to read\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of bytes actually read. This will only be less than the requested number of bytes if the end of the stream is reached. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a4c125e7d627fedbd4d9146a99c53e3fb}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a4c125e7d627fedbd4d9146a99c53e3fb}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read7\+Bit\+Encoded\+Int@{Read7\+Bit\+Encoded\+Int}}
+\index{Read7\+Bit\+Encoded\+Int@{Read7\+Bit\+Encoded\+Int}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read7\+Bit\+Encoded\+Int()}{Read7BitEncodedInt()}}
+{\footnotesize\ttfamily int T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read7\+Bit\+Encoded\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a 7-\/bit encoded integer from the stream. This is stored with the least significant information first, with 7 bits of information per byte of value, and the top bit as a continuation flag. This method is not affected by the endianness of the bit converter. 
+
+\begin{DoxyReturn}{Returns}
+The 7-\/bit encoded integer read from the stream.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a2826f200bdff02c21228316410d828a7}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a2826f200bdff02c21228316410d828a7}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+Big\+Endian7\+Bit\+Encoded\+Int@{Read\+Big\+Endian7\+Bit\+Encoded\+Int}}
+\index{Read\+Big\+Endian7\+Bit\+Encoded\+Int@{Read\+Big\+Endian7\+Bit\+Encoded\+Int}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Big\+Endian7\+Bit\+Encoded\+Int()}{ReadBigEndian7BitEncodedInt()}}
+{\footnotesize\ttfamily int T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+Big\+Endian7\+Bit\+Encoded\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a 7-\/bit encoded integer from the stream. This is stored with the most significant information first, with 7 bits of information per byte of value, and the top bit as a continuation flag. This method is not affected by the endianness of the bit converter. 
+
+\begin{DoxyReturn}{Returns}
+The 7-\/bit encoded integer read from the stream.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a23eba8362b660682eb20797b04e3bf3f}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a23eba8362b660682eb20797b04e3bf3f}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+Boolean@{Read\+Boolean}}
+\index{Read\+Boolean@{Read\+Boolean}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Boolean()}{ReadBoolean()}}
+{\footnotesize\ttfamily bool T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+Boolean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a boolean from the stream. 1 byte is read. 
+
+\begin{DoxyReturn}{Returns}
+The boolean read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_ac68abe7686ebf47317658260a7e46c05}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_ac68abe7686ebf47317658260a7e46c05}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+Byte@{Read\+Byte}}
+\index{Read\+Byte@{Read\+Byte}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Byte()}{ReadByte()}}
+{\footnotesize\ttfamily byte T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+Byte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a single byte from the stream. 
+
+\begin{DoxyReturn}{Returns}
+The byte read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_ad06f8519f7c57b123ec9ba2616f35440}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_ad06f8519f7c57b123ec9ba2616f35440}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+Bytes@{Read\+Bytes}}
+\index{Read\+Bytes@{Read\+Bytes}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Bytes()}{ReadBytes()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+Bytes (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Reads the specified number of bytes, returning them in a new byte array. If not enough bytes are available before the end of the stream, this method will return what is available. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & The number of bytes to read\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The bytes read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_aa192e348d6dc146c53a7aa9bd218c197}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_aa192e348d6dc146c53a7aa9bd218c197}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+Bytes\+Or\+Throw@{Read\+Bytes\+Or\+Throw}}
+\index{Read\+Bytes\+Or\+Throw@{Read\+Bytes\+Or\+Throw}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Bytes\+Or\+Throw()}{ReadBytesOrThrow()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+Bytes\+Or\+Throw (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Reads the specified number of bytes, returning them in a new byte array. If not enough bytes are available before the end of the stream, this method will throw an I\+O\+Exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & The number of bytes to read\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The bytes read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_aa4b6ba813801ec1f4587396c5ab1be3c}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_aa4b6ba813801ec1f4587396c5ab1be3c}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+Decimal@{Read\+Decimal}}
+\index{Read\+Decimal@{Read\+Decimal}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Decimal()}{ReadDecimal()}}
+{\footnotesize\ttfamily decimal T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+Decimal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a decimal value from the stream, using the bit converter for this reader. 16 bytes are read. 
+
+\begin{DoxyReturn}{Returns}
+The decimal value read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a17a0fbf3fff03a507af84dbf824d4915}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a17a0fbf3fff03a507af84dbf824d4915}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+Double@{Read\+Double}}
+\index{Read\+Double@{Read\+Double}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Double()}{ReadDouble()}}
+{\footnotesize\ttfamily double T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a double-\/precision floating-\/point value from the stream, using the bit converter for this reader. 8 bytes are read. 
+
+\begin{DoxyReturn}{Returns}
+The floating point value read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a6e160055b65116bd439d27956ee13569}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a6e160055b65116bd439d27956ee13569}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+Int16@{Read\+Int16}}
+\index{Read\+Int16@{Read\+Int16}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Int16()}{ReadInt16()}}
+{\footnotesize\ttfamily short T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+Int16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a 16-\/bit signed integer from the stream, using the bit converter for this reader. 2 bytes are read. 
+
+\begin{DoxyReturn}{Returns}
+The 16-\/bit integer read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_adcc78fb1a9961b47818c2a9d4c9f71bd}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_adcc78fb1a9961b47818c2a9d4c9f71bd}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+Int32@{Read\+Int32}}
+\index{Read\+Int32@{Read\+Int32}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Int32()}{ReadInt32()}}
+{\footnotesize\ttfamily int T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+Int32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a 32-\/bit signed integer from the stream, using the bit converter for this reader. 4 bytes are read. 
+
+\begin{DoxyReturn}{Returns}
+The 32-\/bit integer read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_aa8f5880eef1ba052963a1728f4f263fd}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_aa8f5880eef1ba052963a1728f4f263fd}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+Int64@{Read\+Int64}}
+\index{Read\+Int64@{Read\+Int64}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Int64()}{ReadInt64()}}
+{\footnotesize\ttfamily long T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+Int64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a 64-\/bit signed integer from the stream, using the bit converter for this reader. 8 bytes are read. 
+
+\begin{DoxyReturn}{Returns}
+The 64-\/bit integer read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_affb384d7c877291a2e2aa449f95c780b}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_affb384d7c877291a2e2aa449f95c780b}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+Obj$<$ T $>$@{Read\+Obj$<$ T $>$}}
+\index{Read\+Obj$<$ T $>$@{Read\+Obj$<$ T $>$}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Obj$<$ T $>$()}{ReadObj< T >()}}
+{\footnotesize\ttfamily T T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+Obj$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+read a object from bson 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a1160226e25216f979b76fe7f1990991e}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a1160226e25216f979b76fe7f1990991e}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+S\+Byte@{Read\+S\+Byte}}
+\index{Read\+S\+Byte@{Read\+S\+Byte}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+S\+Byte()}{ReadSByte()}}
+{\footnotesize\ttfamily sbyte T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+S\+Byte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a single signed byte from the stream. 
+
+\begin{DoxyReturn}{Returns}
+The byte read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a5b8372852eb61c258d3c3bb76f0f0d1e}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a5b8372852eb61c258d3c3bb76f0f0d1e}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+Single@{Read\+Single}}
+\index{Read\+Single@{Read\+Single}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Single()}{ReadSingle()}}
+{\footnotesize\ttfamily float T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+Single (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a single-\/precision floating-\/point value from the stream, using the bit converter for this reader. 4 bytes are read. 
+
+\begin{DoxyReturn}{Returns}
+The floating point value read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a62e1e8719419bc1b9f25e2fb58782039}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a62e1e8719419bc1b9f25e2fb58782039}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+String@{Read\+String}}
+\index{Read\+String@{Read\+String}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+String()}{ReadString()}}
+{\footnotesize\ttfamily string T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a length-\/prefixed string from the stream, using the encoding for this reader. A 7-\/bit encoded integer is first read, which specifies the number of bytes to read from the stream. These bytes are then converted into a string with the encoding for this reader. 
+
+\begin{DoxyReturn}{Returns}
+The string read from the stream.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a7c106faa6d6df6a658ed98c50b529b7b}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a7c106faa6d6df6a658ed98c50b529b7b}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+U\+Int16@{Read\+U\+Int16}}
+\index{Read\+U\+Int16@{Read\+U\+Int16}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+U\+Int16()}{ReadUInt16()}}
+{\footnotesize\ttfamily ushort T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+U\+Int16 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a 16-\/bit unsigned integer from the stream, using the bit converter for this reader. 2 bytes are read. 
+
+\begin{DoxyReturn}{Returns}
+The 16-\/bit unsigned integer read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_ae5a1827eb24391ffb6fac5472433cb68}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_ae5a1827eb24391ffb6fac5472433cb68}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+U\+Int32@{Read\+U\+Int32}}
+\index{Read\+U\+Int32@{Read\+U\+Int32}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+U\+Int32()}{ReadUInt32()}}
+{\footnotesize\ttfamily uint T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+U\+Int32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a 32-\/bit unsigned integer from the stream, using the bit converter for this reader. 4 bytes are read. 
+
+\begin{DoxyReturn}{Returns}
+The 32-\/bit unsigned integer read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a1099cd78f47f8d191142cf344f8c12cb}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a1099cd78f47f8d191142cf344f8c12cb}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Read\+U\+Int64@{Read\+U\+Int64}}
+\index{Read\+U\+Int64@{Read\+U\+Int64}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Read\+U\+Int64()}{ReadUInt64()}}
+{\footnotesize\ttfamily ulong T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Read\+U\+Int64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a 64-\/bit unsigned integer from the stream, using the bit converter for this reader. 8 bytes are read. 
+
+\begin{DoxyReturn}{Returns}
+The 64-\/bit unsigned integer read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a3820798fc511f4ecedd0407461ffb359}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a3820798fc511f4ecedd0407461ffb359}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Seek@{Seek}}
+\index{Seek@{Seek}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily void T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Seek (\begin{DoxyParamCaption}\item[{int}]{offset,  }\item[{Seek\+Origin}]{origin }\end{DoxyParamCaption})}
+
+
+
+Seeks within the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & Offset to seek to.\\
+\hline
+{\em origin} & Origin of seek operation.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a610b56aeb9ffefa9b1354880e5e7cc91}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a610b56aeb9ffefa9b1354880e5e7cc91}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Base\+Stream@{Base\+Stream}}
+\index{Base\+Stream@{Base\+Stream}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Base\+Stream}{BaseStream}}
+{\footnotesize\ttfamily Stream T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Base\+Stream\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the underlying stream of the \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader}{Endian\+Binary\+Reader}}. 
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_a903e43c694cca98444db4d072d520b62}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_a903e43c694cca98444db4d072d520b62}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Bit\+Converter@{Bit\+Converter}}
+\index{Bit\+Converter@{Bit\+Converter}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Bit\+Converter}{BitConverter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Bit\+Converter\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The bit converter used to read values from the stream 
+
+\mbox{\Hypertarget{class_t_net_1_1_i_o_1_1_endian_binary_reader_acd6eb5fbc4f1ce36f7ba50c1b3fc2d8d}\label{class_t_net_1_1_i_o_1_1_endian_binary_reader_acd6eb5fbc4f1ce36f7ba50c1b3fc2d8d}} 
+\index{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}!Encoding@{Encoding}}
+\index{Encoding@{Encoding}!T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader@{T\+Net\+::\+I\+O\+::\+Endian\+Binary\+Reader}}
+\subsubsection{\texorpdfstring{Encoding}{Encoding}}
+{\footnotesize\ttfamily Encoding T\+Net.\+I\+O.\+Endian\+Binary\+Reader.\+Encoding\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The encoding used to read strings 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract\+\_\+/\+I\+O/Endian\+Binary\+Reader.\+cs\end{DoxyCompactItemize}

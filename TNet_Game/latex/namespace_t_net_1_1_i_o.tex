@@ -1,0 +1,47 @@
+\hypertarget{namespace_t_net_1_1_i_o}{}\section{T\+Net.\+IO Namespace Reference}
+\label{namespace_t_net_1_1_i_o}\index{T\+Net.\+IO@{T\+Net.\+IO}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_big_endian_bit_converter}{Big\+Endian\+Bit\+Converter}}
+\begin{DoxyCompactList}\small\item\em Implementation of \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} which converts to/from big-\/endian byte arrays. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_double_converter}{Double\+Converter}}
+\begin{DoxyCompactList}\small\item\em A class to allow the conversion of doubles to string representations of their exact decimal values. The implementation aims for readability over efficiency. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_reader}{Endian\+Binary\+Reader}}
+\begin{DoxyCompactList}\small\item\em Equivalent of System.\+I\+O.\+Binary\+Reader, but with either endianness, depending on the \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} it is constructed with. No data is buffered in the reader; the client may seek within the stream at will. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_binary_writer}{Endian\+Binary\+Writer}}
+\begin{DoxyCompactList}\small\item\em Equivalent of System.\+I\+O.\+Binary\+Writer, but with either endianness, depending on the \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} it is constructed with. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}}
+\begin{DoxyCompactList}\small\item\em Equivalent of System.\+Bit\+Converter, but with either endianness. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_little_endian_bit_converter}{Little\+Endian\+Bit\+Converter}}
+\begin{DoxyCompactList}\small\item\em Implementation of \mbox{\hyperlink{class_t_net_1_1_i_o_1_1_endian_bit_converter}{Endian\+Bit\+Converter}} which converts to/from little-\/endian byte arrays. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dc}{Endianness}} \{ \mbox{\hyperlink{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dca3c0ba6b22b526d7fd50c3026435a8c02}{Endianness.\+Little\+Endian}}, 
+\mbox{\hyperlink{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dca2ce7a92ae43763828ac4acb4560c2a5b}{Endianness.\+Big\+Endian}}
+ \}
+\begin{DoxyCompactList}\small\item\em Endianness of a converter \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dc}\label{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dc}} 
+\index{T\+Net\+::\+IO@{T\+Net\+::\+IO}!Endianness@{Endianness}}
+\index{Endianness@{Endianness}!T\+Net\+::\+IO@{T\+Net\+::\+IO}}
+\subsubsection{\texorpdfstring{Endianness}{Endianness}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dc}{T\+Net.\+I\+O.\+Endianness}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Endianness of a converter 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Little\+Endian@{Little\+Endian}!T\+Net\+::\+IO@{T\+Net\+::\+IO}}\index{T\+Net\+::\+IO@{T\+Net\+::\+IO}!Little\+Endian@{Little\+Endian}}}\mbox{\Hypertarget{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dca3c0ba6b22b526d7fd50c3026435a8c02}\label{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dca3c0ba6b22b526d7fd50c3026435a8c02}} 
+Little\+Endian&Little endian -\/ least significant byte first \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Big\+Endian@{Big\+Endian}!T\+Net\+::\+IO@{T\+Net\+::\+IO}}\index{T\+Net\+::\+IO@{T\+Net\+::\+IO}!Big\+Endian@{Big\+Endian}}}\mbox{\Hypertarget{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dca2ce7a92ae43763828ac4acb4560c2a5b}\label{namespace_t_net_1_1_i_o_afd413ccca7a2b11b5a201325685881dca2ce7a92ae43763828ac4acb4560c2a5b}} 
+Big\+Endian&Big endian -\/ most significant byte first \\
+\hline
+
+\end{DoxyEnumFields}

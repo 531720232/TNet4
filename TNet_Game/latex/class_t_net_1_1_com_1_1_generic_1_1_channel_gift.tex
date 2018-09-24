@@ -1,0 +1,307 @@
+\hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift}{}\section{T\+Net.\+Com.\+Generic.\+Channel\+Gift Class Reference}
+\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift}\index{T\+Net.\+Com.\+Generic.\+Channel\+Gift@{T\+Net.\+Com.\+Generic.\+Channel\+Gift}}
+
+
+渠道媒体礼包  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_ac3a97bf29a95ed15916523136df18ddf}{Check\+Invalid\+Card\+No}} ()
+\begin{DoxyCompactList}\small\item\em 检查是否过期作废的卡（24小时过期） \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_aa712701fe3894974f4717f67d46b6cec}{Generate\+Card\+No}} (string gift\+Type, string create\+Ip)
+\begin{DoxyCompactList}\small\item\em 生成媒体礼包卡 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a6d0dcd4d38cb6f36256cd8268c83f3ba}{Activate}} (int user\+Id, string card\+No)
+\begin{DoxyCompactList}\small\item\em 激活 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_ad4511c1cff4205db5b89d6796271db14}{Channel\+Gift}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift}{T\+Net.\+Com.\+Generic.\+Channel\+Gift}} class. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_af52f559f17bd650695eb536927807b53}{Get\+Card\+No}} (string gift\+Type)
+\begin{DoxyCompactList}\small\item\em 规则：礼包类型(3位) + Card\+Id(最小4位) + 验证码(随机数3位) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a922c54cd3d9e614e8ae3c97f752dc93f}{Try\+Get\+Invalid\+Card\+No}} (string create\+Ip, out string card\+No)
+\begin{DoxyCompactList}\small\item\em 尝试取作废的卡 \end{DoxyCompactList}\item 
+abstract \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_gift_novice_card}{Gift\+Novice\+Card}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a0c72dd14fb3b26d0a759b9f459fd8190}{Get\+Invalid\+Card}} ()
+\begin{DoxyCompactList}\small\item\em Gets the invalid card. \end{DoxyCompactList}\item 
+abstract \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_gift_novice_card}{Gift\+Novice\+Card}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a5120dcae903f683e53fef1c1c2017fd7}{Get\+Not\+Activated\+Card}} ()
+\begin{DoxyCompactList}\small\item\em 获得未激活的卡 \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_aedb6603b56402c2094c4645be1cb3e63}{Add\+Gift\+Card}} (string gift\+Type, string create\+Ip, string card\+No)
+\begin{DoxyCompactList}\small\item\em Adds the gift card. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a9dc52c5c418e162b3c8998b2d78c87ee}{Do\+Activate}} (int user\+Id, string card\+No, string gift\+Type)
+\begin{DoxyCompactList}\small\item\em Dos the activate. \end{DoxyCompactList}\item 
+abstract bool \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a9c446be6e9fe2d7db66c4c81b203131b}{Has\+Activated}} (int user\+Id, string card\+No, string gift\+Type)
+\begin{DoxyCompactList}\small\item\em 是否已激活 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_aa72d615b17d8d2af86d6e82102ac6dc8}{Gift\+Type\+Length}} = 3
+\begin{DoxyCompactList}\small\item\em The length of the gift type. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_aee569eb0759562e806cf3c987304f3f4}{Card\+No\+Min\+Length}} = 10
+\begin{DoxyCompactList}\small\item\em The length of the card no minimum. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a6a58c78803a96279168107cca58e0253}{Invalid\+Hour}} = 24
+\begin{DoxyCompactList}\small\item\em The invalid hour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+abstract int \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a41604aea51abd196526f40a80988e214}{Current\+Card\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the current card identifier. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a0f190a3a2f0577760011efd1be43d085}{Next\+Card\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the next card identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+渠道媒体礼包 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_ad4511c1cff4205db5b89d6796271db14}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_ad4511c1cff4205db5b89d6796271db14}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Channel\+Gift@{Channel\+Gift}}
+\index{Channel\+Gift@{Channel\+Gift}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Channel\+Gift()}{ChannelGift()}}
+{\footnotesize\ttfamily T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Channel\+Gift (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_t_net_1_1_com_1_1_generic_1_1_channel_gift}{T\+Net.\+Com.\+Generic.\+Channel\+Gift}} class. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a6d0dcd4d38cb6f36256cd8268c83f3ba}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a6d0dcd4d38cb6f36256cd8268c83f3ba}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Activate@{Activate}}
+\index{Activate@{Activate}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Activate()}{Activate()}}
+{\footnotesize\ttfamily bool T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Activate (\begin{DoxyParamCaption}\item[{int}]{user\+Id,  }\item[{string}]{card\+No }\end{DoxyParamCaption})}
+
+
+
+激活 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+{\em card\+No} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_aedb6603b56402c2094c4645be1cb3e63}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_aedb6603b56402c2094c4645be1cb3e63}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Add\+Gift\+Card@{Add\+Gift\+Card}}
+\index{Add\+Gift\+Card@{Add\+Gift\+Card}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Add\+Gift\+Card()}{AddGiftCard()}}
+{\footnotesize\ttfamily abstract void T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Add\+Gift\+Card (\begin{DoxyParamCaption}\item[{string}]{gift\+Type,  }\item[{string}]{create\+Ip,  }\item[{string}]{card\+No }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Adds the gift card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gift\+Type} & Gift type.\\
+\hline
+{\em create\+Ip} & Create ip.\\
+\hline
+{\em card\+No} & Card no.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_ac3a97bf29a95ed15916523136df18ddf}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_ac3a97bf29a95ed15916523136df18ddf}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Check\+Invalid\+Card\+No@{Check\+Invalid\+Card\+No}}
+\index{Check\+Invalid\+Card\+No@{Check\+Invalid\+Card\+No}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Check\+Invalid\+Card\+No()}{CheckInvalidCardNo()}}
+{\footnotesize\ttfamily void T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Check\+Invalid\+Card\+No (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+检查是否过期作废的卡（24小时过期） 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a9dc52c5c418e162b3c8998b2d78c87ee}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a9dc52c5c418e162b3c8998b2d78c87ee}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Do\+Activate@{Do\+Activate}}
+\index{Do\+Activate@{Do\+Activate}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Do\+Activate()}{DoActivate()}}
+{\footnotesize\ttfamily abstract void T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Do\+Activate (\begin{DoxyParamCaption}\item[{int}]{user\+Id,  }\item[{string}]{card\+No,  }\item[{string}]{gift\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Dos the activate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & User identifier.\\
+\hline
+{\em card\+No} & Card no.\\
+\hline
+{\em gift\+Type} & Gift type.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_aa712701fe3894974f4717f67d46b6cec}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_aa712701fe3894974f4717f67d46b6cec}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Generate\+Card\+No@{Generate\+Card\+No}}
+\index{Generate\+Card\+No@{Generate\+Card\+No}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Generate\+Card\+No()}{GenerateCardNo()}}
+{\footnotesize\ttfamily string T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Generate\+Card\+No (\begin{DoxyParamCaption}\item[{string}]{gift\+Type,  }\item[{string}]{create\+Ip }\end{DoxyParamCaption})}
+
+
+
+生成媒体礼包卡 
+
+
+\begin{DoxyParams}{Parameters}
+{\em create\+Ip} & 访问的\+IP\\
+\hline
+{\em gift\+Type} & 礼包类型\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_af52f559f17bd650695eb536927807b53}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_af52f559f17bd650695eb536927807b53}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Get\+Card\+No@{Get\+Card\+No}}
+\index{Get\+Card\+No@{Get\+Card\+No}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Get\+Card\+No()}{GetCardNo()}}
+{\footnotesize\ttfamily virtual string T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Get\+Card\+No (\begin{DoxyParamCaption}\item[{string}]{gift\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+规则：礼包类型(3位) + Card\+Id(最小4位) + 验证码(随机数3位) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gift\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a0c72dd14fb3b26d0a759b9f459fd8190}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a0c72dd14fb3b26d0a759b9f459fd8190}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Get\+Invalid\+Card@{Get\+Invalid\+Card}}
+\index{Get\+Invalid\+Card@{Get\+Invalid\+Card}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Get\+Invalid\+Card()}{GetInvalidCard()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_gift_novice_card}{Gift\+Novice\+Card}} \mbox{[}$\,$\mbox{]} T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Get\+Invalid\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Gets the invalid card. 
+
+\begin{DoxyReturn}{Returns}
+The invalid card.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a5120dcae903f683e53fef1c1c2017fd7}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a5120dcae903f683e53fef1c1c2017fd7}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Get\+Not\+Activated\+Card@{Get\+Not\+Activated\+Card}}
+\index{Get\+Not\+Activated\+Card@{Get\+Not\+Activated\+Card}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Get\+Not\+Activated\+Card()}{GetNotActivatedCard()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{class_t_net_1_1_com_1_1_model_1_1_gift_novice_card}{Gift\+Novice\+Card}} \mbox{[}$\,$\mbox{]} T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Get\+Not\+Activated\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+获得未激活的卡 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a9c446be6e9fe2d7db66c4c81b203131b}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a9c446be6e9fe2d7db66c4c81b203131b}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Has\+Activated@{Has\+Activated}}
+\index{Has\+Activated@{Has\+Activated}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Has\+Activated()}{HasActivated()}}
+{\footnotesize\ttfamily abstract bool T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Has\+Activated (\begin{DoxyParamCaption}\item[{int}]{user\+Id,  }\item[{string}]{card\+No,  }\item[{string}]{gift\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+是否已激活 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+{\em card\+No} & \\
+\hline
+{\em gift\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a922c54cd3d9e614e8ae3c97f752dc93f}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a922c54cd3d9e614e8ae3c97f752dc93f}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Try\+Get\+Invalid\+Card\+No@{Try\+Get\+Invalid\+Card\+No}}
+\index{Try\+Get\+Invalid\+Card\+No@{Try\+Get\+Invalid\+Card\+No}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Try\+Get\+Invalid\+Card\+No()}{TryGetInvalidCardNo()}}
+{\footnotesize\ttfamily bool T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Try\+Get\+Invalid\+Card\+No (\begin{DoxyParamCaption}\item[{string}]{create\+Ip,  }\item[{out string}]{card\+No }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+尝试取作废的卡 
+
+
+\begin{DoxyParams}{Parameters}
+{\em create\+Ip} & \\
+\hline
+{\em card\+No} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_aee569eb0759562e806cf3c987304f3f4}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_aee569eb0759562e806cf3c987304f3f4}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Card\+No\+Min\+Length@{Card\+No\+Min\+Length}}
+\index{Card\+No\+Min\+Length@{Card\+No\+Min\+Length}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Card\+No\+Min\+Length}{CardNoMinLength}}
+{\footnotesize\ttfamily int T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Card\+No\+Min\+Length = 10\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The length of the card no minimum. 
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_aa72d615b17d8d2af86d6e82102ac6dc8}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_aa72d615b17d8d2af86d6e82102ac6dc8}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Gift\+Type\+Length@{Gift\+Type\+Length}}
+\index{Gift\+Type\+Length@{Gift\+Type\+Length}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Gift\+Type\+Length}{GiftTypeLength}}
+{\footnotesize\ttfamily int T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Gift\+Type\+Length = 3\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The length of the gift type. 
+
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a6a58c78803a96279168107cca58e0253}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a6a58c78803a96279168107cca58e0253}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Invalid\+Hour@{Invalid\+Hour}}
+\index{Invalid\+Hour@{Invalid\+Hour}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Invalid\+Hour}{InvalidHour}}
+{\footnotesize\ttfamily int T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Invalid\+Hour = 24\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The invalid hour. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a41604aea51abd196526f40a80988e214}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a41604aea51abd196526f40a80988e214}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Current\+Card\+Id@{Current\+Card\+Id}}
+\index{Current\+Card\+Id@{Current\+Card\+Id}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Current\+Card\+Id}{CurrentCardId}}
+{\footnotesize\ttfamily abstract int T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Current\+Card\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+
+
+Gets or sets the current card identifier. 
+
+The current card identifier.\mbox{\Hypertarget{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a0f190a3a2f0577760011efd1be43d085}\label{class_t_net_1_1_com_1_1_generic_1_1_channel_gift_a0f190a3a2f0577760011efd1be43d085}} 
+\index{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}!Next\+Card\+Id@{Next\+Card\+Id}}
+\index{Next\+Card\+Id@{Next\+Card\+Id}!T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift@{T\+Net\+::\+Com\+::\+Generic\+::\+Channel\+Gift}}
+\subsubsection{\texorpdfstring{Next\+Card\+Id}{NextCardId}}
+{\footnotesize\ttfamily int T\+Net.\+Com.\+Generic.\+Channel\+Gift.\+Next\+Card\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+
+
+Gets the next card identifier. 
+
+The next card identifier.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Com/\+Generic/Channel\+Gift.\+cs\end{DoxyCompactItemize}

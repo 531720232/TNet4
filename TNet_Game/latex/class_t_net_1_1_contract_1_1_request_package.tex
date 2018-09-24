@@ -1,0 +1,268 @@
+\hypertarget{class_t_net_1_1_contract_1_1_request_package}{}\section{T\+Net.\+Contract.\+Request\+Package Class Reference}
+\label{class_t_net_1_1_contract_1_1_request_package}\index{T\+Net.\+Contract.\+Request\+Package@{T\+Net.\+Contract.\+Request\+Package}}
+
+
+Request message package  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_a4c7912019e2965e0bb2d996905285f5f}{Request\+Package}} ()
+\begin{DoxyCompactList}\small\item\em init \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_a35e5e19a153b5ba9a7a7786b0092ca93}{Request\+Package}} (int msg\+Id, string session\+Id, int action\+Id, int user\+Id, \mbox{\hyperlink{namespace_t_net_1_1_service_a6651119df6dac62b849ed58cf7ece2bd}{Protocol\+Version}} ptcl=Protocol\+Version.\+Default)
+\begin{DoxyCompactList}\small\item\em init \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_aa0a9e1ab4593e289714e7c301bc79767}{Bind}} (\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}} session)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_a0e0297bb4b64ae84351f188ced2ae263}\label{class_t_net_1_1_contract_1_1_request_package_a0e0297bb4b64ae84351f188ced2ae263}} 
+\mbox{\hyperlink{class_t_net_1_1_data_node}{Data\+Node}} {\bfseries Aode}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Dictionary$<$ string, string $>$ \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_a8bd0af2a192de3cee042d0a3ef40d8c0}{Params}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_a456a7bcd8ddabe32247e33f9055bf2a3}{Msg\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em message id of client request \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_a5a8096016d290fc98fac2ebe81b7405d}{Action\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_t_net_1_1_contract_1_1_action}{Action}} route key \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_abc38ac4f3452921aeb54e67b28eea1bd}{Route\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 服务器间内部通讯通道 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_a9338376f0861bb91a45d35b60280032f}{Session\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em session id of client \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_ae0a08a2f200563dc29f7e1625486a0a1}{User\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em session id of client \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_a1e6c47e96b7fe77d2989fadd1e7ab2ed}{Is\+Proxy\+Request}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em is proxy server connect \end{DoxyCompactList}\item 
+Guid \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_a0a722013bfaab9253906d50d093fd879}{Proxy\+Sid}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Proxy server connect sid \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_ac05be0619f24196b4e841ae041bc9f96}{Is\+Url\+Param}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 是否是\+Url格式参数类型 \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_a6980fa4d3ff7031ae54f8bb2ef74293e}{Proxy\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 远程代理客户端的标识\+ID \end{DoxyCompactList}\item 
+sbyte \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_a87e992561b6e2f4d508b86c4937aa93e}{Op\+Code}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_t_net_1_1_service_a6651119df6dac62b849ed58cf7ece2bd}{Protocol\+Version}} \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_a8710751d3a15cc4b2dd93f6cdf1c9848}{Ptcl}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 通讯协议版本，0\+: default, 1\+: use head extend for sync property to client \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_a959ef1d53cb6698d940dc987eac3ee12}{Original\+Param}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em sigin use \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_abfc3a96ff7ad81f3b18ca9faf0364b3f}{Command\+Message}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em websocket use \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_ab447b7612816e9a1f88cf59bbd334bb4}{Message}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespace_t_net_1_1_message}{Message}} of custom \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_t_net_1_1_contract_1_1_request_package_ad1884bb9a5523f6674cadaf10121ce0b}{Receive\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Receive time \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Request message package 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_a4c7912019e2965e0bb2d996905285f5f}\label{class_t_net_1_1_contract_1_1_request_package_a4c7912019e2965e0bb2d996905285f5f}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Request\+Package@{Request\+Package}}
+\index{Request\+Package@{Request\+Package}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Request\+Package()}{RequestPackage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T\+Net.\+Contract.\+Request\+Package.\+Request\+Package (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+init 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_a35e5e19a153b5ba9a7a7786b0092ca93}\label{class_t_net_1_1_contract_1_1_request_package_a35e5e19a153b5ba9a7a7786b0092ca93}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Request\+Package@{Request\+Package}}
+\index{Request\+Package@{Request\+Package}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Request\+Package()}{RequestPackage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T\+Net.\+Contract.\+Request\+Package.\+Request\+Package (\begin{DoxyParamCaption}\item[{int}]{msg\+Id,  }\item[{string}]{session\+Id,  }\item[{int}]{action\+Id,  }\item[{int}]{user\+Id,  }\item[{\mbox{\hyperlink{namespace_t_net_1_1_service_a6651119df6dac62b849ed58cf7ece2bd}{Protocol\+Version}}}]{ptcl = {\ttfamily ProtocolVersion.Default} }\end{DoxyParamCaption})}
+
+
+
+init 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_aa0a9e1ab4593e289714e7c301bc79767}\label{class_t_net_1_1_contract_1_1_request_package_aa0a9e1ab4593e289714e7c301bc79767}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Bind@{Bind}}
+\index{Bind@{Bind}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Bind()}{Bind()}}
+{\footnotesize\ttfamily void T\+Net.\+Contract.\+Request\+Package.\+Bind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_net_1_1_contract_1_1_game_session}{Game\+Session}}}]{session }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_a5a8096016d290fc98fac2ebe81b7405d}\label{class_t_net_1_1_contract_1_1_request_package_a5a8096016d290fc98fac2ebe81b7405d}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Action\+Id@{Action\+Id}}
+\index{Action\+Id@{Action\+Id}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Action\+Id}{ActionId}}
+{\footnotesize\ttfamily int T\+Net.\+Contract.\+Request\+Package.\+Action\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+\mbox{\hyperlink{namespace_t_net_1_1_contract_1_1_action}{Action}} route key 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_abfc3a96ff7ad81f3b18ca9faf0364b3f}\label{class_t_net_1_1_contract_1_1_request_package_abfc3a96ff7ad81f3b18ca9faf0364b3f}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Command\+Message@{Command\+Message}}
+\index{Command\+Message@{Command\+Message}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Command\+Message}{CommandMessage}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Request\+Package.\+Command\+Message\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+websocket use 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_a1e6c47e96b7fe77d2989fadd1e7ab2ed}\label{class_t_net_1_1_contract_1_1_request_package_a1e6c47e96b7fe77d2989fadd1e7ab2ed}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Is\+Proxy\+Request@{Is\+Proxy\+Request}}
+\index{Is\+Proxy\+Request@{Is\+Proxy\+Request}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Is\+Proxy\+Request}{IsProxyRequest}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Request\+Package.\+Is\+Proxy\+Request\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+is proxy server connect 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_ac05be0619f24196b4e841ae041bc9f96}\label{class_t_net_1_1_contract_1_1_request_package_ac05be0619f24196b4e841ae041bc9f96}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Is\+Url\+Param@{Is\+Url\+Param}}
+\index{Is\+Url\+Param@{Is\+Url\+Param}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Is\+Url\+Param}{IsUrlParam}}
+{\footnotesize\ttfamily bool T\+Net.\+Contract.\+Request\+Package.\+Is\+Url\+Param\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+是否是\+Url格式参数类型 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_ab447b7612816e9a1f88cf59bbd334bb4}\label{class_t_net_1_1_contract_1_1_request_package_ab447b7612816e9a1f88cf59bbd334bb4}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Message@{Message}}
+\index{Message@{Message}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Message}{Message}}
+{\footnotesize\ttfamily object T\+Net.\+Contract.\+Request\+Package.\+Message\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\mbox{\hyperlink{namespace_t_net_1_1_message}{Message}} of custom 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_a456a7bcd8ddabe32247e33f9055bf2a3}\label{class_t_net_1_1_contract_1_1_request_package_a456a7bcd8ddabe32247e33f9055bf2a3}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Msg\+Id@{Msg\+Id}}
+\index{Msg\+Id@{Msg\+Id}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Msg\+Id}{MsgId}}
+{\footnotesize\ttfamily int T\+Net.\+Contract.\+Request\+Package.\+Msg\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+message id of client request 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_a87e992561b6e2f4d508b86c4937aa93e}\label{class_t_net_1_1_contract_1_1_request_package_a87e992561b6e2f4d508b86c4937aa93e}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Op\+Code@{Op\+Code}}
+\index{Op\+Code@{Op\+Code}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Op\+Code}{OpCode}}
+{\footnotesize\ttfamily sbyte T\+Net.\+Contract.\+Request\+Package.\+Op\+Code\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_a959ef1d53cb6698d940dc987eac3ee12}\label{class_t_net_1_1_contract_1_1_request_package_a959ef1d53cb6698d940dc987eac3ee12}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Original\+Param@{Original\+Param}}
+\index{Original\+Param@{Original\+Param}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Original\+Param}{OriginalParam}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Request\+Package.\+Original\+Param\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+sigin use 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_a8bd0af2a192de3cee042d0a3ef40d8c0}\label{class_t_net_1_1_contract_1_1_request_package_a8bd0af2a192de3cee042d0a3ef40d8c0}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Params@{Params}}
+\index{Params@{Params}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Params}{Params}}
+{\footnotesize\ttfamily Dictionary$<$string, string$>$ T\+Net.\+Contract.\+Request\+Package.\+Params\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_a6980fa4d3ff7031ae54f8bb2ef74293e}\label{class_t_net_1_1_contract_1_1_request_package_a6980fa4d3ff7031ae54f8bb2ef74293e}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Proxy\+Id@{Proxy\+Id}}
+\index{Proxy\+Id@{Proxy\+Id}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Proxy\+Id}{ProxyId}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Request\+Package.\+Proxy\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+远程代理客户端的标识\+ID 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_a0a722013bfaab9253906d50d093fd879}\label{class_t_net_1_1_contract_1_1_request_package_a0a722013bfaab9253906d50d093fd879}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Proxy\+Sid@{Proxy\+Sid}}
+\index{Proxy\+Sid@{Proxy\+Sid}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Proxy\+Sid}{ProxySid}}
+{\footnotesize\ttfamily Guid T\+Net.\+Contract.\+Request\+Package.\+Proxy\+Sid\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Proxy server connect sid 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_a8710751d3a15cc4b2dd93f6cdf1c9848}\label{class_t_net_1_1_contract_1_1_request_package_a8710751d3a15cc4b2dd93f6cdf1c9848}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Ptcl@{Ptcl}}
+\index{Ptcl@{Ptcl}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Ptcl}{Ptcl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_t_net_1_1_service_a6651119df6dac62b849ed58cf7ece2bd}{Protocol\+Version}} T\+Net.\+Contract.\+Request\+Package.\+Ptcl\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+通讯协议版本，0\+: default, 1\+: use head extend for sync property to client 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_ad1884bb9a5523f6674cadaf10121ce0b}\label{class_t_net_1_1_contract_1_1_request_package_ad1884bb9a5523f6674cadaf10121ce0b}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Receive\+Time@{Receive\+Time}}
+\index{Receive\+Time@{Receive\+Time}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Receive\+Time}{ReceiveTime}}
+{\footnotesize\ttfamily Date\+Time T\+Net.\+Contract.\+Request\+Package.\+Receive\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Receive time 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_abc38ac4f3452921aeb54e67b28eea1bd}\label{class_t_net_1_1_contract_1_1_request_package_abc38ac4f3452921aeb54e67b28eea1bd}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Route\+Name@{Route\+Name}}
+\index{Route\+Name@{Route\+Name}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Route\+Name}{RouteName}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Request\+Package.\+Route\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+服务器间内部通讯通道 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_a9338376f0861bb91a45d35b60280032f}\label{class_t_net_1_1_contract_1_1_request_package_a9338376f0861bb91a45d35b60280032f}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!Session\+Id@{Session\+Id}}
+\index{Session\+Id@{Session\+Id}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{Session\+Id}{SessionId}}
+{\footnotesize\ttfamily string T\+Net.\+Contract.\+Request\+Package.\+Session\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+session id of client 
+
+\mbox{\Hypertarget{class_t_net_1_1_contract_1_1_request_package_ae0a08a2f200563dc29f7e1625486a0a1}\label{class_t_net_1_1_contract_1_1_request_package_ae0a08a2f200563dc29f7e1625486a0a1}} 
+\index{T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}!User\+Id@{User\+Id}}
+\index{User\+Id@{User\+Id}!T\+Net\+::\+Contract\+::\+Request\+Package@{T\+Net\+::\+Contract\+::\+Request\+Package}}
+\subsubsection{\texorpdfstring{User\+Id}{UserId}}
+{\footnotesize\ttfamily int T\+Net.\+Contract.\+Request\+Package.\+User\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+session id of client 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contract/Request\+Package.\+cs\end{DoxyCompactItemize}

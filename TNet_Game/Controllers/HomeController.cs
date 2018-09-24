@@ -22,6 +22,7 @@ namespace TNet.Controllers
                      Assembly.GetExecutingAssembly().GetName().FullName.Split(',')[1],
                      5317,
                      2017);
+            
             return Content(wr);
         }
         public IActionResult Index()
